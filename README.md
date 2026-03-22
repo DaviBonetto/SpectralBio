@@ -161,6 +161,15 @@ SpectralBio/
 
 ---
 
+## Repository Hygiene
+
+- Sensitive file `submit/api_key.txt` is excluded from version control.
+- Build/runtime noise is ignored (`__pycache__/`, notebook checkpoints, env folders).
+- Compressed raw archives (`*.txt.gz`) are ignored by default.
+- Orchestration artifacts (`plano/`, `ultra_plan.md`) are excluded.
+
+---
+
 ## Citation
 
 ```bibtex
