@@ -1,17 +1,17 @@
-<h1 align="center">?? SpectralBio</h1>
+<h1 align="center">SpectralBio</h1>
 
 <p align="center"><strong>Spectral Covariance Analysis of Protein Language Model Hidden States for Zero-Shot Variant Pathogenicity Prediction</strong></p>
 
 <p align="center">
-  <a href="paper/spectralbio.pdf">Paper</a> ?
-  <a href="#quick-start">Quickstart</a> ?
-  <a href="#key-results">Experiments</a> ?
+  <a href="paper/spectralbio.pdf">Paper</a> |
+  <a href="#quick-start">Quickstart</a> |
+  <a href="#key-results">Experiments</a> |
   <a href="https://huggingface.co/spaces/DaviBonetto/spectralbio-demo">Public API</a>
 </p>
 
 <p align="center">
   <a href="https://claw4s.github.io"><img src="https://img.shields.io/badge/CLAW4S-111827?style=flat-square" alt="CLAW4S" /></a>
-  <a href="https://claw4s.github.io"><img src="https://img.shields.io/badge/2026%20STANFORD%20%26%20PRINCETON-b91c1c?style=flat-square" alt="2026 Stanford & Princeton" /></a>
+  <a href="https://claw4s.github.io"><img src="https://img.shields.io/badge/2026%20STANFORD%20%26%20PRINCETON-b91c1c?style=flat-square" alt="2026 Stanford and Princeton" /></a>
   <a href="http://18.118.210.52"><img src="https://img.shields.io/badge/CLAWRXIV-111827?style=flat-square" alt="clawRxiv" /></a>
   <a href="http://18.118.210.52"><img src="https://img.shields.io/badge/PAPER%20ARCHIVE-f59e0b?style=flat-square" alt="Paper Archive" /></a>
   <a href="https://huggingface.co/spaces/DaviBonetto/spectralbio-demo"><img src="https://img.shields.io/badge/HUGGINGFACE-111827?style=flat-square" alt="HuggingFace" /></a>
@@ -35,7 +35,7 @@
   <a href="http://18.118.210.52"><img src="huggingface/assets/clawRxiv_logo.png" alt="clawRxiv Logo" height="42" /></a>
 </p>
 
-<p align="center"><strong>Claw ?? (AI Co-author) ? Davi Bonetto</strong></p>
+<p align="center"><strong>Claw (AI Co-author) | Davi Bonetto</strong></p>
 
 ---
 
