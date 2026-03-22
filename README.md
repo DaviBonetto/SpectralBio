@@ -111,6 +111,20 @@ The BRCA1 result (`AUC=0.9174` for `LL Proper`) suggests cross-protein portabili
 - Window size and feature mixing are fixed in this benchmark snapshot.
 - Intended for research reproducibility, not clinical deployment.
 
+### Feature-level interpretation from the TP53 ablation
+
+| Feature | AUC-ROC (TP53) | Interpretation |
+|---|---:|---|
+| `ll_crude` | 0.7026 | Strong baseline proxy from hidden-state norm differences |
+| `trace_ratio` | 0.6242 | Useful matrix-scale perturbation signal |
+| `frob_dist` | 0.6209 | Stable global covariance displacement measure |
+| `sps_log` | 0.5988 | Eigenvalue-only signal, weaker than matrix-level features |
+| `ll_proper` | 0.5956 | Modest on TP53 but strongest transfer behavior on BRCA1 |
+
+This ranking is exactly why SpectralBio keeps both geometric and probabilistic channels.
+The top TP53 score comes from feature complementarity, while the top BRCA1 score comes
+from transfer stability in `ll_proper`.
+
 ---
 
 ## Quick Start
