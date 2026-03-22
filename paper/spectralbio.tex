@@ -1,0 +1,272 @@
+% ============================================================================
+% SpectralBio — Claw4S Conference 2026 (Stanford–Princeton)
+% 4-page paper — Compile: pdflatex spectralbio.tex (run twice for refs)
+% ============================================================================
+\documentclass[10pt,twocolumn,letterpaper]{article}
+
+% ---------- Encoding & fonts ------------------------------------------------
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+
+% ---------- Page geometry ----------------------------------------------------
+\usepackage[
+  top=0.68in, bottom=0.72in, left=0.60in, right=0.60in,
+  columnsep=0.24in
+]{geometry}
+
+% ---------- Math, tables, graphics -------------------------------------------
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{caption}
+
+% ---------- Hyperlinks -------------------------------------------------------
+\usepackage[
+  colorlinks=true,
+  linkcolor={blue!70!black},
+  citecolor={green!50!black},
+  urlcolor={blue!60!black}
+]{hyperref}
+
+% ---------- More helpers -----------------------------------------------------
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[numbers,sort&compress]{natbib}
+
+% ---------- Compact spacing --------------------------------------------------
+\setlength{\parskip}{0.5pt plus 0.3pt}
+\setlength{\parindent}{1em}
+\setlength{\abovecaptionskip}{5pt}
+\setlength{\belowcaptionskip}{2pt}
+\setlength{\textfloatsep}{8pt plus 2pt minus 2pt}
+\setlength{\floatsep}{6pt plus 2pt minus 2pt}
+\setlength{\intextsep}{6pt plus 2pt minus 2pt}
+\setlength{\dbltextfloatsep}{8pt plus 2pt minus 2pt}
+\setlength{\dblfloatsep}{6pt plus 2pt minus 2pt}
+\setlist{nosep,leftmargin=1.3em}
+
+\titlespacing*{\section}{0pt}{8pt}{4pt}
+\titlespacing*{\subsection}{0pt}{6pt}{2pt}
+\titleformat{\section}{\large\bfseries}{\thesection}{0.6em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{0.5em}{}
+
+% ---------- Colors & commands ------------------------------------------------
+\definecolor{linkblue}{HTML}{2980B9}
+\newcommand{\methodname}{\textsc{SpectralBio}}
+\newcommand{\claw}{\raisebox{-2pt}{\includegraphics[height=1.1em]{assets/lobster.png}}}
+
+% ============================================================================
+\begin{document}
+
+% ===== FULL-WIDTH HEADER =====================================================
+\twocolumn[{%
+%
+% --- Icon ribbon ---
+\noindent
+{\footnotesize\color{gray}Claw4S Conference 2026~~$\bullet$~~Stanford--Princeton}%
+\hfill
+{\footnotesize%
+\raisebox{-2pt}{\includegraphics[height=10pt]{assets/github_logo.png}}\,%
+\href{https://github.com/DaviBonetto/SpectralBio}{\textcolor{linkblue}{Code}}\quad
+\raisebox{-2pt}{\includegraphics[height=10pt]{assets/hf_logo.png}}\,%
+\href{https://huggingface.co/spaces/DaviBonetto/spectralbio-demo}{\textcolor{linkblue}{Demo}}\quad
+\raisebox{-2pt}{\includegraphics[height=10pt]{assets/hf_logo.png}}\,%
+\href{https://huggingface.co/datasets/DaviBonetto/spectralbio-clinvar}{\textcolor{linkblue}{Dataset}}%
+}%
+\par\vspace{2pt}%
+\noindent\rule{\textwidth}{0.4pt}%
+\vspace{8pt}%
+%
+% --- Title ---
+\begin{center}
+{\LARGE\bfseries \methodname{}: Spectral Covariance Analysis of Protein\\[3pt]
+Language Model Hidden States for Zero-Shot\\[3pt]
+Variant Pathogenicity Prediction\par}
+\vspace{10pt}
+%
+% --- Authors ---
+{\large
+Claw~\claw\textsuperscript{1}\qquad
+Davi Bonetto\textsuperscript{2}%
+}\par\vspace{5pt}
+{\small
+\textsuperscript{1}\textit{AI Co-author \& Reproducibility Verifier, Claw4S 2026}\par
+\textsuperscript{2}\textit{Independent Researcher, Brazil}\par\vspace{2pt}
+\texttt{\href{mailto:davi.bonetto100@gmail.com}{davi.bonetto100@gmail.com}}\quad
+\texttt{\href{https://github.com/DaviBonetto}{github.com/DaviBonetto}}%
+}\par\vspace{3pt}
+{\footnotesize \claw~AI Agent co-author under Claw4S 2026 competition rules.}
+\end{center}
+\vspace{3pt}%
+\noindent\rule{\textwidth}{0.4pt}%
+\vspace{5pt}%
+%
+% --- Abstract ---
+\begin{center}
+\parbox{0.93\textwidth}{\small
+\textbf{Abstract.}\quad
+Predicting whether missense mutations are pathogenic or benign from sequence alone
+is a central challenge in computational biology.
+State-of-the-art zero-shot methods leverage protein language models (PLMs) via
+log-likelihood ratios, but these capture only sequence probability and ignore
+the rich geometry of internal representations.
+We present \methodname{}, a framework that analyzes the \emph{spectral and geometric}
+structure of ESM2-150M hidden-state covariance matrices to derive pathogenicity
+signals complementary to likelihood scores.
+For each variant we compute local covariance matrices ($\pm$40-residue window)
+and extract three features: Frobenius covariance distance (\textit{FrobDist}),
+trace ratio (\textit{TraceRatio}), and log-eigenvalue shift (\textit{SPS-log}).
+On ClinVar TP53 ($N$=255; 115 pathogenic, 140 benign),
+\textbf{FrobDist\,+\,LL\,Proper} achieves \textbf{AUC\,=\,0.7498},
+a +6.7\% relative gain over LL Crude (0.7026).
+Most strikingly, proper masked-LM LL generalizes to BRCA1 with
+\textbf{AUC\,=\,0.9174}---exceptional cross-protein transfer from a feature
+scoring only 0.5956 on TP53.
+Matrix-level features consistently outperform eigenvalue-only SPS, and all results
+are \textbf{exactly reproducible} ($\Delta_{\text{rep}}$=0.0).%
+}
+\end{center}
+\vspace{8pt}%
+}]% end \twocolumn[{...}]
+
+% ============================================================================
+\section{Introduction}
+% ============================================================================
+
+Identifying disease-causing protein variants from sequence data alone remains
+one of the most pressing challenges in computational biology.
+As whole-genome sequencing becomes routine, the number of variants of uncertain
+significance (VUS) grows far faster than experimental capacity to characterize
+them~\cite{landrum2018clinvar}.
+Computational predictors that can reliably triage variants without labeled
+training data are therefore essential for clinical genetics.
+
+Protein language models (PLMs), particularly ESM-2~\cite{lin2023evolutionary},
+have emerged as powerful zero-shot predictors.
+By computing log-likelihood ratios ($\Delta$LLR) between wild-type and mutant
+sequences~\cite{meier2021language}, PLMs achieve competitive accuracy without
+supervised fine-tuning.
+However, standard LLR implementations capture only the probability of each
+sequence under the model's masked-language-modeling objective, discarding
+information encoded in the \emph{geometry of internal representations}.
+
+Recent work in adversarial ML showed that spectral analysis of hidden-state
+covariance can detect subtle perturbations~\cite{bonetto2026spectralguard}.
+We hypothesize that disease-causing mutations induce detectable distortions in
+PLM hidden-state covariance, providing signal \emph{orthogonal} to
+likelihood-based scores.
+
+\textbf{Contributions.}\;
+\textbf{(1)}~We introduce \methodname{}, extracting matrix-level spectral
+features from PLM hidden-state covariance.
+\textbf{(2)}~FrobDist + proper LL yields AUC=0.7498 on TP53 (+4.72\,pp over baseline).
+\textbf{(3)}~Proper LL achieves AUC=0.9174 on BRCA1---exceptional cross-protein transfer.
+\textbf{(4)}~First systematic comparison of matrix-level vs.\ eigenvalue-only
+spectral features for variant prediction.
+\textbf{(5)}~$\Delta_{\text{rep}}$=0.0 via SKILL.md.
+
+% ============================================================================
+\section{Related Work}\label{sec:related}
+% ============================================================================
+
+\textbf{Zero-shot variant effect prediction.}\;
+Meier et al.~\cite{meier2021language} showed that ESM-1b log-likelihood ratios
+achieve strong zero-shot variant effect prediction.
+Notin et al.~\cite{notin2023proteingym} established ProteinGym benchmarks spanning
+hundreds of proteins, confirming that larger PLMs generally improve AUC with
+diminishing returns beyond 650M parameters.
+All these methods operate purely on sequence probability.
+
+\textbf{Spectral analysis of neural representations.}\;
+Bonetto~\cite{bonetto2026spectralguard} introduced SpectralGuard, which monitors
+the spectral radius of hidden-state covariance in Mamba-based SSMs to detect
+poisoning attacks---demonstrating that input perturbations produce detectable
+eigenspectrum shifts.
+\methodname{} applies this insight to PLM hidden states, showing that geometric
+features complement likelihood scores for pathogenicity prediction.
+
+% ============================================================================
+\section{Method}\label{sec:method}
+% ============================================================================
+
+\subsection{Model and Dataset}
+
+We use ESM2-150M (\texttt{esm2\_t30\_150M\_UR50D}; 150M parameters,
+$L$=30 layers, $d$=640)~\cite{lin2023evolutionary} with its masked-LM head.
+The model is used entirely in inference mode with no fine-tuning.
+Missense variants are sourced from ClinVar~\cite{landrum2018clinvar}, filtered
+for ``Pathogenic'' and ``Benign'' labels.
+Primary evaluation: TP53 ($N$=255; 115 pathogenic, 140 benign).
+Cross-protein generalization: BRCA1 ($N$=100).
+
+\subsection{Spectral Feature Extraction}
+
+Given wild-type $\mathbf{S}_{\text{WT}}$ and mutant $\mathbf{S}_{\text{MUT}}$
+at position $p$, extraction proceeds in four steps:
+
+\textbf{Step 1: Local windowing.}\;
+We extract $\pm$40 residues around the mutation site (subsequence length $w \leq 81$),
+focusing analysis on the structural neighborhood most likely perturbed.
+
+\textbf{Step 2: Hidden state extraction.}\;
+Both windows are passed through ESM2-150M. For each layer $\ell \in \{1,\dots,L\}$,
+we extract hidden states $\mathbf{H}^{(\ell)} \in \mathbb{R}^{w \times d}$.
+
+\textbf{Step 3: Covariance.}\;
+Residue-level covariance
+$\mathbf{C}^{(\ell)} = \mathrm{Cov}(\mathbf{H}^{(\ell)}) \in \mathbb{R}^{d \times d}$
+is computed separately for wild-type and mutant.
+
+\textbf{Step 4: Spectral features.}\;
+Three features averaged over all $L$=30 layers:
+%
+\vspace{-2pt}
+\begin{equation}\label{eq:frob}
+  \text{FrobDist} = \frac{1}{L}\sum_{\ell=1}^{L}
+    \bigl\|\mathbf{C}^{(\ell)}_{\text{MUT}} - \mathbf{C}^{(\ell)}_{\text{WT}}\bigr\|_F
+\end{equation}
+\vspace{-10pt}
+\begin{equation}\label{eq:trace}
+  \text{TraceRatio} = \frac{1}{L}\sum_{\ell=1}^{L}
+    \biggl|\frac{\mathrm{tr}(\mathbf{C}^{(\ell)}_{\text{MUT}})}
+               {\mathrm{tr}(\mathbf{C}^{(\ell)}_{\text{WT}})} - 1\biggr|
+\end{equation}
+\vspace{-10pt}
+\begin{equation}\label{eq:sps}
+  \text{SPS\text{-}log} = \frac{1}{L}\sum_{\ell=1}^{L}
+    \bigl\|\log|\boldsymbol{\lambda}^{(\ell)}_{\text{MUT}}|
+           - \log|\boldsymbol{\lambda}^{(\ell)}_{\text{WT}}|\bigr\|_2^2
+\end{equation}
+
+\noindent
+where $\boldsymbol{\lambda}^{(\ell)}$ denotes the eigenvalues of $\mathbf{C}^{(\ell)}$.
+FrobDist (Eq.~\ref{eq:frob}) captures total covariance perturbation magnitude.
+TraceRatio (Eq.~\ref{eq:trace}) measures variance changes.
+SPS-log (Eq.~\ref{eq:sps}) uses only eigenvalues, discarding eigenvector information.
+
+\subsection{Log-Likelihood Scores}
+
+\textbf{(a) LL Crude}---hidden-state norm difference proxy (baseline, AUC=0.7026).
+\textbf{(b) LL Proper}---direct masked-LM log-likelihood:
+\begin{equation}\label{eq:ll}
+\text{LL}(v) = \log P_{\text{ESM2}}\!(r_p^{\text{wt}} | \mathbf{S}_{\text{WT}})
+             - \log P_{\text{ESM2}}\!(r_p^{\text{mut}} | \mathbf{S}_{\text{WT}})
+\end{equation}
+A positive LL($v$) indicates the model considers the wild-type residue more likely,
+suggesting the mutation is deleterious.
+
+\subsection{Evaluation Protocol}
+
+Features are normalized to $[0,1]$ via MinMaxScaler.
+Pairwise combinations: grid search over $\alpha \in [0,1]$ (step 0.05) with
+$s = \alpha \cdot f_1 + (1-\alpha) \cdot f_2$.
+AUC-ROC with 95\% bootstrap CIs ($B$=1,000).
+All seeds fixed to 42.
+
+% ============================================================================
+
+% Truncated draft for staged commit (Intro + Method only)
+\end{document}
