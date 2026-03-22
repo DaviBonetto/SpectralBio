@@ -1,29 +1,41 @@
-﻿<h1 align="center">🧬 SpectralBio</h1>
+<h1 align="center">?? SpectralBio</h1>
 
 <p align="center"><strong>Spectral Covariance Analysis of Protein Language Model Hidden States for Zero-Shot Variant Pathogenicity Prediction</strong></p>
 
 <p align="center">
-  <a href="https://claw4s.github.io"><img src="https://img.shields.io/badge/Claw4S-2026%20Stanford%20%26%20Princeton-B1040E?style=for-the-badge" alt="Claw4S 2026" /></a>
-  <a href="http://18.118.210.52"><img src="https://img.shields.io/badge/clawRxiv-Paper%20Archive-f97316?style=for-the-badge" alt="clawRxiv" /></a>
-  <a href="https://huggingface.co/spaces/DaviBonetto/spectralbio-demo"><img src="https://img.shields.io/badge/HuggingFace-Demo-ffd21f?style=for-the-badge&logo=huggingface&logoColor=black" alt="HuggingFace Demo" /></a>
-  <a href="https://huggingface.co/datasets/DaviBonetto/spectralbio-clinvar"><img src="https://img.shields.io/badge/HuggingFace-Dataset-ffcc4d?style=for-the-badge&logo=huggingface&logoColor=black" alt="HuggingFace Dataset" /></a>
-  <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge" alt="MIT License" /></a>
-  <img src="https://img.shields.io/badge/Python-3.8%2B-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.8+" />
+  <a href="paper/spectralbio.pdf">Paper</a> ?
+  <a href="#quick-start">Quickstart</a> ?
+  <a href="#key-results">Experiments</a> ?
+  <a href="https://huggingface.co/spaces/DaviBonetto/spectralbio-demo">Public API</a>
 </p>
 
 <p align="center">
-  <a href="paper/spectralbio.pdf"><img src="https://img.shields.io/badge/Read%20Full%20Paper-PDF-111827?style=for-the-badge&logo=adobeacrobatreader&logoColor=ff4d4d" alt="Read Full Paper" /></a>
-  <a href="https://huggingface.co/spaces/DaviBonetto/spectralbio-demo"><img src="https://img.shields.io/badge/Launch%20Demo-HuggingFace-f59e0b?style=for-the-badge&logo=huggingface&logoColor=black" alt="Demo" /></a>
-  <a href="https://huggingface.co/datasets/DaviBonetto/spectralbio-clinvar"><img src="https://img.shields.io/badge/Open%20Dataset-HF%20Datasets-fbbf24?style=for-the-badge&logo=huggingface&logoColor=black" alt="Dataset" /></a>
+  <a href="https://claw4s.github.io"><img src="https://img.shields.io/badge/CLAW4S-111827?style=flat-square" alt="CLAW4S" /></a>
+  <a href="https://claw4s.github.io"><img src="https://img.shields.io/badge/2026%20STANFORD%20%26%20PRINCETON-b91c1c?style=flat-square" alt="2026 Stanford & Princeton" /></a>
+  <a href="http://18.118.210.52"><img src="https://img.shields.io/badge/CLAWRXIV-111827?style=flat-square" alt="clawRxiv" /></a>
+  <a href="http://18.118.210.52"><img src="https://img.shields.io/badge/PAPER%20ARCHIVE-f59e0b?style=flat-square" alt="Paper Archive" /></a>
+  <a href="https://huggingface.co/spaces/DaviBonetto/spectralbio-demo"><img src="https://img.shields.io/badge/HUGGINGFACE-111827?style=flat-square" alt="HuggingFace" /></a>
+  <a href="https://huggingface.co/spaces/DaviBonetto/spectralbio-demo"><img src="https://img.shields.io/badge/DEMO-facc15?style=flat-square&logo=huggingface&logoColor=111827" alt="Demo" /></a>
 </p>
 
 <p align="center">
-  <a href="https://huggingface.co/datasets/DaviBonetto/spectralbio-clinvar"><img src="paper/assets/hf_logo.png" alt="Hugging Face Logo" height="42" /></a>
-  &nbsp;&nbsp;&nbsp;
+  <a href="paper/spectralbio.pdf"><img src="https://img.shields.io/badge/READ%20FULL%20PAPER-111827?style=flat-square" alt="Read Full Paper" /></a>
+  <a href="paper/spectralbio.pdf"><img src="https://img.shields.io/badge/PDF-f3f4f6?style=flat-square&logo=adobeacrobatreader&logoColor=b91c1c" alt="PDF" /></a>
+  <a href="https://huggingface.co/spaces/DaviBonetto/spectralbio-demo"><img src="https://img.shields.io/badge/LAUNCH%20DEMO-111827?style=flat-square" alt="Launch Demo" /></a>
+  <a href="https://huggingface.co/spaces/DaviBonetto/spectralbio-demo"><img src="https://img.shields.io/badge/HUGGINGFACE-facc15?style=flat-square" alt="HuggingFace" /></a>
+  <a href="https://huggingface.co/datasets/DaviBonetto/spectralbio-clinvar"><img src="https://img.shields.io/badge/OPEN%20DATASET-111827?style=flat-square" alt="Open Dataset" /></a>
+  <a href="https://huggingface.co/datasets/DaviBonetto/spectralbio-clinvar"><img src="https://img.shields.io/badge/HF%20DATASETS-facc15?style=flat-square" alt="HF Datasets" /></a>
+</p>
+
+<p align="center">
+  <a href="https://huggingface.co/datasets/DaviBonetto/spectralbio-clinvar"><img src="paper/assets/hf_logo.png" alt="Hugging Face Official Logo" height="34" /></a>
+</p>
+
+<p align="center">
   <a href="http://18.118.210.52"><img src="huggingface/assets/clawRxiv_logo.png" alt="clawRxiv Logo" height="42" /></a>
 </p>
 
-<p align="center"><strong>Claw 🦞 (AI Co-author) · Davi Bonetto</strong></p>
+<p align="center"><strong>Claw ?? (AI Co-author) ? Davi Bonetto</strong></p>
 
 ---
 
