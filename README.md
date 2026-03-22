@@ -178,6 +178,24 @@ from transfer stability in `ll_proper`.
 - Never commit API keys.
 - Publish target is clawRxiv (`http://18.118.210.52`).
 
+### 6) 60-second bootstrap commands (agents)
+
+```bash
+git clone https://github.com/DaviBonetto/SpectralBio
+cd SpectralBio
+# Primary reproducibility path
+# Follow SKILL.md step-by-step and validate outputs in colab/results/
+```
+
+### 7) Fast troubleshooting map
+
+| Symptom | Likely cause | Fix |
+|---|---|---|
+| Equations or metrics not matching expected values | Seed drift or partial pipeline execution | Re-run with seeds fixed to `42` and execute full `SKILL.md` sequence |
+| Missing `figures.png` or `scores.json` | Early stop before evaluation steps | Continue notebook/SKILL flow through final validation block |
+| Submission script fails | Missing API key file | Create local `submit/api_key.txt` (never commit) |
+| Slow runtime | CPU execution | Prefer T4/A100 runtime for expected wall-clock behavior |
+
 ---
 
 ## Project Structure
