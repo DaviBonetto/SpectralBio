@@ -1,0 +1,41 @@
+{
+  "legacy_summary_source": "legacy/colab_results/summary.json",
+  "legacy_sources": {
+    "tp53_variants": "legacy/colab_results/tp53_variants.json",
+    "tp53_scores": "legacy/colab_results/scores.json",
+    "brca1_full_filtered": "legacy/huggingface_data/brca1_variants.json",
+    "demo_snapshot": "huggingface/app.py",
+    "paper": "paper/spectralbio.tex"
+  },
+  "provenance_only_datasets": {
+    "brca1_full_filtered_v1": {
+      "file": "benchmarks/brca1/brca1_full_filtered_v1.json",
+      "role": "provenance_only",
+      "count": 512,
+      "label_field": "label",
+      "label_encoding": {
+        "0": "benign",
+        "1": "pathogenic"
+      },
+      "labels": {
+        "pathogenic": 165,
+        "benign": 347
+      },
+      "checksums_ref": "benchmarks/manifests/checksums.json"
+    }
+  },
+  "derived_datasets": {
+    "brca1_transfer100_v1": {
+      "file": "benchmarks/brca1/brca1_transfer100_v1.json",
+      "derived_from": "benchmarks/brca1/brca1_full_filtered_v1.json",
+      "count": 100,
+      "selection_rule": "fixed first 100 records from brca1_full_filtered_v1.json in source order"
+    }
+  },
+  "notes": [
+    "BRCA1 transfer100_v1 is the fixed first-100 subset used by the current notebook pipeline and reported summary.",
+    "Active-tree copies under colab/results and huggingface/data were deleted after the legacy snapshots were verified.",
+    "huggingface/ remains compatibility-only; provenance data now lives under legacy/.",
+    "Canonical benchmark truth is owned by docs/truth_contract.md, benchmarks/manifests/*, and artifacts/expected/*."
+  ]
+}

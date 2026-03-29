@@ -1,0 +1,31 @@
+{
+  "benchmark": "TP53",
+  "role": "canonical_benchmark",
+  "primary_claim": "TP53 canonical executable benchmark",
+  "command": "spectralbio canonical",
+  "config_path": "configs/tp53_canonical.yaml",
+  "source_variants": "benchmarks/tp53/tp53_canonical_v1.json",
+  "n_total": 255,
+  "metrics": {
+    "official_auc_best_pair": 0.7498,
+    "computed_auc_best_pair": 0.749751552795031,
+    "computed_auc_frob_dist": 0.6209316770186335,
+    "computed_auc_ll_proper": 0.5955900621118012,
+    "best_pair_desc": "0.55*frob_dist + 0.45*ll_proper",
+    "reproducibility_delta": 0.0
+  },
+  "artifacts": [
+    "run_metadata.json",
+    "inputs_manifest.json",
+    "tp53_scores.tsv",
+    "tp53_metrics.json",
+    "summary.json",
+    "roc_tp53.png",
+    "manifest.json",
+    "verification.json"
+  ],
+  "non_claims": [
+    "No broad default any-protein workflow claim.",
+    "No clinical use claim."
+  ]
+}

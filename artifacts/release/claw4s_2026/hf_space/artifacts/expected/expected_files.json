@@ -1,0 +1,42 @@
+{
+  "canonical_run": [
+    "run_metadata.json",
+    "inputs_manifest.json",
+    "tp53_scores.tsv",
+    "tp53_metrics.json",
+    "summary.json",
+    "roc_tp53.png",
+    "manifest.json",
+    "verification.json"
+  ],
+  "transfer_run": [
+    "summary.json",
+    "variants.json",
+    "manifest.json"
+  ],
+  "release_bundle_root": [
+    "README.md",
+    "SKILL.md",
+    "docs/truth_contract.md",
+    "docs/reproducibility.md",
+    "benchmarks/manifests/checksums.json"
+  ],
+  "hf_space_publish": [
+    "README.md",
+    "requirements.txt",
+    "publish/hf_space/app.py",
+    "publish/hf_space/README.md",
+    "publish/hf_space/requirements.txt",
+    "src/spectralbio",
+    "benchmarks",
+    "artifacts/expected"
+  ],
+  "hf_dataset_publish": [
+    "README.md",
+    "dataset_manifest.json"
+  ],
+  "dataset_publish": [
+    "publish/hf_dataset/README.md",
+    "publish/hf_dataset/dataset_manifest.json"
+  ]
+}

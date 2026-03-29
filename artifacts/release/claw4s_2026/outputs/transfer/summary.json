@@ -1,0 +1,18 @@
+{
+  "benchmark": "BRCA1_transfer100",
+  "role": "secondary_bounded_transfer",
+  "secondary_claim": "bounded transfer on a fixed BRCA1 subset (N=100) without retraining",
+  "config_path": "configs/brca1_transfer.yaml",
+  "source_variants": "benchmarks/brca1/brca1_transfer100_v1.json",
+  "n_total": 100,
+  "metrics": {
+    "official_ll_proper_auc": 0.9174
+  },
+  "artifacts": [
+    "summary.json",
+    "variants.json",
+    "manifest.json"
+  ],
+  "scope_note": "bounded transfer on a fixed BRCA1 subset (N=100) without retraining",
+  "command": "spectralbio transfer"
+}
