@@ -1,0 +1,10 @@
+{
+  "variants_source": "benchmarks/tp53/tp53_canonical_v1.json",
+  "variants_sha256": "ba37cef10ef3a334932be0b0b7a7d4756d15ea7c6aaf29a777ef79c14e1d4fa6",
+  "score_reference_source": "benchmarks/tp53/tp53_scores_v1.json",
+  "score_reference_sha256": "a07066ca3d55cce98d81a04a30f71ab99e3c5cbb95d28a4a135d03229e809b28",
+  "sequence_source": "benchmarks/sequences/tp53.fasta",
+  "benchmark_manifest": "benchmarks/manifests/tp53_canonical_manifest.json",
+  "checksums_ref": "benchmarks/manifests/checksums.json",
+  "n_variants": 255
+}
