@@ -1,0 +1,65 @@
+{
+  "benchmark_contract": {
+    "canonical_benchmark": "TP53 only",
+    "transfer_benchmark": "BRCA1_transfer100 only"
+  },
+  "claims": {
+    "canonical_primary_claim": "TP53 canonical executable benchmark",
+    "transfer_secondary_claim": "bounded transfer on a fixed BRCA1 subset (N=100) without retraining"
+  },
+  "commands": {
+    "canonical": "spectralbio canonical",
+    "transfer": "spectralbio transfer",
+    "verify": "spectralbio verify",
+    "export_hf_space": "spectralbio export-hf-space",
+    "export_hf_dataset": "spectralbio export-hf-dataset",
+    "release": "spectralbio release"
+  },
+  "paths": {
+    "transfer_selection_rule": "fixed first 100 records from brca1_full_filtered_v1.json in source order"
+  },
+  "text_contract": {
+    "forbidden_generalization_phrases": [
+      "any protein",
+      "works on any protein",
+      "strong cross-protein generalization",
+      "exceptional cross-protein generalization",
+      "broad cross-protein generalization",
+      "exceptional cross-protein transfer",
+      "strong generalization",
+      "clinical deployment",
+      "clinical use"
+    ],
+    "required_transfer_phrase": "bounded transfer on a fixed BRCA1 subset (N=100) without retraining"
+  },
+  "output_contract": {
+    "canonical_dir": "outputs/canonical",
+    "transfer_dir": "outputs/transfer",
+    "canonical_files": [
+      "run_metadata.json",
+      "inputs_manifest.json",
+      "tp53_scores.tsv",
+      "tp53_metrics.json",
+      "summary.json",
+      "roc_tp53.png",
+      "manifest.json",
+      "verification.json"
+    ],
+    "transfer_files": [
+      "summary.json",
+      "variants.json",
+      "manifest.json"
+    ]
+  },
+  "metric_tolerance": 0.0001,
+  "required_files": [
+    "benchmarks/manifests/tp53_canonical_manifest.json",
+    "benchmarks/manifests/brca1_transfer_manifest.json",
+    "benchmarks/manifests/checksums.json",
+    "benchmarks/manifests/source_snapshot.json",
+    "artifacts/expected/expected_metrics.json",
+    "artifacts/expected/output_schema.json",
+    "artifacts/expected/verification_rules.json",
+    "artifacts/expected/expected_files.json"
+  ]
+}
