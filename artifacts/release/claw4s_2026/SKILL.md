@@ -33,6 +33,13 @@ Use this skill to reproduce the public SpectralBio repository through its single
 - Run from the repository root
 - If the repository is already cloned and you are already at its root, skip Step 0
 
+## Runtime Expectations
+
+- Canonical public path: `uv sync --frozen` then `uv run spectralbio canonical`; this is a frozen-artifact reproducibility path for TP53, not a live model-recomputation workflow
+- Typical canonical runtime after `uv sync --frozen`: typically under 10 seconds on CPU-only in the current frozen-artifact repo path
+- It validates the frozen TP53 config, loads bundled TP53 variants and score references, computes contract metrics from those frozen references, and writes the canonical artifact bundle plus the canonical-side `verification.json` report
+- It does **not** perform live HuggingFace download, live ESM2 embedding recomputation, or training
+
 ## Scope And Non-Claims
 
 ### Scope
@@ -66,6 +73,12 @@ If you need to inspect repository truth rather than guess, anchor to these files
 
 Do **not** promote legacy wording, wrapper convenience, or stale surfaces above these truth anchors.
 
+## When to Use This Skill
+
+- Use it to reproduce the public TP53 canonical benchmark on a clean machine from the repository root
+- Use the BRCA1 commands only when you need the bounded secondary transfer check without retraining
+- Do not use this skill as a default path for new targets; anything beyond TP53 plus the fixed BRCA1 subset remains adaptation-recipe work
+
 ## Step 0 - Clone The Public Repository
 
 Run this only if the repository is not already present locally.
@@ -89,6 +102,7 @@ uv --version
 If that command fails, install `uv` with Python and check again:
 
 ```bash
+python --version
 python -m pip install --upgrade uv
 uv --version
 ```
@@ -109,7 +123,7 @@ This installs the locked dependency set from `uv.lock` at the repository root. T
 uv run spectralbio canonical
 ```
 
-This is the canonical public execution path. It validates the frozen TP53 config, loads `benchmarks/tp53/tp53_canonical_v1.json` plus the bundled score reference `benchmarks/tp53/tp53_scores_v1.json`, computes the contract metrics from those frozen score rows, copies the frozen TP53 ROC figure, and writes the canonical artifact bundle to `outputs/canonical/`.
+This is the canonical public execution path. It validates the frozen TP53 config, loads `benchmarks/tp53/tp53_canonical_v1.json` plus the bundled score reference `benchmarks/tp53/tp53_scores_v1.json`, computes the contract metrics from those frozen score rows, copies the frozen TP53 ROC figure, and writes the canonical artifact bundle to `outputs/canonical/`, including the canonical-side `verification.json` report.
 
 This is a deliberate frozen-artifact materialization path for reproducibility, verification, and judge-safe execution. The canonical public path does **not** depend on a live HuggingFace/ESM2 download.
 

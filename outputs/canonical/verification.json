@@ -32,25 +32,8 @@
     "errors": []
   },
   "transfer": {
-    "status": "PASS",
-    "checks": {
-      "exact_file_set": true,
-      "summary_schema": true,
-      "manifest_schema": true,
-      "transfer_role": true,
-      "secondary_claim": true,
-      "transfer_command": true,
-      "transfer_config_path": true,
-      "transfer_variants_source": true,
-      "transfer_provenance_source": true,
-      "transfer_selection_rule": true,
-      "scope_note": true,
-      "transfer_count": true,
-      "transfer_metric": true,
-      "transfer_artifacts": true,
-      "transfer_matches_fixed_subset": true,
-      "transfer_not_full_filtered": true
-    },
+    "status": "PENDING",
+    "checks": {},
     "errors": []
   }
 }
