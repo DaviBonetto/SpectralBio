@@ -1,0 +1,8 @@
+{
+  "official_auc_best_pair": 0.7498,
+  "computed_auc_best_pair": 0.749751552795031,
+  "computed_auc_frob_dist": 0.6209316770186335,
+  "computed_auc_ll_proper": 0.5955900621118012,
+  "best_pair_desc": "0.55*frob_dist + 0.45*ll_proper",
+  "reproducibility_delta": 0.0
+}

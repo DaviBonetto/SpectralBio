@@ -1,0 +1,16 @@
+{
+  "benchmark": "BRCA1_transfer100",
+  "role": "secondary_bounded_transfer",
+  "source_variants": "benchmarks/brca1/brca1_transfer100_v1.json",
+  "source_provenance": "benchmarks/brca1/brca1_full_filtered_v1.json",
+  "sequence_source": "benchmarks/sequences/brca1.fasta",
+  "config_path": "configs/brca1_transfer.yaml",
+  "selection_rule": "fixed first 100 records from brca1_full_filtered_v1.json in source order",
+  "expected_variant_count": 100,
+  "secondary_claim": "bounded transfer on a fixed BRCA1 subset (N=100) without retraining",
+  "artifacts": [
+    "summary.json",
+    "variants.json",
+    "manifest.json"
+  ]
+}

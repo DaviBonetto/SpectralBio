@@ -1,0 +1,5 @@
+benchmark: BRCA1_transfer100
+role: secondary_bounded_transfer
+variants_path: benchmarks/brca1/brca1_transfer100_v1.json
+output_dir: outputs/transfer
+scope_note: bounded transfer on a fixed BRCA1 subset (N=100) without retraining

@@ -12,7 +12,7 @@
 
 % ---------- Page geometry ----------------------------------------------------
 \usepackage[
-  top=0.68in, bottom=0.72in, left=0.60in, right=0.60in,
+  top=0.66in, bottom=0.70in, left=0.60in, right=0.60in,
   columnsep=0.24in
 ]{geometry}
 
@@ -37,19 +37,20 @@
 \usepackage[numbers,sort&compress]{natbib}
 
 % ---------- Compact spacing --------------------------------------------------
-\setlength{\parskip}{0.5pt plus 0.3pt}
+\setlength{\parskip}{0.3pt plus 0.2pt}
 \setlength{\parindent}{1em}
-\setlength{\abovecaptionskip}{5pt}
-\setlength{\belowcaptionskip}{2pt}
-\setlength{\textfloatsep}{8pt plus 2pt minus 2pt}
-\setlength{\floatsep}{6pt plus 2pt minus 2pt}
-\setlength{\intextsep}{6pt plus 2pt minus 2pt}
-\setlength{\dbltextfloatsep}{8pt plus 2pt minus 2pt}
-\setlength{\dblfloatsep}{6pt plus 2pt minus 2pt}
+\setlength{\abovecaptionskip}{3pt}
+\setlength{\belowcaptionskip}{1pt}
+\setlength{\textfloatsep}{5pt plus 1pt minus 1pt}
+\setlength{\floatsep}{4pt plus 1pt minus 1pt}
+\setlength{\intextsep}{4pt plus 1pt minus 1pt}
+\setlength{\dbltextfloatsep}{5pt plus 1pt minus 1pt}
+\setlength{\dblfloatsep}{4pt plus 1pt minus 1pt}
+\setlength{\bibsep}{0pt plus 0.2ex}
 \setlist{nosep,leftmargin=1.3em}
 
-\titlespacing*{\section}{0pt}{8pt}{4pt}
-\titlespacing*{\subsection}{0pt}{6pt}{2pt}
+\titlespacing*{\section}{0pt}{6pt}{3pt}
+\titlespacing*{\subsection}{0pt}{4pt}{1.5pt}
 \titleformat{\section}{\large\bfseries}{\thesection}{0.6em}{}
 \titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{0.5em}{}
 
@@ -76,33 +77,33 @@
 \raisebox{-2pt}{\includegraphics[height=10pt]{assets/hf_logo.png}}\,%
 \href{https://huggingface.co/datasets/DaviBonetto/spectralbio-clinvar}{\textcolor{linkblue}{Dataset}}%
 }%
-\par\vspace{2pt}%
+\par\vspace{1pt}%
 \noindent\rule{\textwidth}{0.4pt}%
-\vspace{8pt}%
+\vspace{5pt}%
 %
 % --- Title ---
 \begin{center}
 {\LARGE\bfseries \methodname{}: Spectral Covariance Analysis of Protein\\[3pt]
 Language Model Hidden States for Zero-Shot\\[3pt]
 Variant Pathogenicity Prediction\par}
-\vspace{10pt}
+\vspace{6pt}
 %
 % --- Authors ---
 {\large
 Claw~\claw\textsuperscript{1}\qquad
 Davi Bonetto\textsuperscript{2}%
-}\par\vspace{5pt}
+}\par\vspace{3pt}
 {\small
 \textsuperscript{1}\textit{AI Co-author \& Reproducibility Verifier, Claw4S 2026}\par
 \textsuperscript{2}\textit{Independent Researcher, Brazil}\par\vspace{2pt}
 \texttt{\href{mailto:davi.bonetto100@gmail.com}{davi.bonetto100@gmail.com}}\quad
 \texttt{\href{https://github.com/DaviBonetto}{github.com/DaviBonetto}}%
-}\par\vspace{3pt}
+}\par\vspace{2pt}
 {\footnotesize \claw~AI Agent co-author under Claw4S 2026 competition rules.}
 \end{center}
-\vspace{3pt}%
+\vspace{2pt}%
 \noindent\rule{\textwidth}{0.4pt}%
-\vspace{5pt}%
+\vspace{3pt}%
 %
 % --- Abstract ---
 \begin{center}
@@ -120,16 +121,17 @@ For each variant we compute local covariance matrices ($\pm$40-residue window)
 and extract three features: Frobenius covariance distance (\textit{FrobDist}),
 trace ratio (\textit{TraceRatio}), and log-eigenvalue shift (\textit{SPS-log}).
 On ClinVar TP53 ($N$=255; 115 pathogenic, 140 benign),
-\textbf{FrobDist\,+\,LL\,Proper} achieves \textbf{AUC\,=\,0.7498},
-a +6.7\% relative gain over LL Crude (0.7026).
-Most strikingly, proper masked-LM LL generalizes to BRCA1 with
-\textbf{AUC\,=\,0.9174}---exceptional cross-protein transfer from a feature
-scoring only 0.5956 on TP53.
-Matrix-level features consistently outperform eigenvalue-only SPS, and all results
-are \textbf{exactly reproducible} ($\Delta_{\text{rep}}$=0.0).%
+\textbf{FrobDist\,+\,LL\,Proper} achieves \textbf{AUC\,=\,0.7498}
+on the TP53 canonical executable benchmark.
+On the secondary bounded transfer evaluation without retraining, proper
+masked-LM LL reaches \textbf{AUC\,=\,0.9174} on a fixed BRCA1 subset
+($N$=100), providing secondary bounded transfer evidence only.
+Matrix-level features consistently outperform eigenvalue-only SPS on TP53,
+and the TP53 canonical benchmark reproduces with
+\textbf{$\Delta_{\text{rep}}$=0.0}.%
 }
 \end{center}
-\vspace{8pt}%
+\vspace{4pt}%
 }]% end \twocolumn[{...}]
 
 % ============================================================================
@@ -141,8 +143,9 @@ one of the most pressing challenges in computational biology.
 As whole-genome sequencing becomes routine, the number of variants of uncertain
 significance (VUS) grows far faster than experimental capacity to characterize
 them~\cite{landrum2018clinvar}.
-Computational predictors that can reliably triage variants without labeled
-training data are therefore essential for clinical genetics.
+Computational predictors that can reliably rank variants without labeled
+training data are therefore useful research tools for zero-shot variant
+effect prediction.
 
 Protein language models (PLMs), particularly ESM-2~\cite{lin2023evolutionary},
 have emerged as powerful zero-shot predictors.
@@ -162,11 +165,14 @@ likelihood-based scores.
 \textbf{Contributions.}\;
 \textbf{(1)}~We introduce \methodname{}, extracting matrix-level spectral
 features from PLM hidden-state covariance.
-\textbf{(2)}~FrobDist + proper LL yields AUC=0.7498 on TP53 (+4.72\,pp over baseline).
-\textbf{(3)}~Proper LL achieves AUC=0.9174 on BRCA1---exceptional cross-protein transfer.
-\textbf{(4)}~First systematic comparison of matrix-level vs.\ eigenvalue-only
-spectral features for variant prediction.
-\textbf{(5)}~$\Delta_{\text{rep}}$=0.0 via SKILL.md.
+\textbf{(2)}~On the TP53 canonical executable benchmark, FrobDist + proper LL
+yields AUC=0.7498.
+\textbf{(3)}~On a secondary bounded transfer evaluation without retraining,
+Proper LL achieves AUC=0.9174 on a fixed BRCA1 subset ($N$=100).
+\textbf{(4)}~We compare matrix-level vs.\ eigenvalue-only spectral
+features for variant prediction within this artifact.
+\textbf{(5)}~The TP53 canonical benchmark reproduces with
+$\Delta_{\text{rep}}$=0.0 under the repository's canonical execution path.
 
 % ============================================================================
 \section{Related Work}\label{sec:related}
@@ -200,7 +206,11 @@ The model is used entirely in inference mode with no fine-tuning.
 Missense variants are sourced from ClinVar~\cite{landrum2018clinvar}, filtered
 for ``Pathogenic'' and ``Benign'' labels.
 Primary evaluation: TP53 ($N$=255; 115 pathogenic, 140 benign).
-Cross-protein generalization: BRCA1 ($N$=100).
+Secondary bounded transfer evaluation: bounded transfer on a fixed BRCA1 subset
+($N$=100) without retraining.
+Operationally, this artifact is anchored to the \emph{TP53 canonical executable benchmark};
+the BRCA1 subset is a \emph{secondary transfer evaluation without retraining},
+and any broader reuse is treated as an \emph{adaptation recipe only}.
 
 \subsection{Spectral Feature Extraction}
 
@@ -284,7 +294,9 @@ confirming that retaining full covariance structure is more informative than
 eigenvalue summaries alone.
 
 The best combination, \textbf{FrobDist + LL Proper} ($\alpha$=0.55/0.45),
-achieves \textbf{AUC=0.7498}, improving the baseline by +0.0472 AUC (+6.7\% relative).
+achieves \textbf{AUC=0.7498} on the TP53 canonical executable benchmark.
+Relative to LL Crude, this corresponds to a descriptive within-benchmark
+gain of +0.0472 AUC (+6.7\% relative).
 The best triple (LL Crude + Trace + Frob; 0.70/0.10/0.20) yields AUC=0.7264---lower
 than the best pair, suggesting crude LL and proper LL capture partially overlapping
 information that interferes when combined.
@@ -320,18 +332,19 @@ LL Crude + Trace + Frob                & 0.7264 \\
 \end{tabular}
 \end{table}
 
-\subsection{Cross-Protein Generalization (BRCA1)}
+\subsection{Secondary Bounded Transfer Evaluation (BRCA1)}
 
-Table~\ref{tab:brca1} presents the BRCA1 results---the most striking finding.
-Proper LL achieves \textbf{AUC=0.9174} ($N$=100), exceptional generalization from a
-feature scoring only 0.5956 on TP53.
-FrobDist retains meaningful signal (0.6401), while all SPS variants fall below
-chance ($<$0.50).
+Table~\ref{tab:brca1} presents the secondary bounded transfer results on the
+fixed BRCA1 subset.
+Proper LL achieves \textbf{AUC=0.9174} ($N$=100) on this fixed subset without
+retraining.
+This secondary bounded transfer evaluation is included as fixed-subset evidence
+only and does not establish broader cross-protein behavior.
 
 \begin{table}[t]
 \centering
-\caption{\textbf{BRCA1 cross-protein generalization (AUC-ROC).}
-$N$=100. No retraining or recalibration.}
+\caption{\textbf{Secondary bounded transfer evaluation on fixed BRCA1 subset (AUC-ROC).}
+$N$=100. Official reported metric only. No retraining or recalibration.}
 \label{tab:brca1}
 \vspace{3pt}
 \small
@@ -339,46 +352,34 @@ $N$=100. No retraining or recalibration.}
 \toprule
 \textbf{Feature} & \textbf{AUC} \\
 \midrule
-\textbf{LL Proper (masked LM)}   & \textbf{0.9174} \\
-FrobDist (spectral)               & 0.6401 \\
-Mut.\ Rank                       & 0.5831 \\
-LL Crude (norm proxy)             & 0.5685 \\
-TraceRatio                        & 0.5372 \\
-SPS-all                           & 0.4954 \\
-SPS-topk                          & 0.4944 \\
-SPS-log                           & 0.4896 \\
-SPS-deep10                        & 0.4779 \\
-SPS-deep5                         & 0.4560 \\
+\textbf{LL Proper (masked LM)} & \textbf{0.9174} \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-This asymmetry is scientifically noteworthy: proper LL captures information
-\emph{less competitive within TP53} yet \emph{far more stable under protein transfer}.
-We conjecture that proper LL encodes protein-invariant evolutionary
-constraints---fundamental biochemical compatibility signals encoded in ESM2's
-masked-LM head---while the crude LL norm proxy overfits to TP53-specific
-hidden-state magnitudes that do not generalize.
+Within this bounded setting, the fixed BRCA1 subset result shows that
+the proper masked-LM score can remain informative without retraining.
+We report this result as secondary transfer evidence only and treat any broader
+reuse beyond TP53 and this fixed subset as an adaptation recipe only.
 
 \subsection{Matrix-Level vs.\ Eigenvalue-Only Features}
 
-A central claim of this paper is that matrix-level spectral features (FrobDist,
+Within the TP53 results reported here, matrix-level spectral features (FrobDist,
 TraceRatio) outperform eigenvalue-only summaries (SPS variants).
 On TP53, both FrobDist (0.6209) and TraceRatio (0.6242)
 exceed all SPS variants (best: 0.5988).
-On BRCA1, FrobDist (0.6401) similarly dominates SPS ($<$0.50).
-This implies eigenvectors of covariance matrices carry meaningful structural
-information lost when only eigenvalues are retained.
+This pattern suggests that retaining full covariance structure may preserve
+useful benchmark signal beyond eigenvalue-only summaries.
 
 \subsection{Visual Analysis}
 
 Figure~\ref{fig:results} provides a comprehensive visual summary.
 The ROC plot (top-left) shows the Best Pair combination
-(orange, FrobDist+LL Proper, AUC=0.750) clearly dominating all individual
-features and the Best Triple (black, 0.726), with SPS variants (dashed)
+(orange, FrobDist+LL Proper, AUC=0.7498) remaining above all individual
+features and the Best Triple (black, 0.7264, rounded in the figure), with SPS variants (dashed)
 clustered near the diagonal.
 The feature ablation bar chart (top-right) ranks all individual AUCs,
-with LL Crude (red) as the strongest standalone feature and
+with LL Crude (red, 0.7026, rounded in the figure) as the strongest standalone feature and
 SPS/positional entropy (gray) at the bottom---visually confirming the
 matrix~$>$~eigenvalue hierarchy.
 The SPS-log density plot (bottom-left) reveals why eigenvalue-only features
@@ -386,31 +387,22 @@ underperform: both pathogenic (red) and benign (blue) distributions are
 heavily concentrated near zero, with minimal class separation.
 In contrast, the proper LL distribution (bottom-right) shows a clear
 rightward shift for pathogenic variants (higher
-$\log P(\text{wt}) - \log P(\text{mut})$), explaining its exceptional
-BRCA1 transfer.
+$\log P(\text{wt}) - \log P(\text{mut})$), consistent with the
+secondary bounded BRCA1 transfer evaluation.
 
 % Full-width figure spanning both columns
 \begin{figure*}[t]
 \centering
-\includegraphics[width=0.95\textwidth]{../colab/results/figures.png}
+\includegraphics[width=0.91\textwidth]{../outputs/canonical/roc_tp53.png}
 \caption{%
-  \textbf{\methodname{} V2 comprehensive results on TP53 ($N$=255).}
-  \textbf{(a)~Top-left:} ROC curves for all methods. The Best Pair
-  (FrobDist+LL Proper, orange, AUC=0.750) outperforms all individuals
-  and the Best Triple (black, 0.726). SPS variants (dashed) cluster
-  near the diagonal.
-  \textbf{(b)~Top-right:} Feature ablation---individual AUC-ROC for
-  each feature. LL Crude (red, 0.703) leads individuals; matrix-level
-  features (TraceRatio, FrobDist) outperform all eigenvalue-based SPS
-  (gray).
-  \textbf{(c)~Bottom-left:} SPS-log score distributions. Both classes
-  are concentrated near zero with heavy overlap, explaining poor
-  discriminative power (AUC=0.599).
-  \textbf{(d)~Bottom-right:} Proper LL score distributions. Pathogenic
-  variants (red) show a clear rightward shift, reflecting higher
-  wild-type preference---this separation underlies the exceptional
-  BRCA1 generalization (AUC=0.917).
-  All results: $\Delta_{\text{rep}}$=0.0 (exact reproducibility).
+  \textbf{\methodname{} canonical TP53 results summary ($N$=255).}
+  Best Pair (FrobDist+LL Proper, orange) reaches AUC=0.7498 and remains above
+  all individual features and the Best Triple (black, 0.7264, rounded in the figure).
+  Matrix-level features outperform eigenvalue-only SPS variants on TP53, while
+  the proper-LL distribution is consistent with the bounded BRCA1 secondary
+  transfer result (AUC=0.9174). Figure linked to canonical asset
+  \texttt{outputs/canonical/roc\_tp53.png}; TP53 reproduces with
+  $\Delta_{\text{rep}}$=0.0.
 }
 \label{fig:results}
 \end{figure*}
@@ -419,9 +411,8 @@ BRCA1 transfer.
 \section{Discussion}\label{sec:discussion}
 % ============================================================================
 
-\methodname{} demonstrates that covariance geometry of PLM hidden states encodes
-partial but meaningful pathogenicity information, complementing sequence-level
-log-likelihoods.
+\methodname{} demonstrates that covariance geometry of PLM hidden states can
+provide useful benchmark signal complementary to sequence-level log-likelihoods.
 
 \textbf{Why feature complementarity works.}\;
 The best TP53 result combines a spectral feature (FrobDist, geometric perturbation)
@@ -432,26 +423,23 @@ These are mechanistically distinct: FrobDist measures how much the
 Their complementarity suggests pathogenic mutations affect both the surface-level
 amino acid preference and the deeper structural representation independently.
 
-\textbf{Why LL Proper generalizes to BRCA1.}\;
-Proper LL achieving AUC=0.9174 on BRCA1 despite 0.5956 on TP53 suggests
-it captures generic, protein-invariant signals about residue conservation
-encoded in ESM2's masked-LM head.
-On TP53, these compete with protein-specific factors (zinc-binding residues,
-DNA-contact positions) that the crude LL proxy captures more effectively.
-On BRCA1, where these confounds are absent, the clean evolutionary signal dominates.
+\textbf{Why LL Proper matters in the bounded BRCA1 transfer evaluation.}\;
+Proper LL achieving AUC=0.9174 on the fixed BRCA1 subset despite 0.5956 on TP53
+shows that this score remains informative in the secondary fixed-subset setting.
+We keep the interpretation narrow: this bounded result does not establish
+broader cross-protein behavior beyond the fixed BRCA1 subset evaluated here.
 
 \textbf{Key findings:}
 \begin{enumerate}[itemsep=1pt]
   \item \textbf{Matrix $>$ eigenvalue.}\;
-    FrobDist/TraceRatio consistently outperform all SPS variants across
-    both proteins.
+    FrobDist/TraceRatio consistently outperform all SPS variants on TP53.
   \item \textbf{Feature complementarity.}\;
     Strongest TP53 classifier (0.7498) combines spectral geometry with
     masked-LM likelihood---neither is strongest alone.
-  \item \textbf{Exceptional BRCA1 transfer.}\;
-    LL Proper: 0.9174 with zero retraining.
-  \item \textbf{Perfect reproducibility.}\;
-    $\Delta_{\text{rep}}$=0.0 via fixed seeds and SKILL.md.
+  \item \textbf{Secondary BRCA1 bounded transfer evidence.}\;
+    LL Proper: 0.9174 with zero retraining on the fixed subset.
+  \item \textbf{TP53 canonical reproducibility.}\;
+    $\Delta_{\text{rep}}$=0.0 under the repository's canonical execution path.
 \end{enumerate}
 
 \textbf{Limitations.}\;
@@ -467,10 +455,12 @@ Larger ESM2 variants (650M--15B) likely produce richer geometry.
 % ============================================================================
 
 Seeds: 42 (PyTorch, NumPy, \texttt{random}).
+This repository is distributed as a research reproducibility artifact anchored
+to the TP53 canonical executable benchmark and a secondary bounded BRCA1
+transfer evaluation without retraining.
 Model: ESM2-150M (HuggingFace, public).
 Dataset: ClinVar FTP (public).
-$\Delta_{\text{rep}}$=0.0 across all runs.
-Runtime: 1447.3\,s ($\approx$24\,min) on NVIDIA T4.
+$\Delta_{\text{rep}}$=0.0 for the TP53 canonical executable benchmark.
 Code: \href{https://github.com/DaviBonetto/SpectralBio}{github.com/DaviBonetto/SpectralBio}.
 Demo: \href{https://huggingface.co/spaces/DaviBonetto/spectralbio-demo}{huggingface.co/spaces/DaviBonetto/spectralbio-demo}.\par
 Dataset: \href{https://huggingface.co/datasets/DaviBonetto/spectralbio-clinvar}{huggingface.co/datasets/DaviBonetto/spectralbio-clinvar}.
@@ -482,19 +472,24 @@ Dataset: \href{https://huggingface.co/datasets/DaviBonetto/spectralbio-clinvar}{
 We presented \methodname{}, a zero-shot variant pathogenicity prediction framework
 based on spectral analysis of PLM hidden-state covariance.
 Matrix-level spectral features provide complementary signal to log-likelihood
-ratios, yielding AUC=0.7498 on TP53 (+6.7\% over baseline) and exceptional
-AUC=0.9174 on BRCA1 via cross-protein transfer.
+ratios, yielding AUC=0.7498 on TP53 and
+AUC=0.9174 on a secondary bounded transfer evaluation on a fixed BRCA1 subset
+($N$=100) without retraining.
 The consistent superiority of covariance-based features over eigenvalue-only
-summaries suggests the full geometric structure of PLM representations carries
-biologically meaningful information underexplored by current approaches.
+summaries suggests that full covariance structure may capture useful benchmark
+signal underexplored by eigenvalue-only summaries.
+These results are presented as a research reproducibility artifact with one
+primary benchmark and one bounded secondary transfer evaluation.
 
 \paragraph{Acknowledgments.}
 Conducted under the Claw4S 2026 competition (Stanford--Princeton).
-Thanks to the organizers and to \claw{} for tireless co-authorship.
+Thanks to the organizers and to the Claw4S AI co-author for
+reproducibility-focused co-authorship under the competition rules.
 
 % ============================================================================
 \bibliographystyle{plainnat}
 \begin{thebibliography}{5}
+\footnotesize
 
 \bibitem{lin2023evolutionary}
 Lin, Z., Akin, H., Rao, R., et al.\ (2023).

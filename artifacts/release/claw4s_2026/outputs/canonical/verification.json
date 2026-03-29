@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "canonical": {
+    "status": "PASS",
+    "checks": {
+      "exact_file_set": true,
+      "run_metadata_schema": true,
+      "inputs_manifest_schema": true,
+      "metrics_schema": true,
+      "summary_schema": true,
+      "manifest_schema": true,
+      "manifest_role": true,
+      "summary_role": true,
+      "primary_claim": true,
+      "canonical_command": true,
+      "canonical_config_path": true,
+      "variants_source": true,
+      "score_reference_source": true,
+      "benchmark_manifest_source": true,
+      "checksums_ref": true,
+      "variants_sha256": true,
+      "score_reference_sha256": true,
+      "variant_count": true,
+      "score_rows_match_frozen_reference": true,
+      "computed_auc_match": true,
+      "official_auc_match": true,
+      "summary_metrics_match": true,
+      "metrics_match": true,
+      "artifacts_list": true,
+      "figure_nonempty": true
+    },
+    "errors": []
+  },
+  "transfer": {
+    "status": "PASS",
+    "checks": {
+      "exact_file_set": true,
+      "summary_schema": true,
+      "manifest_schema": true,
+      "transfer_role": true,
+      "secondary_claim": true,
+      "transfer_command": true,
+      "transfer_config_path": true,
+      "transfer_variants_source": true,
+      "transfer_provenance_source": true,
+      "transfer_selection_rule": true,
+      "scope_note": true,
+      "transfer_count": true,
+      "transfer_metric": true,
+      "transfer_artifacts": true,
+      "transfer_matches_fixed_subset": true,
+      "transfer_not_full_filtered": true
+    },
+    "errors": []
+  }
+}

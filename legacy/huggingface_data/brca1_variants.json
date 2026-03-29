@@ -1,0 +1,4098 @@
+[
+  {
+    "gene": "BRCA1",
+    "wt_aa": "C",
+    "position": 63,
+    "mut_aa": "G",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.190T>G (p.Cys64Gly)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "C",
+    "position": 60,
+    "mut_aa": "G",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.181T>G (p.Cys61Gly)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "S",
+    "position": 1039,
+    "mut_aa": "N",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3119G>A (p.Ser1040Asn)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "R",
+    "position": 1442,
+    "mut_aa": "G",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4327C>G (p.Arg1443Gly)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "R",
+    "position": 840,
+    "mut_aa": "W",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.2521C>T (p.Arg841Trp)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "R",
+    "position": 70,
+    "mut_aa": "G",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.211A>G (p.Arg71Gly)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "M",
+    "position": 1774,
+    "mut_aa": "R",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5324T>G (p.Met1775Arg)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "M",
+    "position": 1774,
+    "mut_aa": "K",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5324T>A (p.Met1775Lys)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "P",
+    "position": 345,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1036C>T (p.Pro346Ser)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "D",
+    "position": 368,
+    "mut_aa": "N",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1105G>A (p.Asp369Asn)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "C",
+    "position": 38,
+    "mut_aa": "Y",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.116G>A (p.Cys39Tyr)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "R",
+    "position": 495,
+    "mut_aa": "C",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1486C>T (p.Arg496Cys)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "L",
+    "position": 511,
+    "mut_aa": "F",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1534C>T (p.Leu512Phe)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "N",
+    "position": 549,
+    "mut_aa": "H",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1648A>C (p.Asn550His)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "L",
+    "position": 667,
+    "mut_aa": "F",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.2002C>T (p.Leu668Phe)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "K",
+    "position": 718,
+    "mut_aa": "E",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.2155A>G (p.Lys719Glu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "N",
+    "position": 722,
+    "mut_aa": "D",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.2167A>G (p.Asn723Asp)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "S",
+    "position": 783,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.2351C>T (p.Ser784Leu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "T",
+    "position": 825,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.2477C>A (p.Thr826Lys)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "K",
+    "position": 861,
+    "mut_aa": "E",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.2584A>G (p.Lys862Glu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "G",
+    "position": 889,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.2669G>T (p.Gly890Val)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "K",
+    "position": 911,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.2735A>G (p.Lys912Arg)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "V",
+    "position": 919,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.2758G>A (p.Val920Ile)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "I",
+    "position": 924,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.2773A>C (p.Ile925Leu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "A",
+    "position": 101,
+    "mut_aa": "G",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.305C>G (p.Ala102Gly)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "R",
+    "position": 1027,
+    "mut_aa": "C",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3082C>T (p.Arg1028Cys)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "R",
+    "position": 1027,
+    "mut_aa": "H",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3083G>A (p.Arg1028His)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "I",
+    "position": 1043,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3130A>G (p.Ile1044Val)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "K",
+    "position": 1108,
+    "mut_aa": "N",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3327A>C (p.Lys1109Asn)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "E",
+    "position": 1218,
+    "mut_aa": "D",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3657G>C (p.Glu1219Asp)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "P",
+    "position": 1237,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3713C>T (p.Pro1238Leu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "I",
+    "position": 1274,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3823A>G (p.Ile1275Val)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "I",
+    "position": 1404,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4213A>G (p.Ile1405Val)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "E",
+    "position": 142,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.427G>A (p.Glu143Lys)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "R",
+    "position": 1494,
+    "mut_aa": "K",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.4484G>A (p.Arg1495Lys)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "R",
+    "position": 1494,
+    "mut_aa": "M",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.4484G>T (p.Arg1495Met)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "S",
+    "position": 152,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.457A>C (p.Ser153Arg)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "E",
+    "position": 1558,
+    "mut_aa": "K",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.4675G>A (p.Glu1559Lys)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "K",
+    "position": 1605,
+    "mut_aa": "E",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4816A>G (p.Lys1606Glu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "M",
+    "position": 1651,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4955T>C (p.Met1652Thr)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "L",
+    "position": 1663,
+    "mut_aa": "P",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4991T>C (p.Leu1664Pro)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "D",
+    "position": 1691,
+    "mut_aa": "H",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5074G>C (p.Asp1692His)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "C",
+    "position": 1696,
+    "mut_aa": "Y",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5090G>A (p.Cys1697Tyr)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "R",
+    "position": 1698,
+    "mut_aa": "Q",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5096G>A (p.Arg1699Gln)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "G",
+    "position": 1705,
+    "mut_aa": "E",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5117G>A (p.Gly1706Glu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "V",
+    "position": 1735,
+    "mut_aa": "A",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5207T>C (p.Val1736Ala)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "G",
+    "position": 1747,
+    "mut_aa": "C",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5242G>T (p.Gly1748Cys)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "I",
+    "position": 1765,
+    "mut_aa": "S",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5297T>G (p.Ile1766Ser)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "G",
+    "position": 1787,
+    "mut_aa": "V",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5363G>T (p.Gly1788Val)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "Y",
+    "position": 178,
+    "mut_aa": "C",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.536A>G (p.Tyr179Cys)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "M",
+    "position": 17,
+    "mut_aa": "T",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.53T>C (p.Met18Thr)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "W",
+    "position": 1836,
+    "mut_aa": "R",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5509T>C (p.Trp1837Arg)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "S",
+    "position": 1840,
+    "mut_aa": "R",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5521A>C (p.Ser1841Arg)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "V",
+    "position": 190,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.571G>A (p.Val191Ile)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "D",
+    "position": 213,
+    "mut_aa": "G",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.641A>G (p.Asp214Gly)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "T",
+    "position": 275,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.827C>G (p.Thr276Arg)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "S",
+    "position": 315,
+    "mut_aa": "G",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.946A>G (p.Ser316Gly)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "Q",
+    "position": 355,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1067A>G (p.Gln356Arg)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "D",
+    "position": 410,
+    "mut_aa": "E",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1233T>G (p.Asp411Glu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "R",
+    "position": 495,
+    "mut_aa": "H",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1487G>A (p.Arg496His)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "E",
+    "position": 596,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1789G>A (p.Glu597Lys)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "D",
+    "position": 692,
+    "mut_aa": "N",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.2077G>A (p.Asp693Asn)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "V",
+    "position": 771,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.2315T>C (p.Val772Ala)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "K",
+    "position": 819,
+    "mut_aa": "E",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.2458A>G (p.Lys820Glu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "R",
+    "position": 865,
+    "mut_aa": "C",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.2596C>T (p.Arg866Cys)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "P",
+    "position": 870,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.2612C>T (p.Pro871Leu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "M",
+    "position": 1007,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3024G>A (p.Met1008Ile)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "E",
+    "position": 1037,
+    "mut_aa": "G",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3113A>G (p.Glu1038Gly)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "P",
+    "position": 1098,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3296C>T (p.Pro1099Leu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "S",
+    "position": 1139,
+    "mut_aa": "G",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3418A>G (p.Ser1140Gly)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "K",
+    "position": 1182,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3548A>G (p.Lys1183Arg)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "L",
+    "position": 1260,
+    "mut_aa": "F",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3783A>T (p.Leu1261Phe)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "R",
+    "position": 1346,
+    "mut_aa": "G",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4039A>G (p.Arg1347Gly)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "P",
+    "position": 141,
+    "mut_aa": "H",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.425C>A (p.Pro142His)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "R",
+    "position": 1506,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4520G>C (p.Arg1507Thr)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "S",
+    "position": 1511,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4535G>T (p.Ser1512Ile)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "S",
+    "position": 1612,
+    "mut_aa": "G",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4837A>G (p.Ser1613Gly)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "M",
+    "position": 1627,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4883T>C (p.Met1628Thr)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "M",
+    "position": 1651,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4956G>A (p.Met1652Ile)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "H",
+    "position": 1859,
+    "mut_aa": "P",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.5579A>C (p.His1860Pro)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "L",
+    "position": 245,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.736T>G (p.Leu246Val)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "P",
+    "position": 333,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1001C>T (p.Pro334Leu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "K",
+    "position": 354,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1064A>G (p.Lys355Arg)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "T",
+    "position": 36,
+    "mut_aa": "K",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.110C>A (p.Thr37Lys)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "N",
+    "position": 375,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1127A>G (p.Asn376Ser)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "S",
+    "position": 376,
+    "mut_aa": "N",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1130G>A (p.Ser377Asn)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "C",
+    "position": 38,
+    "mut_aa": "R",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.115T>C (p.Cys39Arg)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "S",
+    "position": 402,
+    "mut_aa": "F",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1208C>T (p.Ser403Phe)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "H",
+    "position": 40,
+    "mut_aa": "R",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.122A>G (p.His41Arg)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "E",
+    "position": 420,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1261G>A (p.Glu421Lys)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "C",
+    "position": 43,
+    "mut_aa": "S",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.130T>A (p.Cys44Ser)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "C",
+    "position": 43,
+    "mut_aa": "R",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.130T>C (p.Cys44Arg)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "C",
+    "position": 43,
+    "mut_aa": "Y",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.131G>A (p.Cys44Tyr)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "C",
+    "position": 43,
+    "mut_aa": "F",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.131G>T (p.Cys44Phe)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "F",
+    "position": 460,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1383T>A (p.Phe461Leu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "Y",
+    "position": 464,
+    "mut_aa": "D",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1393T>G (p.Tyr465Asp)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "C",
+    "position": 46,
+    "mut_aa": "G",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.139T>G (p.Cys47Gly)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "C",
+    "position": 46,
+    "mut_aa": "Y",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.140G>A (p.Cys47Tyr)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "N",
+    "position": 472,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1418A>G (p.Asn473Ser)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "N",
+    "position": 472,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1418A>T (p.Asn473Ile)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "F",
+    "position": 485,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1456T>C (p.Phe486Leu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "R",
+    "position": 503,
+    "mut_aa": "H",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1511G>A (p.Arg504His)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "D",
+    "position": 521,
+    "mut_aa": "N",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1564G>A (p.Asp522Asn)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "T",
+    "position": 538,
+    "mut_aa": "M",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1616C>T (p.Thr539Met)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "G",
+    "position": 551,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1655G>T (p.Gly552Val)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "P",
+    "position": 567,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1703C>T (p.Pro568Leu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "T",
+    "position": 581,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1744A>G (p.Thr582Ala)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "I",
+    "position": 599,
+    "mut_aa": "M",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1800C>G (p.Ile600Met)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "C",
+    "position": 60,
+    "mut_aa": "S",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.181T>A (p.Cys61Ser)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "C",
+    "position": 60,
+    "mut_aa": "Y",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.182G>A (p.Cys61Tyr)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "R",
+    "position": 611,
+    "mut_aa": "G",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1834A>G (p.Arg612Gly)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "A",
+    "position": 621,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1865C>T (p.Ala622Val)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "P",
+    "position": 632,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1897C>A (p.Pro633Thr)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "P",
+    "position": 633,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1901C>G (p.Pro634Arg)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "C",
+    "position": 63,
+    "mut_aa": "R",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.190T>C (p.Cys64Arg)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "C",
+    "position": 63,
+    "mut_aa": "Y",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.191G>A (p.Cys64Tyr)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "D",
+    "position": 641,
+    "mut_aa": "H",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1924G>C (p.Asp642His)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "S",
+    "position": 642,
+    "mut_aa": "G",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1927A>G (p.Ser643Gly)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "C",
+    "position": 643,
+    "mut_aa": "W",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1932T>G (p.Cys644Trp)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "K",
+    "position": 653,
+    "mut_aa": "E",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1960A>G (p.Lys654Glu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "Y",
+    "position": 654,
+    "mut_aa": "D",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1963T>G (p.Tyr655Asp)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "D",
+    "position": 66,
+    "mut_aa": "Y",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.199G>T (p.Asp67Tyr)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "D",
+    "position": 694,
+    "mut_aa": "Y",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.2083G>T (p.Asp695Tyr)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "R",
+    "position": 70,
+    "mut_aa": "K",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.212G>A (p.Arg71Lys)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "P",
+    "position": 726,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.2180C>T (p.Pro727Leu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "R",
+    "position": 761,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.2286A>T (p.Arg762Ser)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "Q",
+    "position": 803,
+    "mut_aa": "H",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.2412G>C (p.Gln804His)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "C",
+    "position": 804,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.2413T>C (p.Cys805Arg)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "N",
+    "position": 809,
+    "mut_aa": "Y",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.2428A>T (p.Asn810Tyr)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "D",
+    "position": 824,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.2474A>T (p.Asp825Val)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "Y",
+    "position": 855,
+    "mut_aa": "H",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.2566T>C (p.Tyr856His)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "R",
+    "position": 865,
+    "mut_aa": "H",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.2597G>A (p.Arg866His)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "E",
+    "position": 878,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.2635G>A (p.Glu879Lys)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "L",
+    "position": 891,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.2675T>C (p.Leu892Ser)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "D",
+    "position": 95,
+    "mut_aa": "N",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.286G>A (p.Asp96Asn)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "G",
+    "position": 959,
+    "mut_aa": "D",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.2879G>A (p.Gly960Asp)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "E",
+    "position": 961,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.2884G>A (p.Glu962Lys)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "T",
+    "position": 966,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.2899A>T (p.Thr967Ser)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "H",
+    "position": 970,
+    "mut_aa": "N",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.2911C>A (p.His971Asn)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "R",
+    "position": 978,
+    "mut_aa": "C",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.2935C>T (p.Arg979Cys)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "M",
+    "position": 0,
+    "mut_aa": "T",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.2T>C (p.Met1Thr)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "M",
+    "position": 0,
+    "mut_aa": "R",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.2T>G (p.Met1Arg)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "M",
+    "position": 1007,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3022A>G (p.Met1008Val)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "S",
+    "position": 1023,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3072C>G (p.Ser1024Arg)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "V",
+    "position": 1046,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3140T>C (p.Val1047Ala)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "G",
+    "position": 1047,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3143G>T (p.Gly1048Val)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "Y",
+    "position": 104,
+    "mut_aa": "C",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.314A>G (p.Tyr105Cys)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "R",
+    "position": 1075,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3228A>T (p.Arg1076Ser)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "S",
+    "position": 1100,
+    "mut_aa": "N",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3302G>A (p.Ser1101Asn)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "S",
+    "position": 1138,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3416G>T (p.Ser1139Ile)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "Q",
+    "position": 1143,
+    "mut_aa": "H",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3432G>T (p.Gln1144His)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "P",
+    "position": 1149,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3448C>T (p.Pro1150Ser)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "D",
+    "position": 1154,
+    "mut_aa": "H",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3463G>C (p.Asp1155His)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "V",
+    "position": 1175,
+    "mut_aa": "D",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3527T>A (p.Val1176Asp)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "V",
+    "position": 1180,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3541G>A (p.Val1181Ile)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "V",
+    "position": 1180,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3542T>C (p.Val1181Ala)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "Q",
+    "position": 1199,
+    "mut_aa": "H",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3600G>T (p.Gln1200His)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "R",
+    "position": 1202,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3608G>A (p.Arg1203Gln)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "G",
+    "position": 1204,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3613G>C (p.Gly1205Arg)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "E",
+    "position": 1213,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3640G>A (p.Glu1214Lys)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "S",
+    "position": 1217,
+    "mut_aa": "C",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3652A>T (p.Ser1218Cys)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "K",
+    "position": 1232,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3698A>G (p.Lys1233Arg)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "N",
+    "position": 1235,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3708T>G (p.Asn1236Lys)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "I",
+    "position": 123,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.370A>G (p.Ile124Val)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "S",
+    "position": 1240,
+    "mut_aa": "C",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3722C>G (p.Ser1241Cys)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "T",
+    "position": 1241,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3724A>G (p.Thr1242Ala)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "V",
+    "position": 1246,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3739G>A (p.Val1247Ile)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "E",
+    "position": 1249,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3748G>A (p.Glu1250Lys)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "S",
+    "position": 1252,
+    "mut_aa": "Y",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3758C>A (p.Ser1253Tyr)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "S",
+    "position": 1265,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3797G>C (p.Ser1266Thr)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "A",
+    "position": 1276,
+    "mut_aa": "P",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3829G>C (p.Ala1277Pro)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "H",
+    "position": 1282,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3848A>G (p.His1283Arg)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "H",
+    "position": 1283,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3851A>G (p.His1284Arg)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "N",
+    "position": 131,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.396C>A (p.Asn132Lys)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "R",
+    "position": 132,
+    "mut_aa": "C",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.397C>T (p.Arg133Cys)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "M",
+    "position": 0,
+    "mut_aa": "I",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.3G>T (p.Met1Ile)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "D",
+    "position": 1336,
+    "mut_aa": "E",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4011C>G (p.Asp1337Glu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "T",
+    "position": 1348,
+    "mut_aa": "M",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4046C>T (p.Thr1349Met)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "M",
+    "position": 1360,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4081A>C (p.Met1361Leu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "V",
+    "position": 1377,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4132G>A (p.Val1378Ile)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "H",
+    "position": 1401,
+    "mut_aa": "Y",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4204C>T (p.His1402Tyr)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "M",
+    "position": 1410,
+    "mut_aa": "T",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.4232T>C (p.Met1411Thr)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "E",
+    "position": 1418,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4255G>C (p.Glu1419Gln)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "I",
+    "position": 1431,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4294A>C (p.Ile1432Leu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "N",
+    "position": 1467,
+    "mut_aa": "H",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4402A>C (p.Asn1468His)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "V",
+    "position": 1533,
+    "mut_aa": "M",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4600G>A (p.Val1534Met)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "D",
+    "position": 1545,
+    "mut_aa": "N",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4636G>A (p.Asp1546Asn)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "D",
+    "position": 1545,
+    "mut_aa": "Y",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4636G>T (p.Asp1546Tyr)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "Q",
+    "position": 154,
+    "mut_aa": "E",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.463C>G (p.Gln155Glu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "L",
+    "position": 1563,
+    "mut_aa": "P",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4691T>C (p.Leu1564Pro)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "A",
+    "position": 1583,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4750G>T (p.Ala1584Ser)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "I",
+    "position": 1592,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4777A>T (p.Ile1593Leu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "P",
+    "position": 1613,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4840C>T (p.Pro1614Ser)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "P",
+    "position": 1636,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4910C>T (p.Pro1637Leu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "A",
+    "position": 1640,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4921G>A (p.Ala1641Thr)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "F",
+    "position": 1661,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4985T>C (p.Phe1662Ser)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "E",
+    "position": 1681,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.5044G>A (p.Glu1682Lys)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "E",
+    "position": 1681,
+    "mut_aa": "V",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5045A>T (p.Glu1682Val)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "T",
+    "position": 1684,
+    "mut_aa": "A",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5053A>G (p.Thr1685Ala)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "T",
+    "position": 1684,
+    "mut_aa": "I",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5054C>T (p.Thr1685Ile)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "H",
+    "position": 1685,
+    "mut_aa": "Q",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5058T>A (p.His1686Gln)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "T",
+    "position": 1690,
+    "mut_aa": "R",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5072C>G (p.Thr1691Arg)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "D",
+    "position": 1691,
+    "mut_aa": "Y",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5074G>T (p.Asp1692Tyr)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "D",
+    "position": 1691,
+    "mut_aa": "V",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5075A>T (p.Asp1692Val)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "C",
+    "position": 1696,
+    "mut_aa": "R",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5089T>C (p.Cys1697Arg)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "R",
+    "position": 169,
+    "mut_aa": "W",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.508C>T (p.Arg170Trp)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "R",
+    "position": 1698,
+    "mut_aa": "W",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5095C>T (p.Arg1699Trp)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "R",
+    "position": 1698,
+    "mut_aa": "L",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5096G>T (p.Arg1699Leu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "T",
+    "position": 1699,
+    "mut_aa": "A",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5098A>G (p.Thr1700Ala)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "G",
+    "position": 1705,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.5117G>C (p.Gly1706Ala)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "A",
+    "position": 1707,
+    "mut_aa": "E",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5123C>A (p.Ala1708Glu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "V",
+    "position": 1712,
+    "mut_aa": "A",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5138T>C (p.Val1713Ala)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "S",
+    "position": 1714,
+    "mut_aa": "R",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5143A>C (p.Ser1715Arg)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "S",
+    "position": 1714,
+    "mut_aa": "C",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5143A>T (p.Ser1715Cys)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "S",
+    "position": 1714,
+    "mut_aa": "N",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5144G>A (p.Ser1715Asn)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "T",
+    "position": 1719,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.5158A>G (p.Thr1720Ala)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "D",
+    "position": 1732,
+    "mut_aa": "G",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.5198A>G (p.Asp1733Gly)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "F",
+    "position": 1733,
+    "mut_aa": "S",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5201T>C (p.Phe1734Ser)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "G",
+    "position": 1737,
+    "mut_aa": "R",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5212G>A (p.Gly1738Arg)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "D",
+    "position": 1738,
+    "mut_aa": "E",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5217T>G (p.Asp1739Glu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "P",
+    "position": 1748,
+    "mut_aa": "R",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5246C>G (p.Pro1749Arg)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "R",
+    "position": 1750,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.5252G>A (p.Arg1751Gln)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "R",
+    "position": 1750,
+    "mut_aa": "P",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5252G>C (p.Arg1751Pro)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "F",
+    "position": 1760,
+    "mut_aa": "S",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5282T>C (p.Phe1761Ser)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "L",
+    "position": 1763,
+    "mut_aa": "P",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5291T>C (p.Leu1764Pro)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "D",
+    "position": 1777,
+    "mut_aa": "N",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5332G>A (p.Asp1778Asn)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "G",
+    "position": 1787,
+    "mut_aa": "C",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5362G>T (p.Gly1788Cys)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "A",
+    "position": 1788,
+    "mut_aa": "T",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5365G>A (p.Ala1789Thr)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "V",
+    "position": 1803,
+    "mut_aa": "D",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.5411T>A (p.Val1804Asp)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "V",
+    "position": 1808,
+    "mut_aa": "F",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5425G>T (p.Val1809Phe)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "W",
+    "position": 1836,
+    "mut_aa": "G",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5509T>G (p.Trp1837Gly)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "V",
+    "position": 1837,
+    "mut_aa": "E",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5513T>A (p.Val1838Glu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "A",
+    "position": 1842,
+    "mut_aa": "P",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5527G>C (p.Ala1843Pro)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "L",
+    "position": 1843,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.5531T>G (p.Leu1844Arg)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "L",
+    "position": 1853,
+    "mut_aa": "P",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5561T>C (p.Leu1854Pro)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "P",
+    "position": 1855,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.5566C>T (p.Pro1856Ser)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "P",
+    "position": 1858,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.5576C>G (p.Pro1859Arg)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "S",
+    "position": 185,
+    "mut_aa": "Y",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.557C>A (p.Ser186Tyr)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "L",
+    "position": 21,
+    "mut_aa": "S",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.65T>C (p.Leu22Ser)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "H",
+    "position": 238,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.716A>G (p.His239Arg)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "T",
+    "position": 247,
+    "mut_aa": "N",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.743C>A (p.Thr248Asn)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "G",
+    "position": 262,
+    "mut_aa": "C",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.787G>T (p.Gly263Cys)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "G",
+    "position": 262,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.788G>C (p.Gly263Ala)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "S",
+    "position": 263,
+    "mut_aa": "C",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.790A>T (p.Ser264Cys)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "V",
+    "position": 270,
+    "mut_aa": "M",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.811G>A (p.Val271Met)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "G",
+    "position": 274,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.823G>A (p.Gly275Ser)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "G",
+    "position": 274,
+    "mut_aa": "D",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.824G>A (p.Gly275Asp)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "A",
+    "position": 279,
+    "mut_aa": "G",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.839C>G (p.Ala280Gly)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "M",
+    "position": 296,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.891G>A (p.Met297Ile)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "E",
+    "position": 841,
+    "mut_aa": "G",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.2525A>G (p.Glu842Gly)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "N",
+    "position": 915,
+    "mut_aa": "Y",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.2746A>T (p.Asn916Tyr)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "S",
+    "position": 1265,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3798C>G (p.Ser1266Arg)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "R",
+    "position": 132,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.397C>A (p.Arg133Ser)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "G",
+    "position": 1514,
+    "mut_aa": "E",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4544G>A (p.Gly1515Glu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "L",
+    "position": 1785,
+    "mut_aa": "P",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5357T>C (p.Leu1786Pro)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "L",
+    "position": 1838,
+    "mut_aa": "S",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5516T>C (p.Leu1839Ser)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "P",
+    "position": 333,
+    "mut_aa": "H",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1001C>A (p.Pro334His)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "Q",
+    "position": 1272,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3818A>G (p.Gln1273Arg)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "L",
+    "position": 1779,
+    "mut_aa": "R",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5339T>G (p.Leu1780Arg)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "D",
+    "position": 692,
+    "mut_aa": "Y",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.2077G>T (p.Asp693Tyr)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "D",
+    "position": 748,
+    "mut_aa": "H",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.2245G>C (p.Asp749His)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "S",
+    "position": 1319,
+    "mut_aa": "P",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3958T>C (p.Ser1320Pro)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "S",
+    "position": 1721,
+    "mut_aa": "P",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5164T>C (p.Ser1722Pro)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "H",
+    "position": 1804,
+    "mut_aa": "Y",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.5413C>T (p.His1805Tyr)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "K",
+    "position": 555,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1666A>C (p.Lys556Gln)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "I",
+    "position": 1857,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.5572A>C (p.Ile1858Leu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "A",
+    "position": 743,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.2230G>A (p.Ala744Thr)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "T",
+    "position": 332,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.997A>G (p.Thr333Ala)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "K",
+    "position": 44,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.133A>C (p.Lys45Gln)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "P",
+    "position": 33,
+    "mut_aa": "L",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.101C>T (p.Pro34Leu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "S",
+    "position": 1386,
+    "mut_aa": "P",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4159T>C (p.Ser1387Pro)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "F",
+    "position": 1733,
+    "mut_aa": "L",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5202T>G (p.Phe1734Leu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "P",
+    "position": 1748,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.5245C>A (p.Pro1749Thr)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "F",
+    "position": 1733,
+    "mut_aa": "I",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5200T>A (p.Phe1734Ile)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "Y",
+    "position": 1702,
+    "mut_aa": "C",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5108A>G (p.Tyr1703Cys)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "Q",
+    "position": 1394,
+    "mut_aa": "H",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.4185G>C (p.Gln1395His)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "G",
+    "position": 932,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.2798G>C (p.Gly933Ala)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "S",
+    "position": 386,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1159T>A (p.Ser387Thr)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "N",
+    "position": 246,
+    "mut_aa": "D",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.739A>G (p.Asn247Asp)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "H",
+    "position": 40,
+    "mut_aa": "L",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.122A>T (p.His41Leu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "P",
+    "position": 24,
+    "mut_aa": "L",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.74C>T (p.Pro25Leu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "G",
+    "position": 1747,
+    "mut_aa": "R",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5242G>C (p.Gly1748Arg)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "T",
+    "position": 1674,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.5024C>T (p.Thr1675Ile)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "R",
+    "position": 1494,
+    "mut_aa": "T",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.4484G>C (p.Arg1495Thr)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "V",
+    "position": 10,
+    "mut_aa": "G",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.32T>G (p.Val11Gly)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "Y",
+    "position": 1702,
+    "mut_aa": "D",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5107T>G (p.Tyr1703Asp)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "I",
+    "position": 25,
+    "mut_aa": "N",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.77T>A (p.Ile26Asn)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "V",
+    "position": 1837,
+    "mut_aa": "G",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5513T>G (p.Val1838Gly)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "R",
+    "position": 70,
+    "mut_aa": "T",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.212G>C (p.Arg71Thr)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "C",
+    "position": 46,
+    "mut_aa": "S",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.139T>A (p.Cys47Ser)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "C",
+    "position": 38,
+    "mut_aa": "W",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.117T>G (p.Cys39Trp)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "S",
+    "position": 1654,
+    "mut_aa": "P",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.4963T>C (p.Ser1655Pro)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "H",
+    "position": 40,
+    "mut_aa": "N",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.121C>A (p.His41Asn)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "R",
+    "position": 1752,
+    "mut_aa": "S",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5259A>T (p.Arg1753Ser)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "G",
+    "position": 1769,
+    "mut_aa": "V",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5309G>T (p.Gly1770Val)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "P",
+    "position": 33,
+    "mut_aa": "S",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.100C>T (p.Pro34Ser)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "I",
+    "position": 170,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.511A>G (p.Ile171Val)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "A",
+    "position": 520,
+    "mut_aa": "P",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1561G>C (p.Ala521Pro)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "Y",
+    "position": 1852,
+    "mut_aa": "N",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5557T>A (p.Tyr1853Asn)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "R",
+    "position": 1750,
+    "mut_aa": "G",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5251C>G (p.Arg1751Gly)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "V",
+    "position": 1686,
+    "mut_aa": "G",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5060T>G (p.Val1687Gly)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "S",
+    "position": 1124,
+    "mut_aa": "Y",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3374C>A (p.Ser1125Tyr)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "E",
+    "position": 1012,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3037G>A (p.Glu1013Lys)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "F",
+    "position": 1760,
+    "mut_aa": "C",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5282T>G (p.Phe1761Cys)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "D",
+    "position": 1756,
+    "mut_aa": "Y",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.5269G>T (p.Asp1757Tyr)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "I",
+    "position": 89,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.268A>G (p.Ile90Val)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "L",
+    "position": 1779,
+    "mut_aa": "Q",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5339T>A (p.Leu1780Gln)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "L",
+    "position": 1222,
+    "mut_aa": "F",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3667C>T (p.Leu1223Phe)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "D",
+    "position": 1738,
+    "mut_aa": "H",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5215G>C (p.Asp1739His)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "V",
+    "position": 1718,
+    "mut_aa": "G",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5156T>G (p.Val1719Gly)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "T",
+    "position": 1683,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.5050A>G (p.Thr1684Ala)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "T",
+    "position": 1311,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3935C>G (p.Thr1312Ser)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "L",
+    "position": 412,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1237T>G (p.Leu413Val)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "E",
+    "position": 735,
+    "mut_aa": "G",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.2207A>G (p.Glu736Gly)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "C",
+    "position": 26,
+    "mut_aa": "F",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.80G>T (p.Cys27Phe)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "T",
+    "position": 1639,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4918A>G (p.Thr1640Ala)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "L",
+    "position": 1275,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3826T>G (p.Leu1276Val)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "H",
+    "position": 1685,
+    "mut_aa": "Y",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5056C>T (p.His1686Tyr)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "M",
+    "position": 17,
+    "mut_aa": "R",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.53T>G (p.Met18Arg)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "H",
+    "position": 1745,
+    "mut_aa": "D",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5236C>G (p.His1746Asp)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "G",
+    "position": 1787,
+    "mut_aa": "A",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5363G>C (p.Gly1788Ala)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "I",
+    "position": 1722,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.5168T>C (p.Ile1723Thr)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "P",
+    "position": 797,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.2392C>G (p.Pro798Ala)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "W",
+    "position": 1717,
+    "mut_aa": "G",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5152T>G (p.Trp1718Gly)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "V",
+    "position": 1713,
+    "mut_aa": "F",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5140G>T (p.Val1714Phe)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "H",
+    "position": 970,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.2912A>G (p.His971Arg)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "C",
+    "position": 1786,
+    "mut_aa": "Y",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5360G>A (p.Cys1787Tyr)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "C",
+    "position": 43,
+    "mut_aa": "W",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.132C>G (p.Cys44Trp)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "C",
+    "position": 23,
+    "mut_aa": "W",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.72T>G (p.Cys24Trp)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "Q",
+    "position": 1407,
+    "mut_aa": "H",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.4224G>C (p.Gln1408His)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "R",
+    "position": 1752,
+    "mut_aa": "G",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5257A>G (p.Arg1753Gly)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "M",
+    "position": 0,
+    "mut_aa": "K",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.2T>A (p.Met1Lys)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "L",
+    "position": 473,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1421T>C (p.Leu474Ser)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "T",
+    "position": 1815,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.5447C>G (p.Thr1816Arg)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "V",
+    "position": 1808,
+    "mut_aa": "D",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5426T>A (p.Val1809Asp)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "V",
+    "position": 1664,
+    "mut_aa": "G",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4994T>G (p.Val1665Gly)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "E",
+    "position": 1643,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4930G>C (p.Glu1644Gln)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "G",
+    "position": 1331,
+    "mut_aa": "E",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3995G>A (p.Gly1332Glu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "C",
+    "position": 26,
+    "mut_aa": "Y",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.80G>A (p.Cys27Tyr)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "R",
+    "position": 6,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.20G>T (p.Arg7Leu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "G",
+    "position": 1737,
+    "mut_aa": "V",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5213G>T (p.Gly1738Val)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "Y",
+    "position": 1852,
+    "mut_aa": "S",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5558A>C (p.Tyr1853Ser)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "Y",
+    "position": 1852,
+    "mut_aa": "H",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5557T>C (p.Tyr1853His)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "E",
+    "position": 1848,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.5545G>A (p.Glu1849Lys)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "Q",
+    "position": 1847,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.5543A>G (p.Gln1848Arg)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "C",
+    "position": 1846,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.5540G>C (p.Cys1847Ser)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "Q",
+    "position": 1845,
+    "mut_aa": "H",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.5538G>T (p.Gln1846His)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "Q",
+    "position": 1845,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.5537A>G (p.Gln1846Arg)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "V",
+    "position": 1841,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.5524G>C (p.Val1842Leu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "S",
+    "position": 1840,
+    "mut_aa": "I",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5522G>T (p.Ser1841Ile)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "P",
+    "position": 1830,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.5492C>T (p.Pro1831Leu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "P",
+    "position": 1830,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.5491C>T (p.Pro1831Ser)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "A",
+    "position": 1829,
+    "mut_aa": "S",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5488G>T (p.Ala1830Ser)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "M",
+    "position": 1826,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.5479A>T (p.Met1827Leu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "Q",
+    "position": 1825,
+    "mut_aa": "H",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.5478G>C (p.Gln1826His)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "Q",
+    "position": 1825,
+    "mut_aa": "E",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.5476C>G (p.Gln1826Glu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "G",
+    "position": 1824,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.5473G>C (p.Gly1825Arg)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "I",
+    "position": 1823,
+    "mut_aa": "N",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.5471T>A (p.Ile1824Asn)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "A",
+    "position": 1822,
+    "mut_aa": "S",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5467G>T (p.Ala1823Ser)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "A",
+    "position": 1822,
+    "mut_aa": "P",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5467G>C (p.Ala1823Pro)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "T",
+    "position": 1815,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.5446A>G (p.Thr1816Ala)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "A",
+    "position": 1813,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.5440G>A (p.Ala1814Thr)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "D",
+    "position": 1812,
+    "mut_aa": "E",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.5439T>A (p.Asp1813Glu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "Q",
+    "position": 1810,
+    "mut_aa": "P",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5432A>C (p.Gln1811Pro)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "L",
+    "position": 1799,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.5398C>A (p.Leu1800Ile)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "F",
+    "position": 1797,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.5392T>A (p.Phe1798Ile)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "L",
+    "position": 1794,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.5384T>G (p.Leu1795Arg)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "A",
+    "position": 1788,
+    "mut_aa": "V",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5366C>T (p.Ala1789Val)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "A",
+    "position": 1788,
+    "mut_aa": "D",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5366C>A (p.Ala1789Asp)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "G",
+    "position": 1787,
+    "mut_aa": "S",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5362G>A (p.Gly1788Ser)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "V",
+    "position": 1783,
+    "mut_aa": "E",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5351T>A (p.Val1784Glu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "M",
+    "position": 1782,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.5347A>T (p.Met1783Leu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "Q",
+    "position": 1778,
+    "mut_aa": "H",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.5337A>C (p.Gln1779His)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "M",
+    "position": 1774,
+    "mut_aa": "V",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5323A>G (p.Met1775Val)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "I",
+    "position": 1765,
+    "mut_aa": "T",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5297T>C (p.Ile1766Thr)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "D",
+    "position": 1756,
+    "mut_aa": "E",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.5271C>G (p.Asp1757Glu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "R",
+    "position": 1752,
+    "mut_aa": "I",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5258G>T (p.Arg1753Ile)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "A",
+    "position": 1751,
+    "mut_aa": "E",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5255C>A (p.Ala1752Glu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "G",
+    "position": 1742,
+    "mut_aa": "E",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5228G>A (p.Gly1743Glu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "V",
+    "position": 1735,
+    "mut_aa": "F",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5206G>T (p.Val1736Phe)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "H",
+    "position": 1731,
+    "mut_aa": "D",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.5194C>G (p.His1732Asp)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "N",
+    "position": 1729,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.5190T>G (p.Asn1730Lys)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "Q",
+    "position": 1720,
+    "mut_aa": "H",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.5163G>T (p.Gln1721His)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "W",
+    "position": 1717,
+    "mut_aa": "C",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5154G>C (p.Trp1718Cys)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "V",
+    "position": 1712,
+    "mut_aa": "G",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5138T>G (p.Val1713Gly)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "V",
+    "position": 1712,
+    "mut_aa": "L",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5137G>T (p.Val1713Leu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "W",
+    "position": 1711,
+    "mut_aa": "G",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5134T>G (p.Trp1712Gly)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "K",
+    "position": 1710,
+    "mut_aa": "N",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.5133A>C (p.Lys1711Asn)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "K",
+    "position": 1710,
+    "mut_aa": "E",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5131A>G (p.Lys1711Glu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "G",
+    "position": 1705,
+    "mut_aa": "V",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5117G>T (p.Gly1706Val)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "K",
+    "position": 1701,
+    "mut_aa": "Q",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5104A>C (p.Lys1702Gln)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "C",
+    "position": 1696,
+    "mut_aa": "F",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5090G>T (p.Cys1697Phe)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "F",
+    "position": 1694,
+    "mut_aa": "V",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5083T>G (p.Phe1695Val)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "M",
+    "position": 1688,
+    "mut_aa": "K",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5066T>A (p.Met1689Lys)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "V",
+    "position": 1687,
+    "mut_aa": "F",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5062G>T (p.Val1688Phe)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "V",
+    "position": 1686,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.5059G>A (p.Val1687Ile)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "H",
+    "position": 1685,
+    "mut_aa": "D",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5056C>G (p.His1686Asp)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "T",
+    "position": 1680,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.5041A>G (p.Thr1681Ala)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "T",
+    "position": 1676,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.5030C>G (p.Thr1677Ser)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "T",
+    "position": 1676,
+    "mut_aa": "N",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.5030C>A (p.Thr1677Asn)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "I",
+    "position": 1673,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.5020A>G (p.Ile1674Val)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "H",
+    "position": 1672,
+    "mut_aa": "Y",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.5017C>T (p.His1673Tyr)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "H",
+    "position": 1672,
+    "mut_aa": "D",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.5017C>G (p.His1673Asp)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "F",
+    "position": 1667,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.5002T>G (p.Phe1668Val)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "K",
+    "position": 1666,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.5000A>C (p.Lys1667Thr)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "Y",
+    "position": 1665,
+    "mut_aa": "N",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4996T>A (p.Tyr1666Asn)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "M",
+    "position": 1662,
+    "mut_aa": "R",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.4988T>G (p.Met1663Arg)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "V",
+    "position": 1652,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4958T>C (p.Val1653Ala)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "V",
+    "position": 1652,
+    "mut_aa": "E",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.4958T>A (p.Val1653Glu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "K",
+    "position": 1647,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4943A>G (p.Lys1648Arg)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "K",
+    "position": 1647,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4943A>C (p.Lys1648Thr)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "N",
+    "position": 1646,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4941C>G (p.Asn1647Lys)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "N",
+    "position": 1646,
+    "mut_aa": "D",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4939A>G (p.Asn1647Asp)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "V",
+    "position": 1645,
+    "mut_aa": "D",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4937T>A (p.Val1646Asp)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "V",
+    "position": 1645,
+    "mut_aa": "F",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4936G>T (p.Val1646Phe)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "T",
+    "position": 1642,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4927A>T (p.Thr1643Ser)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "S",
+    "position": 1641,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4925C>T (p.Ser1642Leu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "A",
+    "position": 1640,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4921G>T (p.Ala1641Ser)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "E",
+    "position": 1637,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4913A>T (p.Glu1638Val)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "K",
+    "position": 1635,
+    "mut_aa": "N",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4908G>T (p.Lys1636Asn)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "S",
+    "position": 1632,
+    "mut_aa": "G",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4897A>G (p.Ser1633Gly)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "S",
+    "position": 1630,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4891A>C (p.Ser1631Arg)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "T",
+    "position": 96,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.289A>T (p.Thr97Ser)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "D",
+    "position": 95,
+    "mut_aa": "A",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.287A>C (p.Asp96Ala)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "L",
+    "position": 94,
+    "mut_aa": "P",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.284T>C (p.Leu95Pro)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "L",
+    "position": 94,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.283C>A (p.Leu95Ile)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "E",
+    "position": 74,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.223G>A (p.Glu75Lys)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "R",
+    "position": 70,
+    "mut_aa": "W",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.211A>T (p.Arg71Trp)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "N",
+    "position": 65,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.197A>G (p.Asn66Ser)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "C",
+    "position": 63,
+    "mut_aa": "S",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.190T>A (p.Cys64Ser)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "S",
+    "position": 58,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.175T>G (p.Ser59Ala)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "M",
+    "position": 47,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.144G>T (p.Met48Ile)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "H",
+    "position": 40,
+    "mut_aa": "D",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.121C>G (p.His41Asp)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "D",
+    "position": 39,
+    "mut_aa": "G",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.119A>G (p.Asp40Gly)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "T",
+    "position": 36,
+    "mut_aa": "A",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.109A>G (p.Thr37Ala)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "V",
+    "position": 34,
+    "mut_aa": "A",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.104T>C (p.Val35Ala)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "P",
+    "position": 33,
+    "mut_aa": "R",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.101C>G (p.Pro34Arg)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "E",
+    "position": 32,
+    "mut_aa": "D",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.99A>C (p.Glu33Asp)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "E",
+    "position": 32,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.97G>A (p.Glu33Lys)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "C",
+    "position": 26,
+    "mut_aa": "W",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.81T>G (p.Cys27Trp)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "C",
+    "position": 26,
+    "mut_aa": "G",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.79T>G (p.Cys27Gly)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "C",
+    "position": 26,
+    "mut_aa": "R",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.79T>C (p.Cys27Arg)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "I",
+    "position": 25,
+    "mut_aa": "M",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.78C>G (p.Ile26Met)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "C",
+    "position": 23,
+    "mut_aa": "S",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.71G>C (p.Cys24Ser)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "I",
+    "position": 20,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.61A>C (p.Ile21Leu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "M",
+    "position": 17,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.52A>C (p.Met18Leu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "N",
+    "position": 15,
+    "mut_aa": "D",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.46A>G (p.Asn16Asp)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "V",
+    "position": 13,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.40G>A (p.Val14Ile)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "N",
+    "position": 12,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.39T>A (p.Asn13Lys)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "V",
+    "position": 10,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.31G>A (p.Val11Ile)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "L",
+    "position": 2,
+    "mut_aa": "F",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.9A>C (p.Leu3Phe)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "D",
+    "position": 1,
+    "mut_aa": "N",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4G>A (p.Asp2Asn)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "S",
+    "position": 944,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.2834G>C (p.Ser945Thr)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "R",
+    "position": 1187,
+    "mut_aa": "M",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3563G>T (p.Arg1188Met)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "T",
+    "position": 616,
+    "mut_aa": "N",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1850C>A (p.Thr617Asn)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "D",
+    "position": 413,
+    "mut_aa": "Y",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1240G>T (p.Asp414Tyr)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "K",
+    "position": 300,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.901A>C (p.Lys301Gln)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "M",
+    "position": 657,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1974G>A (p.Met658Ile)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "D",
+    "position": 1155,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3467A>C (p.Asp1156Ala)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "I",
+    "position": 547,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1643T>G (p.Ile548Ser)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "S",
+    "position": 1485,
+    "mut_aa": "N",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4457G>A (p.Ser1486Asn)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "L",
+    "position": 1305,
+    "mut_aa": "F",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3918G>T (p.Leu1306Phe)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "P",
+    "position": 1444,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4333C>G (p.Pro1445Ala)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "L",
+    "position": 217,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.652T>G (p.Leu218Val)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "Y",
+    "position": 178,
+    "mut_aa": "F",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.536A>T (p.Tyr179Phe)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "R",
+    "position": 1242,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3728G>C (p.Arg1243Thr)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "P",
+    "position": 1019,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3058C>T (p.Pro1020Ser)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "A",
+    "position": 107,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.322G>T (p.Ala108Ser)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "G",
+    "position": 1183,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3550G>A (p.Gly1184Arg)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "Y",
+    "position": 1201,
+    "mut_aa": "H",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3604T>C (p.Tyr1202His)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "L",
+    "position": 137,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.413T>G (p.Leu138Arg)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "P",
+    "position": 489,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1468C>T (p.Pro490Ser)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "F",
+    "position": 900,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.2703T>G (p.Phe901Leu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "L",
+    "position": 357,
+    "mut_aa": "P",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1073T>C (p.Leu358Pro)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "P",
+    "position": 967,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.2902C>G (p.Pro968Ala)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "L",
+    "position": 953,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.2861T>A (p.Leu954Gln)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "V",
+    "position": 1832,
+    "mut_aa": "G",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.5498T>G (p.Val1833Gly)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "H",
+    "position": 838,
+    "mut_aa": "Y",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.2515C>T (p.His839Tyr)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "H",
+    "position": 317,
+    "mut_aa": "L",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.953A>T (p.His318Leu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "Y",
+    "position": 1112,
+    "mut_aa": "H",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3337T>C (p.Tyr1113His)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "D",
+    "position": 457,
+    "mut_aa": "E",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1374C>G (p.Asp458Glu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "D",
+    "position": 745,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.2237A>T (p.Asp746Val)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "P",
+    "position": 980,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.2941C>G (p.Pro981Ala)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "D",
+    "position": 1440,
+    "mut_aa": "N",
+    "label": 1,
+    "name": "NM_007294.4(BRCA1):c.4321G>A (p.Asp1441Asn)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "T",
+    "position": 366,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1100C>G (p.Thr367Ser)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "N",
+    "position": 1042,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3128A>G (p.Asn1043Ser)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "D",
+    "position": 1161,
+    "mut_aa": "N",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3484G>A (p.Asp1162Asn)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "H",
+    "position": 600,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1803C>A (p.His601Gln)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "D",
+    "position": 389,
+    "mut_aa": "G",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1169A>G (p.Asp390Gly)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "G",
+    "position": 1514,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4543G>A (p.Gly1515Arg)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "V",
+    "position": 1601,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4804G>C (p.Val1602Leu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "Q",
+    "position": 803,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.2411A>T (p.Gln804Leu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "N",
+    "position": 362,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1088A>G (p.Asn363Ser)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "K",
+    "position": 1036,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3110A>T (p.Lys1037Ile)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "L",
+    "position": 982,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.2947C>G (p.Leu983Val)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "F",
+    "position": 1123,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3372C>G (p.Phe1124Leu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "S",
+    "position": 228,
+    "mut_aa": "Y",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.686C>A (p.Ser229Tyr)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "M",
+    "position": 750,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.2251A>G (p.Met751Val)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "L",
+    "position": 1604,
+    "mut_aa": "F",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4815G>C (p.Leu1605Phe)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "A",
+    "position": 438,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1316C>T (p.Ala439Val)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "S",
+    "position": 693,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.2082C>G (p.Ser694Arg)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "G",
+    "position": 1542,
+    "mut_aa": "E",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4628G>A (p.Gly1543Glu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "F",
+    "position": 951,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.2854T>C (p.Phe952Leu)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "L",
+    "position": 1275,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.3827T>C (p.Leu1276Ser)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "I",
+    "position": 428,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1285A>G (p.Ile429Val)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "E",
+    "position": 361,
+    "mut_aa": "D",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1086G>C (p.Glu362Asp)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "A",
+    "position": 1610,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4831G>A (p.Ala1611Thr)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "N",
+    "position": 1518,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.4556A>G (p.Asn1519Ser)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "H",
+    "position": 317,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.954T>G (p.His318Gln)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "E",
+    "position": 879,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.2638G>A (p.Glu880Lys)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "P",
+    "position": 528,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.1585C>G (p.Pro529Ala)"
+  },
+  {
+    "gene": "BRCA1",
+    "wt_aa": "N",
+    "position": 908,
+    "mut_aa": "D",
+    "label": 0,
+    "name": "NM_007294.4(BRCA1):c.2725A>G (p.Asn909Asp)"
+  }
+]

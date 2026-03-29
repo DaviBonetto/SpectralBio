@@ -1,0 +1,20 @@
+{
+  "benchmark": "TP53",
+  "role": "canonical_benchmark",
+  "source_variants": "benchmarks/tp53/tp53_canonical_v1.json",
+  "score_reference_source": "benchmarks/tp53/tp53_scores_v1.json",
+  "sequence_source": "benchmarks/sequences/tp53.fasta",
+  "benchmark_manifest": "benchmarks/manifests/tp53_canonical_manifest.json",
+  "config_path": "configs/tp53_canonical.yaml",
+  "primary_claim": "TP53 canonical executable benchmark",
+  "artifacts": [
+    "run_metadata.json",
+    "inputs_manifest.json",
+    "tp53_scores.tsv",
+    "tp53_metrics.json",
+    "summary.json",
+    "roc_tp53.png",
+    "manifest.json",
+    "verification.json"
+  ]
+}

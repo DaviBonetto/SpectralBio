@@ -1,0 +1,5 @@
+benchmark: TP53
+role: canonical_benchmark
+variants_path: benchmarks/tp53/tp53_canonical_v1.json
+scores_path: benchmarks/tp53/tp53_scores_v1.json
+output_dir: outputs/canonical

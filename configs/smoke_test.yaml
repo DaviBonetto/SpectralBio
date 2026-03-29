@@ -1,0 +1,5 @@
+benchmark: smoke_test
+commands:
+  - spectralbio canonical
+  - spectralbio transfer
+  - spectralbio verify

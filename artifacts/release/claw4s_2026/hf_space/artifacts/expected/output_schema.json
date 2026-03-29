@@ -1,0 +1,179 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SpectralBio Output Contract",
+  "type": "object",
+  "required": [
+    "canonical_run_metadata",
+    "canonical_inputs_manifest",
+    "canonical_metrics",
+    "canonical_summary",
+    "canonical_manifest",
+    "canonical_verification",
+    "transfer_summary",
+    "transfer_manifest"
+  ],
+  "properties": {
+    "canonical_run_metadata": {
+      "type": "object",
+      "required": [
+        "benchmark",
+        "mode",
+        "seed",
+        "model_name",
+        "score_formula",
+        "command",
+        "config_path"
+      ],
+      "properties": {
+        "benchmark": {
+          "const": "TP53"
+        },
+        "mode": {
+          "const": "canonical"
+        }
+      }
+    },
+    "canonical_inputs_manifest": {
+      "type": "object",
+      "required": [
+        "variants_source",
+        "variants_sha256",
+        "score_reference_source",
+        "score_reference_sha256",
+        "benchmark_manifest",
+        "checksums_ref",
+        "n_variants"
+      ]
+    },
+    "canonical_metrics": {
+      "type": "object",
+      "required": [
+        "official_auc_best_pair",
+        "computed_auc_best_pair",
+        "computed_auc_frob_dist",
+        "computed_auc_ll_proper",
+        "best_pair_desc",
+        "reproducibility_delta"
+      ]
+    },
+    "canonical_summary": {
+      "type": "object",
+      "required": [
+        "benchmark",
+        "role",
+        "primary_claim",
+        "command",
+        "config_path",
+        "source_variants",
+        "n_total",
+        "metrics",
+        "artifacts",
+        "non_claims"
+      ],
+      "properties": {
+        "benchmark": {
+          "const": "TP53"
+        },
+        "n_total": {
+          "type": "integer"
+        },
+        "metrics": {
+          "type": "object"
+        },
+        "artifacts": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "non_claims": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "canonical_manifest": {
+      "type": "object",
+      "required": [
+        "benchmark",
+        "role",
+        "source_variants",
+        "primary_claim",
+        "benchmark_manifest",
+        "config_path",
+        "artifacts"
+      ]
+    },
+    "canonical_verification": {
+      "type": "object",
+      "required": [
+        "status",
+        "canonical",
+        "transfer"
+      ]
+    },
+    "canonical_output_files": {
+      "type": "array",
+      "const": [
+        "run_metadata.json",
+        "inputs_manifest.json",
+        "tp53_scores.tsv",
+        "tp53_metrics.json",
+        "summary.json",
+        "roc_tp53.png",
+        "manifest.json",
+        "verification.json"
+      ]
+    },
+    "transfer_summary": {
+      "type": "object",
+      "required": [
+        "benchmark",
+        "role",
+        "secondary_claim",
+        "n_total",
+        "metrics",
+        "artifacts",
+        "scope_note",
+        "command",
+        "config_path",
+        "source_variants"
+      ],
+      "properties": {
+        "benchmark": {
+          "const": "BRCA1_transfer100"
+        },
+        "n_total": {
+          "type": "integer"
+        },
+        "metrics": {
+          "type": "object"
+        },
+        "artifacts": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "scope_note": {
+          "type": "string"
+        }
+      }
+    },
+    "transfer_manifest": {
+      "type": "object",
+      "required": [
+        "benchmark",
+        "role",
+        "source_variants",
+        "source_provenance",
+        "selection_rule",
+        "expected_variant_count",
+        "secondary_claim",
+        "artifacts"
+      ]
+    }
+  }
+}

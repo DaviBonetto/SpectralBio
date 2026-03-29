@@ -9,8 +9,11 @@ dist/
 
 # Virtual environments
 .venv/
+.venvtest/
 venv/
 env/
+.uv-cache/
+.uv-bootstrap/
 
 # Jupyter
 .ipynb_checkpoints/
@@ -26,10 +29,18 @@ env/
 Thumbs.db
 
 # Secrets
-submit/api_key.txt
 api_key.txt
 .env
 *.env
+
+# Local agent and temp workspaces
+.codex/
+.codex_vendor/
+.pytest_cache/
+.pytest_tmp/
+.pytest-local-tmp/
+temporario/
+notebooks/
 
 # Large compressed raw files
 *.txt.gz
@@ -37,3 +48,13 @@ api_key.txt
 # AI orchestration artifacts
 plano/
 ultra_plan.md
+
+# Local inventory dumps
+directory_structure.md
+ESTRUTURA_DIRETORIO.md
+arquivotodos.txt
+
+# Paper build byproducts
+paper/*.aux
+paper/*.log
+paper/*.out

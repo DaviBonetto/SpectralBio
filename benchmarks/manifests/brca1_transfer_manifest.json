@@ -1,0 +1,33 @@
+{
+  "name": "brca1_transfer100_v1",
+  "role": "secondary_bounded_transfer",
+  "secondary_claim": "Bounded transfer on a fixed BRCA1 subset (N=100) without retraining.",
+  "file": "benchmarks/brca1/brca1_transfer100_v1.json",
+  "source_file": "benchmarks/brca1/brca1_full_filtered_v1.json",
+  "sequence_file": "benchmarks/sequences/brca1.fasta",
+  "count": 100,
+  "label_field": "label",
+  "label_encoding": {
+    "0": "benign",
+    "1": "pathogenic"
+  },
+  "labels": {
+    "pathogenic": 29,
+    "benign": 71
+  },
+  "source_dataset": {
+    "role": "provenance_only",
+    "count": 512,
+    "labels": {
+      "pathogenic": 165,
+      "benign": 347
+    },
+    "selection_rule": "fixed first 100 records from brca1_full_filtered_v1.json in source order"
+  },
+  "checksums_ref": "benchmarks/manifests/checksums.json",
+  "official_metrics": {
+    "feature": "ll_proper",
+    "auc": 0.9174,
+    "no_retraining": true
+  }
+}
