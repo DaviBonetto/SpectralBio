@@ -75,9 +75,21 @@ Do **not** promote legacy wording, wrapper convenience, or stale surfaces above 
 
 ## When to Use This Skill
 
-- Use it to reproduce the public TP53 canonical benchmark on a clean machine from the repository root
-- Use the BRCA1 commands only when you need the bounded secondary transfer check without retraining
-- Do not use this skill as a default path for new targets; anything beyond TP53 plus the fixed BRCA1 subset remains adaptation-recipe work
+- Case 1 - Canonical
+  - Goal: reproduce the `TP53 canonical executable benchmark`
+  - Path: use the canonical path from the repository root
+  - Result: frozen-artifact reproducibility path under `outputs/canonical/`
+  - Priority: fastest and default route
+- Case 2 - Optional bounded secondary validation
+  - Goal: check `BRCA1_transfer100` as bounded secondary evidence
+  - Order: use this only after canonical TP53 understanding or execution
+  - Path: run the optional transfer / verify / preflight path only when that bounded secondary check is required
+  - Constraint: secondary evidence only, without retraining
+- Case 3 - Out of scope
+  - Stop if the task is adapting to a new target
+  - Stop if the task requires live heavy recomputation from scratch
+  - Stop if the task asks for broad generalization claims beyond the current reproducibility contract
+  - Next step: use `## Adaptation Architecture`; this repository keeps that work under `adaptation recipe only`
 
 ## Step 0 - Clone The Public Repository
 
@@ -123,7 +135,7 @@ This installs the locked dependency set from `uv.lock` at the repository root. T
 uv run spectralbio canonical
 ```
 
-This is the canonical public execution path. It validates the frozen TP53 config, loads `benchmarks/tp53/tp53_canonical_v1.json` plus the bundled score reference `benchmarks/tp53/tp53_scores_v1.json`, computes the contract metrics from those frozen score rows, copies the frozen TP53 ROC figure, and writes the canonical artifact bundle to `outputs/canonical/`, including the canonical-side `verification.json` report.
+This is the canonical public execution path. It validates the frozen TP53 config, loads `benchmarks/tp53/tp53_canonical_v1.json` plus the bundled score reference `benchmarks/tp53/tp53_scores_v1.json`, computes the contract metrics from those frozen score rows, copies the frozen TP53 ROC figure, and writes the canonical artifact bundle plus the canonical-side `verification.json` report to `outputs/canonical/`. Optional full validation remains separate below.
 
 This is a deliberate frozen-artifact materialization path for reproducibility, verification, and judge-safe execution. The canonical public path does **not** depend on a live HuggingFace/ESM2 download.
 
@@ -265,23 +277,23 @@ uv run python scripts/preflight.py
 
 Do **not** promote demoted surfaces above the `uv` path in public execution.
 
-## Adaptation Recipe (Generalizability)
+## Adaptation Architecture
 
-Anything beyond the canonical TP53 path and the fixed BRCA1 subset is **not** covered by the validated public CLI surface of this skill.
+### Frozen Invariants
 
-The current public CLI surface is limited to:
+The validated default path remains the `TP53 canonical executable benchmark`. Its strict artifact-contract style, strict output-schema discipline, strict verification tolerance (`0.0001`), and primary score formula (`0.55*frob_dist + 0.45*ll_proper`) are part of the frozen TP53 reproducibility contract. Adaptation beyond TP53 is outside that frozen contract and is not validated by the current canonical outputs.
 
-- `spectralbio canonical`
-- `spectralbio transfer`
-- `spectralbio verify`
+### Adaptation Interface
 
-Treat any extension beyond TP53 plus the fixed BRCA1 subset as an adaptation recipe only:
+A new target such as `{GENE}` would require its own bounded benchmark inputs and provenance: a target-specific variant dataset, a target-specific sequence reference, a target-specific score reference, a target-specific config and manifest trail, and target-specific expected metrics backed by independent validation evidence. None of these are created automatically by the current TP53-plus-BRCA1 repository contract.
 
-- it requires separate implementation and separate validation
-- it should not reuse canonical TP53 metrics as evidence
-- it should not be presented as part of the current canonical public contract
+### Adaptation Recipe
 
-Treat any result outside the canonical TP53 path as an adaptation recipe result only.
+For a new target, first curate a target-specific benchmark with explicit labels and provenance. Then generate target-specific score references with a separate validated workflow, define the target-specific config and expected metrics, and add independent validation evidence for that target. Only after that target has its own validated contract should this repository be used to materialize outputs for it, and any resulting evidence must be reported separately from the TP53 canonical claim set.
+
+### Limitation Statement
+
+This repository canonically validates TP53. `BRCA1_transfer100` remains bounded secondary evidence only. Any new target requires separate implementation and separate validation, and no broad generalization claim is made.
 
 ## Failure Modes
 
