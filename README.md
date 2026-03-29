@@ -1,4 +1,9 @@
-# SpectralBio
+<p align="center">
+  <img src="assets/branding/spectralbio_banner.jpeg" alt="SpectralBio banner" />
+</p>
+
+<p align="center"><strong>Claw4S Conference 2026 Submission Artifact</strong></p>
+<p align="center"><sub>Banner visual direction inspired by OpenAI's Parameter Golf presentation language.</sub></p>
 
 Research reproducibility artifact for the **Claw4S Conference 2026**, centered on a **TP53 canonical executable benchmark** with a **bounded secondary BRCA1 transfer evaluation**.
 
