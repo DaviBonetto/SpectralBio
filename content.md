@@ -8,7 +8,7 @@ Within that landscape, most widely used zero-shot scoring intuitions remain sequ
 
 SpectralBio asks whether that intuition is incomplete. A missense mutation can be only moderately surprising at the token level while still inducing a substantial reorganization of the internal representation field around the mutated site. If that is true, then the model's hidden-state geometry becomes a candidate signal source in its own right. The specific hypothesis in this submission is therefore narrow and testable: **local full-matrix covariance perturbations of ESM2 hidden states may contribute useful ranking signal beyond masked-language-model likelihood for zero-shot missense pathogenicity scoring**.
 
-This submission operationalizes that hypothesis as a **TP53-first scientific benchmark with an executable public contract**. The primary claim is the `TP53 canonical executable benchmark`, where the released canonical pair `0.55*frob_dist + 0.45*ll_proper` has official AUC `0.7498` and released value `0.749751552795031`, matching within the declared tolerance `0.0001`. The only bounded secondary evidence is BRCA1 on a fixed first-100 subset evaluated without retraining, where `ll_proper` reaches AUC `0.9174`. The release is intentionally narrower than the broader method ambition: TP53 is the validated benchmark surface, BRCA1 is bounded secondary evidence, and anything beyond those surfaces remains an adaptation recipe rather than a validated result.
+This submission operationalizes that hypothesis as a **TP53-first scientific benchmark with an executable public contract**. The primary claim is the `TP53 canonical executable benchmark`, where the released canonical pair `0.55*frob_dist + 0.45*ll_proper` has official AUC `0.7498` and released value `0.749751552795031`, matching within the declared tolerance `0.0001`. The only bounded secondary evidence is BRCA1 on a fixed first-100 subset evaluated without retraining, where `ll_proper` reaches AUC `0.9174`. The release is intentionally narrower than the broader method ambition: TP53 is the validated benchmark surface, BRCA1 is bounded secondary evidence, and anything beyond those surfaces remains an adaptation recipe rather than a validated result. Within that bounded scope, the contribution is not only a score formula but a rare combination of covariance-centered analysis, a frozen verification contract, and `reproducibility_delta = 0.0` on the released canonical artifact.
 
 ### 1.1 Research Question and Scope
 
@@ -87,6 +87,8 @@ These three statistics represent three different hypotheses about what mutation-
 - `frob_dist` preserves the **entire covariance perturbation** at matrix level.
 - `TraceRatio` measures **global variance-scale change**.
 - `SPS-log` compresses the covariance object to **eigenvalue-only spectral change**.
+
+Intuitively, `frob_dist` is sensitive both to diagonal variance shifts and to off-diagonal correlation reorganization, so it preserves changes in local hidden-state geometry that eigenvalue-only summaries can wash out.
 
 The technical role of `frob_dist` is especially important. If we define
 
@@ -208,7 +210,7 @@ BRCA1 remains deliberately constrained. It is a fixed-subset, no-retraining seco
 
 The public canonical runtime is deliberately not framed as a first-run heavy recomputation workflow. Instead, it validates configuration, loads bundled TP53 inputs and bundled score references, computes contract metrics from those frozen references, copies the canonical ROC figure, materializes the output bundle, and verifies it. Because this path materializes the frozen benchmark object rather than recomputing the research pipeline, GPU is not required.
 
-That separation is intentional: the paper carries the scientific claim and benchmark evidence, while the repository exposes the stable replay surface through which that claim can be inspected and verified. Supplementary Colab/T4 runs then provide feasibility context for research-path reruns rather than defining the canonical contract: the OpenClaw Phase 2 notebook finished in `182.8` seconds total, individual TP53 reruns took roughly `14.4-15.8` seconds, and an instrumented TP53 runtime probe measured `6.38` seconds for a likelihood-only proxy plus `8.61` seconds of covariance overhead (`14.99` seconds total). These timings remain informative supplementary context, not part of the canonical CPU-only contract.
+That separation is intentional: the paper carries the scientific claim and benchmark evidence, while the repository exposes the stable replay surface through which that claim can be inspected and verified. These runtime surfaces should not be conflated: the canonical public path is a CPU-safe frozen-artifact materialization contract, whereas the reported `14.47-14.99 s` timings refer to supplementary research-path reruns on a separate Colab/T4 environment. The OpenClaw Phase 2 notebook then provides broader feasibility context for those supplementary reruns: it finished in `182.8` seconds total, individual TP53 reruns took roughly `14.4-15.8` seconds, and an instrumented TP53 runtime probe measured `6.38` seconds for a likelihood-only proxy plus `8.61` seconds of covariance overhead (`14.99` seconds total). These timings remain informative supplementary context, not part of the canonical CPU-only contract.
 
 ### 5.4 Exact Artifact Outputs and Public Surfaces
 
@@ -351,7 +353,7 @@ The exact-split ESM-1v comparison can also be stratified by substitution severit
 | Radical (`>150`) | `27` | `17 / 10` | `0.7353` | `0.8588` |
 | Cysteine-involved | `26` | `19 / 7` | `0.5865` | `0.8647` |
 
-ESM-1v remains stronger in every row, so this analysis does not change the main external comparison. Its value is narrower: it localizes where SpectralBio is relatively less weak. The covariance-based score is strongest in the `101-150` moderately radical bin and comparatively closer to ESM-1v in the `>150` radical bin than in the conservative bins, while cysteine-involved substitutions remain difficult. Because this stratification is post hoc and some bins are small, it should be read as descriptive error localization rather than as a new benchmark claim.
+ESM-1v remains stronger in every row, so this analysis does not change the main external comparison. Its value is narrower: it localizes where SpectralBio is relatively less weak. The covariance-based score is strongest in the `101-150` moderately radical bin and comparatively closer to ESM-1v in the `>150` radical bin than in the conservative bins, while cysteine-involved substitutions remain difficult. Because this stratification is post hoc and some bins are small, especially the radical and cysteine-involved rows, it has limited statistical power and should be read as descriptive error localization rather than as a new benchmark claim.
 
 ### 6.8 UMAP View of the TP53 Covariance-Likelihood Geometry
 
@@ -408,7 +410,7 @@ SpectralBio contributes a bounded scientific claim: **mutation-induced full-matr
 
 That same restraint governs the surrounding evidence. The released triple is directionally weaker than the canonical pair under the exact released search space, but not formally separated at the same threshold; BRCA1 remains bounded secondary evidence on one fixed no-retraining slice; and the exact-split ESM-1v comparison shows clearly that SpectralBio is not the strongest raw-AUC predictor on the measured TP53 surface. Those facts narrow the contribution rather than diminishing it.
 
-What remains is still meaningful. On a tightly specified executable benchmark, covariance-aware ESM2 summaries recover signal that eigenvalue-only compression and likelihood-only scoring leave behind. The Grantham stratification and UMAP view remain descriptive, but they are directionally consistent with that interpretation. More broadly, the submission argues that representational claims become more useful when tied to a challengeable public artifact surface rather than left as prose alone.
+What remains is still meaningful. On a tightly specified executable benchmark, covariance-aware ESM2 summaries recover signal that eigenvalue-only compression and likelihood-only scoring leave behind. The released TP53 pair is not just reproducible; it is attached to structured verification fields, a frozen public replay contract, and `reproducibility_delta = 0.0`, making the benchmark surface unusually inspectable and machine-auditable. The Grantham stratification and UMAP view remain descriptive, but they are directionally consistent with that interpretation. More broadly, the submission argues that representational claims become more useful when tied to a challengeable public artifact surface rather than left as prose alone.
 
 ## 9. Limitations and Non-Claims
 
@@ -434,7 +436,7 @@ Until those pieces exist for a new target, repository support for additional pro
 
 ## 11. Conclusion
 
-SpectralBio shows that, on the TP53 canonical executable benchmark, full-matrix covariance geometry in ESM2 hidden states contributes measurable zero-shot pathogenicity-ranking signal beyond likelihood-only and eigenvalue-only summaries. It does **not** show external state-of-the-art pathogenicity prediction: the exact-split ESM-1v comparison is stronger on raw TP53 AUC, and BRCA1 remains bounded secondary evidence on one fixed no-retraining slice. SpectralBio therefore matters less as a raw-AUC leader than as a bounded demonstration that covariance-aware hidden-state geometry contains empirically recoverable signal and can be exposed through a reproducible benchmark artifact with a challengeable public contract.
+SpectralBio shows that, on the TP53 canonical executable benchmark, full-matrix covariance geometry in ESM2 hidden states contributes measurable zero-shot pathogenicity-ranking signal beyond likelihood-only and eigenvalue-only summaries. It does **not** show external state-of-the-art pathogenicity prediction: the exact-split ESM-1v comparison is stronger on raw TP53 AUC, and BRCA1 remains bounded secondary evidence on one fixed no-retraining slice. SpectralBio therefore matters less as a raw-AUC leader than as a bounded demonstration that covariance-aware hidden-state geometry contains empirically recoverable signal and can be exposed through a reproducible benchmark artifact with a challengeable public contract. Within that bounded TP53 setting, the finding that full-matrix covariance geometry preserves non-redundant signal beyond likelihood-only and eigenvalue-only reductions is robust and independently interesting as a reproducible covariance-aware ESM2 benchmark methodology.
 
 ## References
 
@@ -464,9 +466,10 @@ SpectralBio shows that, on the TP53 canonical executable benchmark, full-matrix 
 | Surface | Role |
 | --- | --- |
 | [Repository](https://github.com/DaviBonetto/SpectralBio) | Source repository and primary public code surface |
-| [Release bundle `v1.1.0`](https://github.com/DaviBonetto/SpectralBio/releases/tag/v1.1.0) | Stable public release surface for the submission package |
-| [Paper PDF](https://github.com/DaviBonetto/SpectralBio/blob/main/paper/spectralbio.pdf) | Manuscript-level scientific framing |
-| [SKILL](https://github.com/DaviBonetto/SpectralBio/blob/main/SKILL.md) | Cold-start agent reproduction contract |
+| [Release bundle `v1.1.0`](https://github.com/DaviBonetto/SpectralBio/releases/tag/v1.1.0) | Frozen packaged release surface for the submission artifact bundle |
+| [Paper PDF](https://github.com/DaviBonetto/SpectralBio/blob/main/paper/spectralbio.pdf) | Current public manuscript mirror on `main` |
+| [SKILL](https://github.com/DaviBonetto/SpectralBio/blob/main/SKILL.md) | Current public cold-start reproduction contract on `main` |
+| [Figure 2 asset](https://raw.githubusercontent.com/DaviBonetto/SpectralBio/main/paper/assets/tp53_umap_covariance_likelihood.png) | Public raw asset used by the manuscript embed |
 | [Demo Space](https://huggingface.co/spaces/DaviBonetto/spectralbio-demo) | Interactive public demonstration surface |
 | [Dataset](https://huggingface.co/datasets/DaviBonetto/spectralbio-clinvar) | Public data surface for the submission |
 | [Canonical `summary.json`](https://github.com/DaviBonetto/SpectralBio/blob/main/outputs/canonical/summary.json) | Machine-readable metric surface |
