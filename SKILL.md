@@ -36,7 +36,7 @@ Use this skill to reproduce the public SpectralBio repository through its single
 ## Runtime Expectations
 
 - Canonical public path: `uv sync --frozen` then `uv run spectralbio canonical`; this is a frozen-artifact reproducibility path for TP53, not a live model-recomputation workflow
-- Typical canonical runtime after `uv sync --frozen`: fast CPU-safe frozen-artifact materialization in the current repo state; supplementary research-path rerun timings are documented separately in the paper and are not the canonical contract runtime surface
+- Typical canonical runtime after `uv sync --frozen`: fast CPU-safe frozen-artifact materialization in the current repo state; supplementary research-path rerun timings (14-15s) are documented separately in the paper and are not part of the canonical verification contract runtime surface
 - It validates the frozen TP53 config, loads bundled TP53 variants and score references, computes contract metrics from those frozen references, and writes the canonical artifact bundle plus the canonical-side `verification.json` report
 - It does **not** perform live HuggingFace download, live ESM2 embedding recomputation, or training
 
