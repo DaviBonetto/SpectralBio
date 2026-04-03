@@ -41,6 +41,8 @@ api_key.txt
 .pytest-local-tmp/
 temporario/
 notebooks/
+!notebooks/
+!notebooks/reject_recovery_accept_upgrade.ipynb
 
 # Large compressed raw files
 *.txt.gz
