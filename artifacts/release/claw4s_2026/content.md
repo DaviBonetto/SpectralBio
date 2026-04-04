@@ -442,7 +442,7 @@ The BRCA2 augmentation and canonicalization analyses document the manuscript's f
 | Surface | Role |
 | --- | --- |
 | [Repository](https://github.com/DaviBonetto/SpectralBio) | Source repository and primary public code surface |
-| [Release bundle `v1.2.0`](https://github.com/DaviBonetto/SpectralBio/releases/tag/v1.2.0) | Frozen packaged release surface for the artifact bundle |
+| [Release bundle `v1.2.0`](https://github.com/DaviBonetto/SpectralBio/tree/v1.2.0/artifacts/release/claw4s_2026) | Frozen packaged release surface for the artifact bundle |
 | [Paper PDF](https://github.com/DaviBonetto/SpectralBio/blob/v1.2.0/paper/spectralbio.pdf) | Release-pinned public manuscript mirror |
 | [BRCA2 ESM-1v augmentation notebook](https://github.com/DaviBonetto/SpectralBio/blob/v1.2.0/notebooks/final_accept_part3_esm1v_augmentation_A100.ipynb) | Flagship BRCA2 baseline-versus-augmentation-versus-permutation analysis |
 | [BRCA2 canonicalization notebook](https://github.com/DaviBonetto/SpectralBio/blob/v1.2.0/notebooks/final_accept_part4_brca2_canonicalization_A100.ipynb) | BRCA2 benchmark-candidate qualification and next-canonicalization evidence |
