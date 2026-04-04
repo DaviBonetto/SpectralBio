@@ -124,16 +124,30 @@ def export_hf_space(destination_root: Path | None = None) -> dict[str, Any]:
 
 
 def export_hf_dataset(destination_root: Path | None = None) -> dict[str, Any]:
-    source_dir = PROJECT_ROOT / "publish" / "hf_dataset"
     destination_dir = (destination_root or RELEASE_DIR) / "hf_dataset"
     _reset_dir(destination_dir)
     copied_files: list[str] = []
-    for file_name in ("README.md", "dataset_manifest.json"):
-        source = source_dir / file_name
-        destination = destination_dir / file_name
+
+    file_copies = (
+        ("publish/hf_dataset/README.md", "README.md"),
+        ("publish/hf_dataset/dataset_manifest.json", "dataset_manifest.json"),
+        ("benchmarks/tp53/tp53_canonical_v1.json", "benchmarks/tp53/tp53_canonical_v1.json"),
+        ("benchmarks/tp53/tp53_scores_v1.json", "benchmarks/tp53/tp53_scores_v1.json"),
+        ("benchmarks/brca1/brca1_transfer100_v1.json", "benchmarks/brca1/brca1_transfer100_v1.json"),
+        ("benchmarks/brca1/brca1_full_filtered_v1.json", "benchmarks/brca1/brca1_full_filtered_v1.json"),
+        ("benchmarks/sequences/tp53.fasta", "benchmarks/sequences/tp53.fasta"),
+        ("benchmarks/sequences/brca1.fasta", "benchmarks/sequences/brca1.fasta"),
+        ("benchmarks/manifests/tp53_canonical_manifest.json", "benchmarks/manifests/tp53_canonical_manifest.json"),
+        ("benchmarks/manifests/brca1_transfer_manifest.json", "benchmarks/manifests/brca1_transfer_manifest.json"),
+        ("benchmarks/manifests/source_snapshot.json", "benchmarks/manifests/source_snapshot.json"),
+        ("benchmarks/manifests/checksums.json", "benchmarks/manifests/checksums.json"),
+    )
+    for source_relative, destination_relative in file_copies:
+        source = PROJECT_ROOT / source_relative
+        destination = destination_dir / destination_relative
         destination.parent.mkdir(parents=True, exist_ok=True)
         destination.write_text(source.read_text(encoding="utf-8"), encoding="utf-8")
-        copied_files.append(file_name)
+        copied_files.append(destination_relative)
     return {
         "status": "PASS",
         "artifact": "hf_dataset",
