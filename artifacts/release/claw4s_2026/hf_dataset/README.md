@@ -1,3 +1,52 @@
+---
+license: mit
+pretty_name: SpectralBio Canonical Benchmarks
+size_categories:
+  - n<1K
+task_categories:
+  - text-classification
+task_ids:
+  - multi-class-classification
+annotations_creators:
+  - expert-generated
+language_creators:
+  - expert-generated
+language:
+  - en
+multilinguality:
+  - monolingual
+source_datasets:
+  - original
+tags:
+  - biology
+  - bioinformatics
+  - proteins
+  - clinvar
+  - pathogenicity
+  - variant-effect-prediction
+  - executable-science
+  - claw4s
+configs:
+  - config_name: tp53_canonical
+    data_files:
+      - split: train
+        path: benchmarks/tp53/tp53_canonical_v1.json
+  - config_name: brca1_transfer100
+    data_files:
+      - split: train
+        path: benchmarks/brca1/brca1_transfer100_v1.json
+  - config_name: brca1_full_filtered
+    data_files:
+      - split: train
+        path: benchmarks/brca1/brca1_full_filtered_v1.json
+  - config_name: canonical_plus_transfer
+    data_files:
+      - split: train
+        path:
+          - benchmarks/tp53/tp53_canonical_v1.json
+          - benchmarks/brca1/brca1_transfer100_v1.json
+---
+
 # SpectralBio Dataset Card
 
 ## Public Hierarchy
@@ -22,6 +71,8 @@ This dataset card therefore describes both the released executable payloads and 
 - Provenance-only data: `BRCA1_full_filtered_v1.json` is preserved for transparency and transfer-subset derivation only
 
 TP53 remains the only canonical scored benchmark. `BRCA1_transfer100` remains bounded auxiliary executable evidence without retraining.
+
+The Hugging Face dataset payload mirrors the frozen benchmark JSONs directly, so the Hub viewer and downloadable files point at the same canonical records used by the release bundle.
 
 ## Frozen Files
 

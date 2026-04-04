@@ -33,7 +33,17 @@
   ],
   "hf_dataset_publish": [
     "README.md",
-    "dataset_manifest.json"
+    "dataset_manifest.json",
+    "benchmarks/tp53/tp53_canonical_v1.json",
+    "benchmarks/tp53/tp53_scores_v1.json",
+    "benchmarks/brca1/brca1_transfer100_v1.json",
+    "benchmarks/brca1/brca1_full_filtered_v1.json",
+    "benchmarks/sequences/tp53.fasta",
+    "benchmarks/sequences/brca1.fasta",
+    "benchmarks/manifests/tp53_canonical_manifest.json",
+    "benchmarks/manifests/brca1_transfer_manifest.json",
+    "benchmarks/manifests/source_snapshot.json",
+    "benchmarks/manifests/checksums.json"
   ],
   "dataset_publish": [
     "publish/hf_dataset/README.md",

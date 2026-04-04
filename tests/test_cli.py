@@ -88,7 +88,36 @@ def test_export_commands_stage_expected_files() -> None:
     ):
         assert (destination / relative_path).exists()
     assert hf_dataset["status"] == "PASS"
-    assert hf_dataset["files"] == ["README.md", "dataset_manifest.json"]
+    assert hf_dataset["files"] == [
+        "README.md",
+        "dataset_manifest.json",
+        "benchmarks/tp53/tp53_canonical_v1.json",
+        "benchmarks/tp53/tp53_scores_v1.json",
+        "benchmarks/brca1/brca1_transfer100_v1.json",
+        "benchmarks/brca1/brca1_full_filtered_v1.json",
+        "benchmarks/sequences/tp53.fasta",
+        "benchmarks/sequences/brca1.fasta",
+        "benchmarks/manifests/tp53_canonical_manifest.json",
+        "benchmarks/manifests/brca1_transfer_manifest.json",
+        "benchmarks/manifests/source_snapshot.json",
+        "benchmarks/manifests/checksums.json",
+    ]
+    dataset_destination = Path(hf_dataset["destination"])
+    for relative_path in (
+        "README.md",
+        "dataset_manifest.json",
+        "benchmarks/tp53/tp53_canonical_v1.json",
+        "benchmarks/tp53/tp53_scores_v1.json",
+        "benchmarks/brca1/brca1_transfer100_v1.json",
+        "benchmarks/brca1/brca1_full_filtered_v1.json",
+        "benchmarks/sequences/tp53.fasta",
+        "benchmarks/sequences/brca1.fasta",
+        "benchmarks/manifests/tp53_canonical_manifest.json",
+        "benchmarks/manifests/brca1_transfer_manifest.json",
+        "benchmarks/manifests/source_snapshot.json",
+        "benchmarks/manifests/checksums.json",
+    ):
+        assert (dataset_destination / relative_path).exists()
 
 
 def test_release_bundle_copies_support_files_and_verified_outputs(tmp_path: Path) -> None:
@@ -134,6 +163,9 @@ def test_release_bundle_copies_support_files_and_verified_outputs(tmp_path: Path
         "hf_space/publish/hf_space/app.py",
         "hf_space/src/spectralbio/cli.py",
         "hf_dataset/README.md",
+        "hf_dataset/benchmarks/tp53/tp53_canonical_v1.json",
+        "hf_dataset/benchmarks/brca1/brca1_transfer100_v1.json",
+        "hf_dataset/benchmarks/manifests/checksums.json",
         "outputs/canonical/summary.json",
         "outputs/transfer/summary.json",
     ):

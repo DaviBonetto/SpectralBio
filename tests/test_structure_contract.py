@@ -62,6 +62,19 @@ def test_release_dataset_mirror_matches_publish_surface() -> None:
         Path("artifacts/release/claw4s_2026/hf_dataset/dataset_manifest.json").read_text(encoding="utf-8")
         == Path("publish/hf_dataset/dataset_manifest.json").read_text(encoding="utf-8")
     )
+    for relative_path in (
+        "artifacts/release/claw4s_2026/hf_dataset/benchmarks/tp53/tp53_canonical_v1.json",
+        "artifacts/release/claw4s_2026/hf_dataset/benchmarks/tp53/tp53_scores_v1.json",
+        "artifacts/release/claw4s_2026/hf_dataset/benchmarks/brca1/brca1_transfer100_v1.json",
+        "artifacts/release/claw4s_2026/hf_dataset/benchmarks/brca1/brca1_full_filtered_v1.json",
+        "artifacts/release/claw4s_2026/hf_dataset/benchmarks/sequences/tp53.fasta",
+        "artifacts/release/claw4s_2026/hf_dataset/benchmarks/sequences/brca1.fasta",
+        "artifacts/release/claw4s_2026/hf_dataset/benchmarks/manifests/tp53_canonical_manifest.json",
+        "artifacts/release/claw4s_2026/hf_dataset/benchmarks/manifests/brca1_transfer_manifest.json",
+        "artifacts/release/claw4s_2026/hf_dataset/benchmarks/manifests/source_snapshot.json",
+        "artifacts/release/claw4s_2026/hf_dataset/benchmarks/manifests/checksums.json",
+    ):
+        assert Path(relative_path).exists()
 
 
 def test_release_bundle_support_files_are_staged() -> None:

@@ -1,6 +1,6 @@
 % ============================================================================
-% SpectralBio — Claw4S Conference 2026 (Stanford–Princeton)
-% 4-page paper — Compile: pdflatex spectralbio.tex (run twice for refs)
+% SpectralBio -- Claw4S Conference 2026 (Stanford--Princeton)
+% 4-page paper -- Compile: pdflatex spectralbio.tex (run twice for refs)
 % ============================================================================
 \documentclass[10pt,twocolumn,letterpaper]{article}
 
@@ -29,10 +29,10 @@
   linkcolor={blue!70!black},
   citecolor={green!50!black},
   urlcolor={blue!60!black},
-  pdftitle={SpectralBio: Full-Matrix Covariance Analysis for Zero-Shot Variant Pathogenicity on the TP53 Canonical Benchmark},
+  pdftitle={SpectralBio: Covariance-Aware Hidden-State Geometry Adds Recoverable Zero-Shot Pathogenicity Signal Beyond Likelihood},
   pdfauthor={Davi Bonetto; Claw4S AI Co-author},
   pdfsubject={Claw4S Conference 2026 four-page paper},
-  pdfkeywords={SpectralBio, TP53, protein language model, covariance, zero-shot variant pathogenicity, ESM2, reproducibility}
+  pdfkeywords={SpectralBio, BRCA2, TP53, protein language model, covariance, zero-shot variant pathogenicity, ESM2, ESM-1v, reproducibility}
 ]{hyperref}
 
 % ---------- More helpers -----------------------------------------------------
@@ -87,9 +87,9 @@
 %
 % --- Title ---
 \begin{center}
-{\LARGE\bfseries \methodname{}: Full-Matrix Covariance Analysis\\[3pt]
-for Zero-Shot Variant Pathogenicity on the\\[3pt]
-TP53 Canonical Benchmark\par}
+{\LARGE\bfseries \methodname{}: Covariance-Aware Hidden-State Geometry\\[3pt]
+Adds Recoverable Zero-Shot Pathogenicity Signal\\[3pt]
+Beyond Likelihood\par}
 \vspace{6pt}
 %
 % --- Authors ---
@@ -113,29 +113,26 @@ Davi Bonetto\textsuperscript{2}%
 \begin{center}
 \parbox{0.93\textwidth}{\small
 \textbf{Abstract.}\quad
-Predicting whether missense mutations are pathogenic or benign from sequence alone
-is a central challenge in computational biology.
-State-of-the-art zero-shot methods leverage protein language models (PLMs) via
-log-likelihood ratios, but these capture only sequence probability and ignore
-the rich geometry of internal representations.
-We present \methodname{}, a framework that analyzes the \emph{spectral and geometric}
-structure of ESM2-150M hidden-state covariance matrices to derive pathogenicity
-signals complementary to likelihood scores.
-For each variant we compute local covariance matrices ($\pm$40-residue window)
-and extract three features: Frobenius covariance distance (\textit{FrobDist}),
-trace ratio (\textit{TraceRatio}), and log-eigenvalue shift (\textit{SPS-log}).
-On ClinVar TP53 ($N$=255; 115 pathogenic, 140 benign),
-\textbf{FrobDist\,+\,LL\,Proper} achieves \textbf{AUC\,=\,0.7498}
-on the TP53 canonical executable benchmark.
-On the secondary bounded transfer evaluation without retraining, proper
-masked-LM LL reaches \textbf{AUC\,=\,0.9174} on a fixed BRCA1 subset
-($N$=100), providing secondary bounded transfer evidence only.
-A supplementary exact-split ESM-1v ensemble reaches \textbf{AUC\,=\,0.9465} on TP53,
-so the contribution is best read as a covariance-centered representational
-benchmark artifact rather than a raw-AUC state-of-the-art claim.
-Matrix-level features consistently outperform eigenvalue-only SPS on TP53,
-and the TP53 canonical benchmark reproduces with
-\textbf{$\Delta_{\text{rep}}$=0.0}.%
+Zero-shot missense scoring with protein language models is usually framed as a
+sequence-likelihood problem. \methodname{} tests a narrower alternative:
+mutation-induced perturbations in the local full-matrix covariance geometry of
+ESM2 hidden states may carry pathogenicity signal that likelihood-only and
+eigenvalue-only summaries do not exhaust. The manuscript centers a stronger-baseline
+BRCA2 audit, while the public executable replay center remains the TP53 canonical
+benchmark. On BRCA2, adding covariance-aware geometry to a five-model ESM-1v
+ensemble improves AUC from \textbf{0.6324} to \textbf{0.6890}, for paired gain
+\textbf{0.0566}, paired 95\% bootstrap CI \textbf{[0.0131, 0.1063]}, and
+empirical permutation \textbf{$p=0.0010$}. On the frozen TP53 canonical benchmark,
+the released pair \textbf{$0.55\cdot\text{FrobDist}+0.45\cdot\text{LL Proper}$}
+reaches \textbf{AUC=0.7498}, and repeated nested cross-validation places the fixed
+released weight on a stable out-of-fold plateau (\textbf{0.7510} vs.\ \textbf{0.7485}
+for re-tuned alpha). Across a support-ranked top-25 feasible panel derived from a
+15,752-gene ClinVar scan, 10 genes show positive pair-versus-likelihood lower bounds,
+2 are clearly negative, and the remainder are ambiguous. \methodname{} is therefore a
+bounded representational result and reproducibility artifact: covariance-aware
+hidden-state geometry can improve a stronger baseline in a benchmark-qualified gene,
+survives executable audit on TP53, and behaves as a structured rather than universal
+phenomenon.%
 }
 \end{center}
 \vspace{4pt}%
@@ -145,102 +142,74 @@ and the TP53 canonical benchmark reproduces with
 \section{Introduction}
 % ============================================================================
 
-Identifying disease-causing protein variants from sequence data alone remains
-one of the most pressing challenges in computational biology.
-As whole-genome sequencing becomes routine, the number of variants of uncertain
-significance (VUS) grows far faster than experimental capacity to characterize
-them~\cite{landrum2018clinvar}.
-Computational predictors that can reliably rank variants without labeled
-training data are therefore useful research tools for zero-shot variant
-effect prediction.
+Zero-shot missense prediction is usually reduced to sequence likelihood:
+a mutation is scored by how surprising the mutant residue appears under a protein
+language model (PLM)~\cite{meier2021language}. This framing has been highly useful,
+but it leaves open a narrower mechanistic question. A missense change may be only
+moderately surprising at the token level while still reorganizing the local geometry
+of hidden states. If that geometry carries benchmark-relevant pathogenicity signal,
+then scalar likelihood alone is an incomplete readout.
 
-Protein language models (PLMs), particularly ESM-2~\cite{lin2023evolutionary},
-have emerged as powerful zero-shot predictors.
-By computing log-likelihood ratios ($\Delta$LLR) between wild-type and mutant
-sequences~\cite{meier2021language}, PLMs achieve competitive accuracy without
-supervised fine-tuning.
-However, standard LLR implementations capture only the probability of each
-sequence under the model's masked-language-modeling objective, discarding
-information encoded in the \emph{geometry of internal representations}.
+\methodname{} studies this question through local covariance analysis of ESM2 hidden
+states. For each mutation, we compare wild-type and mutant covariance matrices in a
+window centered on the altered residue and derive full-matrix spectral features that
+can be combined with likelihood-based scores. The repository deliberately separates
+the manuscript scientific center from the frozen executable replay center. The
+flagship scientific result is a stronger-baseline augmentation audit on BRCA2; the
+only frozen public replay surface remains TP53; the support-ranked top-25 feasible
+panel is the performance-blind breadth surface; and protocol sweep plus BRCA1 failure
+analysis define the current boundaries of the method.
 
-Recent work in adversarial ML showed that spectral analysis of hidden-state
-covariance can detect subtle perturbations~\cite{bonetto2026spectralguard}.
-We hypothesize that disease-causing mutations induce detectable distortions in
-PLM hidden-state covariance, providing signal \emph{orthogonal} to
-likelihood-based scores.
-
-\textbf{Contributions.}\;
-\textbf{(1)}~We introduce \methodname{}, extracting matrix-level spectral
-features from PLM hidden-state covariance.
-\textbf{(2)}~On the TP53 canonical executable benchmark, FrobDist + proper LL
-yields AUC=0.7498.
-\textbf{(3)}~On a secondary bounded transfer evaluation without retraining,
-Proper LL achieves AUC=0.9174 on a fixed BRCA1 subset ($N$=100).
-\textbf{(4)}~We compare matrix-level vs.\ eigenvalue-only spectral
-features for variant prediction within this artifact.
-\textbf{(5)}~The TP53 canonical benchmark reproduces with
-$\Delta_{\text{rep}}$=0.0 under the repository's canonical execution path.
+The contribution is therefore bounded and multi-surface. On BRCA2, covariance-aware
+geometry improves a stronger external ESM-1v baseline. On TP53, the released pair is
+stable under nested validation and remains machine-checkable through a frozen public
+artifact. Across the support-ranked top-25 panel, outcomes are heterogeneous rather
+than uniformly favorable. Together these surfaces support a representational claim
+about covariance-aware hidden-state geometry, not a universal pathogenicity or
+clinical-deployment claim.
 
 % ============================================================================
 \section{Related Work}\label{sec:related}
 % ============================================================================
 
-\textbf{Zero-shot variant effect prediction.}\;
-Meier et al.~\cite{meier2021language} showed that ESM-1b log-likelihood ratios
-achieve strong zero-shot variant effect prediction.
-Notin et al.~\cite{notin2023proteingym} established ProteinGym benchmarks spanning
-hundreds of proteins, confirming that larger PLMs generally improve AUC with
-diminishing returns beyond 650M parameters.
-All these methods operate purely on sequence probability.
+Large PLMs such as ESM-2 have become strong zero-shot baselines for mutation-effect
+prediction~\cite{lin2023evolutionary,meier2021language}. ProteinGym broadened this
+benchmarking culture by emphasizing explicit comparable evaluation surfaces rather
+than anecdotal gene-specific wins~\cite{notin2023proteingym}. In that literature,
+the dominant readout remains sequence likelihood or closely related scalar summaries.
 
-\textbf{Spectral analysis of neural representations.}\;
-Bonetto~\cite{bonetto2026spectralguard} introduced SpectralGuard, which monitors
-the spectral radius of hidden-state covariance in Mamba-based SSMs to detect
-poisoning attacks---demonstrating that input perturbations produce detectable
-eigenspectrum shifts.
-\methodname{} applies this insight to PLM hidden states, showing that geometric
-features complement likelihood scores for pathogenicity prediction.
+Spectral analysis of hidden-state geometry offers a complementary perspective.
+SpectralGuard showed that covariance-level perturbations in model representations can
+carry discriminative signal beyond surface probabilities~\cite{bonetto2026spectralguard}.
+\methodname{} transfers that intuition to zero-shot missense scoring and asks whether
+full-matrix covariance perturbations provide usable pathogenicity signal beyond both
+likelihood-only and eigenvalue-only summaries.
 
 % ============================================================================
 \section{Method}\label{sec:method}
 % ============================================================================
 
-\subsection{Model and Dataset}
+\subsection{Evidence Surfaces and Backbone}
 
-We use ESM2-150M (\texttt{esm2\_t30\_150M\_UR50D}; 150M parameters,
-$L$=30 layers, $d$=640)~\cite{lin2023evolutionary} with its masked-LM head.
-The model is used entirely in inference mode with no fine-tuning.
-Missense variants are sourced from ClinVar~\cite{landrum2018clinvar}, filtered
-for ``Pathogenic'' and ``Benign'' labels.
-Primary evaluation: TP53 ($N$=255; 115 pathogenic, 140 benign).
-Secondary bounded transfer evaluation: bounded transfer on a fixed BRCA1 subset
-($N$=100) without retraining.
-Operationally, this artifact is anchored to the \emph{TP53 canonical executable benchmark};
-the BRCA1 subset is a \emph{secondary transfer evaluation without retraining},
-and any broader reuse is treated as an \emph{adaptation recipe only}.
+The public canonical backbone is ESM2-150M
+(\texttt{esm2\_t30\_150M\_UR50D}; 30 layers, hidden size 640) in inference mode
+with no fine-tuning~\cite{lin2023evolutionary}. Missense variants are sourced from
+ClinVar after binary pathogenic/benign filtering~\cite{landrum2018clinvar}. The
+frozen executable replay surface is TP53 ($N=255$; 115 pathogenic, 140 benign),
+with an auxiliary bounded transfer surface on a fixed BRCA1 subset ($N=100$) without
+retraining. The manuscript-facing flagship surface is a BRCA2 stronger-baseline audit
+against a five-model ESM-1v ensemble, complemented by a support-ranked top-25 feasible
+panel derived from a 15,752-gene ClinVar scan and by protocol/boundary analyses.
 
-\subsection{Spectral Feature Extraction}
+\subsection{Covariance Features and Score Construction}
 
-Given wild-type $\mathbf{S}_{\text{WT}}$ and mutant $\mathbf{S}_{\text{MUT}}$
-at position $p$, extraction proceeds in four steps:
-
-\textbf{Step 1: Local windowing.}\;
-We extract $\pm$40 residues around the mutation site (subsequence length $w \leq 81$),
-focusing analysis on the structural neighborhood most likely perturbed.
-
-\textbf{Step 2: Hidden state extraction.}\;
-Both windows are passed through ESM2-150M. For each layer $\ell \in \{1,\dots,L\}$,
-we extract hidden states $\mathbf{H}^{(\ell)} \in \mathbb{R}^{w \times d}$.
-
-\textbf{Step 3: Covariance.}\;
-Residue-level covariance
-$\mathbf{C}^{(\ell)} = \mathrm{Cov}(\mathbf{H}^{(\ell)}) \in \mathbb{R}^{d \times d}$
-is computed separately for wild-type and mutant.
-
-\textbf{Step 4: Spectral features.}\;
-Three features averaged over all $L$=30 layers:
-%
-\vspace{-2pt}
+For a wild-type sequence $\mathbf{S}_{\text{WT}}$ and mutant sequence
+$\mathbf{S}_{\text{MUT}}$ at position $p$, we extract a $\pm 40$ residue local window
+around the mutation and compute hidden states for each ESM2 layer. For layer
+$\ell \in \{1,\dots,L\}$ with hidden matrix
+$\mathbf{H}^{(\ell)} \in \mathbb{R}^{w \times d}$, we form residue-level covariance
+$\mathbf{C}^{(\ell)} = \mathrm{Cov}(\mathbf{H}^{(\ell)})$. Three features are then
+averaged across layers:
 \begin{equation}\label{eq:frob}
   \text{FrobDist} = \frac{1}{L}\sum_{\ell=1}^{L}
     \bigl\|\mathbf{C}^{(\ell)}_{\text{MUT}} - \mathbf{C}^{(\ell)}_{\text{WT}}\bigr\|_F
@@ -253,265 +222,181 @@ Three features averaged over all $L$=30 layers:
 \end{equation}
 \vspace{-10pt}
 \begin{equation}\label{eq:sps}
-  \text{SPS\text{-}log} = \frac{1}{L}\sum_{\ell=1}^{L}
+  \text{SPS-log} = \frac{1}{L}\sum_{\ell=1}^{L}
     \bigl\|\log|\boldsymbol{\lambda}^{(\ell)}_{\text{MUT}}|
            - \log|\boldsymbol{\lambda}^{(\ell)}_{\text{WT}}|\bigr\|_2^2
 \end{equation}
+where $\boldsymbol{\lambda}^{(\ell)}$ denotes the covariance eigenvalues.
+FrobDist and TraceRatio retain matrix-level information; SPS-log keeps only
+eigenvalue summaries.
 
-\noindent
-where $\boldsymbol{\lambda}^{(\ell)}$ denotes the eigenvalues of $\mathbf{C}^{(\ell)}$.
-We treat Eqs.~\ref{eq:frob}--\ref{eq:sps} as the core spectral equation set of
-\methodname{}: full-matrix displacement, trace-scale perturbation, and
-eigenvalue-log shift, respectively.
-FrobDist (Eq.~\ref{eq:frob}) captures total covariance perturbation magnitude.
-TraceRatio (Eq.~\ref{eq:trace}) measures variance changes.
-SPS-log (Eq.~\ref{eq:sps}) uses only eigenvalues, discarding eigenvector information.
-
-\subsection{Log-Likelihood Scores}
-
-\textbf{(a) LL Crude}---hidden-state norm difference proxy (baseline, AUC=0.7026).
-\textbf{(b) LL Proper}---direct masked-LM log-likelihood:
+The likelihood branch uses the masked-language-model score
 \begin{equation}\label{eq:ll}
-\text{LL}(v) = \log P_{\text{ESM2}}\!(r_p^{\text{wt}} | \mathbf{S}_{\text{WT}})
-             - \log P_{\text{ESM2}}\!(r_p^{\text{mut}} | \mathbf{S}_{\text{WT}})
+\begin{aligned}
+\text{LL Proper}(v)=&\ \log P_{\text{ESM2}}\!(r_p^{\text{wt}} \mid \mathbf{S}_{\text{WT}}) \\
+&- \log P_{\text{ESM2}}\!(r_p^{\text{mut}} \mid \mathbf{S}_{\text{WT}})
+\end{aligned}
 \end{equation}
-A positive LL($v$) indicates the model considers the wild-type residue more likely,
-suggesting the mutation is deleterious.
+Within a scored surface, features are MinMax-normalized and combined as
+$s=\alpha f_1 + (1-\alpha)f_2$ over an alpha grid with step 0.05. The released
+TP53 pair is fixed at $0.55\cdot\text{FrobDist}+0.45\cdot\text{LL Proper}$.
 
-\subsection{Evaluation Protocol}
+\subsection{Evaluation}
 
-Features are normalized to $[0,1]$ via MinMaxScaler.
-Pairwise combinations: grid search over $\alpha \in [0,1]$ (step 0.05) with
-$s = \alpha \cdot f_1 + (1-\alpha) \cdot f_2$.
-AUC-ROC with 95\% bootstrap CIs ($B$=1,000).
-All seeds fixed to 42.
+We report AUC-ROC with 95\% nonparametric bootstrap intervals ($B=1000$, seed 42).
+Pair-versus-baseline deltas use paired bootstrap resampling of the same variant
+indices. TP53 and BRCA2 validation audits use repeated $5\times5$ stratified
+cross-validation, comparing the released fixed weight against re-tuned alpha on
+held-out folds. The BRCA2 stronger-baseline falsification test permutes covariance
+alignment against the ESM-1v branch while holding labels fixed, yielding an empirical
+tail probability for the observed gain.
 
 % ============================================================================
 \section{Results}\label{sec:results}
 % ============================================================================
 
-\subsection{TP53 Classification}
+\subsection{Flagship Stronger-Baseline Result on BRCA2}
 
-Table~\ref{tab:main} presents the full TP53 results.
-Among individual features, LL Crude leads (0.7026), followed by the matrix-level
-spectral features TraceRatio (0.6242) and FrobDist (0.6209).
-Eigenvalue-only SPS variants perform substantially worse (SPS-log: 0.5988;
-SPS-all: 0.5611; SPS-topk: 0.5606; SPS-deep10: 0.5542; SPS-deep5: 0.5298),
-confirming that retaining full covariance structure is more informative than
-eigenvalue summaries alone.
+The strongest single result in the manuscript is the BRCA2 augmentation audit.
+Replacing the internal likelihood comparator with a five-model ESM-1v ensemble makes
+the question harder and cleaner: does covariance still add signal against a stronger
+external zero-shot baseline? On BRCA2, the answer is yes. The fixed covariance-plus-
+ESM-1v score improves AUC from 0.6324 to 0.6890, for paired gain 0.0566 with paired
+95\% CI [0.0131, 0.1063]. Under covariance permutation, that gain disappears
+($p=0.0010$), arguing that the improvement is not a generic metric artifact. In the
+separate benchmark-qualification audit, BRCA2 also reaches fixed nested mean AUC
+0.7448 versus 0.6938 for likelihood-only, making it the only current non-anchor gene
+that satisfies the repository's benchmark-promotion rule.
 
-The best combination, \textbf{FrobDist + LL Proper} ($\alpha$=0.55/0.45),
-achieves \textbf{AUC=0.7498} on the TP53 canonical executable benchmark.
-Relative to LL Crude, this corresponds to a descriptive within-benchmark
-gain of +0.0472 AUC (+6.7\% relative).
-The best triple (LL Crude + Trace + Frob; 0.70/0.10/0.20) yields AUC=0.7264---lower
-than the best pair, suggesting crude LL and proper LL capture partially overlapping
-information that interferes when combined.
-
-\begin{table}[t]
+\begin{table*}[t]
 \centering
-\caption{\textbf{TP53 pathogenicity classification (AUC-ROC).}
-$N$=255: 115 pathogenic, 140 benign. $\Delta_{\text{rep}}$=0.0.}
-\label{tab:main}
+\caption{\textbf{Headline evidence surfaces in the final manuscript.} The manuscript
+center is BRCA2, the frozen executable center is TP53, and the remaining surfaces test
+breadth and boundaries rather than replacing the canonical replay contract.}
+\label{tab:evidence}
 \vspace{3pt}
 \small
-\begin{tabular}{@{}lc@{}}
+\begin{tabular}{@{}p{0.21\textwidth}p{0.30\textwidth}p{0.38\textwidth}@{}}
 \toprule
-\textbf{Method} & \textbf{AUC} \\
+\textbf{Surface} & \textbf{Key Result} & \textbf{Interpretation} \\
 \midrule
-\multicolumn{2}{@{}l}{\textit{Individual features}} \\[2pt]
-LL Crude (norm proxy, baseline)       & 0.7026 \\
-TraceRatio (spectral, matrix)         & 0.6242 \\
-FrobDist (spectral, matrix)           & 0.6209 \\
-SPS-log (spectral, eigenvalue)        & 0.5988 \\
-LL Proper (masked LM)                 & 0.5956 \\
-SPS-all (spectral, eigenvalue)        & 0.5611 \\
-SPS-topk (spectral, eigenvalue)       & 0.5606 \\
-SPS-deep10 (spectral, eigenvalue)     & 0.5542 \\
-SPS-deep5 (spectral, eigenvalue)      & 0.5298 \\
-\midrule
-\multicolumn{2}{@{}l}{\textit{Best combinations}} \\[2pt]
-\textbf{FrobDist + LL Proper}
-  ($\boldsymbol{\alpha}$\textbf{=0.55})
-                                       & \textbf{0.7498} \\
-LL Crude + Trace + Frob                & 0.7264 \\
+BRCA2 stronger-baseline audit &
+ESM-1v 0.6324 $\rightarrow$ covariance + ESM-1v 0.6890; paired gain 0.0566; CI [0.0131, 0.1063]; $p=0.0010$ &
+Flagship evidence that covariance-aware geometry can improve a stronger external baseline \\
+TP53 canonical replay &
+Released pair AUC 0.7498; nested fixed 0.7510 vs.\ 0.7485 for re-tuned alpha &
+Executable validation anchor showing the released score is stable rather than a same-surface spike \\
+Support-ranked top-25 panel &
+10 positive lower bounds, 2 clearly negative, 13 ambiguous across 10,992 variants &
+Performance-blind breadth surface showing structured heterogeneity rather than hand-picked favorable transfer \\
+Protocol and BRCA1 boundary analyses &
+192 scored configurations; BRCA1 remains structured boundary case; fixed BRCA1 transfer AUC 0.9174 is auxiliary only &
+Boundary evidence defining where the method is sensitive, not a co-primary flagship benchmark \\
 \bottomrule
 \end{tabular}
-\end{table}
+\end{table*}
 
-\subsection{Secondary Bounded Transfer Evaluation (BRCA1)}
+\subsection{TP53 Canonical Validation Anchor}
 
-Table~\ref{tab:brca1} presents the secondary bounded transfer results on the
-fixed BRCA1 subset.
-Proper LL achieves \textbf{AUC=0.9174} ($N$=100) on this fixed subset without
-retraining.
-This secondary bounded transfer evaluation is included as fixed-subset evidence
-only and does not establish broader cross-protein behavior.
+TP53 remains the only frozen public canonical replay surface and the executable
+validation anchor of the paper. On that benchmark, the released pair
+$0.55\cdot\text{FrobDist}+0.45\cdot\text{LL Proper}$ reaches AUC 0.7498 with
+reproducibility delta 0.0. Repeated nested cross-validation places the fixed released
+weight on a stable out-of-fold plateau (mean AUC 0.7510) rather than below the
+re-tuned alternative (0.7485), which directly addresses the simplest same-surface
+overfitting criticism.
 
-\begin{table}[t]
-\centering
-\caption{\textbf{Secondary bounded transfer evaluation on fixed BRCA1 subset (AUC-ROC).}
-$N$=100. Official reported metric only. No retraining or recalibration.}
-\label{tab:brca1}
-\vspace{3pt}
-\small
-\begin{tabular}{@{}lc@{}}
-\toprule
-\textbf{Feature} & \textbf{AUC} \\
-\midrule
-\textbf{LL Proper (masked LM)} & \textbf{0.9174} \\
-\bottomrule
-\end{tabular}
-\end{table}
+The TP53 surface also clarifies what part of covariance is useful. Matrix-level
+features outperform eigenvalue-only summaries: TraceRatio reaches 0.6242 and FrobDist
+0.6209, while SPS-log reaches 0.5988 and other SPS variants are lower. The best TP53
+pair also exceeds either branch alone, with FrobDist and LL Proper combining
+mechanistically distinct information: representational displacement and sequence-level
+surprisal.
 
-Within this bounded setting, the fixed BRCA1 subset result shows that
-the proper masked-LM score can remain informative without retraining.
-We report this result as secondary transfer evidence only and treat any broader
-reuse beyond TP53 and this fixed subset as an adaptation recipe only.
-
-\subsection{Matrix-Level vs.\ Eigenvalue-Only Features}
-
-Within the TP53 results reported here, matrix-level spectral features (FrobDist,
-TraceRatio) outperform eigenvalue-only summaries (SPS variants).
-On TP53, both FrobDist (0.6209) and TraceRatio (0.6242)
-exceed all SPS variants (best: 0.5988).
-This pattern suggests that retaining full covariance structure may preserve
-useful benchmark signal beyond eigenvalue-only summaries.
-
-\subsection{Visual Analysis}
-
-Figure~\ref{fig:results} provides a comprehensive visual summary.
-The ROC plot (top-left) shows the Best Pair combination
-(orange, FrobDist+LL Proper, AUC=0.7498) remaining above all individual
-features and the Best Triple (black, 0.7264, rounded in the figure), with SPS variants (dashed)
-clustered near the diagonal.
-The feature ablation bar chart (top-right) ranks all individual AUCs,
-with LL Crude (red, 0.7026, rounded in the figure) as the strongest standalone feature and
-SPS/positional entropy (gray) at the bottom---visually confirming the
-matrix~$>$~eigenvalue hierarchy.
-The SPS-log density plot (bottom-left) reveals why eigenvalue-only features
-underperform: both pathogenic (red) and benign (blue) distributions are
-heavily concentrated near zero, with minimal class separation.
-In contrast, the proper LL distribution (bottom-right) shows a clear
-rightward shift for pathogenic variants (higher
-$\log P(\text{wt}) - \log P(\text{mut})$), consistent with the
-secondary bounded BRCA1 transfer evaluation.
-
-% Full-width figure spanning both columns
 \begin{figure*}[t]
 \centering
-\includegraphics[width=0.91\textwidth]{../outputs/canonical/roc_tp53.png}
+\includegraphics[width=0.88\textwidth]{../outputs/canonical/roc_tp53.png}
 \caption{%
-  \textbf{\methodname{} canonical TP53 results summary ($N$=255).}
-  Best Pair (FrobDist+LL Proper, orange) reaches AUC=0.7498 and remains above
-  all individual features and the Best Triple (black, 0.7264, rounded in the figure).
-  Matrix-level features outperform eigenvalue-only SPS variants on TP53, while
-  the proper-LL distribution is consistent with the bounded BRCA1 secondary
-  transfer result (AUC=0.9174). Figure linked to canonical asset
-  \texttt{outputs/canonical/roc\_tp53.png}; TP53 reproduces with
-  $\Delta_{\text{rep}}$=0.0.
+  \textbf{TP53 canonical executable validation surface.}
+  The released pair (orange) remains above the individual covariance and likelihood
+  branches on the frozen TP53 replay path and materializes as a machine-checkable
+  artifact under \texttt{outputs/canonical/}. This figure summarizes the executable
+  anchor that keeps the manuscript's covariance claim challengeable on a public,
+  deterministic surface.
 }
 \label{fig:results}
 \end{figure*}
+
+\subsection{Breadth and Boundary Surfaces}
+
+The manuscript no longer relies on a favorable companion-gene narrative. The
+performance-blind breadth surface begins from a 15,752-gene ClinVar scan, applies
+predeclared support thresholds, yields 446 threshold-passing genes, and realizes a
+support-ranked feasible top-25 panel with 10,992 scored variants. Within that panel,
+10 genes show positive pair-versus-likelihood lower confidence bounds, 2 are clearly
+negative, and 13 are ambiguous. This is weaker than universal transfer, but stronger
+than a hand-built all-positive companion panel because heterogeneity is now explicit.
+
+Boundary analyses make the hard cases interpretable instead of hidden. A 192-configuration
+sweep across checkpoints, window radii, layer protocols, and alpha handling shows that
+covariance utility is checkpoint-, window-, and layer-sensitive rather than a trivial
+150M-only artifact. BRCA1 remains the most visible hard-negative surface, but its
+behavior is structured rather than uniformly contradictory. The released BRCA1 transfer
+AUC of 0.9174 is kept as bounded auxiliary evidence on a fixed subset without retraining;
+it is not promoted to a co-primary manuscript center.
 
 % ============================================================================
 \section{Discussion}\label{sec:discussion}
 % ============================================================================
 
-\methodname{} demonstrates that covariance geometry of PLM hidden states can
-provide useful benchmark signal complementary to sequence-level log-likelihoods.
+Taken together, these results support a bounded representational claim. The strongest
+evidence is not that covariance beats every baseline everywhere, but that it survives a
+stronger-baseline test on BRCA2, remains executable and auditable on TP53, appears on a
+performance-blind breadth surface with mixed outcomes, and behaves under protocol
+perturbation as a structured phenomenon rather than a universal law. This is why the
+paper is framed as a research reproducibility artifact plus scientific audit surfaces,
+not as a universal pathogenicity predictor or clinical deployment recipe.
 
-\textbf{Why feature complementarity works.}\;
-The best TP53 result combines a spectral feature (FrobDist, geometric perturbation)
-with a likelihood feature (LL Proper, evolutionary constraint).
-These are mechanistically distinct: FrobDist measures how much the
-\emph{shape} of the representation manifold changes, while LL Proper measures how
-\emph{surprising} the mutant residue is.
-Their complementarity suggests pathogenic mutations affect both the surface-level
-amino acid preference and the deeper structural representation independently.
-
-\textbf{Why LL Proper matters in the bounded BRCA1 transfer evaluation.}\;
-Proper LL achieving AUC=0.9174 on the fixed BRCA1 subset despite 0.5956 on TP53
-shows that this score remains informative in the secondary fixed-subset setting.
-We keep the interpretation narrow: this bounded result does not establish
-broader cross-protein behavior beyond the fixed BRCA1 subset evaluated here.
-
-\textbf{What the exact-split external comparison changes.}\;
-A supplementary exact-split ESM-1v five-model ensemble on the same TP53 variants
-reaches AUC=0.9465, exceeding \methodname{} (0.7498).
-This sharpens the claim boundary: the contribution here is not external raw-AUC
-state of the art, but covariance-based representational analysis plus a
-reproducible executable benchmark artifact.
-
-\textbf{Key findings:}
-\begin{enumerate}[itemsep=1pt]
-  \item \textbf{Matrix $>$ eigenvalue.}\;
-    FrobDist/TraceRatio consistently outperform all SPS variants on TP53.
-  \item \textbf{Feature complementarity.}\;
-    Strongest TP53 classifier (0.7498) combines spectral geometry with
-    masked-LM likelihood---neither is strongest alone.
-  \item \textbf{Secondary BRCA1 bounded transfer evidence.}\;
-    LL Proper: 0.9174 with zero retraining on the fixed subset.
-  \item \textbf{External context and descriptive phase-5 geometry.}\;
-    Exact-split ESM-1v is stronger on TP53, while supplementary Grantham bins
-    localize relative \methodname{} strength to more chemically disruptive substitutions
-    and a residual covariance-likelihood UMAP shows partial label organization only.
-  \item \textbf{TP53 canonical reproducibility.}\;
-    $\Delta_{\text{rep}}$=0.0 under the repository's canonical execution path.
-\end{enumerate}
-
-\textbf{Limitations.}\;
-Window size ($\pm$40), model size (150M), and mixing weights were not jointly
-optimized.
-SPS features remain weak (best: 0.5988); layer selection provided no improvement.
-Evaluation limited to two proteins; ProteinGym~\cite{notin2023proteingym}
-benchmarking with 87 proteins is future work.
-Supplementary phase-5 analyses remain descriptive rather than confirmatory:
-Grantham stratification localizes relative performance, and the residual
-covariance-likelihood UMAP shows only partial class organization
-(silhouette = 0.133).
-Larger ESM2 variants (650M--15B) likely produce richer geometry.
+The role split across surfaces is important. BRCA2 is the manuscript's flagship
+scientific result and the clearest direct evidence that covariance-aware hidden-state
+geometry can add signal beyond a stronger external baseline. TP53 remains the only
+frozen public canonical replay surface and therefore the validation anchor that makes
+the claim challengeable. The top-25 panel shows that the paper is not built from
+favorable hand-selection, while the protocol sweep and BRCA1 analysis define concrete
+boundary conditions. BRCA2 is therefore best understood as the next canonicalization
+target under the stated promotion rule, not as an already-frozen replacement for TP53.
 
 % ============================================================================
 \section{Reproducibility}
 % ============================================================================
 
-Seeds: 42 (PyTorch, NumPy, \texttt{random}).
-This repository is distributed as a research reproducibility artifact anchored
-to the TP53 canonical executable benchmark and a secondary bounded BRCA1
-transfer evaluation without retraining.
-Model: ESM2-150M (HuggingFace, public).
-Dataset: ClinVar FTP (public).
-$\Delta_{\text{rep}}$=0.0 for the TP53 canonical executable benchmark.
-Code: \href{https://github.com/DaviBonetto/SpectralBio}{github.com/DaviBonetto/SpectralBio}.
-Demo: \href{https://huggingface.co/spaces/DaviBonetto/spectralbio-demo}{huggingface.co/spaces/DaviBonetto/spectralbio-demo}.\par
-Dataset: \href{https://huggingface.co/datasets/DaviBonetto/spectralbio-clinvar}{huggingface.co/datasets/DaviBonetto/spectralbio-clinvar}.
+The cold-start public replay path is \texttt{uv sync --frozen} followed by
+\texttt{uv run spectralbio canonical}, which materializes the frozen TP53 artifact from
+bundled inputs and bundled score references. Optional auxiliary validation then runs
+\texttt{uv run spectralbio transfer}, \texttt{uv run spectralbio verify}, and
+\texttt{python -m uv run python scripts/preflight.py}. The BRCA2 flagship result, the
+support-ranked top-25 panel, the protocol sweep, and the BRCA1 failure analysis are
+released as public scientific audit surfaces through the repository's paper-facing text
+and notebooks rather than through the default CPU-only canonical replay path.
 
 % ============================================================================
 \section{Conclusion}
 % ============================================================================
 
-We presented \methodname{}, a zero-shot variant pathogenicity prediction framework
-based on spectral analysis of PLM hidden-state covariance.
-Matrix-level spectral features provide complementary signal to log-likelihood
-ratios, yielding AUC=0.7498 on TP53 and
-AUC=0.9174 on a secondary bounded transfer evaluation on a fixed BRCA1 subset
-($N$=100) without retraining.
-The consistent superiority of covariance-based features over eigenvalue-only
-summaries suggests that full covariance structure may capture useful benchmark
-signal underexplored by eigenvalue-only summaries.
-At the same time, a supplementary exact-split ESM-1v ensemble reaches AUC=0.9465
-on TP53, so \methodname{} is best interpreted as a bounded representational
-result and reproducibility artifact rather than as the strongest raw-AUC
-external predictor on this split.
-These results are therefore presented as a research reproducibility artifact
-with one primary benchmark, one bounded secondary transfer evaluation, and
-descriptive supplementary geometry analyses rather than broad generalization claims.
+\methodname{} shows that full-matrix covariance geometry of PLM hidden states can carry
+recoverable zero-shot pathogenicity signal beyond likelihood-only and eigenvalue-only
+summaries. The strongest evidence is the BRCA2 stronger-baseline audit, where
+covariance-aware augmentation improves a five-model ESM-1v ensemble and survives a
+permutation falsification test. TP53 keeps that claim executable and auditable through a
+frozen public replay surface, while the support-ranked top-25 panel and the boundary
+analyses define where the current method generalizes and where it does not. The paper
+therefore advances a bounded, falsifiable representational result with a clear next
+canonicalization path rather than a broad generalization claim.
 
 \paragraph{Acknowledgments.}
-Conducted under the Claw4S 2026 competition (Stanford--Princeton).
-Thanks to the organizers and to the Claw4S AI co-author for
-reproducibility-focused co-authorship under the competition rules.
+Conducted under the Claw4S 2026 competition (Stanford--Princeton). Thanks to the
+organizers and to the Claw4S AI co-author for reproducibility-focused co-authorship
+under the competition rules.
 
 % ============================================================================
 \bibliographystyle{plainnat}
