@@ -1,4 +1,4 @@
-"""SpectralBio command-line entrypoint."""
+"""SpectralBio public replay and verification CLI."""
 
 from __future__ import annotations
 
@@ -29,19 +29,55 @@ def _reset_dir(path: Path) -> Path:
     return path
 
 
-def _copy_release_contract_files(destination_dir: Path) -> None:
+def _copy_release_contract_files(destination_dir: Path) -> tuple[list[str], list[str]]:
     files_to_copy = (
         ("README.md", "README.md"),
         ("SKILL.md", "SKILL.md"),
+        ("abstract.md", "abstract.md"),
+        ("content.md", "content.md"),
         ("docs/truth_contract.md", "docs/truth_contract.md"),
         ("docs/reproducibility.md", "docs/reproducibility.md"),
         ("benchmarks/manifests/checksums.json", "benchmarks/manifests/checksums.json"),
+        ("publish/clawrxiv/spectralbio_clawrxiv.md", "publish/clawrxiv/spectralbio_clawrxiv.md"),
+        ("assets/branding/spectralbio_banner.jpeg", "assets/branding/spectralbio_banner.jpeg"),
+        ("paper/spectralbio.pdf", "paper/spectralbio.pdf"),
+        ("paper/spectralbio.tex", "paper/spectralbio.tex"),
+        ("paper/references.bib", "paper/references.bib"),
+        ("notebooks/final_accept_part1_support_panel.ipynb", "notebooks/final_accept_part1_support_panel.ipynb"),
+        (
+            "notebooks/final_accept_part3_esm1v_augmentation_A100.ipynb",
+            "notebooks/final_accept_part3_esm1v_augmentation_A100.ipynb",
+        ),
+        (
+            "notebooks/final_accept_part4_brca2_canonicalization_A100.ipynb",
+            "notebooks/final_accept_part4_brca2_canonicalization_A100.ipynb",
+        ),
+        (
+            "notebooks/final_accept_part5_protocol_sweep_A100.ipynb",
+            "notebooks/final_accept_part5_protocol_sweep_A100.ipynb",
+        ),
+        (
+            "notebooks/final_accept_part6_panel25_brca1_failure_L4.ipynb",
+            "notebooks/final_accept_part6_panel25_brca1_failure_L4.ipynb",
+        ),
     )
+    copied_files: list[str] = []
     for source_relative, destination_relative in files_to_copy:
         source = PROJECT_ROOT / source_relative
         destination = destination_dir / destination_relative
         destination.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(source, destination)
+        copied_files.append(destination_relative)
+
+    tree_copies = (("paper/assets", "paper/assets"),)
+    copied_trees: list[str] = []
+    for source_relative, destination_relative in tree_copies:
+        source = PROJECT_ROOT / source_relative
+        destination = destination_dir / destination_relative
+        shutil.copytree(source, destination, dirs_exist_ok=True)
+        copied_trees.append(destination_relative)
+
+    return copied_files, copied_trees
 
 
 def export_hf_space(destination_root: Path | None = None) -> dict[str, Any]:
@@ -71,7 +107,12 @@ def export_hf_space(destination_root: Path | None = None) -> dict[str, Any]:
     for source_relative, destination_relative in tree_copies:
         source = PROJECT_ROOT / source_relative
         destination = destination_dir / destination_relative
-        shutil.copytree(source, destination, ignore=shutil.ignore_patterns("__pycache__", "*.pyc"))
+        shutil.copytree(
+            source,
+            destination,
+            ignore=shutil.ignore_patterns("__pycache__", "*.pyc"),
+            dirs_exist_ok=True,
+        )
         copied_files.append(destination_relative)
 
     return {
@@ -90,6 +131,7 @@ def export_hf_dataset(destination_root: Path | None = None) -> dict[str, Any]:
     for file_name in ("README.md", "dataset_manifest.json"):
         source = source_dir / file_name
         destination = destination_dir / file_name
+        destination.parent.mkdir(parents=True, exist_ok=True)
         destination.write_text(source.read_text(encoding="utf-8"), encoding="utf-8")
         copied_files.append(file_name)
     return {
@@ -117,7 +159,7 @@ def release_bundle(
 
     destination_dir = destination or RELEASE_DIR
     _reset_dir(destination_dir)
-    _copy_release_contract_files(destination_dir)
+    support_files, support_trees = _copy_release_contract_files(destination_dir)
     hf_space = export_hf_space(destination_dir)
     hf_dataset = export_hf_dataset(destination_dir)
     release_outputs = destination_dir / "outputs"
@@ -127,35 +169,48 @@ def release_bundle(
         "status": "PASS",
         "release_dir": str(destination_dir),
         "verification": verification,
-        "support_files": [
-            "README.md",
-            "SKILL.md",
-            "docs/truth_contract.md",
-            "docs/reproducibility.md",
-            "benchmarks/manifests/checksums.json",
-        ],
+        "support_files": support_files,
+        "support_trees": support_trees,
         "hf_space": hf_space,
         "hf_dataset": hf_dataset,
     }
 
 
 def build_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(prog="spectralbio", description="Canonical SpectralBio CLI")
+    parser = argparse.ArgumentParser(
+        prog="spectralbio",
+        description="SpectralBio public replay and verification CLI",
+    )
     subparsers = parser.add_subparsers(dest="command", required=True)
 
-    canonical = subparsers.add_parser("canonical", help="Run the canonical TP53 artifact path")
+    canonical = subparsers.add_parser(
+        "canonical",
+        help="Materialize the frozen TP53 canonical replay surface",
+    )
     canonical.add_argument("--output-dir", type=Path, default=CANONICAL_OUTPUT_DIR)
 
-    transfer = subparsers.add_parser("transfer", help="Run the bounded BRCA1 transfer artifact path")
+    transfer = subparsers.add_parser(
+        "transfer",
+        help="Materialize the bounded BRCA1 auxiliary transfer artifact",
+    )
     transfer.add_argument("--output-dir", type=Path, default=TRANSFER_OUTPUT_DIR)
 
-    verify = subparsers.add_parser("verify", help="Verify the canonical and transfer outputs")
+    verify = subparsers.add_parser(
+        "verify",
+        help="Verify the TP53 replay and BRCA1 auxiliary transfer outputs",
+    )
     verify.add_argument("--canonical-dir", type=Path, default=CANONICAL_OUTPUT_DIR)
     verify.add_argument("--transfer-dir", type=Path, default=TRANSFER_OUTPUT_DIR)
 
-    subparsers.add_parser("export-hf-space", help="Stage the canonical HF Space files into the release bundle")
-    subparsers.add_parser("export-hf-dataset", help="Stage the canonical HF dataset files into the release bundle")
-    subparsers.add_parser("release", help="Build the release bundle")
+    subparsers.add_parser(
+        "export-hf-space",
+        help="Stage the public HF Space files into the release bundle",
+    )
+    subparsers.add_parser(
+        "export-hf-dataset",
+        help="Stage the public HF dataset files into the release bundle",
+    )
+    subparsers.add_parser("release", help="Build the public replay and audit release bundle")
 
     return parser
 

@@ -29,6 +29,7 @@ def _render_result(gene: str, position: int, mutant_aa: str) -> tuple[str, dict]
         )
         benchmark_metric_lines = [
             "",
+            "Scientific center remains the BRCA2 flagship result; this response is the TP53 executable replay surface.",
             f"Primary benchmark context | Official TP53 canonical AUC: {metrics['canonical']['auc_best_pair']:.4f}",
             "Secondary bounded transfer context remains available in the raw payload only.",
         ]
@@ -39,6 +40,7 @@ def _render_result(gene: str, position: int, mutant_aa: str) -> tuple[str, dict]
         )
         benchmark_metric_lines = [
             "",
+            "Scientific center remains the BRCA2 flagship result; this response is a bounded BRCA1 auxiliary transfer surface.",
             f"Primary calibration reference | Official TP53 canonical AUC: {metrics['canonical']['auc_best_pair']:.4f}",
             (
                 "Secondary bounded transfer reference | Official BRCA1 subset AUC: "
@@ -75,6 +77,10 @@ with gr.Blocks(title="SpectralBio Demo") as demo:
                 "",
                 "**Artifact role:** research reproducibility artifact",
                 "",
+                "**Flagship scientific result:** BRCA2 covariance-aware augmentation against a stronger ESM-1v ensemble",
+                "",
+                "**Validation anchor:** TP53 frozen public canonical replay surface",
+                "",
                 "**Primary benchmark:** TP53 canonical executable benchmark",
                 "",
                 "**Secondary benchmark:** bounded transfer on a fixed BRCA1 subset (N=100)",
@@ -83,7 +89,7 @@ with gr.Blocks(title="SpectralBio Demo") as demo:
                 "",
                 "**Adaptation note:** adaptation recipe only",
                 "",
-                "This Space renders shared-core outputs only and keeps TP53 presets as the default workflow.",
+                "This Space renders shared-core executable outputs only. BRCA2 scientific centrality lives in the paper-aligned audit surfaces, while TP53 remains the default workflow here.",
             ]
         )
     )
@@ -97,7 +103,7 @@ with gr.Blocks(title="SpectralBio Demo") as demo:
         load_preset = gr.Button("Use preset", variant="secondary")
 
     gr.Markdown(
-        "TP53 presets stay first. BRCA1 presets remain clearly secondary bounded transfer examples."
+        "TP53 presets stay first because the executable contract is TP53-first. BRCA1 presets remain clearly secondary bounded transfer examples, while BRCA2 remains the manuscript-facing flagship scientific result."
     )
 
     with gr.Accordion("Advanced manual scoring", open=False):
@@ -112,7 +118,7 @@ with gr.Blocks(title="SpectralBio Demo") as demo:
             mutant_aa = gr.Dropdown(demo_contract.AA_LIST, label="Mutant amino acid", value="H")
 
     run_button = gr.Button("Score variant", variant="primary")
-    summary_output = gr.Textbox(label="Rendered summary", lines=14)
+    summary_output = gr.Textbox(label="Rendered summary", lines=16)
     json_output = gr.JSON(label="Shared contract payload")
 
     load_preset.click(_load_preset, inputs=[preset], outputs=[gene, position, mutant_aa])

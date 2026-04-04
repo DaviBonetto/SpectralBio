@@ -276,7 +276,7 @@ ls outputs/transfer
 
 - TP53 canonical score formula: `0.55*frob_dist + 0.45*ll_proper`
 - TP53 official AUC: `0.7498`
-- TP53 computed AUC (`metrics.computed_auc_best_pair`): `0.749751...` (delta = 0.0 when rounded to 4 decimal places)
+- TP53 computed AUC (`metrics.computed_auc_best_pair`): `0.749751...`, which matches the official AUC `0.7498` within the declared tolerance `0.0001`; the repository verification artifact separately reports `reproducibility_delta = 0.0`
 - BRCA1 bounded transfer AUC: `0.9174`
 - Reproducibility delta: `0.0`
 - Verification tolerance: `0.0001`

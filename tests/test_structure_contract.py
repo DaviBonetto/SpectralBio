@@ -53,6 +53,7 @@ def test_publish_surfaces_are_complete() -> None:
 
 
 def test_release_dataset_mirror_matches_publish_surface() -> None:
+    release_bundle()
     assert (
         Path("artifacts/release/claw4s_2026/hf_dataset/README.md").read_text(encoding="utf-8")
         == Path("publish/hf_dataset/README.md").read_text(encoding="utf-8")
@@ -68,9 +69,17 @@ def test_release_bundle_support_files_are_staged() -> None:
     for relative_path in (
         "artifacts/release/claw4s_2026/README.md",
         "artifacts/release/claw4s_2026/SKILL.md",
+        "artifacts/release/claw4s_2026/abstract.md",
+        "artifacts/release/claw4s_2026/content.md",
         "artifacts/release/claw4s_2026/docs/truth_contract.md",
         "artifacts/release/claw4s_2026/docs/reproducibility.md",
         "artifacts/release/claw4s_2026/benchmarks/manifests/checksums.json",
+        "artifacts/release/claw4s_2026/publish/clawrxiv/spectralbio_clawrxiv.md",
+        "artifacts/release/claw4s_2026/assets/branding/spectralbio_banner.jpeg",
+        "artifacts/release/claw4s_2026/paper/spectralbio.pdf",
+        "artifacts/release/claw4s_2026/paper/spectralbio.tex",
+        "artifacts/release/claw4s_2026/paper/references.bib",
+        "artifacts/release/claw4s_2026/paper/assets/lobster.png",
     ):
         assert Path(relative_path).exists()
 
