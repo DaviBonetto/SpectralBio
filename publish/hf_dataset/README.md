@@ -6,7 +6,7 @@ size_categories:
 task_categories:
   - text-classification
 task_ids:
-  - binary-classification
+  - multi-class-classification
 annotations_creators:
   - expert-generated
 language_creators:
