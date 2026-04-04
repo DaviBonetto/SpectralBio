@@ -1,0 +1,28 @@
+{
+  "screen_name": "SpectralBio failure-mode screen",
+  "selected_regime": "high_frob_low_ll_and_from_glycine",
+  "ready_for_h100": false,
+  "selection_reason": "No regime passed the strict gate; fallback regime kept for manual inspection only.",
+  "thresholds": {
+    "rescue_threshold": 0.12,
+    "harm_threshold": 0.12,
+    "min_rescued_positives": 4,
+    "min_reference_gap": 0.05
+  },
+  "selected_regime_summary": {
+    "regime": "high_frob_low_ll_and_from_glycine",
+    "rescued_positive_count": 3,
+    "harmed_benign_count": 0,
+    "genes_with_rescued_positive": 2,
+    "path_rescue_margin_mean": 0.21804696594839004,
+    "benign_rescue_margin_mean": 0.0,
+    "reference_gap": -0.20894732015679646,
+    "composite_score": 1.2062113467677553
+  },
+  "panel_manifest_path": "supplementary/final_accept_a100/panel25/support_ranked_panel_manifest.json",
+  "validation_pool_counts": {
+    "candidate_positive_existing_aug": 3,
+    "matched_positive_control": 3
+  },
+  "recommended_h100_variant_count": 6
+}
