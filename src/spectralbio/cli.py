@@ -1,4 +1,4 @@
-"""SpectralBio command-line entrypoint."""
+"""SpectralBio public replay and verification CLI."""
 
 from __future__ import annotations
 
@@ -140,22 +140,40 @@ def release_bundle(
 
 
 def build_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(prog="spectralbio", description="Canonical SpectralBio CLI")
+    parser = argparse.ArgumentParser(
+        prog="spectralbio",
+        description="SpectralBio public replay and verification CLI",
+    )
     subparsers = parser.add_subparsers(dest="command", required=True)
 
-    canonical = subparsers.add_parser("canonical", help="Run the canonical TP53 artifact path")
+    canonical = subparsers.add_parser(
+        "canonical",
+        help="Materialize the frozen TP53 canonical replay surface",
+    )
     canonical.add_argument("--output-dir", type=Path, default=CANONICAL_OUTPUT_DIR)
 
-    transfer = subparsers.add_parser("transfer", help="Run the bounded BRCA1 transfer artifact path")
+    transfer = subparsers.add_parser(
+        "transfer",
+        help="Materialize the bounded BRCA1 auxiliary transfer artifact",
+    )
     transfer.add_argument("--output-dir", type=Path, default=TRANSFER_OUTPUT_DIR)
 
-    verify = subparsers.add_parser("verify", help="Verify the canonical and transfer outputs")
+    verify = subparsers.add_parser(
+        "verify",
+        help="Verify the TP53 replay and BRCA1 auxiliary transfer outputs",
+    )
     verify.add_argument("--canonical-dir", type=Path, default=CANONICAL_OUTPUT_DIR)
     verify.add_argument("--transfer-dir", type=Path, default=TRANSFER_OUTPUT_DIR)
 
-    subparsers.add_parser("export-hf-space", help="Stage the canonical HF Space files into the release bundle")
-    subparsers.add_parser("export-hf-dataset", help="Stage the canonical HF dataset files into the release bundle")
-    subparsers.add_parser("release", help="Build the release bundle")
+    subparsers.add_parser(
+        "export-hf-space",
+        help="Stage the public HF Space files into the release bundle",
+    )
+    subparsers.add_parser(
+        "export-hf-dataset",
+        help="Stage the public HF dataset files into the release bundle",
+    )
+    subparsers.add_parser("release", help="Build the public replay and audit release bundle")
 
     return parser
 
