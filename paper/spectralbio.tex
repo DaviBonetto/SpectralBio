@@ -28,7 +28,11 @@
   colorlinks=true,
   linkcolor={blue!70!black},
   citecolor={green!50!black},
-  urlcolor={blue!60!black}
+  urlcolor={blue!60!black},
+  pdftitle={SpectralBio: Full-Matrix Covariance Analysis for Zero-Shot Variant Pathogenicity on the TP53 Canonical Benchmark},
+  pdfauthor={Davi Bonetto; Claw4S AI Co-author},
+  pdfsubject={Claw4S Conference 2026 four-page paper},
+  pdfkeywords={SpectralBio, TP53, protein language model, covariance, zero-shot variant pathogenicity, ESM2, reproducibility}
 ]{hyperref}
 
 % ---------- More helpers -----------------------------------------------------
@@ -83,9 +87,9 @@
 %
 % --- Title ---
 \begin{center}
-{\LARGE\bfseries \methodname{}: Spectral Covariance Analysis of Protein\\[3pt]
-Language Model Hidden States for Zero-Shot\\[3pt]
-Variant Pathogenicity Prediction\par}
+{\LARGE\bfseries \methodname{}: Full-Matrix Covariance Analysis\\[3pt]
+for Zero-Shot Variant Pathogenicity on the\\[3pt]
+TP53 Canonical Benchmark\par}
 \vspace{6pt}
 %
 % --- Authors ---
@@ -126,6 +130,9 @@ on the TP53 canonical executable benchmark.
 On the secondary bounded transfer evaluation without retraining, proper
 masked-LM LL reaches \textbf{AUC\,=\,0.9174} on a fixed BRCA1 subset
 ($N$=100), providing secondary bounded transfer evidence only.
+A supplementary exact-split ESM-1v ensemble reaches \textbf{AUC\,=\,0.9465} on TP53,
+so the contribution is best read as a covariance-centered representational
+benchmark artifact rather than a raw-AUC state-of-the-art claim.
 Matrix-level features consistently outperform eigenvalue-only SPS on TP53,
 and the TP53 canonical benchmark reproduces with
 \textbf{$\Delta_{\text{rep}}$=0.0}.%
@@ -429,6 +436,13 @@ shows that this score remains informative in the secondary fixed-subset setting.
 We keep the interpretation narrow: this bounded result does not establish
 broader cross-protein behavior beyond the fixed BRCA1 subset evaluated here.
 
+\textbf{What the exact-split external comparison changes.}\;
+A supplementary exact-split ESM-1v five-model ensemble on the same TP53 variants
+reaches AUC=0.9465, exceeding \methodname{} (0.7498).
+This sharpens the claim boundary: the contribution here is not external raw-AUC
+state of the art, but covariance-based representational analysis plus a
+reproducible executable benchmark artifact.
+
 \textbf{Key findings:}
 \begin{enumerate}[itemsep=1pt]
   \item \textbf{Matrix $>$ eigenvalue.}\;
@@ -438,6 +452,10 @@ broader cross-protein behavior beyond the fixed BRCA1 subset evaluated here.
     masked-LM likelihood---neither is strongest alone.
   \item \textbf{Secondary BRCA1 bounded transfer evidence.}\;
     LL Proper: 0.9174 with zero retraining on the fixed subset.
+  \item \textbf{External context and descriptive phase-5 geometry.}\;
+    Exact-split ESM-1v is stronger on TP53, while supplementary Grantham bins
+    localize relative \methodname{} strength to more chemically disruptive substitutions
+    and a residual covariance-likelihood UMAP shows partial label organization only.
   \item \textbf{TP53 canonical reproducibility.}\;
     $\Delta_{\text{rep}}$=0.0 under the repository's canonical execution path.
 \end{enumerate}
@@ -448,6 +466,10 @@ optimized.
 SPS features remain weak (best: 0.5988); layer selection provided no improvement.
 Evaluation limited to two proteins; ProteinGym~\cite{notin2023proteingym}
 benchmarking with 87 proteins is future work.
+Supplementary phase-5 analyses remain descriptive rather than confirmatory:
+Grantham stratification localizes relative performance, and the residual
+covariance-likelihood UMAP shows only partial class organization
+(silhouette = 0.133).
 Larger ESM2 variants (650M--15B) likely produce richer geometry.
 
 % ============================================================================
@@ -478,8 +500,13 @@ AUC=0.9174 on a secondary bounded transfer evaluation on a fixed BRCA1 subset
 The consistent superiority of covariance-based features over eigenvalue-only
 summaries suggests that full covariance structure may capture useful benchmark
 signal underexplored by eigenvalue-only summaries.
-These results are presented as a research reproducibility artifact with one
-primary benchmark and one bounded secondary transfer evaluation.
+At the same time, a supplementary exact-split ESM-1v ensemble reaches AUC=0.9465
+on TP53, so \methodname{} is best interpreted as a bounded representational
+result and reproducibility artifact rather than as the strongest raw-AUC
+external predictor on this split.
+These results are therefore presented as a research reproducibility artifact
+with one primary benchmark, one bounded secondary transfer evaluation, and
+descriptive supplementary geometry analyses rather than broad generalization claims.
 
 \paragraph{Acknowledgments.}
 Conducted under the Claw4S 2026 competition (Stanford--Princeton).
