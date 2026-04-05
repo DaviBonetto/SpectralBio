@@ -135,6 +135,7 @@ import json
 import math
 import os
 import shutil
+import zipfile
 from pathlib import Path
 
 import matplotlib.pyplot as plt
@@ -195,6 +196,14 @@ def minmax_normalize(series: pd.Series) -> pd.Series:
     return (values - minimum) / (maximum - minimum)
 
 
+def find_first_existing_path(candidates: list[str | Path]) -> Path | None:
+    for candidate in candidates:
+        resolved = resolve_existing_path(candidate)
+        if resolved.exists():
+            return resolved
+    return None
+
+
 def _ensure_gene_score_rows_lazy(**kwargs):
     try:
         from spectralbio.supplementary.reject_recovery import _ensure_gene_score_rows as _inner
@@ -248,12 +257,61 @@ existing_validation_rows_candidates = [
     REPO_ROOT / "notebooks" / "failure_mode_validation_bundle" / "tables" / "failure_mode_validation_rows.csv",
     REPO_ROOT / "supplementary" / "failure_mode_validation_h100" / "failure_mode_validation" / "tables" / "failure_mode_validation_rows.csv",
 ]
-existing_validation_rows_path = None
-for candidate in existing_validation_rows_candidates:
-    resolved = resolve_existing_path(candidate)
-    if resolved.exists():
-        existing_validation_rows_path = resolved
-        break
+
+existing_validation_bundle_zip_candidates = [
+    REPO_ROOT / "notebooks" / "Results 7,8,9" / "failure_mode_validation_bundle.zip",
+    REPO_ROOT / "notebooks" / "Results 7,8,9" / "failure_mode_validation_bundle" / "failure_mode_validation_bundle.zip",
+    REPO_ROOT / "notebooks" / "failure_mode_validation_bundle.zip",
+    REPO_ROOT / "supplementary" / "failure_mode_validation_h100" / "failure_mode_validation" / "failure_mode_validation_bundle.zip",
+]
+
+
+def locate_existing_validation_rows() -> tuple[Path | None, Path | None]:
+    direct_match = find_first_existing_path(existing_validation_rows_candidates)
+    if direct_match is not None:
+        return direct_match, None
+
+    search_roots = [
+        REPO_ROOT / "notebooks" / "Results 7,8,9",
+        REPO_ROOT / "notebooks",
+        REPO_ROOT / "supplementary",
+    ]
+    for root in search_roots:
+        resolved_root = resolve_existing_path(root)
+        if not resolved_root.exists():
+            continue
+        matches = sorted(resolved_root.rglob("failure_mode_validation_rows.csv"))
+        if matches:
+            return matches[0], None
+
+    zip_match = find_first_existing_path(existing_validation_bundle_zip_candidates)
+    if zip_match is None:
+        for root in search_roots:
+            resolved_root = resolve_existing_path(root)
+            if not resolved_root.exists():
+                continue
+            matches = sorted(resolved_root.rglob("failure_mode_validation_bundle.zip"))
+            if matches:
+                zip_match = matches[0]
+                break
+    if zip_match is None:
+        return None, None
+
+    extract_root = OUTPUT_ROOT / "_reused_part8_validation"
+    if extract_root.exists() and OVERWRITE:
+        shutil.rmtree(extract_root)
+    ensure_dir(extract_root)
+
+    with zipfile.ZipFile(zip_match) as archive:
+        archive.extractall(extract_root)
+
+    extracted_matches = sorted(extract_root.rglob("failure_mode_validation_rows.csv"))
+    if extracted_matches:
+        return extracted_matches[0], zip_match
+    return None, zip_match
+
+
+existing_validation_rows_path, existing_validation_bundle_zip_path = locate_existing_validation_rows()
 
 reuse_existing_rows = bool(
     PREFER_EXISTING_PART8_ROWS
@@ -266,6 +324,7 @@ print("selected_regime =", selected_regime)
 print("ready_for_h100 =", ready_for_h100)
 print("validation_pool roles =", validation_pool["validation_role"].value_counts().to_dict())
 print("existing_validation_rows_path =", existing_validation_rows_path)
+print("existing_validation_bundle_zip_path =", existing_validation_bundle_zip_path)
 print("reuse_existing_rows =", reuse_existing_rows)
 print("ACABEI PODE IR PARA O PRÓXIMO")
 """
@@ -296,38 +355,11 @@ if reuse_existing_rows:
         print("Existing validation rows found, but the stronger-backbone columns are missing. Falling back to re-score.")
 
 if validation_df is None:
-    from spectralbio.data.sequences import load_gene_sequence
-
-    rescored_frames = []
-    for gene, gene_pool in validation_pool.groupby("gene", sort=True):
-        sequence = load_gene_sequence(str(gene).upper())
-        variant_rows = gene_pool[["gene", "name", "position", "wt_aa", "mut_aa", "label"]].to_dict("records")
-        score_rows = _ensure_gene_score_rows_lazy(
-            gene=str(gene).upper(),
-            sequence=sequence,
-            variants=variant_rows,
-            model_name=VALIDATION_MODEL_NAME,
-            output_dir=SCORES_DIR / str(gene).lower(),
-            window_radius=WINDOW_RADIUS,
-            checkpoint_every=CHECKPOINT_EVERY,
-            overwrite=OVERWRITE,
-        )
-        frame = pd.DataFrame(score_rows)
-        frame["gene"] = frame["gene"].str.upper()
-        frame = frame.merge(
-            gene_pool,
-            on=["gene", "name", "position", "wt_aa", "mut_aa", "label"],
-            how="left",
-        )
-        rescored_frames.append(frame)
-
-    validation_df = pd.concat(rescored_frames, ignore_index=True)
-    validation_df["ll_norm_strong"] = validation_df.groupby("gene")["ll_proper"].transform(minmax_normalize)
-    validation_df["frob_norm_strong"] = validation_df.groupby("gene")["frob_dist"].transform(minmax_normalize)
-    validation_df["pair_norm_strong"] = (0.55 * validation_df["frob_norm_strong"]) + (0.45 * validation_df["ll_norm_strong"])
-    validation_df["strong_model_name"] = VALIDATION_MODEL_NAME
-    rescored_now = True
-    score_source_note = f"Re-scored validation pool on {VALIDATION_MODEL_NAME}"
+    raise FileNotFoundError(
+        "Notebook 8b expected to reuse notebook 8 outputs on T4, but it could not find "
+        "failure_mode_validation_rows.csv or extract it from failure_mode_validation_bundle.zip. "
+        "Place the notebook 8 bundle under notebooks/Results 7,8,9 and rerun this cell."
+    )
 
 print("used_existing_validation_rows =", used_existing_validation_rows)
 print("rescored_now =", rescored_now)
