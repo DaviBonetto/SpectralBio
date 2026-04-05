@@ -1,0 +1,34 @@
+{
+  "screen_name": "SpectralBio failure-mode screen",
+  "selected_regime": "to_basic__AND__high_disagreement_q75",
+  "ready_for_h100": true,
+  "selection_reason": "Selected regime passed the expanded strict gate in the broader failure-mode search.",
+  "thresholds": {
+    "rescue_threshold": 0.12,
+    "harm_threshold": 0.12,
+    "min_rescued_positives": 4,
+    "min_reference_gap": 0.05
+  },
+  "selected_regime_summary": {
+    "regime": "to_basic__AND__high_disagreement_q75",
+    "predicate_count": 2,
+    "regime_size_aug": 128,
+    "regime_size_reference": 352,
+    "rescued_positive_count": 8,
+    "harmed_benign_count": 5,
+    "genes_with_rescued_positive": 4,
+    "path_rescue_margin_mean": -0.038393947524300295,
+    "benign_rescue_margin_mean": -0.04309813372891471,
+    "reference_gap": 0.050620215143912614,
+    "strict_gate_pass": true,
+    "composite_score": 0.2808650702627387
+  },
+  "panel_manifest_path": "supplementary/final_accept_a100/panel25/support_ranked_panel_manifest.json",
+  "validation_pool_counts": {
+    "matched_positive_control": 13,
+    "candidate_positive_existing_aug": 8,
+    "candidate_positive_reference_extension": 6,
+    "regime_benign": 4
+  },
+  "recommended_h100_variant_count": 31
+}
