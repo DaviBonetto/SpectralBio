@@ -41,8 +41,8 @@ This notebook is the one-shot follow-up to notebook 8.
 - Show that this repair happens across a majority of candidate variants and across most genes with matched controls.
 
 ## Output contract
-- Save everything only inside `notebooks/`.
-- Write a zip bundle directly into `notebooks/` so it can be downloaded from the notebooks pane.
+- Save everything only inside `notebooks/Results 7,8,9`.
+- Write a zip bundle directly into that folder so it can be downloaded from the notebooks pane.
 """
     ),
     code_cell(
@@ -125,7 +125,7 @@ print("ACABEI PODE IR PARA O PRÓXIMO")
 2. Prefer existing notebook 8 validation rows if they already exist in `notebooks/Results 7,8,9`.
 3. If needed, re-score the same pool on a configurable stronger backbone.
 4. Validate **scale repair** using gap direction, per-variant repair rates, and gene-level flips.
-5. Save tables, figures, narrative text, and a zip bundle only under `notebooks/`.
+5. Save tables, figures, narrative text, and a zip bundle only under `notebooks/Results 7,8,9`.
 """
     ),
     code_cell(
@@ -145,7 +145,7 @@ from spectralbio.constants import WINDOW_RADIUS
 from spectralbio.supplementary.reject_recovery import _ensure_gene_score_rows
 from spectralbio.utils.io import ensure_dir
 
-OUTPUT_ROOT = REPO_ROOT / "notebooks" / "failure_mode_scale_repair_bundle"
+OUTPUT_ROOT = REPO_ROOT / "notebooks" / "Results 7,8,9" / "failure_mode_scale_repair_bundle"
 TABLES_DIR = OUTPUT_ROOT / "tables"
 FIGURES_DIR = OUTPUT_ROOT / "figures"
 SCORES_DIR = OUTPUT_ROOT / "scores"
@@ -553,6 +553,13 @@ print("ACABEI PODE IR PARA O PRÓXIMO")
 print("Bundle written to", ZIP_PATH)
 print("Results folder =", OUTPUT_ROOT)
 print("ZIP ready in notebooks pane =", ZIP_PATH)
+try:
+    from google.colab import files as colab_files
+
+    colab_files.download(str(ZIP_PATH))
+    print("Auto-download triggered.")
+except Exception as exc:
+    print(f"Auto-download was not triggered: {exc}")
 print("ACABEI PODE IR PARA O PRÓXIMO")
 """
     ),
