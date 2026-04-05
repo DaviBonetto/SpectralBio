@@ -142,7 +142,6 @@ import numpy as np
 import pandas as pd
 
 from spectralbio.constants import WINDOW_RADIUS
-from spectralbio.supplementary.reject_recovery import _ensure_gene_score_rows
 from spectralbio.utils.io import ensure_dir
 
 OUTPUT_ROOT = REPO_ROOT / "notebooks" / "Results 7,8,9" / "failure_mode_scale_repair_bundle"
@@ -194,6 +193,20 @@ def minmax_normalize(series: pd.Series) -> pd.Series:
     if maximum <= minimum:
         return pd.Series(np.zeros(len(values), dtype=float), index=series.index)
     return (values - minimum) / (maximum - minimum)
+
+
+def _ensure_gene_score_rows_lazy(**kwargs):
+    try:
+        from spectralbio.supplementary.reject_recovery import _ensure_gene_score_rows as _inner
+    except Exception as exc:
+        raise RuntimeError(
+            "Could not import the stronger-backbone rescoring helper. "
+            "Notebook 8b can still run from existing notebook 8 outputs on T4. "
+            "If you expected a reuse-only run, confirm that "
+            "failure_mode_validation_rows.csv from notebook 8 is available under notebooks/Results 7,8,9. "
+            f"Original import error: {exc}"
+        ) from exc
+    return _inner(**kwargs)
 
 
 print("validation model =", VALIDATION_MODEL_NAME)
@@ -289,7 +302,7 @@ if validation_df is None:
     for gene, gene_pool in validation_pool.groupby("gene", sort=True):
         sequence = load_gene_sequence(str(gene).upper())
         variant_rows = gene_pool[["gene", "name", "position", "wt_aa", "mut_aa", "label"]].to_dict("records")
-        score_rows = _ensure_gene_score_rows(
+        score_rows = _ensure_gene_score_rows_lazy(
             gene=str(gene).upper(),
             sequence=sequence,
             variants=variant_rows,
