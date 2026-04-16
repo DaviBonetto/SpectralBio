@@ -1,0 +1,14 @@
+{
+  "gene": "MSH2",
+  "esm1v_scoring_mode": "full_sequence",
+  "auc_esm1v_mean": 0.9232531841447447,
+  "auc_augmented_pair_fixed_055": 0.8457028925127961,
+  "delta_augmented_vs_esm1v": -0.0775502916319486,
+  "bootstrap_ci_2p5": -0.10785718004471745,
+  "bootstrap_ci_97p5": -0.04894482775763693,
+  "bootstrap_p_one_sided_pair_gt_baseline": 1.0,
+  "best_alpha_full_surface": 0.0,
+  "best_alpha_full_surface_auc": 0.9232531841447447,
+  "permute_frob_p_ge_observed": 0.7122877122877123,
+  "permute_esm1v_p_ge_observed": 1.0
+}

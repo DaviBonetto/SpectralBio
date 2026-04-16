@@ -1,0 +1,628 @@
+{
+  "benchmark": "ESM-1v augmentation audit",
+  "esm1v_model_ids": [
+    "facebook/esm1v_t33_650M_UR90S_1",
+    "facebook/esm1v_t33_650M_UR90S_2",
+    "facebook/esm1v_t33_650M_UR90S_3",
+    "facebook/esm1v_t33_650M_UR90S_4",
+    "facebook/esm1v_t33_650M_UR90S_5"
+  ],
+  "genes": {
+    "TP53": {
+      "gene": "TP53",
+      "n_total": 255,
+      "n_positive": 115,
+      "n_negative": 140,
+      "esm1v_scoring_mode": "full_sequence",
+      "auc_esm1v_mean": 0.9465838509316771,
+      "auc_reference_pair_fixed_055": 0.749751552795031,
+      "auc_augmented_pair_fixed_055": 0.9304968944099379,
+      "delta_augmented_vs_esm1v": -0.016086956521739193,
+      "delta_augmented_vs_reference_pair": 0.18074534161490685,
+      "pair_vs_esm1v_bootstrap_delta": {
+        "observed_delta": -0.016086956521739193,
+        "n_boot_requested": 1000,
+        "n_boot_valid": 1000,
+        "ci_2p5": -0.04164773534928658,
+        "ci_50": -0.015349420986502216,
+        "ci_97p5": 0.006031411088911139,
+        "p_one_sided_pair_gt_baseline": 0.9100899100899101
+      },
+      "best_alpha_on_full_surface": {
+        "alpha": 0.3,
+        "beta": 0.7,
+        "auc": 0.9525465838509317
+      },
+      "alpha_sweep": [
+        {
+          "alpha": 0.0,
+          "beta": 1.0,
+          "auc": 0.9465838509316771
+        },
+        {
+          "alpha": 0.05,
+          "beta": 0.95,
+          "auc": 0.948695652173913
+        },
+        {
+          "alpha": 0.1,
+          "beta": 0.9,
+          "auc": 0.9502484472049689
+        },
+        {
+          "alpha": 0.15,
+          "beta": 0.85,
+          "auc": 0.9511801242236024
+        },
+        {
+          "alpha": 0.2,
+          "beta": 0.8,
+          "auc": 0.9514906832298137
+        },
+        {
+          "alpha": 0.25,
+          "beta": 0.75,
+          "auc": 0.9522981366459627
+        },
+        {
+          "alpha": 0.3,
+          "beta": 0.7,
+          "auc": 0.9525465838509317
+        },
+        {
+          "alpha": 0.35,
+          "beta": 0.65,
+          "auc": 0.9518633540372671
+        },
+        {
+          "alpha": 0.4,
+          "beta": 0.6,
+          "auc": 0.9480124223602484
+        },
+        {
+          "alpha": 0.45,
+          "beta": 0.55,
+          "auc": 0.9451552795031056
+        },
+        {
+          "alpha": 0.5,
+          "beta": 0.5,
+          "auc": 0.9393167701863354
+        },
+        {
+          "alpha": 0.55,
+          "beta": 0.45,
+          "auc": 0.9304968944099379
+        },
+        {
+          "alpha": 0.6,
+          "beta": 0.4,
+          "auc": 0.9204347826086956
+        },
+        {
+          "alpha": 0.65,
+          "beta": 0.35,
+          "auc": 0.9072670807453416
+        },
+        {
+          "alpha": 0.7,
+          "beta": 0.3,
+          "auc": 0.89
+        },
+        {
+          "alpha": 0.75,
+          "beta": 0.25,
+          "auc": 0.867888198757764
+        },
+        {
+          "alpha": 0.8,
+          "beta": 0.2,
+          "auc": 0.8383850931677018
+        },
+        {
+          "alpha": 0.85,
+          "beta": 0.15,
+          "auc": 0.7980745341614907
+        },
+        {
+          "alpha": 0.9,
+          "beta": 0.1,
+          "auc": 0.7463975155279503
+        },
+        {
+          "alpha": 0.95,
+          "beta": 0.05,
+          "auc": 0.6846583850931677
+        },
+        {
+          "alpha": 1.0,
+          "beta": 0.0,
+          "auc": 0.6209316770186335
+        }
+      ],
+      "shadow_model_name": "facebook/esm2_t36_3B_UR50D",
+      "auc_augmented_pair_shadow": 0.9060869565217391,
+      "delta_shadow_vs_esm1v": -0.04049689440993798
+    },
+    "BRCA1": {
+      "gene": "BRCA1",
+      "n_total": 512,
+      "n_positive": 165,
+      "n_negative": 347,
+      "esm1v_scoring_mode": "local_window",
+      "auc_esm1v_mean": 0.7865164614444153,
+      "auc_reference_pair_fixed_055": 0.8284865950572002,
+      "auc_augmented_pair_fixed_055": 0.7950921316915553,
+      "delta_augmented_vs_esm1v": 0.00857567024714001,
+      "delta_augmented_vs_reference_pair": -0.03339446336564489,
+      "pair_vs_esm1v_bootstrap_delta": {
+        "observed_delta": 0.00857567024714001,
+        "n_boot_requested": 1000,
+        "n_boot_valid": 1000,
+        "ci_2p5": -0.02297297010376792,
+        "ci_50": 0.007885114951900196,
+        "ci_97p5": 0.04456822195922275,
+        "p_one_sided_pair_gt_baseline": 0.3006993006993007
+      },
+      "best_alpha_on_full_surface": {
+        "alpha": 0.3,
+        "beta": 0.7,
+        "auc": 0.8056239629726661
+      },
+      "alpha_sweep": [
+        {
+          "alpha": 0.0,
+          "beta": 1.0,
+          "auc": 0.7865164614444153
+        },
+        {
+          "alpha": 0.05,
+          "beta": 0.95,
+          "auc": 0.7910051523884377
+        },
+        {
+          "alpha": 0.1,
+          "beta": 0.9,
+          "auc": 0.7946554886036155
+        },
+        {
+          "alpha": 0.15,
+          "beta": 0.85,
+          "auc": 0.7995808226355777
+        },
+        {
+          "alpha": 0.2,
+          "beta": 0.8,
+          "auc": 0.8025849270806044
+        },
+        {
+          "alpha": 0.25,
+          "beta": 0.75,
+          "auc": 0.8048904025849271
+        },
+        {
+          "alpha": 0.3,
+          "beta": 0.7,
+          "auc": 0.8056239629726661
+        },
+        {
+          "alpha": 0.35,
+          "beta": 0.65,
+          "auc": 0.8047332110732687
+        },
+        {
+          "alpha": 0.4,
+          "beta": 0.6,
+          "auc": 0.8034407475329666
+        },
+        {
+          "alpha": 0.45,
+          "beta": 0.55,
+          "auc": 0.8011003405816086
+        },
+        {
+          "alpha": 0.5,
+          "beta": 0.5,
+          "auc": 0.7985154135010043
+        },
+        {
+          "alpha": 0.55,
+          "beta": 0.45,
+          "auc": 0.7950921316915553
+        },
+        {
+          "alpha": 0.6,
+          "beta": 0.4,
+          "auc": 0.7910400838354729
+        },
+        {
+          "alpha": 0.65,
+          "beta": 0.35,
+          "auc": 0.7855383809274299
+        },
+        {
+          "alpha": 0.7,
+          "beta": 0.3,
+          "auc": 0.7786743515850144
+        },
+        {
+          "alpha": 0.75,
+          "beta": 0.25,
+          "auc": 0.7702209414024976
+        },
+        {
+          "alpha": 0.8,
+          "beta": 0.2,
+          "auc": 0.7594969871626932
+        },
+        {
+          "alpha": 0.85,
+          "beta": 0.15,
+          "auc": 0.7448083136843944
+        },
+        {
+          "alpha": 0.9,
+          "beta": 0.1,
+          "auc": 0.7258754693913195
+        },
+        {
+          "alpha": 0.95,
+          "beta": 0.05,
+          "auc": 0.7022618111955288
+        },
+        {
+          "alpha": 1.0,
+          "beta": 0.0,
+          "auc": 0.6707187145227491
+        }
+      ]
+    },
+    "BRCA2": {
+      "gene": "BRCA2",
+      "n_total": 658,
+      "n_positive": 100,
+      "n_negative": 558,
+      "esm1v_scoring_mode": "local_window",
+      "auc_esm1v_mean": 0.6323835125448029,
+      "auc_reference_pair_fixed_055": 0.7445878136200716,
+      "auc_augmented_pair_fixed_055": 0.6889784946236559,
+      "delta_augmented_vs_esm1v": 0.05659498207885305,
+      "delta_augmented_vs_reference_pair": -0.055609318996415746,
+      "pair_vs_esm1v_bootstrap_delta": {
+        "observed_delta": 0.05659498207885305,
+        "n_boot_requested": 1000,
+        "n_boot_valid": 1000,
+        "ci_2p5": 0.013139085295604062,
+        "ci_50": 0.056353965322495425,
+        "ci_97p5": 0.1063037599856574,
+        "p_one_sided_pair_gt_baseline": 0.007992007992007992
+      },
+      "best_alpha_on_full_surface": {
+        "alpha": 0.9,
+        "beta": 0.1,
+        "auc": 0.7142652329749104
+      },
+      "alpha_sweep": [
+        {
+          "alpha": 0.0,
+          "beta": 1.0,
+          "auc": 0.6323835125448029
+        },
+        {
+          "alpha": 0.05,
+          "beta": 0.95,
+          "auc": 0.6411290322580645
+        },
+        {
+          "alpha": 0.1,
+          "beta": 0.9,
+          "auc": 0.6495519713261648
+        },
+        {
+          "alpha": 0.15,
+          "beta": 0.85,
+          "auc": 0.6563082437275986
+        },
+        {
+          "alpha": 0.2,
+          "beta": 0.8,
+          "auc": 0.662831541218638
+        },
+        {
+          "alpha": 0.25,
+          "beta": 0.75,
+          "auc": 0.6676702508960574
+        },
+        {
+          "alpha": 0.3,
+          "beta": 0.7,
+          "auc": 0.6717741935483871
+        },
+        {
+          "alpha": 0.35,
+          "beta": 0.65,
+          "auc": 0.6754480286738351
+        },
+        {
+          "alpha": 0.4,
+          "beta": 0.6,
+          "auc": 0.678010752688172
+        },
+        {
+          "alpha": 0.45,
+          "beta": 0.55,
+          "auc": 0.6820250896057347
+        },
+        {
+          "alpha": 0.5,
+          "beta": 0.5,
+          "auc": 0.6856810035842293
+        },
+        {
+          "alpha": 0.55,
+          "beta": 0.45,
+          "auc": 0.6889784946236559
+        },
+        {
+          "alpha": 0.6,
+          "beta": 0.4,
+          "auc": 0.6918458781362007
+        },
+        {
+          "alpha": 0.65,
+          "beta": 0.35,
+          "auc": 0.6968637992831541
+        },
+        {
+          "alpha": 0.7,
+          "beta": 0.3,
+          "auc": 0.7002329749103943
+        },
+        {
+          "alpha": 0.75,
+          "beta": 0.25,
+          "auc": 0.7043548387096774
+        },
+        {
+          "alpha": 0.8,
+          "beta": 0.2,
+          "auc": 0.7094086021505376
+        },
+        {
+          "alpha": 0.85,
+          "beta": 0.15,
+          "auc": 0.7124193548387097
+        },
+        {
+          "alpha": 0.9,
+          "beta": 0.1,
+          "auc": 0.7142652329749104
+        },
+        {
+          "alpha": 0.95,
+          "beta": 0.05,
+          "auc": 0.7136021505376344
+        },
+        {
+          "alpha": 1.0,
+          "beta": 0.0,
+          "auc": 0.7099820788530466
+        }
+      ],
+      "shadow_model_name": "facebook/esm2_t36_3B_UR50D",
+      "auc_augmented_pair_shadow": 0.6645698924731183,
+      "delta_shadow_vs_esm1v": 0.03218637992831541
+    },
+    "NSD1": {
+      "gene": "NSD1",
+      "n_total": 407,
+      "n_positive": 160,
+      "n_negative": 247,
+      "esm1v_scoring_mode": "local_window",
+      "auc_esm1v_mean": 0.8827935222672065,
+      "auc_reference_pair_fixed_055": 0.860754048582996,
+      "auc_augmented_pair_fixed_055": 0.8741902834008097,
+      "delta_augmented_vs_esm1v": -0.0086032388663968,
+      "delta_augmented_vs_reference_pair": 0.013436234817813753,
+      "pair_vs_esm1v_bootstrap_delta": {
+        "observed_delta": -0.0086032388663968,
+        "n_boot_requested": 1000,
+        "n_boot_valid": 1000,
+        "ci_2p5": -0.0378074309883086,
+        "ci_50": -0.008784606874366219,
+        "ci_97p5": 0.02305025822909314,
+        "p_one_sided_pair_gt_baseline": 0.7022977022977023
+      },
+      "best_alpha_on_full_surface": {
+        "alpha": 0.25,
+        "beta": 0.75,
+        "auc": 0.8960779352226721
+      },
+      "alpha_sweep": [
+        {
+          "alpha": 0.0,
+          "beta": 1.0,
+          "auc": 0.8827935222672065
+        },
+        {
+          "alpha": 0.05,
+          "beta": 0.95,
+          "auc": 0.8877783400809717
+        },
+        {
+          "alpha": 0.1,
+          "beta": 0.9,
+          "auc": 0.8915738866396761
+        },
+        {
+          "alpha": 0.15,
+          "beta": 0.85,
+          "auc": 0.8945597165991903
+        },
+        {
+          "alpha": 0.2,
+          "beta": 0.8,
+          "auc": 0.8954453441295547
+        },
+        {
+          "alpha": 0.25,
+          "beta": 0.75,
+          "auc": 0.8960779352226721
+        },
+        {
+          "alpha": 0.3,
+          "beta": 0.7,
+          "auc": 0.8959261133603239
+        },
+        {
+          "alpha": 0.35,
+          "beta": 0.65,
+          "auc": 0.8939018218623481
+        },
+        {
+          "alpha": 0.4,
+          "beta": 0.6,
+          "auc": 0.8905617408906883
+        },
+        {
+          "alpha": 0.45,
+          "beta": 0.55,
+          "auc": 0.8860576923076923
+        },
+        {
+          "alpha": 0.5,
+          "beta": 0.5,
+          "auc": 0.8810475708502025
+        },
+        {
+          "alpha": 0.55,
+          "beta": 0.45,
+          "auc": 0.8741902834008097
+        },
+        {
+          "alpha": 0.6,
+          "beta": 0.4,
+          "auc": 0.8648785425101214
+        },
+        {
+          "alpha": 0.65,
+          "beta": 0.35,
+          "auc": 0.8545293522267207
+        },
+        {
+          "alpha": 0.7,
+          "beta": 0.3,
+          "auc": 0.8404858299595142
+        },
+        {
+          "alpha": 0.75,
+          "beta": 0.25,
+          "auc": 0.822494939271255
+        },
+        {
+          "alpha": 0.8,
+          "beta": 0.2,
+          "auc": 0.8024038461538462
+        },
+        {
+          "alpha": 0.85,
+          "beta": 0.15,
+          "auc": 0.7778846153846154
+        },
+        {
+          "alpha": 0.9,
+          "beta": 0.1,
+          "auc": 0.7504554655870446
+        },
+        {
+          "alpha": 0.95,
+          "beta": 0.05,
+          "auc": 0.719838056680162
+        },
+        {
+          "alpha": 1.0,
+          "beta": 0.0,
+          "auc": 0.6857540485829959
+        }
+      ]
+    }
+  },
+  "gene_rows": [
+    {
+      "gene": "TP53",
+      "n_total": 255,
+      "n_positive": 115,
+      "n_negative": 140,
+      "esm1v_scoring_mode": "full_sequence",
+      "auc_esm1v_mean": 0.9465838509316771,
+      "auc_reference_pair_fixed_055": 0.749751552795031,
+      "auc_augmented_pair_fixed_055": 0.9304968944099379,
+      "delta_augmented_vs_esm1v": -0.016086956521739193,
+      "delta_augmented_vs_reference_pair": 0.18074534161490685,
+      "best_alpha": 0.3,
+      "best_alpha_auc": 0.9525465838509317,
+      "paired_delta_ci_2p5": -0.04164773534928658,
+      "paired_delta_ci_97p5": 0.006031411088911139,
+      "shadow_model_name": "facebook/esm2_t36_3B_UR50D",
+      "auc_augmented_pair_shadow": 0.9060869565217391,
+      "delta_shadow_vs_esm1v": -0.04049689440993798
+    },
+    {
+      "gene": "BRCA1",
+      "n_total": 512,
+      "n_positive": 165,
+      "n_negative": 347,
+      "esm1v_scoring_mode": "local_window",
+      "auc_esm1v_mean": 0.7865164614444153,
+      "auc_reference_pair_fixed_055": 0.8284865950572002,
+      "auc_augmented_pair_fixed_055": 0.7950921316915553,
+      "delta_augmented_vs_esm1v": 0.00857567024714001,
+      "delta_augmented_vs_reference_pair": -0.03339446336564489,
+      "best_alpha": 0.3,
+      "best_alpha_auc": 0.8056239629726661,
+      "paired_delta_ci_2p5": -0.02297297010376792,
+      "paired_delta_ci_97p5": 0.04456822195922275,
+      "shadow_model_name": "",
+      "auc_augmented_pair_shadow": NaN,
+      "delta_shadow_vs_esm1v": NaN
+    },
+    {
+      "gene": "BRCA2",
+      "n_total": 658,
+      "n_positive": 100,
+      "n_negative": 558,
+      "esm1v_scoring_mode": "local_window",
+      "auc_esm1v_mean": 0.6323835125448029,
+      "auc_reference_pair_fixed_055": 0.7445878136200716,
+      "auc_augmented_pair_fixed_055": 0.6889784946236559,
+      "delta_augmented_vs_esm1v": 0.05659498207885305,
+      "delta_augmented_vs_reference_pair": -0.055609318996415746,
+      "best_alpha": 0.9,
+      "best_alpha_auc": 0.7142652329749104,
+      "paired_delta_ci_2p5": 0.013139085295604062,
+      "paired_delta_ci_97p5": 0.1063037599856574,
+      "shadow_model_name": "facebook/esm2_t36_3B_UR50D",
+      "auc_augmented_pair_shadow": 0.6645698924731183,
+      "delta_shadow_vs_esm1v": 0.03218637992831541
+    },
+    {
+      "gene": "NSD1",
+      "n_total": 407,
+      "n_positive": 160,
+      "n_negative": 247,
+      "esm1v_scoring_mode": "local_window",
+      "auc_esm1v_mean": 0.8827935222672065,
+      "auc_reference_pair_fixed_055": 0.860754048582996,
+      "auc_augmented_pair_fixed_055": 0.8741902834008097,
+      "delta_augmented_vs_esm1v": -0.0086032388663968,
+      "delta_augmented_vs_reference_pair": 0.013436234817813753,
+      "best_alpha": 0.25,
+      "best_alpha_auc": 0.8960779352226721,
+      "paired_delta_ci_2p5": -0.0378074309883086,
+      "paired_delta_ci_97p5": 0.02305025822909314,
+      "shadow_model_name": "",
+      "auc_augmented_pair_shadow": NaN,
+      "delta_shadow_vs_esm1v": NaN
+    }
+  ]
+}

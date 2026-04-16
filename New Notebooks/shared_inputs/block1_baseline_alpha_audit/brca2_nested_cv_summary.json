@@ -1,0 +1,29 @@
+{
+  "benchmark": "BRCA2 nested CV audit",
+  "gene": "BRCA2",
+  "n_rows": 658,
+  "n_splits": 5,
+  "n_repeats": 5,
+  "alpha_step": 0.05,
+  "released_alpha": 0.55,
+  "comparison_means": {
+    "auc_tuned_alpha_mean": 0.7408769305019305,
+    "auc_tuned_alpha_std": 0.07078429643091716,
+    "auc_fixed_055_mean": 0.7447512870012869,
+    "auc_fixed_055_std": 0.07456513209883732,
+    "auc_fixed_050_mean": 0.7438666344916345,
+    "auc_fixed_050_std": 0.07629875583678264,
+    "auc_ll_proper_mean": 0.6937879665379666,
+    "auc_ll_proper_std": 0.08478295248911624,
+    "auc_frob_dist_mean": 0.7109684684684684,
+    "auc_frob_dist_std": 0.0572188954869147
+  },
+  "chosen_alpha_mean": 0.616,
+  "chosen_alpha_std": 0.088,
+  "artifacts": {
+    "fold_results": "/teamspace/studios/this_studio/Stanford-Claw4s/supplementary/final_accept_a100/gene_nested_cv/brca2/brca2_nested_cv_fold_results.csv",
+    "alpha_distribution": "/teamspace/studios/this_studio/Stanford-Claw4s/supplementary/final_accept_a100/gene_nested_cv/brca2/brca2_nested_cv_alpha_distribution.csv",
+    "summary": "/teamspace/studios/this_studio/Stanford-Claw4s/supplementary/final_accept_a100/gene_nested_cv/brca2/brca2_nested_cv_summary.json",
+    "inner_sweeps": "/teamspace/studios/this_studio/Stanford-Claw4s/supplementary/final_accept_a100/gene_nested_cv/brca2/brca2_nested_cv_inner_sweeps.json"
+  }
+}
