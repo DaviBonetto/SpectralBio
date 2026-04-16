@@ -226,7 +226,7 @@ def build_notebook() -> dict:
             "with zipfile.ZipFile(zip_path, 'w', compression=zipfile.ZIP_DEFLATED) as archive:\n"
             "    for file_path in sorted(results_root.rglob('*')):\n"
             "        if file_path.is_file():\n"
-            "            archive.write(file_path, file_path.relative_to(campaign_root.parent))\n\n"
+            "            archive.write(file_path, file_path.relative_to(results_root.parent))\n\n"
             "artifact_summary = {\n"
             "    'zip_path': str(zip_path),\n"
             "    'zip_size_bytes': zip_path.stat().st_size,\n"
