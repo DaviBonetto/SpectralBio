@@ -14,12 +14,15 @@ def markdown_cell(source: str) -> dict:
 
 
 def code_cell(source: str) -> dict:
+    normalized = source.rstrip()
+    if "done(" not in normalized:
+        normalized = f"{normalized}\n\ndone('Cell completed.')"
     return {
         "cell_type": "code",
         "execution_count": None,
         "metadata": {},
         "outputs": [],
-        "source": source.splitlines(keepends=True),
+        "source": (normalized + "\n").splitlines(keepends=True),
     }
 
 
@@ -70,7 +73,7 @@ def build_notebook() -> dict:
                 from IPython.display import display
 
                 NOTEBOOK_SLUG = '08_block7_turbo_gallery_rescues_h100'
-                ACCOUNT_LABEL = os.environ.get('SPECTRALBIO_ACCOUNT_LABEL', 'SET_ACCOUNT_LABEL_HERE')
+                ACCOUNT_LABEL = os.environ.get('SPECTRALBIO_ACCOUNT_LABEL', 'local_run')
                 RUN_AT = datetime.now(timezone.utc).isoformat()
                 OVERWRITE = os.environ.get('SPECTRALBIO_OVERWRITE', '').strip().lower() in {'1', 'true', 'yes'}
                 TOP_POSITIVE_CASES = int(os.environ.get('SPECTRALBIO_BLOCK7_TOP_POSITIVE_CASES', '5'))
@@ -102,6 +105,13 @@ def build_notebook() -> dict:
                     ('numpy', 'numpy==2.1.3'),
                     ('pandas', 'pandas==2.2.3'),
                     ('matplotlib', 'matplotlib==3.9.2'),
+                    ('sklearn', 'scikit-learn==1.5.2'),
+                    ('scipy', 'scipy>=1.14.0'),
+                    ('torch', 'torch'),
+                    ('transformers', 'transformers==4.49.0'),
+                    ('accelerate', 'accelerate>=1.0.0'),
+                    ('sentencepiece', 'sentencepiece>=0.2.0'),
+                    ('safetensors', 'safetensors>=0.4.0'),
                     ('requests', 'requests>=2.32.0'),
                 ]
                 missing_specs: list[str] = []

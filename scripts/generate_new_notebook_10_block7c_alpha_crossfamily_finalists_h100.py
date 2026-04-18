@@ -14,12 +14,15 @@ def markdown_cell(source: str) -> dict:
 
 
 def code_cell(source: str) -> dict:
+    normalized = source.rstrip()
+    if "done(" not in normalized:
+        normalized = f"{normalized}\n\ndone('Cell completed.')"
     return {
         "cell_type": "code",
         "execution_count": None,
         "metadata": {},
         "outputs": [],
-        "source": source.splitlines(keepends=True),
+        "source": (normalized + "\n").splitlines(keepends=True),
     }
 
 
@@ -74,7 +77,7 @@ def build_notebook() -> dict:
                 from IPython.display import display
 
                 NOTEBOOK_SLUG = '10_block7c_alpha_crossfamily_finalists_h100'
-                ACCOUNT_LABEL = os.environ.get('SPECTRALBIO_ACCOUNT_LABEL', 'SET_ACCOUNT_LABEL_HERE')
+                ACCOUNT_LABEL = os.environ.get('SPECTRALBIO_ACCOUNT_LABEL', 'local_run')
                 RUN_AT = datetime.now(timezone.utc).isoformat()
                 OVERWRITE = os.environ.get('SPECTRALBIO_OVERWRITE', '').strip().lower() in {'1', 'true', 'yes'}
                 SKIP_LIVE = os.environ.get('SPECTRALBIO_BLOCK7C_SKIP_LIVE', '').strip().lower() in {'1', 'true', 'yes'}
