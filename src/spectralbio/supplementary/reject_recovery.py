@@ -533,6 +533,7 @@ def _score_variant_from_sequence(
         "wt_aa": wt_aa,
         "mut_aa": mut_aa,
         "label": int(row["label"]),
+        "variant_id": str(row.get("variant_id", row["name"])),
         "frob_dist": float(covariance_metrics["frob_dist"]),
         "trace_ratio": float(covariance_metrics["trace_ratio"]),
         "sps_log": float(covariance_metrics["sps_log"]),
@@ -575,6 +576,7 @@ def _typed_score_row(row: dict[str, Any]) -> dict[str, Any]:
         "wt_aa": str(row["wt_aa"]),
         "mut_aa": str(row["mut_aa"]),
         "label": int(row["label"]),
+        "variant_id": str(row.get("variant_id", row["name"])),
         "frob_dist": float(row["frob_dist"]),
         "trace_ratio": float(row["trace_ratio"]),
         "sps_log": float(row["sps_log"]),
@@ -599,12 +601,20 @@ def _ensure_gene_score_rows(
 ) -> list[dict[str, Any]]:
     score_path = output_dir / f"{gene.lower()}_{_model_slug(model_name)}_scores.csv"
     metadata_path = output_dir / f"{gene.lower()}_{_model_slug(model_name)}_metadata.json"
-    if score_path.exists() and not overwrite:
-        existing = _read_csv_rows(score_path)
-        if existing and len(existing) >= len(variants):
-            return [_typed_score_row(row) for row in existing]
+    existing_rows = _read_csv_rows(score_path)
+    expected_variant_ids = {str(row.get("variant_id", row["name"])) for row in variants}
+    existing_typed = [_typed_score_row(row) for row in existing_rows] if existing_rows else []
+    existing_variant_ids = {str(row.get("variant_id", row["name"])) for row in existing_typed}
+    existing_has_variant_ids = bool(existing_typed) and all(str(row.get("variant_id", "")).strip() for row in existing_typed)
 
-    done_rows = {_typed_score_row(row)["name"]: _typed_score_row(row) for row in _read_csv_rows(score_path)}
+    if score_path.exists() and not overwrite:
+        if existing_typed and len(existing_typed) >= len(variants) and existing_has_variant_ids and expected_variant_ids.issubset(existing_variant_ids):
+            return existing_typed
+
+    if existing_typed and existing_has_variant_ids:
+        done_rows = {row["name"]: row for row in existing_typed}
+    else:
+        done_rows = {}
     bundle = _load_esm_bundle(model_name)
     wt_cache: dict[int, tuple[np.ndarray, Any, int]] = {}
     started_at = time.time()
