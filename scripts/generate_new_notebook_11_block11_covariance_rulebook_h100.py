@@ -359,10 +359,23 @@ def build_notebook() -> dict:
                     RESULTS_DIR / '02_block2_failure_mode_hunt_h100' / '02_block2_failure_mode_hunt_h100' / 'tables' / 'candidate_exemplars_ranked.csv',
                     SHARED_INPUTS_DIR / 'block2' / 'candidate_exemplars_ranked.csv',
                 ))
-                tp53_strict = pd.read_csv(resolve_existing_path(
+                tp53_strict_candidates = [
                     RESULTS_DIR / '07b_block10_structural_dissociation_tp53_h100' / '07b_block10_structural_dissociation_tp53_h100' / 'tables' / 'tp53_structural_pairs_variant_level_strict.csv',
                     RESULTS_DIR / '07b_block10_structural_dissociation_tp53_h100' / 'tables' / 'tp53_structural_pairs_variant_level_strict.csv',
-                ))
+                ]
+                tp53_strict_path = next((candidate for candidate in tp53_strict_candidates if candidate.exists()), None)
+                if tp53_strict_path is not None:
+                    tp53_strict = pd.read_csv(tp53_strict_path)
+                    tp53_structural_status = 'loaded'
+                else:
+                    tp53_strict = pd.DataFrame(columns=[
+                        'variant_id',
+                        'pair_rank_norm',
+                        'll_rank_norm',
+                        'excess_local_rmsd_median',
+                        'contact_change_fraction_median',
+                    ])
+                    tp53_structural_status = 'missing_optional_upstream_result'
                 open_points_summary = json.loads(resolve_existing_path(
                     RESULTS_DIR / '09_block7b_open_points_closure' / 'manifests' / 'artifact_summary.json',
                     RESULTS_DIR / '09_block7b_open_points_closure' / '09_block7b_open_points_closure' / 'manifests' / 'artifact_summary.json',
@@ -436,6 +449,7 @@ def build_notebook() -> dict:
                 tp53_rule_panel.to_csv(TABLES_DIR / 'tp53_rule_support_panel.csv', index=False)
 
                 display(decision_panel[['variant_id', 'rule_panel_role', 'rulebook_score', 'recommended_for_covariance', 'reviewer_sticky_summary']])
+                print({'tp53_structural_status': tp53_structural_status, 'tp53_structural_rows': int(len(tp53_strict))})
                 done('Decision panel, Block 2 support panel, and TP53 support panel are assembled.')
                 """
             )
