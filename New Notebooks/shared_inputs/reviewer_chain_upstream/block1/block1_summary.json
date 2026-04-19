@@ -1,0 +1,160 @@
+{
+  "benchmark": "SpectralBio Block 1 baseline alpha regime audit",
+  "account_label": "SET_ACCOUNT_LABEL_HERE",
+  "repo_status": {
+    "repo_root": "/teamspace/studios/this_studio/SpectralBio",
+    "head_commit": "cb52f10a52b911a9c659861e089a3fe034e5ff2c",
+    "head_subject": "feat(notebooks): Add Block 1 H100 audit notebook",
+    "branch": "codex/claw4s-rebuild"
+  },
+  "run_genes": [
+    "TP53",
+    "BRCA2",
+    "MSH2"
+  ],
+  "reviewer_summary_rows": [
+    {
+      "gene": "BRCA2",
+      "auc_esm1v_mean": 0.6323835125448029,
+      "auc_reference_pair_fixed_055": 0.7445878136200716,
+      "auc_augmented_pair_fixed_055": 0.6889784946236559,
+      "delta_augmented_vs_esm1v": 0.05659498207885305,
+      "best_alpha_on_full_surface": 0.9,
+      "best_alpha_auc": 0.7142652329749104,
+      "fixed_alpha_in_plateau": false,
+      "plateau_alpha_min": 0.75,
+      "plateau_alpha_max": 1.0,
+      "paired_delta_ci_2p5": 0.013139085295604062,
+      "paired_delta_ci_97p5": 0.1063037599856574
+    },
+    {
+      "gene": "MSH2",
+      "auc_esm1v_mean": 0.9232531841447447,
+      "auc_reference_pair_fixed_055": 0.7492262825854065,
+      "auc_augmented_pair_fixed_055": 0.8457028925127961,
+      "delta_augmented_vs_esm1v": -0.0775502916319486,
+      "best_alpha_on_full_surface": 0.0,
+      "best_alpha_auc": 0.9232531841447447,
+      "fixed_alpha_in_plateau": false,
+      "plateau_alpha_min": 0.0,
+      "plateau_alpha_max": 0.25,
+      "paired_delta_ci_2p5": -0.10785718004471745,
+      "paired_delta_ci_97p5": -0.04894482775763693
+    },
+    {
+      "gene": "TP53",
+      "auc_esm1v_mean": 0.9465838509316771,
+      "auc_reference_pair_fixed_055": 0.749751552795031,
+      "auc_augmented_pair_fixed_055": 0.9304968944099379,
+      "delta_augmented_vs_esm1v": -0.016086956521739193,
+      "best_alpha_on_full_surface": 0.3,
+      "best_alpha_auc": 0.9525465838509317,
+      "fixed_alpha_in_plateau": false,
+      "plateau_alpha_min": 0.0,
+      "plateau_alpha_max": 0.45,
+      "paired_delta_ci_2p5": -0.04164773534928658,
+      "paired_delta_ci_97p5": 0.006031411088911139
+    }
+  ],
+  "alpha_plateau_rows": [
+    {
+      "best_alpha": 0.9,
+      "best_auc": 0.7142652329749104,
+      "fixed_alpha": 0.55,
+      "fixed_auc": 0.6889784946236559,
+      "delta_fixed_to_best_auc": 0.0252867383512545,
+      "plateau_tolerance_auc": 0.01,
+      "plateau_alpha_min": 0.75,
+      "plateau_alpha_max": 1.0,
+      "plateau_width": 0.25,
+      "fixed_alpha_in_plateau": false,
+      "gene": "BRCA2"
+    },
+    {
+      "best_alpha": 0.0,
+      "best_auc": 0.9232531841447447,
+      "fixed_alpha": 0.55,
+      "fixed_auc": 0.8457028925127961,
+      "delta_fixed_to_best_auc": 0.0775502916319486,
+      "plateau_tolerance_auc": 0.01,
+      "plateau_alpha_min": 0.0,
+      "plateau_alpha_max": 0.25,
+      "plateau_width": 0.25,
+      "fixed_alpha_in_plateau": false,
+      "gene": "MSH2"
+    },
+    {
+      "best_alpha": 0.3,
+      "best_auc": 0.9525465838509317,
+      "fixed_alpha": 0.55,
+      "fixed_auc": 0.9304968944099379,
+      "delta_fixed_to_best_auc": 0.022049689440993836,
+      "plateau_tolerance_auc": 0.01,
+      "plateau_alpha_min": 0.0,
+      "plateau_alpha_max": 0.45,
+      "plateau_width": 0.45,
+      "fixed_alpha_in_plateau": false,
+      "gene": "TP53"
+    }
+  ],
+  "permutation_rows": [
+    {
+      "gene": "TP53",
+      "observed_delta_augmented_vs_esm1v": -0.016086956521739193,
+      "permute_frob_mean": -0.0709368322981367,
+      "permute_frob_ci_2p5": -0.10255745341614914,
+      "permute_frob_ci_97p5": -0.041667701863354126,
+      "permute_frob_empirical_p_ge_observed": 0.000999000999000999,
+      "permute_esm1v_mean": 0.07870627329192546,
+      "permute_esm1v_ci_2p5": 0.05800077639751558,
+      "permute_esm1v_ci_97p5": 0.09854736024844725,
+      "permute_esm1v_empirical_p_ge_observed": 1.0
+    },
+    {
+      "gene": "BRCA2",
+      "observed_delta_augmented_vs_esm1v": 0.05659498207885305,
+      "permute_frob_mean": -0.03497734767025088,
+      "permute_frob_ci_2p5": -0.07679838709677422,
+      "permute_frob_ci_97p5": 0.008822132616487425,
+      "permute_frob_empirical_p_ge_observed": 0.000999000999000999,
+      "permute_esm1v_mean": 0.15257132616487457,
+      "permute_esm1v_ci_2p5": 0.11652822580645161,
+      "permute_esm1v_ci_97p5": 0.18700761648745517,
+      "permute_esm1v_empirical_p_ge_observed": 1.0
+    },
+    {
+      "gene": "MSH2",
+      "observed_delta_augmented_vs_esm1v": -0.0775502916319486,
+      "permute_frob_mean": -0.07046545054160219,
+      "permute_frob_ci_2p5": -0.09425514819664321,
+      "permute_frob_ci_97p5": -0.044929919057255054,
+      "permute_frob_empirical_p_ge_observed": 0.7122877122877123,
+      "permute_esm1v_mean": 0.02038891203428163,
+      "permute_esm1v_ci_2p5": 0.003360463040114223,
+      "permute_esm1v_ci_97p5": 0.03788239495298179,
+      "permute_esm1v_empirical_p_ge_observed": 1.0
+    }
+  ],
+  "selection_rule_rows": [
+    {
+      "field": "support_scan_table",
+      "value": "/teamspace/studios/this_studio/SpectralBio/New Notebooks/results/01_block1_baseline_alpha_regime_audit_h100/runtime/support_scan/clinvar_gene_support_table.csv"
+    },
+    {
+      "field": "min_total",
+      "value": 60
+    },
+    {
+      "field": "min_per_class",
+      "value": 20
+    },
+    {
+      "field": "max_additional_genes",
+      "value": 8
+    },
+    {
+      "field": "ranking",
+      "value": "min_class_count desc | n_total desc | gene asc"
+    }
+  ]
+}

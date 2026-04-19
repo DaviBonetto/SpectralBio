@@ -224,6 +224,7 @@ def build_notebook() -> dict:
                 # Runtime setup, local package imports, and model helper functions
                 REPO_ROOT = find_repo_root()
                 RESULTS_DIR = REPO_ROOT / 'New Notebooks' / 'results'
+                SHARED_INPUTS_DIR = REPO_ROOT / 'New Notebooks' / 'shared_inputs' / 'reviewer_chain_upstream'
                 RESULTS_ROOT = ensure_dir(RESULTS_DIR / NOTEBOOK_SLUG)
                 TABLES_DIR = ensure_dir(RESULTS_ROOT / 'tables')
                 FIGURES_DIR = ensure_dir(RESULTS_ROOT / 'figures')
@@ -261,6 +262,31 @@ def build_notebook() -> dict:
                 if missing_specs:
                     run([sys.executable, '-m', 'pip', 'install', *missing_specs], cwd=REPO_ROOT)
                     importlib.invalidate_caches()
+
+                def clear_modules(prefixes: list[str]) -> None:
+                    for module_name in list(sys.modules):
+                        if any(module_name == prefix or module_name.startswith(prefix + '.') for prefix in prefixes):
+                            sys.modules.pop(module_name, None)
+
+                def apply_transformers_torchvision_hotfix() -> None:
+                    os.environ['DISABLE_TRANSFORMERS_AV'] = '1'
+                    os.environ['TRANSFORMERS_NO_TORCHVISION'] = '1'
+                    try:
+                        import transformers.utils as tutils
+                        import transformers.utils.import_utils as tiu
+
+                        tiu._torchvision_available = False
+                        try:
+                            tiu._torchvision_version = '0.0'
+                        except Exception:
+                            pass
+                        tiu.is_torchvision_available = lambda: False
+                        tutils.is_torchvision_available = lambda: False
+                    except Exception:
+                        pass
+
+                apply_transformers_torchvision_hotfix()
+                clear_modules(['torchvision', 'transformers.image_utils', 'transformers.image_transforms', 'transformers.loss'])
 
                 src_path = REPO_ROOT / 'src'
                 if str(src_path) not in sys.path:
@@ -383,14 +409,17 @@ def build_notebook() -> dict:
                 gallery_final_path = resolve_existing_path(
                     RESULTS_DIR / '08_block7_turbo_gallery_rescues_h100' / 'tables' / 'gallery_final_cases.csv',
                     RESULTS_DIR / '08_block7_turbo_gallery_rescues_h100' / '08_block7_turbo_gallery_rescues_h100' / 'tables' / 'gallery_final_cases.csv',
+                    SHARED_INPUTS_DIR / 'block7' / 'gallery_final_cases.csv',
                 )
                 gallery_anti_path = resolve_existing_path(
                     RESULTS_DIR / '08_block7_turbo_gallery_rescues_h100' / 'tables' / 'gallery_anti_case.csv',
                     RESULTS_DIR / '08_block7_turbo_gallery_rescues_h100' / '08_block7_turbo_gallery_rescues_h100' / 'tables' / 'gallery_anti_case.csv',
+                    SHARED_INPUTS_DIR / 'block7' / 'gallery_anti_case.csv',
                 )
                 counterexample_path = resolve_existing_path(
                     RESULTS_DIR / '06_block5_clinical_panel_audit_h100' / 'tables' / 'clinical_counterexample_cases.csv',
                     RESULTS_DIR / '06_block5_clinical_panel_audit_h100' / '06_block5_clinical_panel_audit_h100' / 'tables' / 'clinical_counterexample_cases.csv',
+                    SHARED_INPUTS_DIR / 'block6' / 'clinical_counterexample_cases.csv',
                 )
 
                 gallery_final = pd.read_csv(gallery_final_path).copy()
@@ -490,7 +519,6 @@ def build_notebook() -> dict:
                 else:
                     live_scores = pd.DataFrame()
                 if not live_scores.empty:
-                    live_scores = live_scores.merge(panel[['variant_id', 'gene', 'label']], on=['variant_id', 'gene', 'label'], how='left')
                     live_scores.to_csv(TABLES_DIR / 'finalists_live_model_rows.csv', index=False)
                     display(live_scores[['variant_id', 'model_label', 'frob_dist', 'll_proper']].head(20))
                 done('Live finalist audit finished.')
@@ -518,7 +546,9 @@ def build_notebook() -> dict:
                     model_summary_rows = []
                     alpha_sweep_frames = []
                     case_support_rows = []
+                    runtime_warning_rows = []
                     positive_variant_ids = panel.loc[panel['label'].eq(1), 'variant_id'].astype(str).tolist()
+                    negative_variant_ids = panel.loc[panel['label'].eq(0), 'variant_id'].astype(str).tolist()
                     alpha_grid_values = alpha_values()
 
                     for spec in MODEL_SPECS:
@@ -526,6 +556,13 @@ def build_notebook() -> dict:
                         model_label = spec['model_label']
                         scalar_name = spec['scalar_name']
                         model_rows_df = live_scores.loc[live_scores['model_label'].eq(model_label)].copy()
+                        if model_rows_df.empty:
+                            runtime_warning_rows.append({
+                                'model_label': model_label,
+                                'warning': 'no_live_rows_for_model',
+                            })
+                            continue
+                        model_rows_df['variant_id'] = model_rows_df['variant_id'].astype(str)
                         rows = model_rows_df[['gene', 'name', 'position', 'wt_aa', 'mut_aa', 'label', 'frob_dist', 'trace_ratio', 'sps_log', 'll_proper', 'model_name']].to_dict(orient='records')
                         summary = _score_rows_summary(rows, FIXED_ALPHA)
                         sweep_rows, best_alpha = _alpha_sweep_on_rows(rows, ALPHA_STEP)
@@ -554,16 +591,43 @@ def build_notebook() -> dict:
                             'best_auc': best_auc,
                             'fixed_alpha_auc': fixed_auc,
                             'fixed_alpha_in_plateau': alpha_in_plateau,
-                            'plateau_fraction': plateau_fraction,
-                            'best_minus_fixed_auc': float(best_auc - fixed_auc),
-                        })
+                                'plateau_fraction': plateau_fraction,
+                                'best_minus_fixed_auc': float(best_auc - fixed_auc),
+                            })
+
+                        aligned_variant_ids = model_rows_df['variant_id'].tolist()
+                        available_variant_ids = set(aligned_variant_ids)
+                        missing_positive_ids = [variant_id for variant_id in positive_variant_ids if variant_id not in available_variant_ids]
+                        missing_negative_ids = [variant_id for variant_id in negative_variant_ids if variant_id not in available_variant_ids]
+                        if missing_positive_ids or missing_negative_ids:
+                            runtime_warning_rows.append({
+                                'model_label': model_label,
+                                'warning': 'missing_variants_for_case_support',
+                                'missing_positive_count': len(missing_positive_ids),
+                                'missing_negative_count': len(missing_negative_ids),
+                                'missing_positive_ids': '|'.join(missing_positive_ids[:10]),
+                                'missing_negative_ids': '|'.join(missing_negative_ids[:10]),
+                            })
 
                         for alpha in alpha_grid_values:
                             pair_scores = _pair_scores(rows, float(alpha))['pair']
-                            pair_by_variant = dict(zip(model_rows_df['variant_id'].astype(str).tolist(), pair_scores))
-                            negative_scores = [pair_by_variant[str(variant_id)] for variant_id in panel.loc[panel['label'].eq(0), 'variant_id'].astype(str).tolist()]
+                            pair_by_variant = {
+                                str(variant_id): float(score)
+                                for variant_id, score in zip(aligned_variant_ids, pair_scores)
+                            }
+                            available_negative_ids = [variant_id for variant_id in negative_variant_ids if variant_id in pair_by_variant]
+                            if not available_negative_ids:
+                                runtime_warning_rows.append({
+                                    'model_label': model_label,
+                                    'warning': 'no_negative_scores_available_for_alpha',
+                                    'alpha': float(alpha),
+                                })
+                                continue
+                            negative_scores = [pair_by_variant[variant_id] for variant_id in available_negative_ids]
                             negative_median = float(np.median(negative_scores))
                             for variant_id in positive_variant_ids:
+                                if variant_id not in pair_by_variant:
+                                    continue
                                 case_support_rows.append({
                                     'variant_id': str(variant_id),
                                     'model_label': model_label,
@@ -572,37 +636,49 @@ def build_notebook() -> dict:
                                     'pair_margin_vs_negative_median': float(pair_by_variant[str(variant_id)] - negative_median),
                                 })
 
-                    alpha_sweep_long = pd.concat(alpha_sweep_frames, ignore_index=True, sort=False)
-                    model_summary = pd.DataFrame(model_summary_rows).sort_values('model_label').reset_index(drop=True)
+                    alpha_sweep_long = pd.concat(alpha_sweep_frames, ignore_index=True, sort=False) if alpha_sweep_frames else pd.DataFrame()
+                    model_summary = pd.DataFrame(model_summary_rows).sort_values('model_label').reset_index(drop=True) if model_summary_rows else pd.DataFrame()
                     case_support_long = pd.DataFrame(case_support_rows)
+                    runtime_warnings = pd.DataFrame(runtime_warning_rows)
+
+                    if not runtime_warnings.empty:
+                        runtime_warnings.to_csv(TABLES_DIR / 'runtime_warnings.csv', index=False)
+                        display(runtime_warnings.head(20))
 
                     def fixed_margin_for_group(frame: pd.DataFrame) -> float:
                         subset = frame.loc[np.isclose(frame['alpha'], FIXED_ALPHA), 'pair_margin_vs_negative_median']
                         return float(subset.iloc[0]) if not subset.empty else float('nan')
 
-                    case_support_collapsed = (
-                        case_support_long
-                        .groupby(['variant_id', 'model_label', 'family_label'], as_index=False)
-                        .apply(
-                            lambda frame: pd.Series({
-                                'alpha_positive_fraction': float(np.mean(frame['pair_margin_vs_negative_median'].to_numpy() > 0)),
-                                'fixed055_margin': fixed_margin_for_group(frame),
-                                'best_margin': float(frame['pair_margin_vs_negative_median'].max()),
-                                'median_margin': float(frame['pair_margin_vs_negative_median'].median()),
-                            })
+                    if not case_support_long.empty:
+                        case_support_collapsed = (
+                            case_support_long
+                            .groupby(['variant_id', 'model_label', 'family_label'], as_index=False)
+                            .apply(
+                                lambda frame: pd.Series({
+                                    'alpha_positive_fraction': float(np.mean(frame['pair_margin_vs_negative_median'].to_numpy() > 0)),
+                                    'fixed055_margin': fixed_margin_for_group(frame),
+                                    'best_margin': float(frame['pair_margin_vs_negative_median'].max()),
+                                    'median_margin': float(frame['pair_margin_vs_negative_median'].median()),
+                                })
+                            )
+                            .reset_index(drop=True)
                         )
-                        .reset_index(drop=True)
-                    )
 
-                    support_matrix = (
-                        case_support_collapsed
-                        .pivot_table(index='variant_id', columns='model_label', values='fixed055_margin', aggfunc='first')
-                        .reset_index()
-                    )
+                        support_matrix = (
+                            case_support_collapsed
+                            .pivot_table(index='variant_id', columns='model_label', values='fixed055_margin', aggfunc='first')
+                            .reset_index()
+                        )
+                    else:
+                        case_support_collapsed = pd.DataFrame(columns=[
+                            'variant_id', 'model_label', 'family_label',
+                            'alpha_positive_fraction', 'fixed055_margin', 'best_margin', 'median_margin',
+                        ])
+                        support_matrix = pd.DataFrame({'variant_id': positive_variant_ids})
 
-                    alpha_models_closed = int(model_summary['fixed_alpha_in_plateau'].sum())
-                    alpha_mean_plateau_fraction = float(model_summary['plateau_fraction'].mean())
-                    alpha_case_support = float(case_support_collapsed['alpha_positive_fraction'].mean())
+                    alpha_models_closed = int(model_summary['fixed_alpha_in_plateau'].sum()) if not model_summary.empty else 0
+                    alpha_mean_plateau_fraction = float(model_summary['plateau_fraction'].mean()) if not model_summary.empty else 0.0
+                    alpha_case_support = float(case_support_collapsed['alpha_positive_fraction'].mean()) if not case_support_collapsed.empty else 0.0
                     alpha_closure_score = clip01(
                         0.45 * (alpha_models_closed / max(1, len(model_summary)))
                         + 0.25 * alpha_mean_plateau_fraction
@@ -611,17 +687,20 @@ def build_notebook() -> dict:
 
                     prott5_rows = case_support_collapsed.loc[case_support_collapsed['model_label'].eq('ProtT5')].copy()
                     prott5_positive_fraction = float(np.mean(prott5_rows['alpha_positive_fraction'] >= 0.80)) if not prott5_rows.empty else 0.0
-                    non_reference_rows = model_summary.loc[~model_summary['model_label'].eq('ESM2-150M')].copy()
-                    supportive_non_reference_models = int(((non_reference_rows['auc_pair_fixed_055'] >= 0.70) & (non_reference_rows['delta_pair_vs_scalar'] > 0.0)).sum())
+                    non_reference_rows = model_summary.loc[~model_summary['model_label'].eq('ESM2-150M')].copy() if not model_summary.empty else pd.DataFrame()
+                    supportive_non_reference_models = int(((non_reference_rows['auc_pair_fixed_055'] >= 0.70) & (non_reference_rows['delta_pair_vs_scalar'] > 0.0)).sum()) if not non_reference_rows.empty else 0
 
-                    family_case_support = (
-                        case_support_collapsed.assign(positive_fixed055=lambda frame: frame['fixed055_margin'] > 0)
-                        .groupby(['variant_id', 'family_label'], as_index=False)['positive_fixed055'].max()
-                        .groupby('variant_id', as_index=False)['positive_fixed055'].sum()
-                        .rename(columns={'positive_fixed055': 'supportive_family_count'})
-                    )
-                    two_family_support_fraction = float(np.mean(family_case_support['supportive_family_count'] >= 2)) if not family_case_support.empty else 0.0
-                    prott5_auc = float(model_summary.loc[model_summary['model_label'].eq('ProtT5'), 'auc_pair_fixed_055'].iloc[0]) if 'ProtT5' in model_summary['model_label'].tolist() else 0.0
+                    if not case_support_collapsed.empty:
+                        family_case_support = (
+                            case_support_collapsed.assign(positive_fixed055=lambda frame: frame['fixed055_margin'] > 0)
+                            .groupby(['variant_id', 'family_label'], as_index=False)['positive_fixed055'].max()
+                            .groupby('variant_id', as_index=False)['positive_fixed055'].sum()
+                            .rename(columns={'positive_fixed055': 'supportive_family_count'})
+                        )
+                        two_family_support_fraction = float(np.mean(family_case_support['supportive_family_count'] >= 2)) if not family_case_support.empty else 0.0
+                    else:
+                        two_family_support_fraction = 0.0
+                    prott5_auc = float(model_summary.loc[model_summary['model_label'].eq('ProtT5'), 'auc_pair_fixed_055'].iloc[0]) if (not model_summary.empty and 'ProtT5' in model_summary['model_label'].tolist()) else 0.0
 
                     cross_family_closure_score = clip01(
                         0.45 * prott5_positive_fraction
@@ -639,46 +718,49 @@ def build_notebook() -> dict:
                     case_support_collapsed.to_csv(TABLES_DIR / 'case_support_collapsed.csv', index=False)
                     support_matrix.to_csv(TABLES_DIR / 'cross_family_support_matrix.csv', index=False)
 
-                    fig, ax = plt.subplots(figsize=(10, 6))
-                    for model_label, group in alpha_sweep_long.groupby('model_label'):
-                        ax.plot(group['alpha'], group['auc'], marker='o', linewidth=2, label=model_label)
-                    ax.axvline(FIXED_ALPHA, color='black', linestyle='--', linewidth=1, alpha=0.7)
-                    ax.set_xlabel('alpha')
-                    ax.set_ylabel('AUC on finalist panel')
-                    ax.set_title('Alpha sweep on reviewer-facing finalists')
-                    ax.legend(loc='best')
-                    fig.tight_layout()
-                    fig.savefig(FIGURES_DIR / 'alpha_plateau_on_finalists.png', dpi=220, bbox_inches='tight')
-                    plt.close(fig)
+                    if not alpha_sweep_long.empty:
+                        fig, ax = plt.subplots(figsize=(10, 6))
+                        for model_label, group in alpha_sweep_long.groupby('model_label'):
+                            ax.plot(group['alpha'], group['auc'], marker='o', linewidth=2, label=model_label)
+                        ax.axvline(FIXED_ALPHA, color='black', linestyle='--', linewidth=1, alpha=0.7)
+                        ax.set_xlabel('alpha')
+                        ax.set_ylabel('AUC on finalist panel')
+                        ax.set_title('Alpha sweep on reviewer-facing finalists')
+                        ax.legend(loc='best')
+                        fig.tight_layout()
+                        fig.savefig(FIGURES_DIR / 'alpha_plateau_on_finalists.png', dpi=220, bbox_inches='tight')
+                        plt.close(fig)
 
-                    heatmap_values = case_support_collapsed.pivot_table(index='variant_id', columns='model_label', values='fixed055_margin', aggfunc='first')
-                    fig, ax = plt.subplots(figsize=(9, max(4, 0.75 * len(heatmap_values.index))))
-                    im = ax.imshow(heatmap_values.fillna(0).to_numpy(), cmap='coolwarm', aspect='auto', vmin=-1.0, vmax=1.0)
-                    ax.set_xticks(range(len(heatmap_values.columns)))
-                    ax.set_xticklabels(list(heatmap_values.columns), rotation=25, ha='right')
-                    ax.set_yticks(range(len(heatmap_values.index)))
-                    ax.set_yticklabels(list(heatmap_values.index))
-                    ax.set_title('Finalist support margin vs negative median at alpha=0.55')
-                    cbar = fig.colorbar(im, ax=ax, shrink=0.85)
-                    cbar.set_label('Pair margin')
-                    fig.tight_layout()
-                    fig.savefig(FIGURES_DIR / 'cross_family_support_heatmap.png', dpi=220, bbox_inches='tight')
-                    plt.close(fig)
+                    if not case_support_collapsed.empty:
+                        heatmap_values = case_support_collapsed.pivot_table(index='variant_id', columns='model_label', values='fixed055_margin', aggfunc='first')
+                        fig, ax = plt.subplots(figsize=(9, max(4, 0.75 * len(heatmap_values.index))))
+                        im = ax.imshow(heatmap_values.fillna(0).to_numpy(), cmap='coolwarm', aspect='auto', vmin=-1.0, vmax=1.0)
+                        ax.set_xticks(range(len(heatmap_values.columns)))
+                        ax.set_xticklabels(list(heatmap_values.columns), rotation=25, ha='right')
+                        ax.set_yticks(range(len(heatmap_values.index)))
+                        ax.set_yticklabels(list(heatmap_values.index))
+                        ax.set_title('Finalist support margin vs negative median at alpha=0.55')
+                        cbar = fig.colorbar(im, ax=ax, shrink=0.85)
+                        cbar.set_label('Pair margin')
+                        fig.tight_layout()
+                        fig.savefig(FIGURES_DIR / 'cross_family_support_heatmap.png', dpi=220, bbox_inches='tight')
+                        plt.close(fig)
 
-                    auc_plot = model_summary[['model_label', 'auc_scalar', 'auc_pair_fixed_055']].copy()
-                    fig, ax = plt.subplots(figsize=(9, 5))
-                    x = np.arange(len(auc_plot))
-                    width = 0.36
-                    ax.bar(x - width / 2, auc_plot['auc_scalar'], width=width, label='scalar baseline', color='#7c3aed')
-                    ax.bar(x + width / 2, auc_plot['auc_pair_fixed_055'], width=width, label='pair(alpha=0.55)', color='#0f766e')
-                    ax.set_xticks(x)
-                    ax.set_xticklabels(auc_plot['model_label'], rotation=20, ha='right')
-                    ax.set_ylabel('AUC')
-                    ax.set_title('Scalar vs covariance-augmented separation on finalists')
-                    ax.legend(loc='best')
-                    fig.tight_layout()
-                    fig.savefig(FIGURES_DIR / 'pair_vs_scalar_auc_by_model.png', dpi=220, bbox_inches='tight')
-                    plt.close(fig)
+                    if not model_summary.empty:
+                        auc_plot = model_summary[['model_label', 'auc_scalar', 'auc_pair_fixed_055']].copy()
+                        fig, ax = plt.subplots(figsize=(9, 5))
+                        x = np.arange(len(auc_plot))
+                        width = 0.36
+                        ax.bar(x - width / 2, auc_plot['auc_scalar'], width=width, label='scalar baseline', color='#7c3aed')
+                        ax.bar(x + width / 2, auc_plot['auc_pair_fixed_055'], width=width, label='pair(alpha=0.55)', color='#0f766e')
+                        ax.set_xticks(x)
+                        ax.set_xticklabels(auc_plot['model_label'], rotation=20, ha='right')
+                        ax.set_ylabel('AUC')
+                        ax.set_title('Scalar vs covariance-augmented separation on finalists')
+                        ax.legend(loc='best')
+                        fig.tight_layout()
+                        fig.savefig(FIGURES_DIR / 'pair_vs_scalar_auc_by_model.png', dpi=220, bbox_inches='tight')
+                        plt.close(fig)
 
                     claim_status = 'alpha_and_cross_family_closed_on_finalists'
                     if alpha_closure_score < 0.75 or cross_family_closure_score < 0.75:
