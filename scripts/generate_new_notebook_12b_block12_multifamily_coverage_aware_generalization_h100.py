@@ -863,22 +863,45 @@ def build_notebook() -> dict:
 
                 def score_panel_with_model(panel_df: pd.DataFrame, sequence_map: dict[str, str], spec: dict, output_path: Path) -> tuple[pd.DataFrame, dict]:
                     if spec['adapter_kind'] == 'esm':
-                        rows = _ensure_gene_score_rows(
-                            gene=str(panel_df['gene'].iloc[0]).upper(),
-                            sequence=sequence_map[str(panel_df['gene'].iloc[0]).upper()],
-                            variants=panel_df[['gene', 'name', 'position', 'wt_aa', 'mut_aa', 'label', 'variant_id']].to_dict(orient='records'),
-                            model_name=spec['model_name'],
-                            output_dir=output_path.parent,
-                            window_radius=WINDOW_RADIUS,
-                            checkpoint_every=CHECKPOINT_EVERY,
-                            overwrite=OVERWRITE,
-                        )
-                        output = pd.DataFrame(rows)
+                        if output_path.exists() and not OVERWRITE:
+                            reused = pd.read_csv(output_path)
+                            return reused, {
+                                'model_label': spec['model_label'],
+                                'model_name': spec['model_name'],
+                                'status': 'reused_existing_scores',
+                                'n_rows': int(len(reused)),
+                                'adapter_kind': 'esm',
+                            }
+
+                        grouped_rows = []
+                        status = 'completed'
+                        for gene, gene_df in panel_df.groupby('gene', sort=False):
+                            gene_key = str(gene).upper()
+                            if gene_key not in sequence_map:
+                                raise KeyError(f'Missing sequence for gene {gene_key} in panel scoring.')
+                            gene_rows = _ensure_gene_score_rows(
+                                gene=gene_key,
+                                sequence=sequence_map[gene_key],
+                                variants=gene_df[['gene', 'name', 'position', 'wt_aa', 'mut_aa', 'label', 'variant_id']].to_dict(orient='records'),
+                                model_name=spec['model_name'],
+                                output_dir=output_path.parent,
+                                window_radius=WINDOW_RADIUS,
+                                checkpoint_every=CHECKPOINT_EVERY,
+                                overwrite=OVERWRITE,
+                            )
+                            grouped_rows.extend(gene_rows)
+
+                        output = pd.DataFrame(grouped_rows)
+                        if not output.empty and 'variant_id' in output.columns and 'variant_id' in panel_df.columns:
+                            ordering = panel_df[['variant_id']].copy()
+                            ordering['_order'] = np.arange(len(ordering))
+                            output = output.merge(ordering, on='variant_id', how='left')
+                            output = output.sort_values(['_order', 'variant_id'], kind='stable').drop(columns=['_order'])
                         output.to_csv(output_path, index=False)
                         return output, {
                             'model_label': spec['model_label'],
                             'model_name': spec['model_name'],
-                            'status': 'completed',
+                            'status': status,
                             'n_rows': int(len(output)),
                             'adapter_kind': 'esm',
                         }
