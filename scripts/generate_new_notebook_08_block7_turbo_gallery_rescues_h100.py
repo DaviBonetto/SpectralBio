@@ -200,25 +200,27 @@ def build_notebook() -> dict:
                             return candidate.resolve()
                     raise FileNotFoundError('Could not locate the SpectralBio repository root. Set SPECTRALBIO_REPO_ROOT or run inside the repo.')
 
-                def resolve_existing_path(raw: str | Path, repo_root: Path) -> Path:
-                    raw_path = Path(raw)
-                    if raw_path.exists():
-                        return raw_path.resolve()
-                    raw_text = str(raw).replace('\\\\', '/')
-                    for prefix in ('/content/Stanford-Claw4s/', '/teamspace/studios/this_studio/Stanford-Claw4s/', '/teamspace/studios/this_studio/SpectralBio/'):
-                        if raw_text.startswith(prefix):
-                            candidate = repo_root / raw_text[len(prefix):]
+                def resolve_existing_path(*candidates: str | Path) -> Path:
+                    repo_root = find_repo_root()
+                    for raw in candidates:
+                        raw_path = Path(raw)
+                        if raw_path.exists():
+                            return raw_path.resolve()
+                        raw_text = str(raw).replace('\\\\', '/')
+                        for prefix in ('/content/Stanford-Claw4s/', '/teamspace/studios/this_studio/Stanford-Claw4s/', '/teamspace/studios/this_studio/SpectralBio/'):
+                            if raw_text.startswith(prefix):
+                                candidate = repo_root / raw_text[len(prefix):]
+                                if candidate.exists():
+                                    return candidate.resolve()
+                        if 'Stanford-Claw4s/' in raw_text:
+                            candidate = repo_root / raw_text.split('Stanford-Claw4s/', 1)[1]
                             if candidate.exists():
                                 return candidate.resolve()
-                    if 'Stanford-Claw4s/' in raw_text:
-                        candidate = repo_root / raw_text.split('Stanford-Claw4s/', 1)[1]
-                        if candidate.exists():
-                            return candidate.resolve()
-                    if not raw_path.is_absolute():
-                        candidate = (repo_root / raw_path).resolve()
-                        if candidate.exists():
-                            return candidate
-                    return raw_path
+                        if not raw_path.is_absolute():
+                            candidate = (repo_root / raw_path).resolve()
+                            if candidate.exists():
+                                return candidate
+                    raise FileNotFoundError('None of the candidate paths exist: ' + ' | '.join(str(candidate) for candidate in candidates))
 
                 def safe_float(value, default: float = float('nan')) -> float:
                     try:
@@ -420,45 +422,37 @@ def build_notebook() -> dict:
                     'block2_candidates': resolve_existing_path(
                         'New Notebooks/results/02_block2_failure_mode_hunt_h100/tables/candidate_exemplars_ranked.csv',
                         SHARED_INPUTS_DIR / 'block2' / 'candidate_exemplars_ranked.csv',
-                        REPO_ROOT,
                     ),
                     'block3_structure_metrics': resolve_existing_path(
                         'New Notebooks/results/05_block3_structure_bridge_h100/tables/structure_bridge_metrics.csv',
                         'New Notebooks/results/05_block3_structure_bridge_h100/05_block3_structure_bridge_h100/tables/structure_bridge_metrics.csv',
                         SHARED_INPUTS_DIR / 'block5' / 'structure_bridge_metrics.csv',
-                        REPO_ROOT,
                     ),
                     'block5_shortlist': resolve_existing_path(
                         'New Notebooks/results/06_block5_clinical_panel_audit_h100/tables/clinical_case_shortlist_for_block7.csv',
                         SHARED_INPUTS_DIR / 'block6' / 'clinical_case_shortlist_for_block7.csv',
-                        REPO_ROOT,
                     ),
                     'block5_counterexamples': resolve_existing_path(
                         'New Notebooks/results/06_block5_clinical_panel_audit_h100/tables/clinical_counterexample_cases.csv',
                         SHARED_INPUTS_DIR / 'block6' / 'clinical_counterexample_cases.csv',
-                        REPO_ROOT,
                     ),
                     'block5_gene_audit': resolve_existing_path(
                         'New Notebooks/results/06_block5_clinical_panel_audit_h100/tables/clinical_gene_audit_table.csv',
                         SHARED_INPUTS_DIR / 'block6' / 'clinical_gene_audit_table.csv',
-                        REPO_ROOT,
                     ),
                     'block4_anchor_long': resolve_existing_path(
                         'New Notebooks/results/03_block4_model_agnostic_plms_h100_v2/tables/model_agnostic_anchor_long.csv',
                         'New Notebooks/results/03_block4_model_agnostic_plms_h100/tables/model_agnostic_anchor_long.csv',
                         SHARED_INPUTS_DIR / 'block4' / 'model_agnostic_anchor_long.csv',
-                        REPO_ROOT,
                     ),
                     'block4_prott5_rows': resolve_existing_path(
                         'New Notebooks/results/03_block4_model_agnostic_plms_h100_v2/tables/prott5_subset_rows.csv',
                         'New Notebooks/results/03_block4_model_agnostic_plms_h100/tables/prott5_subset_rows.csv',
                         SHARED_INPUTS_DIR / 'block4' / 'prott5_subset_rows.csv',
-                        REPO_ROOT,
                     ),
                     'block10_07b': resolve_existing_path(
                         'New Notebooks/results/07b_block10_structural_dissociation_tp53_h100/07b_block10_structural_dissociation_tp53_h100/tables/tp53_structural_pairs_variant_level_strict.csv',
                         SHARED_INPUTS_DIR / 'block10b' / 'tp53_structural_pairs_variant_level_strict.csv',
-                        REPO_ROOT,
                     ),
                 }
                 missing_artifacts = [key for key, path in artifact_paths.items() if not path.exists()]
@@ -678,6 +672,7 @@ def build_notebook() -> dict:
                 counterexample_path = resolve_existing_path(
                     RESULTS_DIR / '06_block5_clinical_panel_audit_h100' / 'tables' / 'clinical_counterexample_cases.csv',
                     RESULTS_DIR / '06_block5_clinical_panel_audit_h100' / '06_block5_clinical_panel_audit_h100' / 'tables' / 'clinical_counterexample_cases.csv',
+                    SHARED_INPUTS_DIR / 'block6' / 'clinical_counterexample_cases.csv',
                 )
                 counterexamples = pd.read_csv(counterexample_path).copy()
                 if 'variant_id' not in counterexamples.columns:
