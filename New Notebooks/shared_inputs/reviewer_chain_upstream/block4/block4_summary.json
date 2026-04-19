@@ -1,0 +1,17 @@
+{
+  "notebook_slug": "03_block4_model_agnostic_plms_h100_v2",
+  "account_label": "SET_ACCOUNT_LABEL_HERE",
+  "run_at": "2026-04-16T21:18:26.002625+00:00",
+  "anchor_genes": [
+    "TP53",
+    "BRCA2",
+    "BRCA1",
+    "MSH2"
+  ],
+  "light_model_name": "facebook/esm2_t12_35M_UR50D",
+  "prott5_model_name": "Rostlab/prot_t5_xl_half_uniref50-enc",
+  "claim_status": "family-bounded audit",
+  "claim_reason": "Cross-family support was not strong enough to upgrade the claim.",
+  "n_anchor_rows": 11,
+  "positive_delta_rows": 8
+}

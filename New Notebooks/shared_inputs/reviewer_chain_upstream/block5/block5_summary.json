@@ -1,0 +1,79 @@
+{
+  "notebook_slug": "05_block3_structure_bridge_h100",
+  "account_label": "SET_ACCOUNT_LABEL_HERE",
+  "run_at_utc": "2026-04-17T00:09:32.309625+00:00",
+  "head_commit": "6b56be543547e0544696278b919cc476aa5ac4d9",
+  "claim_status": "bounded_wt_structure_bridge",
+  "claim_reason": "Repair exemplars sit in denser WT structural neighborhoods than likelihood-driven references, but the matched-control bridge is still mixed.",
+  "n_selected_variants": 15,
+  "n_structured_variants": 15,
+  "repair_exemplar_median_contacts": 9.0,
+  "matched_control_median_contacts": 9.0,
+  "likelihood_reference_median_contacts": 3.0,
+  "repair_exemplar_median_window_contact_mean": 6.487804878048781,
+  "likelihood_reference_median_window_contact_mean": 5.7073170731707314,
+  "pair_repair_vs_site_contact_count_spearman": -0.4216387325415215,
+  "pair_repair_vs_window_plddt_spearman": -0.12175513922068282,
+  "top_variants": [
+    {
+      "cohort": "likelihood_reference",
+      "gene": "ANKRD11",
+      "variant_id": "ANKRD11:E2561K",
+      "pair_repair": 0.6983781841060752,
+      "frob_repair": 0.986194316847523,
+      "ll_repair": 0.3466029107554167,
+      "site_plddt": 61.72,
+      "window_plddt_mean": 59.20975609756096,
+      "site_contact_count": 3,
+      "site_long_range_contact_count": 0
+    },
+    {
+      "cohort": "likelihood_reference",
+      "gene": "TP53",
+      "variant_id": "TP53:N130H",
+      "pair_repair": 0.618750113262813,
+      "frob_repair": 0.829223945682877,
+      "ll_repair": 0.3615043180827347,
+      "site_plddt": 97.44,
+      "window_plddt_mean": 96.20317073170733,
+      "site_contact_count": 5,
+      "site_long_range_contact_count": 2
+    },
+    {
+      "cohort": "likelihood_reference",
+      "gene": "BRCA1",
+      "variant_id": "BRCA1:K1232R",
+      "pair_repair": 0.5226899617987351,
+      "frob_repair": 0.6706004522289142,
+      "ll_repair": 0.3419104734951828,
+      "site_plddt": 32.47,
+      "window_plddt_mean": 30.14512195121951,
+      "site_contact_count": 0,
+      "site_long_range_contact_count": 0
+    },
+    {
+      "cohort": "likelihood_reference",
+      "gene": "BRCA1",
+      "variant_id": "BRCA1:P1858R",
+      "pair_repair": 0.505259340684022,
+      "frob_repair": 0.593405255609151,
+      "ll_repair": 0.3975254446644199,
+      "site_plddt": 71.25,
+      "window_plddt_mean": 84.49239999999998,
+      "site_contact_count": 2,
+      "site_long_range_contact_count": 2
+    },
+    {
+      "cohort": "repair_exemplar",
+      "gene": "BRCA1",
+      "variant_id": "BRCA1:G1737R",
+      "pair_repair": 0.3641412058334302,
+      "frob_repair": 0.8835960699972717,
+      "ll_repair": -0.2707480725890431,
+      "site_plddt": 94.69,
+      "window_plddt_mean": 93.81073170731707,
+      "site_contact_count": 12,
+      "site_long_range_contact_count": 4
+    }
+  ]
+}

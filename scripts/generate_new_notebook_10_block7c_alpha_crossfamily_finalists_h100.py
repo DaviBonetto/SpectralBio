@@ -224,6 +224,7 @@ def build_notebook() -> dict:
                 # Runtime setup, local package imports, and model helper functions
                 REPO_ROOT = find_repo_root()
                 RESULTS_DIR = REPO_ROOT / 'New Notebooks' / 'results'
+                SHARED_INPUTS_DIR = REPO_ROOT / 'New Notebooks' / 'shared_inputs' / 'reviewer_chain_upstream'
                 RESULTS_ROOT = ensure_dir(RESULTS_DIR / NOTEBOOK_SLUG)
                 TABLES_DIR = ensure_dir(RESULTS_ROOT / 'tables')
                 FIGURES_DIR = ensure_dir(RESULTS_ROOT / 'figures')
@@ -391,6 +392,7 @@ def build_notebook() -> dict:
                 counterexample_path = resolve_existing_path(
                     RESULTS_DIR / '06_block5_clinical_panel_audit_h100' / 'tables' / 'clinical_counterexample_cases.csv',
                     RESULTS_DIR / '06_block5_clinical_panel_audit_h100' / '06_block5_clinical_panel_audit_h100' / 'tables' / 'clinical_counterexample_cases.csv',
+                    SHARED_INPUTS_DIR / 'block6' / 'clinical_counterexample_cases.csv',
                 )
 
                 gallery_final = pd.read_csv(gallery_final_path).copy()
