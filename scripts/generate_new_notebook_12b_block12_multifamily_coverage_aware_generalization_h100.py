@@ -238,7 +238,7 @@ def build_notebook() -> dict:
                     subprocess.run([sys.executable, '-m', 'pip', 'install', '--upgrade', 'packaging>=24.0'], check=True, text=True)
                     from packaging.requirements import Requirement as _Requirement
 
-                TORCH_SPEC = 'torch>=2.6,<3' if sys.version_info >= (3, 13) else 'torch==2.5.1'
+                TORCH_SPEC = 'torch>=2.5,<3'
 
                 runtime_requirements = [
                     ('packaging', 'packaging>=24.0', 'packaging'),
