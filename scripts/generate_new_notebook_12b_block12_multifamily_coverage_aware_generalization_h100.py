@@ -577,6 +577,47 @@ def build_notebook() -> dict:
                     lines = [line.strip() for line in cache_path.read_text(encoding='utf-8').splitlines() if line.strip()]
                     return ''.join(line for line in lines if not line.startswith('>'))
 
+                def validate_panel_against_sequences(panel_df: pd.DataFrame, sequence_map: dict[str, str], panel_name: str) -> tuple[pd.DataFrame, pd.DataFrame]:
+                    audit_cols = ['panel_name', 'gene', 'variant_id', 'name', 'position', 'wt_aa', 'mut_aa', 'reason', 'observed_residue']
+                    if panel_df.empty:
+                        return panel_df.copy(), pd.DataFrame(columns=audit_cols)
+                    valid_rows = []
+                    mismatch_rows = []
+                    for row in panel_df.to_dict(orient='records'):
+                        gene = str(row.get('gene', '')).upper()
+                        sequence = str(sequence_map.get(gene, '')).upper()
+                        position = int(row.get('position', -1))
+                        wt_aa = str(row.get('wt_aa', '')).upper()
+                        observed = None
+                        reason = None
+                        if not sequence:
+                            reason = 'missing_sequence'
+                        elif position < 0 or position >= len(sequence):
+                            reason = 'position_out_of_range'
+                        else:
+                            observed = sequence[position].upper()
+                            if observed != wt_aa:
+                                reason = 'wt_mismatch'
+                        if reason is None:
+                            valid_rows.append(row)
+                        else:
+                            mismatch_rows.append({
+                                'panel_name': panel_name,
+                                'gene': gene,
+                                'variant_id': str(row.get('variant_id', row.get('name', ''))),
+                                'name': str(row.get('name', '')),
+                                'position': position,
+                                'wt_aa': wt_aa,
+                                'mut_aa': str(row.get('mut_aa', '')).upper(),
+                                'reason': reason,
+                                'observed_residue': observed,
+                            })
+                    valid_df = pd.DataFrame(valid_rows)
+                    if valid_df.empty:
+                        valid_df = panel_df.iloc[0:0].copy()
+                    mismatch_df = pd.DataFrame(mismatch_rows, columns=audit_cols)
+                    return valid_df, mismatch_df
+
                 REPO_ROOT = find_repo_root()
                 RESULTS_DIR = REPO_ROOT / 'New Notebooks' / 'results'
                 SHARED_INPUTS_DIR = REPO_ROOT / 'New Notebooks' / 'shared_inputs' / 'reviewer_chain_upstream'
@@ -980,14 +1021,27 @@ def build_notebook() -> dict:
                     if accession:
                         sequence_map[str(record['gene']).upper()] = fetch_uniprot_fasta(accession, CACHE_DIR)
 
+                canonical_panel_valid, canonical_panel_mismatches = validate_panel_against_sequences(canonical_panel, sequence_map, 'tp53')
+                if not canonical_panel_mismatches.empty:
+                    canonical_panel_mismatches.to_csv(TABLES_DIR / 'tp53_sequence_validation_mismatches.csv', index=False)
+                    raise ValueError(
+                        'TP53 canonical panel contains WT/sequence mismatches. '
+                        'See tables/tp53_sequence_validation_mismatches.csv before continuing.'
+                    )
+                holdout_panel_valid, holdout_panel_mismatches = validate_panel_against_sequences(holdout_panel, sequence_map, 'mini_holdout_non_tp53')
+                canonical_panel = canonical_panel_valid.copy()
+                holdout_panel = holdout_panel_valid.copy()
+
                 canonical_panel.to_csv(TABLES_DIR / 'tp53_canonical_panel.csv', index=False)
                 frozen_scores.to_csv(TABLES_DIR / 'tp53_frozen_scores_reference.csv', index=False)
                 tp53_structural_strict.to_csv(TABLES_DIR / 'tp53_structural_reference.csv', index=False)
                 holdout_panel.to_csv(TABLES_DIR / 'mini_holdout_non_tp53_panel.csv', index=False)
+                holdout_panel_mismatches.to_csv(TABLES_DIR / 'mini_holdout_non_tp53_sequence_validation_mismatches.csv', index=False)
 
                 panel_manifest = {
                     'tp53_rows': int(len(canonical_panel)),
                     'holdout_rows': int(len(holdout_panel)),
+                    'holdout_filtered_mismatches': int(len(holdout_panel_mismatches)),
                     'holdout_status': holdout_status,
                     'structural_status': structural_status,
                     'structural_rows': int(len(tp53_structural_strict)),
@@ -997,6 +1051,7 @@ def build_notebook() -> dict:
                 display(pd.DataFrame([panel_manifest]))
                 display(canonical_panel.head(5))
                 display(holdout_panel.head(5))
+                display(holdout_panel_mismatches.head(10))
                 done('TP53 benchmark, structural references, and the compact non-TP53 holdout are loaded.')
                 """
             )
