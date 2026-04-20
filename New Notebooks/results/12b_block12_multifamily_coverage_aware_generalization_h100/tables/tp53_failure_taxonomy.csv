@@ -1,0 +1,13 @@
+model_label,family_label,architecture_kind,failure_taxonomy,reason
+ESM2-35M,esm,masked_encoder,missing_structural_support_layer,"Model passed label checks, but structural overlap was unavailable."
+ESM2-150M,esm,masked_encoder,missing_structural_support_layer,"Model passed label checks, but structural overlap was unavailable."
+ESM2-650M,esm,masked_encoder,missing_structural_support_layer,"Model passed label checks, but structural overlap was unavailable."
+ESM2-3B,esm,masked_encoder,missing_structural_support_layer,"Model passed label checks, but structural overlap was unavailable."
+ESM-1v,esm_variant_specialist,masked_encoder,missing_structural_support_layer,"Model passed label checks, but structural overlap was unavailable."
+ProtT5,prottrans,encoder_decoder,missing_structural_support_layer,"Model passed label checks, but structural overlap was unavailable."
+ProtBERT,bert_style,bidirectional_encoder,missing_structural_support_layer,"Model passed label checks, but structural overlap was unavailable."
+ProtBERT-BFD,bert_style,bidirectional_encoder,missing_structural_support_layer,"Model passed label checks, but structural overlap was unavailable."
+Ankh-base,ankh,encoder_decoder,runtime_or_loading_failure,No TP53 live rows were produced for this model.
+Ankh-large,ankh,encoder_decoder,runtime_or_loading_failure,No TP53 live rows were produced for this model.
+ProGen2-small,progen,causal_decoder,missing_structural_support_layer,"Model passed label checks, but structural overlap was unavailable."
+ProGen2-base,progen,causal_decoder,missing_structural_support_layer,"Model passed label checks, but structural overlap was unavailable."
