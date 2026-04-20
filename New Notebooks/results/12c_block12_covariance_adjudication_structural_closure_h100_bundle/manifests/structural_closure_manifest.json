@@ -1,0 +1,7 @@
+{
+  "structural_source_path": "/teamspace/studios/this_studio/SpectralBio/New Notebooks/results/07b_block10_structural_dissociation_tp53_h100/07b_block10_structural_dissociation_tp53_h100/tables/tp53_structural_pairs_variant_level_strict.csv",
+  "structural_source_kind": "strict",
+  "n_variant_score_rows": 2550,
+  "n_structural_reference_rows": 11,
+  "models_with_structural_overlap": 10
+}

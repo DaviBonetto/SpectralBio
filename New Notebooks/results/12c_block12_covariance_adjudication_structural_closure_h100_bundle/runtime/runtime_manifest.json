@@ -1,0 +1,10 @@
+{
+  "repo_root": "/teamspace/studios/this_studio/SpectralBio",
+  "head_commit": "61129ef49069592bd869e8fb4b76a526130aa357",
+  "branch": "",
+  "cuda_available": true,
+  "cuda_device_count": 1,
+  "cuda_device_name": "NVIDIA H100 80GB HBM3",
+  "rerun_brca1": true,
+  "include_ankh": false
+}

@@ -1,0 +1,11 @@
+model_label,family_label,architecture_kind,adjudication_status,highest_evidence_level
+ESM-1v,esm_variant_specialist,masked_encoder,supportive,5
+ProGen2-small,progen,causal_decoder,supportive,5
+ProtBERT,bert_style,bidirectional_encoder,not_eligible,5
+ProtT5,prottrans,encoder_decoder,not_eligible,5
+ESM2-150M,esm,masked_encoder,supportive,4
+ESM2-3B,esm,masked_encoder,supportive,4
+ESM2-650M,esm,masked_encoder,supportive,4
+ESM2-35M,esm,masked_encoder,not_eligible,3
+ProGen2-base,progen,causal_decoder,supportive,3
+ProtBERT-BFD,bert_style,bidirectional_encoder,not_eligible,0

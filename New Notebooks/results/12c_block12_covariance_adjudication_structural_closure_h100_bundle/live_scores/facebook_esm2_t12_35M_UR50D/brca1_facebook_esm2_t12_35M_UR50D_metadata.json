@@ -1,0 +1,8 @@
+{
+  "gene": "BRCA1",
+  "model_name": "facebook/esm2_t12_35M_UR50D",
+  "window_radius": 40,
+  "n_variants_total": 24,
+  "n_variants_written": 24,
+  "elapsed_seconds": 0.5658891201019287
+}

@@ -1,0 +1,25 @@
+gene,wt_aa,position,mut_aa,label,name,variant_id,panel_name
+BRCA1,V,10,G,1,NM_007294.4(BRCA1):c.32T>G (p.Val11Gly),BRCA1:V10G,brca1_same_position_adjudication
+BRCA1,V,10,I,0,NM_007294.4(BRCA1):c.31G>A (p.Val11Ile),BRCA1:V10I,brca1_same_position_adjudication
+BRCA1,M,17,T,1,NM_007294.4(BRCA1):c.53T>C (p.Met18Thr),BRCA1:M17T,brca1_same_position_adjudication
+BRCA1,M,17,L,0,NM_007294.4(BRCA1):c.52A>C (p.Met18Leu),BRCA1:M17L,brca1_same_position_adjudication
+BRCA1,I,25,N,1,NM_007294.4(BRCA1):c.77T>A (p.Ile26Asn),BRCA1:I25N,brca1_same_position_adjudication
+BRCA1,I,25,M,0,NM_007294.4(BRCA1):c.78C>G (p.Ile26Met),BRCA1:I25M,brca1_same_position_adjudication
+BRCA1,L,94,P,1,NM_007294.4(BRCA1):c.284T>C (p.Leu95Pro),BRCA1:L94P,brca1_same_position_adjudication
+BRCA1,L,94,I,0,NM_007294.4(BRCA1):c.283C>A (p.Leu95Ile),BRCA1:L94I,brca1_same_position_adjudication
+BRCA1,H,317,L,1,NM_007294.4(BRCA1):c.953A>T (p.His318Leu),BRCA1:H317L,brca1_same_position_adjudication
+BRCA1,H,317,Q,0,NM_007294.4(BRCA1):c.954T>G (p.His318Gln),BRCA1:H317Q,brca1_same_position_adjudication
+BRCA1,V,1652,E,1,NM_007294.4(BRCA1):c.4958T>A (p.Val1653Glu),BRCA1:V1652E,brca1_same_position_adjudication
+BRCA1,V,1652,A,0,NM_007294.4(BRCA1):c.4958T>C (p.Val1653Ala),BRCA1:V1652A,brca1_same_position_adjudication
+BRCA1,E,1681,V,1,NM_007294.4(BRCA1):c.5045A>T (p.Glu1682Val),BRCA1:E1681V,brca1_same_position_adjudication
+BRCA1,E,1681,K,0,NM_007294.4(BRCA1):c.5044G>A (p.Glu1682Lys),BRCA1:E1681K,brca1_same_position_adjudication
+BRCA1,V,1686,G,1,NM_007294.4(BRCA1):c.5060T>G (p.Val1687Gly),BRCA1:V1686G,brca1_same_position_adjudication
+BRCA1,V,1686,I,0,NM_007294.4(BRCA1):c.5059G>A (p.Val1687Ile),BRCA1:V1686I,brca1_same_position_adjudication
+BRCA1,G,1705,E,1,NM_007294.4(BRCA1):c.5117G>A (p.Gly1706Glu),BRCA1:G1705E,brca1_same_position_adjudication
+BRCA1,G,1705,A,0,NM_007294.4(BRCA1):c.5117G>C (p.Gly1706Ala),BRCA1:G1705A,brca1_same_position_adjudication
+BRCA1,K,1710,E,1,NM_007294.4(BRCA1):c.5131A>G (p.Lys1711Glu),BRCA1:K1710E,brca1_same_position_adjudication
+BRCA1,K,1710,N,0,NM_007294.4(BRCA1):c.5133A>C (p.Lys1711Asn),BRCA1:K1710N,brca1_same_position_adjudication
+BRCA1,P,1748,R,1,NM_007294.4(BRCA1):c.5246C>G (p.Pro1749Arg),BRCA1:P1748R,brca1_same_position_adjudication
+BRCA1,P,1748,T,0,NM_007294.4(BRCA1):c.5245C>A (p.Pro1749Thr),BRCA1:P1748T,brca1_same_position_adjudication
+BRCA1,R,1750,P,1,NM_007294.4(BRCA1):c.5252G>C (p.Arg1751Pro),BRCA1:R1750P,brca1_same_position_adjudication
+BRCA1,R,1750,Q,0,NM_007294.4(BRCA1):c.5252G>A (p.Arg1751Gln),BRCA1:R1750Q,brca1_same_position_adjudication

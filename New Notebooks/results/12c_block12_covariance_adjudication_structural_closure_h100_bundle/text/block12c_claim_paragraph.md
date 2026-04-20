@@ -1,0 +1,1 @@
+The adjudication notebook meaningfully strengthens the case, especially by closing the structural layer and replacing the weak transfer panel. But the covariance-native nuclear set remains limited enough that the final paper claim should stay bounded and explicit about where the rescue truly holds.

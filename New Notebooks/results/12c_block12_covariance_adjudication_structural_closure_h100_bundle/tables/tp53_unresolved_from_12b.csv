@@ -1,0 +1,11 @@
+model_label,family_label,architecture_kind,selected_rule_type,selected_rule_enrichment_gap,selected_rule_n_on,structural_overlap_rows,selected_rule_vs_scalar_gap_delta,unresolved_flags
+ProGen2-small,progen,causal_decoder,pair_only,0.5125,15,4,0.07083333333333325,none
+ESM-1v,esm_variant_specialist,masked_encoder,scalar_only,0.4545454545454545,253,4,0.0,scalar_only_primary|selected_rule_not_above_scalar_matched
+ESM2-35M,esm,masked_encoder,scalar_only,0.4618473895582329,249,4,0.0,scalar_only_primary|selected_rule_not_above_scalar_matched
+ESM2-3B,esm,masked_encoder,scalar_only,0.4545454545454545,253,4,0.0,scalar_only_primary|selected_rule_not_above_scalar_matched
+ProGen2-base,progen,causal_decoder,scalar_only,0.4674796747967479,246,4,0.0,scalar_only_primary|selected_rule_not_above_scalar_matched
+ProtBERT-BFD,bert_style,bidirectional_encoder,scalar_only,0.4637096774193548,248,4,0.0,scalar_only_primary|selected_rule_not_above_scalar_matched
+ProtT5,prottrans,encoder_decoder,scalar_only,0.2041832669322709,251,4,0.0,scalar_only_primary|selected_rule_not_above_scalar_matched
+ESM2-150M,esm,masked_encoder,pair_only,0.3190376569037657,16,4,-0.20005230125523016,selected_rule_not_above_scalar_matched
+ESM2-650M,esm,masked_encoder,pair_only,0.2030231179608773,14,4,-0.37788974510966206,selected_rule_not_above_scalar_matched
+ProtBERT,bert_style,bidirectional_encoder,chemistry_only,0.0860772187865619,62,4,-0.021310379408323504,selected_rule_not_above_scalar_matched
