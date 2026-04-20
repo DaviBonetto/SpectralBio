@@ -1,0 +1,15 @@
+{
+  "notebook_slug": "12d_block12_final_nuclear_localization_h100",
+  "run_at_utc": "2026-04-20T11:00:16.932182+00:00",
+  "account_label": "local_run",
+  "claim_status": "localized_covariance_supportive",
+  "claim_reason": "Block 12D sharpens the story substantially, but the final primary claim still falls short of a nuclear localized regime.",
+  "block12c_claim_status": "covariance_adjudication_mixed",
+  "n_models_evaluated": 10,
+  "n_nuclear_localized_models": 0,
+  "n_supportive_localized_models": 1,
+  "best_primary_model": "none",
+  "best_primary_panel": "none",
+  "structural_source_kind": "strict",
+  "structural_source_path": "C:\\Users\\Davib\\OneDrive\\\u00c1rea de Trabalho\\Stanford-Claw4s\\New Notebooks\\results\\07b_block10_structural_dissociation_tp53_h100\\07b_block10_structural_dissociation_tp53_h100\\tables\\tp53_structural_pairs_variant_level_strict.csv"
+}
