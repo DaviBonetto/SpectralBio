@@ -1,0 +1,11 @@
+model_label,positive_witness_panels_present,positive_witness_hit_fraction_mean
+ESM-1v,3,0.0
+ESM2-150M,3,0.0
+ESM2-35M,3,0.16666666666666666
+ESM2-3B,3,0.8333333333333334
+ESM2-650M,3,0.16666666666666666
+ProGen2-base,0,
+ProGen2-small,0,
+ProtBERT,0,
+ProtBERT-BFD,0,
+ProtT5,0,

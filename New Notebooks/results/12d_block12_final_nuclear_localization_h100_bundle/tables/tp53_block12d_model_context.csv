@@ -1,0 +1,11 @@
+model_label,family_label,architecture_kind,block12c_status,block12c_reason,block12b_selected_rule_type,block12b_selected_gap,structural_witness_verdict,structural_pair_spearman,structural_ll_spearman,structural_geometry_gap,structural_rows
+ESM2-35M,esm,masked_encoder,not_eligible,coverage_or_enrichment_failure,scalar_only,0.4618473895582329,negative,0.0,0.0,,4
+ProtBERT-BFD,bert_style,bidirectional_encoder,not_eligible,coverage_or_enrichment_failure,scalar_only,0.4637096774193548,negative,-1.0,0.7999999999999999,,4
+ESM2-150M,esm,masked_encoder,supportive,positive_but_not_fully_adjudicated,pair_only,0.3190376569037657,negative,-0.3999999999999999,0.3999999999999999,,4
+ESM2-3B,esm,masked_encoder,supportive,positive_but_not_fully_adjudicated,scalar_only,0.4545454545454545,negative,0.0,0.0,,4
+ProGen2-base,progen,causal_decoder,supportive,positive_but_not_fully_adjudicated,scalar_only,0.4674796747967479,negative,-0.6000000000000001,1.0,,4
+ProtBERT,bert_style,bidirectional_encoder,not_eligible,coverage_or_enrichment_failure,chemistry_only,0.0860772187865619,positive,0.1999999999999999,-0.3999999999999999,,4
+ProtT5,prottrans,encoder_decoder,not_eligible,coverage_or_enrichment_failure,scalar_only,0.2041832669322709,positive,-0.1999999999999999,-0.7999999999999999,,4
+ESM-1v,esm_variant_specialist,masked_encoder,supportive,positive_but_not_fully_adjudicated,scalar_only,0.4545454545454545,positive,0.3999999999999999,-0.1999999999999999,,4
+ESM2-650M,esm,masked_encoder,supportive,positive_but_not_fully_adjudicated,pair_only,0.2030231179608773,positive,-0.3999999999999999,0.3999999999999999,0.3333333333333333,4
+ProGen2-small,progen,causal_decoder,supportive,positive_but_not_fully_adjudicated,pair_only,0.5125,positive,1.0,-0.3999999999999999,0.3333333333333333,4
