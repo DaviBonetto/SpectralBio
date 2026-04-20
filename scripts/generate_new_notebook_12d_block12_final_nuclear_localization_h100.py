@@ -78,9 +78,10 @@ def build_notebook() -> dict:
                 BLOCK12B_ROOT = RESULTS_DIR / BLOCK12B_SLUG
                 BLOCK12B_TABLES_DIR = BLOCK12B_ROOT / 'tables'
                 BLOCK12C_SLUG = '12c_block12_covariance_adjudication_structural_closure_h100'
-                BLOCK12C_ROOT = RESULTS_DIR / BLOCK12C_SLUG
-                BLOCK12C_TABLES_DIR = BLOCK12C_ROOT / 'tables'
-                BLOCK12C_MANIFESTS_DIR = BLOCK12C_ROOT / 'manifests'
+                BLOCK12C_ROOT_CANDIDATES = [
+                    RESULTS_DIR / BLOCK12C_SLUG,
+                    RESULTS_DIR / f'{BLOCK12C_SLUG}_bundle',
+                ]
                 BLOCK12B_LIVE_SCORES_DIR = BLOCK12B_ROOT / 'live_scores'
 
                 LOCAL_MIN_RULE_ON_ABS = int(os.environ.get('SPECTRALBIO_BLOCK12D_LOCAL_MIN_RULE_ON_ABS', '6'))
@@ -105,15 +106,29 @@ def build_notebook() -> dict:
                 if missing_12b:
                     raise FileNotFoundError(f'Missing required Block 12B tables: {missing_12b}')
 
-                required_12c_tables = {
-                    'adjudication': BLOCK12C_TABLES_DIR / 'tp53_covariance_adjudication_summary.csv',
-                    'structural': BLOCK12C_TABLES_DIR / 'tp53_structural_closure_summary.csv',
-                }
-                missing_12c = [name for name, path in required_12c_tables.items() if not path.exists()]
+                def resolve_block12c_tables() -> tuple[dict[str, Path] | None, Path | None]:
+                    for root in BLOCK12C_ROOT_CANDIDATES:
+                        tables_dir = root / 'tables'
+                        manifests_dir = root / 'manifests'
+                        required = {
+                            'adjudication': tables_dir / 'tp53_covariance_adjudication_summary.csv',
+                            'structural': tables_dir / 'tp53_structural_closure_summary.csv',
+                            'artifact_summary': manifests_dir / 'artifact_summary.json',
+                        }
+                        if all(path.exists() for path in required.values()):
+                            return required, root
+                    return None, None
+
+                required_12c_tables, resolved_block12c_root = resolve_block12c_tables()
+                missing_12c = [] if required_12c_tables is not None else ['adjudication', 'structural', 'artifact_summary']
                 if missing_12c:
                     raise FileNotFoundError(
-                        f'Missing required Block 12C outputs: {missing_12c}. Run {BLOCK12C_SLUG} before Block 12D.'
+                        f'Missing required Block 12C outputs: {missing_12c}. '
+                        f'Looked in {[str(path) for path in BLOCK12C_ROOT_CANDIDATES]}. '
+                        f'Run {BLOCK12C_SLUG} before Block 12D.'
                     )
+                BLOCK12C_TABLES_DIR = resolved_block12c_root / 'tables'
+                BLOCK12C_MANIFESTS_DIR = resolved_block12c_root / 'manifests'
 
                 variant_scores_12b = pd.read_csv(required_12b_tables['variant_scores'])
                 model_summary_12b = pd.read_csv(required_12b_tables['model_summary'])
@@ -126,12 +141,7 @@ def build_notebook() -> dict:
                 covariance_12c = pd.read_csv(required_12c_tables['adjudication'])
                 structural_12c = pd.read_csv(required_12c_tables['structural'])
 
-                block12c_artifact_summary_path = BLOCK12C_MANIFESTS_DIR / 'artifact_summary.json'
-                block12c_artifact_summary = (
-                    json.loads(block12c_artifact_summary_path.read_text(encoding='utf-8'))
-                    if block12c_artifact_summary_path.exists()
-                    else {}
-                )
+                block12c_artifact_summary = json.loads(required_12c_tables['artifact_summary'].read_text(encoding='utf-8'))
 
                 structural_reference, structural_source_path, structural_source_kind = load_structural_reference()
                 structural_positions_zero_based = sorted(

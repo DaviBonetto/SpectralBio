@@ -1,0 +1,2 @@
+status,message
+skip_brca1_disabled,Set SPECTRALBIO_BLOCK12C_RERUN_BRCA1=1 to execute BRCA1 transfer scoring.

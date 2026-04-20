@@ -1,0 +1,16 @@
+{
+  "notebook_slug": "12c_block12_covariance_adjudication_structural_closure_h100",
+  "run_at_utc": "2026-04-20T10:25:01.115602+00:00",
+  "account_label": "local_run",
+  "claim_status": "covariance_adjudication_mixed",
+  "claim_reason": "The notebook strengthens the case substantially, but the covariance-native nuclear set is still too narrow or too uneven to close the claim beyond dispute.",
+  "n_models_adjudicated": 10,
+  "n_nuclear_models": 0,
+  "n_supportive_models": 6,
+  "n_non_esm_nuclear_models": 0,
+  "structural_positive_models": 4,
+  "transfer_positive_models": 3,
+  "structural_source_kind": "strict",
+  "structural_source_path": "/teamspace/studios/this_studio/SpectralBio/New Notebooks/results/07b_block10_structural_dissociation_tp53_h100/07b_block10_structural_dissociation_tp53_h100/tables/tp53_structural_pairs_variant_level_strict.csv",
+  "best_nuclear_model": "none"
+}

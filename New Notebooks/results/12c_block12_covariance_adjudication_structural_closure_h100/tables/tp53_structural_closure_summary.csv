@@ -1,0 +1,11 @@
+model_label,family_label,architecture_kind,n_structural_rows,spearman_pair_minus_ll_vs_excess_local_rmsd,spearman_ll_rank_vs_excess_local_rmsd,spearman_pair_minus_ll_vs_contact_change_fraction,mean_excess_local_rmsd_rule_on,mean_excess_local_rmsd_rule_off,structural_geometry_gap,structural_status
+ESM-1v,esm_variant_specialist,masked_encoder,4,0.39999999999999997,-0.19999999999999998,0.7999999999999999,0.1306097280063246,,,closed
+ESM2-150M,esm,masked_encoder,4,-0.39999999999999997,0.39999999999999997,-0.19999999999999998,,0.1306097280063246,,closed
+ESM2-35M,esm,masked_encoder,4,0.0,0.0,0.6000000000000001,0.1306097280063246,,,closed
+ESM2-3B,esm,masked_encoder,4,0.0,0.0,0.6000000000000001,0.1306097280063246,,,closed
+ESM2-650M,esm,masked_encoder,4,-0.39999999999999997,0.39999999999999997,-0.19999999999999998,0.082612605788858,0.14660876874548012,0.33333333333333337,closed
+ProGen2-base,progen,causal_decoder,4,-0.6000000000000001,1.0,0.0,0.1306097280063246,,,closed
+ProGen2-small,progen,causal_decoder,4,1.0,-0.39999999999999997,0.7999999999999999,0.2416347914268972,0.0936013735328004,0.33333333333333337,closed
+ProtBERT,bert_style,bidirectional_encoder,4,0.19999999999999998,-0.39999999999999997,0.39999999999999997,,0.1306097280063246,,closed
+ProtBERT-BFD,bert_style,bidirectional_encoder,4,-1.0,0.7999999999999999,-0.7999999999999999,0.1306097280063246,,,closed
+ProtT5,prottrans,encoder_decoder,4,-0.19999999999999998,-0.7999999999999999,-0.39999999999999997,0.1306097280063246,,,closed

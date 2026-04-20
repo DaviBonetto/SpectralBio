@@ -1,0 +1,5 @@
+model_label,family_label,architecture_kind,reason
+ESM2-35M,esm,masked_encoder,coverage_or_enrichment_failure
+ProtT5,prottrans,encoder_decoder,coverage_or_enrichment_failure
+ProtBERT,bert_style,bidirectional_encoder,coverage_or_enrichment_failure
+ProtBERT-BFD,bert_style,bidirectional_encoder,coverage_or_enrichment_failure
