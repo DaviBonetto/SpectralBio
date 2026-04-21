@@ -1,0 +1,4 @@
+gene,status,best_public_auc_proxy,fixed_alpha_auc_proxy,loss_vs_best,portable_protocol_ok,fixed_alpha,window_radius,layer_policy
+TP53,evaluated,0.9525465838509317,0.9304968944099379,0.022049689440993836,False,0.55,40,all_layers_default_or_upstream_public_surface
+BRCA2,evaluated,0.7142652329749104,0.6889784946236559,0.0252867383512545,False,0.55,40,all_layers_default_or_upstream_public_surface
+TSC2,evaluated,1.0,1.0,0.0,True,0.55,40,all_layers_default_or_upstream_public_surface

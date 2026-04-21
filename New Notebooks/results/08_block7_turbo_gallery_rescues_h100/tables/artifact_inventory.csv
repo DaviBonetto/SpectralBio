@@ -1,0 +1,9 @@
+artifact_key,path,exists
+block2_candidates,C:\Users\Davib\OneDrive\Área de Trabalho\Stanford-Claw4s\New Notebooks\results\02_block2_failure_mode_hunt_h100\tables\candidate_exemplars_ranked.csv,True
+block3_structure_metrics,C:\Users\Davib\OneDrive\Área de Trabalho\Stanford-Claw4s\New Notebooks\results\05_block3_structure_bridge_h100\tables\structure_bridge_metrics.csv,True
+block5_shortlist,C:\Users\Davib\OneDrive\Área de Trabalho\Stanford-Claw4s\New Notebooks\results\06_block5_clinical_panel_audit_h100\tables\clinical_case_shortlist_for_block7.csv,True
+block5_counterexamples,C:\Users\Davib\OneDrive\Área de Trabalho\Stanford-Claw4s\New Notebooks\results\06_block5_clinical_panel_audit_h100\tables\clinical_counterexample_cases.csv,True
+block5_gene_audit,C:\Users\Davib\OneDrive\Área de Trabalho\Stanford-Claw4s\New Notebooks\results\06_block5_clinical_panel_audit_h100\tables\clinical_gene_audit_table.csv,True
+block4_anchor_long,C:\Users\Davib\OneDrive\Área de Trabalho\Stanford-Claw4s\New Notebooks\results\03_block4_model_agnostic_plms_h100_v2\tables\model_agnostic_anchor_long.csv,True
+block4_prott5_rows,C:\Users\Davib\OneDrive\Área de Trabalho\Stanford-Claw4s\New Notebooks\results\03_block4_model_agnostic_plms_h100_v2\tables\prott5_subset_rows.csv,True
+block10_07b,C:\Users\Davib\OneDrive\Área de Trabalho\Stanford-Claw4s\New Notebooks\results\07b_block10_structural_dissociation_tp53_h100\07b_block10_structural_dissociation_tp53_h100\tables\tp53_structural_pairs_variant_level_strict.csv,True

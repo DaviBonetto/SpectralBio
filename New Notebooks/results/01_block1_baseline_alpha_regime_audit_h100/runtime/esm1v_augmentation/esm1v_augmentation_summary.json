@@ -1,0 +1,470 @@
+{
+  "benchmark": "ESM-1v augmentation audit",
+  "esm1v_model_ids": [
+    "facebook/esm1v_t33_650M_UR90S_1",
+    "facebook/esm1v_t33_650M_UR90S_2",
+    "facebook/esm1v_t33_650M_UR90S_3",
+    "facebook/esm1v_t33_650M_UR90S_4",
+    "facebook/esm1v_t33_650M_UR90S_5"
+  ],
+  "genes": {
+    "TP53": {
+      "gene": "TP53",
+      "n_total": 255,
+      "n_positive": 115,
+      "n_negative": 140,
+      "esm1v_scoring_mode": "full_sequence",
+      "auc_esm1v_mean": 0.9465838509316771,
+      "auc_reference_pair_fixed_055": 0.749751552795031,
+      "auc_augmented_pair_fixed_055": 0.9304968944099379,
+      "delta_augmented_vs_esm1v": -0.016086956521739193,
+      "delta_augmented_vs_reference_pair": 0.18074534161490685,
+      "pair_vs_esm1v_bootstrap_delta": {
+        "observed_delta": -0.016086956521739193,
+        "n_boot_requested": 1000,
+        "n_boot_valid": 1000,
+        "ci_2p5": -0.04164773534928658,
+        "ci_50": -0.015349420986502216,
+        "ci_97p5": 0.006031411088911139,
+        "p_one_sided_pair_gt_baseline": 0.9100899100899101
+      },
+      "best_alpha_on_full_surface": {
+        "alpha": 0.3,
+        "beta": 0.7,
+        "auc": 0.9525465838509317
+      },
+      "alpha_sweep": [
+        {
+          "alpha": 0.0,
+          "beta": 1.0,
+          "auc": 0.9465838509316771
+        },
+        {
+          "alpha": 0.05,
+          "beta": 0.95,
+          "auc": 0.948695652173913
+        },
+        {
+          "alpha": 0.1,
+          "beta": 0.9,
+          "auc": 0.9502484472049689
+        },
+        {
+          "alpha": 0.15,
+          "beta": 0.85,
+          "auc": 0.9511801242236024
+        },
+        {
+          "alpha": 0.2,
+          "beta": 0.8,
+          "auc": 0.9514906832298137
+        },
+        {
+          "alpha": 0.25,
+          "beta": 0.75,
+          "auc": 0.9522981366459627
+        },
+        {
+          "alpha": 0.3,
+          "beta": 0.7,
+          "auc": 0.9525465838509317
+        },
+        {
+          "alpha": 0.35,
+          "beta": 0.65,
+          "auc": 0.9518633540372671
+        },
+        {
+          "alpha": 0.4,
+          "beta": 0.6,
+          "auc": 0.9480124223602484
+        },
+        {
+          "alpha": 0.45,
+          "beta": 0.55,
+          "auc": 0.9451552795031056
+        },
+        {
+          "alpha": 0.5,
+          "beta": 0.5,
+          "auc": 0.9393167701863354
+        },
+        {
+          "alpha": 0.55,
+          "beta": 0.45,
+          "auc": 0.9304968944099379
+        },
+        {
+          "alpha": 0.6,
+          "beta": 0.4,
+          "auc": 0.9204347826086956
+        },
+        {
+          "alpha": 0.65,
+          "beta": 0.35,
+          "auc": 0.9072670807453416
+        },
+        {
+          "alpha": 0.7,
+          "beta": 0.3,
+          "auc": 0.89
+        },
+        {
+          "alpha": 0.75,
+          "beta": 0.25,
+          "auc": 0.867888198757764
+        },
+        {
+          "alpha": 0.8,
+          "beta": 0.2,
+          "auc": 0.8383850931677018
+        },
+        {
+          "alpha": 0.85,
+          "beta": 0.15,
+          "auc": 0.7980745341614907
+        },
+        {
+          "alpha": 0.9,
+          "beta": 0.1,
+          "auc": 0.7463975155279503
+        },
+        {
+          "alpha": 0.95,
+          "beta": 0.05,
+          "auc": 0.6846583850931677
+        },
+        {
+          "alpha": 1.0,
+          "beta": 0.0,
+          "auc": 0.6209316770186335
+        }
+      ]
+    },
+    "BRCA2": {
+      "gene": "BRCA2",
+      "n_total": 658,
+      "n_positive": 100,
+      "n_negative": 558,
+      "esm1v_scoring_mode": "local_window",
+      "auc_esm1v_mean": 0.6323835125448029,
+      "auc_reference_pair_fixed_055": 0.7445878136200716,
+      "auc_augmented_pair_fixed_055": 0.6889784946236559,
+      "delta_augmented_vs_esm1v": 0.05659498207885305,
+      "delta_augmented_vs_reference_pair": -0.055609318996415746,
+      "pair_vs_esm1v_bootstrap_delta": {
+        "observed_delta": 0.05659498207885305,
+        "n_boot_requested": 1000,
+        "n_boot_valid": 1000,
+        "ci_2p5": 0.013139085295604062,
+        "ci_50": 0.056353965322495425,
+        "ci_97p5": 0.1063037599856574,
+        "p_one_sided_pair_gt_baseline": 0.007992007992007992
+      },
+      "best_alpha_on_full_surface": {
+        "alpha": 0.9,
+        "beta": 0.1,
+        "auc": 0.7142652329749104
+      },
+      "alpha_sweep": [
+        {
+          "alpha": 0.0,
+          "beta": 1.0,
+          "auc": 0.6323835125448029
+        },
+        {
+          "alpha": 0.05,
+          "beta": 0.95,
+          "auc": 0.6411290322580645
+        },
+        {
+          "alpha": 0.1,
+          "beta": 0.9,
+          "auc": 0.6495519713261648
+        },
+        {
+          "alpha": 0.15,
+          "beta": 0.85,
+          "auc": 0.6563082437275986
+        },
+        {
+          "alpha": 0.2,
+          "beta": 0.8,
+          "auc": 0.662831541218638
+        },
+        {
+          "alpha": 0.25,
+          "beta": 0.75,
+          "auc": 0.6676702508960574
+        },
+        {
+          "alpha": 0.3,
+          "beta": 0.7,
+          "auc": 0.6717741935483871
+        },
+        {
+          "alpha": 0.35,
+          "beta": 0.65,
+          "auc": 0.6754480286738351
+        },
+        {
+          "alpha": 0.4,
+          "beta": 0.6,
+          "auc": 0.678010752688172
+        },
+        {
+          "alpha": 0.45,
+          "beta": 0.55,
+          "auc": 0.6820250896057347
+        },
+        {
+          "alpha": 0.5,
+          "beta": 0.5,
+          "auc": 0.6856810035842293
+        },
+        {
+          "alpha": 0.55,
+          "beta": 0.45,
+          "auc": 0.6889784946236559
+        },
+        {
+          "alpha": 0.6,
+          "beta": 0.4,
+          "auc": 0.6918458781362007
+        },
+        {
+          "alpha": 0.65,
+          "beta": 0.35,
+          "auc": 0.6968637992831541
+        },
+        {
+          "alpha": 0.7,
+          "beta": 0.3,
+          "auc": 0.7002329749103943
+        },
+        {
+          "alpha": 0.75,
+          "beta": 0.25,
+          "auc": 0.7043548387096774
+        },
+        {
+          "alpha": 0.8,
+          "beta": 0.2,
+          "auc": 0.7094086021505376
+        },
+        {
+          "alpha": 0.85,
+          "beta": 0.15,
+          "auc": 0.7124193548387097
+        },
+        {
+          "alpha": 0.9,
+          "beta": 0.1,
+          "auc": 0.7142652329749104
+        },
+        {
+          "alpha": 0.95,
+          "beta": 0.05,
+          "auc": 0.7136021505376344
+        },
+        {
+          "alpha": 1.0,
+          "beta": 0.0,
+          "auc": 0.7099820788530466
+        }
+      ]
+    },
+    "MSH2": {
+      "gene": "MSH2",
+      "n_total": 395,
+      "n_positive": 124,
+      "n_negative": 271,
+      "esm1v_scoring_mode": "full_sequence",
+      "auc_esm1v_mean": 0.9232531841447447,
+      "auc_reference_pair_fixed_055": 0.7492262825854065,
+      "auc_augmented_pair_fixed_055": 0.8457028925127961,
+      "delta_augmented_vs_esm1v": -0.0775502916319486,
+      "delta_augmented_vs_reference_pair": 0.0964766099273896,
+      "pair_vs_esm1v_bootstrap_delta": {
+        "observed_delta": -0.0775502916319486,
+        "n_boot_requested": 1000,
+        "n_boot_valid": 1000,
+        "ci_2p5": -0.10785718004471745,
+        "ci_50": -0.07806827777252423,
+        "ci_97p5": -0.04894482775763693,
+        "p_one_sided_pair_gt_baseline": 1.0
+      },
+      "best_alpha_on_full_surface": {
+        "alpha": 0.0,
+        "beta": 1.0,
+        "auc": 0.9232531841447447
+      },
+      "alpha_sweep": [
+        {
+          "alpha": 0.0,
+          "beta": 1.0,
+          "auc": 0.9232531841447447
+        },
+        {
+          "alpha": 0.05,
+          "beta": 0.95,
+          "auc": 0.9228068087132484
+        },
+        {
+          "alpha": 0.1,
+          "beta": 0.9,
+          "auc": 0.922033091298655
+        },
+        {
+          "alpha": 0.15,
+          "beta": 0.85,
+          "auc": 0.9209320319009642
+        },
+        {
+          "alpha": 0.2,
+          "beta": 0.8,
+          "auc": 0.9191465301749792
+        },
+        {
+          "alpha": 0.25,
+          "beta": 0.75,
+          "auc": 0.9162302106892036
+        },
+        {
+          "alpha": 0.3,
+          "beta": 0.7,
+          "auc": 0.9103082966313534
+        },
+        {
+          "alpha": 0.35,
+          "beta": 0.65,
+          "auc": 0.9030770146411141
+        },
+        {
+          "alpha": 0.4,
+          "beta": 0.6,
+          "auc": 0.8906975360076181
+        },
+        {
+          "alpha": 0.45,
+          "beta": 0.55,
+          "auc": 0.8762052136650399
+        },
+        {
+          "alpha": 0.5,
+          "beta": 0.5,
+          "auc": 0.8624270920128556
+        },
+        {
+          "alpha": 0.55,
+          "beta": 0.45,
+          "auc": 0.8457028925127961
+        },
+        {
+          "alpha": 0.6,
+          "beta": 0.4,
+          "auc": 0.8285620759433401
+        },
+        {
+          "alpha": 0.65,
+          "beta": 0.35,
+          "auc": 0.8123140102368765
+        },
+        {
+          "alpha": 0.7,
+          "beta": 0.3,
+          "auc": 0.7951434353053208
+        },
+        {
+          "alpha": 0.75,
+          "beta": 0.25,
+          "auc": 0.7746101654564933
+        },
+        {
+          "alpha": 0.8,
+          "beta": 0.2,
+          "auc": 0.7514581597428878
+        },
+        {
+          "alpha": 0.85,
+          "beta": 0.15,
+          "auc": 0.7248541840257112
+        },
+        {
+          "alpha": 0.9,
+          "beta": 0.1,
+          "auc": 0.6942625877871682
+        },
+        {
+          "alpha": 0.95,
+          "beta": 0.05,
+          "auc": 0.6561718842994881
+        },
+        {
+          "alpha": 1.0,
+          "beta": 0.0,
+          "auc": 0.6127544339959529
+        }
+      ]
+    }
+  },
+  "gene_rows": [
+    {
+      "gene": "TP53",
+      "n_total": 255,
+      "n_positive": 115,
+      "n_negative": 140,
+      "esm1v_scoring_mode": "full_sequence",
+      "auc_esm1v_mean": 0.9465838509316771,
+      "auc_reference_pair_fixed_055": 0.749751552795031,
+      "auc_augmented_pair_fixed_055": 0.9304968944099379,
+      "delta_augmented_vs_esm1v": -0.016086956521739193,
+      "delta_augmented_vs_reference_pair": 0.18074534161490685,
+      "best_alpha": 0.3,
+      "best_alpha_auc": 0.9525465838509317,
+      "paired_delta_ci_2p5": -0.04164773534928658,
+      "paired_delta_ci_97p5": 0.006031411088911139,
+      "shadow_model_name": "",
+      "auc_augmented_pair_shadow": NaN,
+      "delta_shadow_vs_esm1v": NaN
+    },
+    {
+      "gene": "BRCA2",
+      "n_total": 658,
+      "n_positive": 100,
+      "n_negative": 558,
+      "esm1v_scoring_mode": "local_window",
+      "auc_esm1v_mean": 0.6323835125448029,
+      "auc_reference_pair_fixed_055": 0.7445878136200716,
+      "auc_augmented_pair_fixed_055": 0.6889784946236559,
+      "delta_augmented_vs_esm1v": 0.05659498207885305,
+      "delta_augmented_vs_reference_pair": -0.055609318996415746,
+      "best_alpha": 0.9,
+      "best_alpha_auc": 0.7142652329749104,
+      "paired_delta_ci_2p5": 0.013139085295604062,
+      "paired_delta_ci_97p5": 0.1063037599856574,
+      "shadow_model_name": "",
+      "auc_augmented_pair_shadow": NaN,
+      "delta_shadow_vs_esm1v": NaN
+    },
+    {
+      "gene": "MSH2",
+      "n_total": 395,
+      "n_positive": 124,
+      "n_negative": 271,
+      "esm1v_scoring_mode": "full_sequence",
+      "auc_esm1v_mean": 0.9232531841447447,
+      "auc_reference_pair_fixed_055": 0.7492262825854065,
+      "auc_augmented_pair_fixed_055": 0.8457028925127961,
+      "delta_augmented_vs_esm1v": -0.0775502916319486,
+      "delta_augmented_vs_reference_pair": 0.0964766099273896,
+      "best_alpha": 0.0,
+      "best_alpha_auc": 0.9232531841447447,
+      "paired_delta_ci_2p5": -0.10785718004471745,
+      "paired_delta_ci_97p5": -0.04894482775763693,
+      "shadow_model_name": "",
+      "auc_augmented_pair_shadow": NaN,
+      "delta_shadow_vs_esm1v": NaN
+    }
+  ]
+}

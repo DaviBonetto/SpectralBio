@@ -1,0 +1,11 @@
+model_label,family_label,architecture_kind,n_holdout_rows,n_holdout_rule_on,holdout_rule_on_fraction,holdout_enrichment_gap,holdout_pathogenic_fraction_rule_on,holdout_pathogenic_fraction_rule_off,holdout_positive
+ESM2-35M,esm,masked_encoder,5,4,0.8,0.0,1.0,1.0,False
+ESM2-150M,esm,masked_encoder,5,3,0.6,0.0,1.0,1.0,False
+ESM2-650M,esm,masked_encoder,5,3,0.6,0.0,1.0,1.0,False
+ESM2-3B,esm,masked_encoder,5,4,0.8,0.0,1.0,1.0,False
+ESM-1v,esm_variant_specialist,masked_encoder,5,3,0.6,0.0,1.0,1.0,False
+ProtT5,prottrans,encoder_decoder,5,4,0.8,0.0,1.0,1.0,False
+ProtBERT,bert_style,bidirectional_encoder,5,5,1.0,,,,False
+ProtBERT-BFD,bert_style,bidirectional_encoder,5,3,0.6,0.0,1.0,1.0,False
+ProGen2-small,progen,causal_decoder,5,1,0.2,0.0,1.0,1.0,False
+ProGen2-base,progen,causal_decoder,5,4,0.8,0.0,1.0,1.0,False

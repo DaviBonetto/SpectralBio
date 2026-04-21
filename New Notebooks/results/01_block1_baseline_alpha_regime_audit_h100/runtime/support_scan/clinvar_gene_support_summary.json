@@ -1,0 +1,245 @@
+{
+  "benchmark": "Global ClinVar support scan for support-ranked supplementary panel selection",
+  "n_genes_seen": 15753,
+  "n_genes_passing_thresholds": 447,
+  "selection_rule": {
+    "min_total": 60,
+    "min_per_class": 20,
+    "ranking": [
+      "min_class_count desc",
+      "n_total desc",
+      "gene asc"
+    ]
+  },
+  "top_genes": [
+    {
+      "gene": "TTN",
+      "n_total": 2817,
+      "n_positive": 1807,
+      "n_negative": 1010,
+      "min_class_count": 1010,
+      "passes_thresholds": true,
+      "review_status_examples": "criteria provided, multiple submitters, no conflicts | criteria provided, single submitter | no assertion criteria provided"
+    },
+    {
+      "gene": "BRCA2",
+      "n_total": 1581,
+      "n_positive": 1013,
+      "n_negative": 568,
+      "min_class_count": 568,
+      "passes_thresholds": true,
+      "review_status_examples": "criteria provided, multiple submitters, no conflicts | criteria provided, single submitter | no assertion criteria provided"
+    },
+    {
+      "gene": "NEB",
+      "n_total": 1001,
+      "n_positive": 385,
+      "n_negative": 616,
+      "min_class_count": 385,
+      "passes_thresholds": true,
+      "review_status_examples": "criteria provided, multiple submitters, no conflicts | criteria provided, single submitter | no assertion criteria provided"
+    },
+    {
+      "gene": "BRCA1",
+      "n_total": 1108,
+      "n_positive": 751,
+      "n_negative": 357,
+      "min_class_count": 357,
+      "passes_thresholds": true,
+      "review_status_examples": "criteria provided, multiple submitters, no conflicts | criteria provided, single submitter | no assertion criteria provided"
+    },
+    {
+      "gene": "KMT2D",
+      "n_total": 1436,
+      "n_positive": 347,
+      "n_negative": 1089,
+      "min_class_count": 347,
+      "passes_thresholds": true,
+      "review_status_examples": "criteria provided, multiple submitters, no conflicts | criteria provided, single submitter | no assertion criteria provided"
+    },
+    {
+      "gene": "DMD",
+      "n_total": 1026,
+      "n_positive": 684,
+      "n_negative": 342,
+      "min_class_count": 342,
+      "passes_thresholds": true,
+      "review_status_examples": "criteria provided, multiple submitters, no conflicts | criteria provided, single submitter | no assertion criteria provided"
+    },
+    {
+      "gene": "DNAH5",
+      "n_total": 736,
+      "n_positive": 328,
+      "n_negative": 408,
+      "min_class_count": 328,
+      "passes_thresholds": true,
+      "review_status_examples": "criteria provided, multiple submitters, no conflicts | criteria provided, single submitter | no assertion criteria provided"
+    },
+    {
+      "gene": "CHD7",
+      "n_total": 600,
+      "n_positive": 284,
+      "n_negative": 316,
+      "min_class_count": 284,
+      "passes_thresholds": true,
+      "review_status_examples": "criteria provided, multiple submitters, no conflicts | criteria provided, single submitter | no assertion criteria provided"
+    },
+    {
+      "gene": "MSH2",
+      "n_total": 663,
+      "n_positive": 390,
+      "n_negative": 273,
+      "min_class_count": 273,
+      "passes_thresholds": true,
+      "review_status_examples": "criteria provided, multiple submitters, no conflicts | criteria provided, single submitter | reviewed by expert panel"
+    },
+    {
+      "gene": "SACS",
+      "n_total": 722,
+      "n_positive": 254,
+      "n_negative": 468,
+      "min_class_count": 254,
+      "passes_thresholds": true,
+      "review_status_examples": "criteria provided, multiple submitters, no conflicts | criteria provided, single submitter | no assertion criteria provided"
+    },
+    {
+      "gene": "NSD1",
+      "n_total": 543,
+      "n_positive": 295,
+      "n_negative": 248,
+      "min_class_count": 248,
+      "passes_thresholds": true,
+      "review_status_examples": "criteria provided, multiple submitters, no conflicts | criteria provided, single submitter | no assertion criteria provided"
+    },
+    {
+      "gene": "DNAH11",
+      "n_total": 1278,
+      "n_positive": 221,
+      "n_negative": 1057,
+      "min_class_count": 221,
+      "passes_thresholds": true,
+      "review_status_examples": "criteria provided, multiple submitters, no conflicts | criteria provided, single submitter | no assertion criteria provided"
+    },
+    {
+      "gene": "COL7A1",
+      "n_total": 653,
+      "n_positive": 438,
+      "n_negative": 215,
+      "min_class_count": 215,
+      "passes_thresholds": true,
+      "review_status_examples": "criteria provided, multiple submitters, no conflicts | criteria provided, single submitter | no assertion criteria provided"
+    },
+    {
+      "gene": "ADGRV1",
+      "n_total": 813,
+      "n_positive": 209,
+      "n_negative": 604,
+      "min_class_count": 209,
+      "passes_thresholds": true,
+      "review_status_examples": "criteria provided, multiple submitters, no conflicts | criteria provided, single submitter | no assertion criteria provided"
+    },
+    {
+      "gene": "ANKRD11",
+      "n_total": 432,
+      "n_positive": 201,
+      "n_negative": 231,
+      "min_class_count": 201,
+      "passes_thresholds": true,
+      "review_status_examples": "criteria provided, multiple submitters, no conflicts | criteria provided, single submitter | no assertion criteria provided"
+    },
+    {
+      "gene": "TSC2",
+      "n_total": 608,
+      "n_positive": 409,
+      "n_negative": 199,
+      "min_class_count": 199,
+      "passes_thresholds": true,
+      "review_status_examples": "criteria provided, multiple submitters, no conflicts | criteria provided, single submitter | no assertion criteria provided"
+    },
+    {
+      "gene": "ALMS1",
+      "n_total": 519,
+      "n_positive": 324,
+      "n_negative": 195,
+      "min_class_count": 195,
+      "passes_thresholds": true,
+      "review_status_examples": "criteria provided, multiple submitters, no conflicts | criteria provided, single submitter | no assertion criteria provided"
+    },
+    {
+      "gene": "PKD1",
+      "n_total": 808,
+      "n_positive": 623,
+      "n_negative": 185,
+      "min_class_count": 185,
+      "passes_thresholds": true,
+      "review_status_examples": "criteria provided, multiple submitters, no conflicts | criteria provided, single submitter | no assertion criteria provided"
+    },
+    {
+      "gene": "CREBBP",
+      "n_total": 391,
+      "n_positive": 209,
+      "n_negative": 182,
+      "min_class_count": 182,
+      "passes_thresholds": true,
+      "review_status_examples": "criteria provided, multiple submitters, no conflicts | criteria provided, single submitter | no assertion criteria provided"
+    },
+    {
+      "gene": "MECP2",
+      "n_total": 381,
+      "n_positive": 204,
+      "n_negative": 177,
+      "min_class_count": 177,
+      "passes_thresholds": true,
+      "review_status_examples": "criteria provided, multiple submitters, no conflicts | criteria provided, single submitter | no assertion criteria provided"
+    },
+    {
+      "gene": "ARID1B",
+      "n_total": 460,
+      "n_positive": 174,
+      "n_negative": 286,
+      "min_class_count": 174,
+      "passes_thresholds": true,
+      "review_status_examples": "criteria provided, multiple submitters, no conflicts | criteria provided, single submitter | no assertion criteria provided"
+    },
+    {
+      "gene": "DYNC1H1",
+      "n_total": 389,
+      "n_positive": 147,
+      "n_negative": 242,
+      "min_class_count": 147,
+      "passes_thresholds": true,
+      "review_status_examples": "criteria provided, multiple submitters, no conflicts | criteria provided, single submitter | no assertion criteria provided"
+    },
+    {
+      "gene": "GRIN2A",
+      "n_total": 321,
+      "n_positive": 144,
+      "n_negative": 177,
+      "min_class_count": 144,
+      "passes_thresholds": true,
+      "review_status_examples": "criteria provided, multiple submitters, no conflicts | criteria provided, single submitter | no assertion criteria provided"
+    },
+    {
+      "gene": "FLG",
+      "n_total": 502,
+      "n_positive": 142,
+      "n_negative": 360,
+      "min_class_count": 142,
+      "passes_thresholds": true,
+      "review_status_examples": "criteria provided, multiple submitters, no conflicts | criteria provided, single submitter | no assertion criteria provided"
+    },
+    {
+      "gene": "GRIN2B",
+      "n_total": 322,
+      "n_positive": 183,
+      "n_negative": 139,
+      "min_class_count": 139,
+      "passes_thresholds": true,
+      "review_status_examples": "criteria provided, multiple submitters, no conflicts | criteria provided, single submitter | no assertion criteria provided"
+    }
+  ],
+  "artifacts": {
+    "table": "/teamspace/studios/this_studio/SpectralBio/New Notebooks/results/01_block1_baseline_alpha_regime_audit_h100/runtime/support_scan/clinvar_gene_support_table.csv",
+    "summary": "/teamspace/studios/this_studio/SpectralBio/New Notebooks/results/01_block1_baseline_alpha_regime_audit_h100/runtime/support_scan/clinvar_gene_support_summary.json"
+  }
+}

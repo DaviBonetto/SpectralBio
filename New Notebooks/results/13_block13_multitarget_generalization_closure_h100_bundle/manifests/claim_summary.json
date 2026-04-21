@@ -1,0 +1,45 @@
+{
+  "claim_status": "multitarget_generalization_strengthened_but_not_fully_closed",
+  "claim_reason": "Replay surfaces are now public and portability evidence improves, but at least one hard firewall still remains open.",
+  "n_replay_ready_targets": 4,
+  "replay_ready_targets": [
+    "CREBBP",
+    "TSC2",
+    "BRCA2",
+    "TP53"
+  ],
+  "holdout_positive_models": [],
+  "transfer_positive_targets": [
+    "CREBBP",
+    "TSC2"
+  ],
+  "control_win_models": [],
+  "near_transfer_targets": [
+    "CREBBP",
+    "GRIN2A",
+    "TSC2"
+  ],
+  "negative_controls": [
+    {
+      "gene": "BRCA1",
+      "source": "clinical_gene_panel",
+      "delta_pair_vs_ll": -0.0244520129246353,
+      "same_surface_status": "mixed",
+      "esm2_status": "scalar_wins",
+      "is_strong_negative_guardrail": true
+    },
+    {
+      "gene": "MSH2",
+      "source": "clinical_gene_panel",
+      "delta_pair_vs_ll": 0.0027972860373765,
+      "same_surface_status": "scalar_wins",
+      "esm2_status": "mixed",
+      "is_strong_negative_guardrail": true
+    }
+  ],
+  "upstream_final_chain": {
+    "block12b_status": "multifamily_generalization_mixed",
+    "block12c_status": "covariance_adjudication_mixed",
+    "block12d_status": "localized_covariance_supportive"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "gene": "MSH2",
+  "model_name": "facebook/esm1v_t33_650M_UR90S_4",
+  "window_radius": 40,
+  "n_total": 395,
+  "scoring_mode": "full_sequence"
+}

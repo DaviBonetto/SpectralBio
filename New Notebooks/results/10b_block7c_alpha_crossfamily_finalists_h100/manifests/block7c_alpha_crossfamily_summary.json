@@ -1,0 +1,33 @@
+{
+  "notebook_slug": "10_block7c_alpha_crossfamily_finalists_h100",
+  "run_at_utc": "2026-04-19T11:46:46.295602+00:00",
+  "account_label": "local_run",
+  "claim_status": "alpha_and_cross_family_still_mixed",
+  "alpha_claim_status": "still_open",
+  "cross_family_claim_status": "still_open",
+  "alpha_closure_score_finalists": 0.09464285714285714,
+  "cross_family_closure_score_finalists": 0.2,
+  "alpha_models_closed": 0,
+  "n_models": 4,
+  "alpha_mean_plateau_fraction": 0.10714285714285714,
+  "alpha_case_support_mean": 0.2261904761904762,
+  "prott5_positive_fraction": 0.2,
+  "prott5_auc_pair_fixed_055": 0.32,
+  "supportive_non_reference_models": 0,
+  "two_family_support_fraction": 0.2,
+  "positive_variants": [
+    "TSC2:N1563K",
+    "TSC2:G293R",
+    "CREBBP:R1340P",
+    "CREBBP:S1686F",
+    "GRIN2A:P78R"
+  ],
+  "negative_variants": [
+    "BRCA1:C60G",
+    "BRCA1:C38W",
+    "MSH2:C696W",
+    "MSH2:T676R",
+    "BRCA1:C23W"
+  ],
+  "claim_paragraph": "On the reviewer-facing finalist panel, the `0.55/0.45` pair is no longer defended as a global coincidence: `0` of `4` live models keep alpha=0.55 inside a near-optimal plateau, and the mean case-level alpha-positive fraction reaches `0.226`. Cross-family support also becomes sharper on the exact rescue cases that matter most: ProtT5 supports `0.200` of finalists at high alpha stability, while `0` non-reference live models show pair-over-scalar gains. This is the strongest version of the claim so far because it is finalist-specific, biologically filtered, and no longer diluted by broad low-signal surfaces."
+}

@@ -1,0 +1,22 @@
+{
+  "notebook_slug": "12b_block12_multifamily_coverage_aware_generalization_h100",
+  "run_at_utc": "2026-04-20T00:18:32.702176+00:00",
+  "account_label": "local_run",
+  "claim_status": "multifamily_generalization_mixed",
+  "claim_reason": "The multifamily panel still shows real covariance signal, but portability remains uneven across families or weak once coverage floors and controls are enforced.",
+  "n_models_attempted": 12,
+  "n_models_scored_on_tp53": 10,
+  "primary_esm_models_passing": 5,
+  "non_esm_models_passing": 5,
+  "positive_family_count": 5,
+  "structural_positive_models": 0,
+  "control_win_count": 0,
+  "holdout_positive_models": 0,
+  "best_model_label": "ESM2-3B",
+  "best_model_auc_pair_fixed_055": 0.8369565217391305,
+  "best_model_delta_pair_vs_ll": 0.10180124223602494,
+  "best_structural_model_label": "none",
+  "best_structural_alignment": NaN,
+  "rule_selection_policy": "coverage-aware best rule among chemistry-only, pair-only, scalar-only, combined, and combined+confidence candidates",
+  "coverage_floor_definition": "max(10, ceil(n_variants * 0.050))"
+}

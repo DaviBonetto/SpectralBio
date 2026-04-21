@@ -1,0 +1,6 @@
+gene,name,position,wt_aa,mut_aa,label,variant_id,uniprot_accession,panel_name
+TSC2,NM_000548.5(TSC2):c.4692T>G (p.Asn1564Lys),1563,N,K,1,TSC2:N1563K,P49815,mini_holdout_non_tp53
+TSC2,NM_000548.5(TSC2):c.880G>A (p.Gly294Arg),293,G,R,1,TSC2:G293R,P49815,mini_holdout_non_tp53
+CREBBP,NM_004380.3(CREBBP):c.4022G>C (p.Arg1341Pro),1340,R,P,1,CREBBP:R1340P,Q92793,mini_holdout_non_tp53
+CREBBP,NM_004380.3(CREBBP):c.5060C>T (p.Ser1687Phe),1686,S,F,1,CREBBP:S1686F,Q92793,mini_holdout_non_tp53
+GRIN2A,NM_001134407.3(GRIN2A):c.236C>G (p.Pro79Arg),78,P,R,1,GRIN2A:P78R,Q12879,mini_holdout_non_tp53

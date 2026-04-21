@@ -1,0 +1,6 @@
+family_label,n_models,n_models_passing_coverage,weighted_enrichment_gap,weighted_delta_pair_vs_ll,weighted_structural_alignment
+progen,2,2,0.4700670498084291,0.0857542657242808,
+esm_variant_specialist,1,1,0.45454545454545453,0.12478260869565216,
+esm,4,4,0.4472686581990837,0.06942838462616173,
+bert_style,2,2,0.38818318569279625,0.017913043478260893,
+prottrans,1,1,0.2041832669322709,0.0016149068322981464,

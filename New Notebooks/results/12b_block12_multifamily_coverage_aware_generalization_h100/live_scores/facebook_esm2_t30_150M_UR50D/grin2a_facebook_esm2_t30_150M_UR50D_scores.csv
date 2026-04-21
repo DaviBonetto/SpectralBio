@@ -1,0 +1,2 @@
+gene,name,position,wt_aa,mut_aa,label,variant_id,frob_dist,trace_ratio,sps_log,ll_proper,model_name
+GRIN2A,NM_001134407.3(GRIN2A):c.236C>G (p.Pro79Arg),78,P,R,1,GRIN2A:P78R,889.3048453094336,0.04846834082445971,0.4844552764979033,3.1908264458179474,facebook/esm2_t30_150M_UR50D

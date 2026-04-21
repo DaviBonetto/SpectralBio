@@ -1,0 +1,31 @@
+{
+  "notebook_slug": "08_block7_turbo_gallery_rescues_h100",
+  "run_at_utc": "2026-04-18T16:11:09.028877+00:00",
+  "account_label": "SET_ACCOUNT_LABEL_HERE",
+  "claim_status": "reviewer_grip_gallery_supported",
+  "claim_reason": "The gallery isolates concrete cases where covariance rescue, local structure, and at least partial cross-model/alpha support align.",
+  "positive_case_count": 5,
+  "positive_gene_count": 3,
+  "anti_case_count": 1,
+  "anti_case_variant_id": "BRCA1:C60G",
+  "positive_cases_with_structure_support": 4,
+  "positive_cases_with_prott5_support": 1,
+  "positive_cases_with_alpha_support": 4,
+  "positive_cases_with_positive_margin": 4,
+  "selected_positive_variants": [
+    "TSC2:N1563K",
+    "TSC2:G293R",
+    "CREBBP:R1340P",
+    "CREBBP:S1686F",
+    "GRIN2A:P78R"
+  ],
+  "selected_positive_genes": [
+    "CREBBP",
+    "GRIN2A",
+    "TSC2"
+  ],
+  "selected_anti_variants": [
+    "BRCA1:C60G"
+  ],
+  "claim_paragraph": "We distilled the previous bounded evidence into a reviewer-grip gallery with `5` rescue cases across `3` genes plus anti-case `BRCA1:C60G`. The finalists are not just high-scoring by covariance: `4` carry strong local structure support, `1` show explicit ProtT5 agreement, and `4` stay positive across the alpha sweep. This makes the story concrete: SpectralBio is strongest when likelihood under-reacts, local geometry is contact-dense and high-confidence, and covariance rescue survives beyond a single checkpoint."
+}

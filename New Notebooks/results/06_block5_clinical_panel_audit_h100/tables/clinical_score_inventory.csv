@@ -1,0 +1,7 @@
+gene,score_path,exists
+MSH2,/teamspace/studios/this_studio/SpectralBio_block5/supplementary/final_accept_a100/panel25/multigene/msh2/msh2_facebook_esm2_t30_150M_UR50D_scores.csv,True
+BRCA1,/teamspace/studios/this_studio/SpectralBio_block5/supplementary/final_accept_a100/panel25/multigene/brca1/brca1_facebook_esm2_t30_150M_UR50D_scores.csv,True
+ANKRD11,/teamspace/studios/this_studio/SpectralBio_block5/supplementary/final_accept_a100/panel25/multigene/ankrd11/ankrd11_facebook_esm2_t30_150M_UR50D_scores.csv,True
+TSC2,/teamspace/studios/this_studio/SpectralBio_block5/supplementary/final_accept_a100/panel25/multigene/tsc2/tsc2_facebook_esm2_t30_150M_UR50D_scores.csv,True
+CREBBP,/teamspace/studios/this_studio/SpectralBio_block5/supplementary/final_accept_a100/panel25/multigene/crebbp/crebbp_facebook_esm2_t30_150M_UR50D_scores.csv,True
+BRCA2,/teamspace/studios/this_studio/SpectralBio_block5/supplementary/final_accept_a100/panel25/multigene/brca2/brca2_facebook_esm2_t30_150M_UR50D_scores.csv,True

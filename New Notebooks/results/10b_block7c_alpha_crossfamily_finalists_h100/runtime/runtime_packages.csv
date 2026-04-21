@@ -1,0 +1,11 @@
+module,status,version
+numpy,present,2.1.3
+pandas,present,2.2.3
+matplotlib,present,3.9.2
+sklearn,present,1.5.2
+torch,present,2.5.1+cu124
+transformers,present,4.49.0
+accelerate,present,1.13.0
+sentencepiece,present,0.2.1
+scipy,present,1.14.1
+safetensors,present,0.7.0

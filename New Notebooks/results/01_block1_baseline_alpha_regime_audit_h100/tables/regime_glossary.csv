@@ -1,0 +1,3 @@
+legacy_name,proposed_name,selection_explanation
+to_basic__AND__high_disagreement_q75,high-covariance high-disagreement basic-substitution regime,"Variants selected by fixed rescue, harm, and disagreement thresholds before any narrative inspection."
+support-ranked feasible panel,performance-blind support-ranked feasible panel,"Genes selected by predeclared support thresholds and feasibility filters, not by observed gain."

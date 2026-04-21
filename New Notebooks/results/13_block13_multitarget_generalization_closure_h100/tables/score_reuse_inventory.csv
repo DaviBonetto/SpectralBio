@@ -1,0 +1,7 @@
+source_block,dataset,rows,models_covered,targets_covered
+12b,tp53_model_variant_scores,2550,10,1
+01,brca2_augmentation_table,658,1,1
+01,msh2_augmentation_table,395,1,1
+01,tp53_augmentation_table,255,1,1
+06,clinical_panel_variant_scores,2487,1,6
+10b,case_support_collapsed,20,4,3

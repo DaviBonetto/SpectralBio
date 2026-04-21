@@ -1,0 +1,3130 @@
+[
+  {
+    "gene": "CHD7",
+    "wt_aa": "A",
+    "position": 1,
+    "mut_aa": "E",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.5C>A (p.Ala2Glu)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "D",
+    "position": 2,
+    "mut_aa": "N",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.7G>A (p.Asp3Asn)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "M",
+    "position": 5,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.18G>T (p.Met6Ile)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "E",
+    "position": 11,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.34G>A (p.Glu12Lys)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "G",
+    "position": 22,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.67G>A (p.Gly23Ser)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "P",
+    "position": 32,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.98C>G (p.Pro33Arg)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "P",
+    "position": 35,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.106C>T (p.Pro36Ser)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "M",
+    "position": 40,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.123G>A (p.Met41Ile)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "P",
+    "position": 41,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.124C>T (p.Pro42Ser)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "F",
+    "position": 46,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.139T>G (p.Phe47Val)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "H",
+    "position": 54,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.164A>G (p.His55Arg)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "T",
+    "position": 58,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.176C>G (p.Thr59Ser)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "D",
+    "position": 69,
+    "mut_aa": "H",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.208G>C (p.Asp70His)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "P",
+    "position": 85,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.257C>T (p.Pro86Leu)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "A",
+    "position": 98,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.295G>A (p.Ala99Thr)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "S",
+    "position": 102,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.307T>A (p.Ser103Thr)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "T",
+    "position": 106,
+    "mut_aa": "N",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.320C>A (p.Thr107Asn)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "P",
+    "position": 108,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.325C>T (p.Pro109Ser)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "V",
+    "position": 109,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.328G>A (p.Val110Ile)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "G",
+    "position": 116,
+    "mut_aa": "D",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.350G>A (p.Gly117Asp)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "M",
+    "position": 128,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.387G>A (p.Met129Ile)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "S",
+    "position": 136,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.409T>G (p.Ser137Ala)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "P",
+    "position": 146,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.440C>T (p.Pro147Leu)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "P",
+    "position": 158,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.476C>T (p.Pro159Leu)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "P",
+    "position": 169,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.509C>T (p.Pro170Leu)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "P",
+    "position": 169,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.509C>A (p.Pro170Gln)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "P",
+    "position": 171,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.515C>T (p.Pro172Leu)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "P",
+    "position": 173,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.521C>T (p.Pro174Leu)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "S",
+    "position": 174,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.524C>T (p.Ser175Leu)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "P",
+    "position": 177,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.532C>G (p.Pro178Ala)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "G",
+    "position": 180,
+    "mut_aa": "D",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.542G>A (p.Gly181Asp)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "P",
+    "position": 182,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.548C>G (p.Pro183Arg)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "H",
+    "position": 184,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.555C>A (p.His185Gln)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "M",
+    "position": 185,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.557T>C (p.Met186Thr)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "Q",
+    "position": 186,
+    "mut_aa": "P",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.560A>C (p.Gln187Pro)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "M",
+    "position": 192,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.578T>C (p.Met193Thr)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "M",
+    "position": 192,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.577A>G (p.Met193Val)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "P",
+    "position": 205,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.616C>A (p.Pro206Thr)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "T",
+    "position": 228,
+    "mut_aa": "P",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.685A>C (p.Thr229Pro)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "P",
+    "position": 231,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.694C>A (p.Pro232Thr)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "G",
+    "position": 232,
+    "mut_aa": "D",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.698G>A (p.Gly233Asp)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "V",
+    "position": 237,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.712G>C (p.Val238Leu)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "P",
+    "position": 238,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.715C>T (p.Pro239Ser)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "S",
+    "position": 243,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.732C>G (p.Ser244Arg)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "P",
+    "position": 246,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.739C>T (p.Pro247Ser)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "R",
+    "position": 249,
+    "mut_aa": "H",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.749G>A (p.Arg250His)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "S",
+    "position": 260,
+    "mut_aa": "F",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.782C>T (p.Ser261Phe)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "T",
+    "position": 261,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.784A>G (p.Thr262Ala)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "A",
+    "position": 262,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.788C>T (p.Ala263Val)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "E",
+    "position": 266,
+    "mut_aa": "G",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.800A>G (p.Glu267Gly)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "P",
+    "position": 272,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.817C>T (p.Pro273Ser)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "P",
+    "position": 276,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.830C>T (p.Pro277Leu)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "R",
+    "position": 285,
+    "mut_aa": "G",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.856A>G (p.Arg286Gly)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "R",
+    "position": 294,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.884G>A (p.Arg295Gln)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "R",
+    "position": 294,
+    "mut_aa": "W",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.883C>T (p.Arg295Trp)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "Q",
+    "position": 296,
+    "mut_aa": "H",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.891G>C (p.Gln297His)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "T",
+    "position": 302,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.907A>G (p.Thr303Ala)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "I",
+    "position": 303,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.910A>G (p.Ile304Val)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "Q",
+    "position": 308,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.925C>A (p.Gln309Lys)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "R",
+    "position": 311,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.935G>A (p.Arg312Gln)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "Q",
+    "position": 329,
+    "mut_aa": "E",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.988C>G (p.Gln330Glu)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "N",
+    "position": 336,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.1011T>G (p.Asn337Lys)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "M",
+    "position": 339,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.1018A>G (p.Met340Val)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "S",
+    "position": 342,
+    "mut_aa": "C",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.1028C>G (p.Ser343Cys)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "V",
+    "position": 350,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.1051G>A (p.Val351Ile)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "G",
+    "position": 359,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.1079G>C (p.Gly360Ala)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "Q",
+    "position": 364,
+    "mut_aa": "H",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.1095G>C (p.Gln365His)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "P",
+    "position": 368,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.1105C>T (p.Pro369Ser)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "M",
+    "position": 380,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.1141A>G (p.Met381Val)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "S",
+    "position": 391,
+    "mut_aa": "F",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.1175C>T (p.Ser392Phe)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "P",
+    "position": 393,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.1180C>T (p.Pro394Ser)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "M",
+    "position": 395,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.1188G>T (p.Met396Ile)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "M",
+    "position": 395,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.1186A>G (p.Met396Val)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "G",
+    "position": 415,
+    "mut_aa": "E",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.1247G>A (p.Gly416Glu)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "I",
+    "position": 419,
+    "mut_aa": "M",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.1260A>G (p.Ile420Met)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "M",
+    "position": 429,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.1290G>T (p.Met430Ile)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "P",
+    "position": 438,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.1315C>T (p.Pro439Ser)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "G",
+    "position": 445,
+    "mut_aa": "E",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.1337G>A (p.Gly446Glu)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "M",
+    "position": 449,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.1349T>C (p.Met450Thr)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "S",
+    "position": 457,
+    "mut_aa": "C",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.1373C>G (p.Ser458Cys)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "M",
+    "position": 463,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.1392G>T (p.Met464Ile)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "M",
+    "position": 474,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.1423A>G (p.Met475Val)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "G",
+    "position": 483,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.1451G>T (p.Gly484Val)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "Q",
+    "position": 491,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.1475A>G (p.Gln492Arg)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "P",
+    "position": 496,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.1489C>A (p.Pro497Thr)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "P",
+    "position": 518,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.1556C>T (p.Pro519Leu)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "P",
+    "position": 518,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.1555C>T (p.Pro519Ser)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "G",
+    "position": 521,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.1565G>T (p.Gly522Val)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "P",
+    "position": 547,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.1642C>T (p.Pro548Ser)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "V",
+    "position": 552,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.1657G>T (p.Val553Leu)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "P",
+    "position": 557,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.1672C>G (p.Pro558Ala)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "E",
+    "position": 559,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.1678G>A (p.Glu560Lys)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "M",
+    "position": 569,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.1708A>G (p.Met570Val)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "Q",
+    "position": 571,
+    "mut_aa": "H",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.1716G>C (p.Gln572His)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "P",
+    "position": 593,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.1780C>T (p.Pro594Ser)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "K",
+    "position": 599,
+    "mut_aa": "E",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.1798A>G (p.Lys600Glu)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "H",
+    "position": 604,
+    "mut_aa": "D",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.1813C>G (p.His605Asp)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "V",
+    "position": 606,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.1819G>A (p.Val607Ile)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "G",
+    "position": 613,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.1840G>A (p.Gly614Ser)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "P",
+    "position": 620,
+    "mut_aa": "H",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.1862C>A (p.Pro621His)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "D",
+    "position": 651,
+    "mut_aa": "E",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.1956C>A (p.Asp652Glu)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "P",
+    "position": 652,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.1958C>T (p.Pro653Leu)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "P",
+    "position": 655,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.1966C>T (p.Pro656Ser)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "P",
+    "position": 670,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.2012C>T (p.Pro671Leu)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "P",
+    "position": 670,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.2012C>G (p.Pro671Arg)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "P",
+    "position": 673,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.2021C>G (p.Pro674Arg)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "A",
+    "position": 687,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.2062G>A (p.Ala688Thr)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "A",
+    "position": 687,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.2063C>T (p.Ala688Val)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "S",
+    "position": 698,
+    "mut_aa": "G",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.2095A>G (p.Ser699Gly)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "S",
+    "position": 707,
+    "mut_aa": "N",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.2123G>A (p.Ser708Asn)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "K",
+    "position": 715,
+    "mut_aa": "M",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.2147A>T (p.Lys716Met)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "K",
+    "position": 715,
+    "mut_aa": "N",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.2148G>T (p.Lys716Asn)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "D",
+    "position": 727,
+    "mut_aa": "G",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.2183A>G (p.Asp728Gly)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "D",
+    "position": 727,
+    "mut_aa": "N",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.2182G>A (p.Asp728Asn)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "D",
+    "position": 739,
+    "mut_aa": "N",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.2218G>A (p.Asp740Asn)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "D",
+    "position": 741,
+    "mut_aa": "N",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.2224G>A (p.Asp742Asn)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "G",
+    "position": 743,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.2230G>A (p.Gly744Ser)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "K",
+    "position": 746,
+    "mut_aa": "N",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.2241G>C (p.Lys747Asn)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "V",
+    "position": 753,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.2260G>C (p.Val754Leu)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "K",
+    "position": 765,
+    "mut_aa": "N",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.2298G>T (p.Lys766Asn)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "S",
+    "position": 786,
+    "mut_aa": "F",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.2360C>T (p.Ser787Phe)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "Y",
+    "position": 826,
+    "mut_aa": "C",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.2480A>G (p.Tyr827Cys)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "S",
+    "position": 833,
+    "mut_aa": "F",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.2501C>T (p.Ser834Phe)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "I",
+    "position": 842,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.2527A>G (p.Ile843Val)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "D",
+    "position": 848,
+    "mut_aa": "G",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.2546A>G (p.Asp849Gly)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "K",
+    "position": 866,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.2600A>G (p.Lys867Arg)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "D",
+    "position": 879,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.2639A>T (p.Asp880Val)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "M",
+    "position": 887,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.2662A>G (p.Met888Val)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "D",
+    "position": 888,
+    "mut_aa": "N",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.2665G>A (p.Asp889Asn)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "R",
+    "position": 891,
+    "mut_aa": "H",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.2675G>A (p.Arg892His)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "T",
+    "position": 893,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.2680A>G (p.Thr894Ala)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "R",
+    "position": 896,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.2690G>A (p.Arg897Gln)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "K",
+    "position": 906,
+    "mut_aa": "E",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.2719A>G (p.Lys907Glu)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "L",
+    "position": 910,
+    "mut_aa": "F",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.2731C>T (p.Leu911Phe)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "R",
+    "position": 919,
+    "mut_aa": "W",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.2758C>T (p.Arg920Trp)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "D",
+    "position": 924,
+    "mut_aa": "E",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.2775T>A (p.Asp925Glu)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "I",
+    "position": 928,
+    "mut_aa": "M",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.2787C>G (p.Ile929Met)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "E",
+    "position": 929,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.2788G>A (p.Glu930Lys)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "L",
+    "position": 934,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.2803C>G (p.Leu935Val)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "R",
+    "position": 937,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.2813G>A (p.Arg938Lys)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "T",
+    "position": 941,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.2824A>G (p.Thr942Ala)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "R",
+    "position": 943,
+    "mut_aa": "H",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.2831G>A (p.Arg944His)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "A",
+    "position": 949,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.2848G>A (p.Ala950Thr)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "S",
+    "position": 955,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.2867C>T (p.Ser956Leu)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "S",
+    "position": 957,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.2874T>A (p.Ser958Arg)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "N",
+    "position": 965,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.2897A>G (p.Asn966Ser)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "Q",
+    "position": 971,
+    "mut_aa": "R",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.2915A>G (p.Gln972Arg)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "L",
+    "position": 979,
+    "mut_aa": "P",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.2939T>C (p.Leu980Pro)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "M",
+    "position": 994,
+    "mut_aa": "V",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.2983A>G (p.Met995Val)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "L",
+    "position": 996,
+    "mut_aa": "S",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.2990T>C (p.Leu997Ser)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "I",
+    "position": 1000,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.3001A>G (p.Ile1001Val)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "Y",
+    "position": 1010,
+    "mut_aa": "H",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.3031T>C (p.Tyr1011His)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "L",
+    "position": 1019,
+    "mut_aa": "S",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.3059T>C (p.Leu1020Ser)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "V",
+    "position": 1020,
+    "mut_aa": "G",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.3062T>G (p.Val1021Gly)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "I",
+    "position": 1027,
+    "mut_aa": "V",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.3082A>G (p.Ile1028Val)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "N",
+    "position": 1029,
+    "mut_aa": "D",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.3088A>G (p.Asn1030Asp)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "N",
+    "position": 1029,
+    "mut_aa": "S",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.3089A>G (p.Asn1030Ser)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "W",
+    "position": 1030,
+    "mut_aa": "C",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.3093G>C (p.Trp1031Cys)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "W",
+    "position": 1030,
+    "mut_aa": "G",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.3091T>G (p.Trp1031Gly)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "V",
+    "position": 1042,
+    "mut_aa": "M",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.3127G>A (p.Val1043Met)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "R",
+    "position": 1068,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.3206G>A (p.Arg1069Gln)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "K",
+    "position": 1075,
+    "mut_aa": "E",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.3226A>G (p.Lys1076Glu)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "H",
+    "position": 1077,
+    "mut_aa": "Y",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.3232C>T (p.His1078Tyr)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "I",
+    "position": 1080,
+    "mut_aa": "N",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.3242T>A (p.Ile1081Asn)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "W",
+    "position": 1098,
+    "mut_aa": "R",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.3295T>C (p.Trp1099Arg)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "C",
+    "position": 1100,
+    "mut_aa": "R",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.3301T>C (p.Cys1101Arg)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "C",
+    "position": 1100,
+    "mut_aa": "Y",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.3302G>A (p.Cys1101Tyr)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "H",
+    "position": 1107,
+    "mut_aa": "Y",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.3322C>T (p.His1108Tyr)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "L",
+    "position": 1125,
+    "mut_aa": "F",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.3378G>C (p.Leu1126Phe)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "L",
+    "position": 1130,
+    "mut_aa": "P",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.3392T>C (p.Leu1131Pro)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "V",
+    "position": 1207,
+    "mut_aa": "D",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.3623T>A (p.Val1208Asp)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "Q",
+    "position": 1213,
+    "mut_aa": "H",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.3642G>T (p.Gln1214His)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "Q",
+    "position": 1213,
+    "mut_aa": "P",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.3641A>C (p.Gln1214Pro)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "Q",
+    "position": 1213,
+    "mut_aa": "R",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.3641A>G (p.Gln1214Arg)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "G",
+    "position": 1231,
+    "mut_aa": "D",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.3695G>A (p.Gly1232Asp)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "G",
+    "position": 1232,
+    "mut_aa": "D",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.3698G>A (p.Gly1233Asp)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "G",
+    "position": 1232,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.3697G>A (p.Gly1233Ser)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "Q",
+    "position": 1234,
+    "mut_aa": "H",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.3705A>T (p.Gln1235His)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "C",
+    "position": 1250,
+    "mut_aa": "R",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.3751T>C (p.Cys1251Arg)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "H",
+    "position": 1253,
+    "mut_aa": "P",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.3761A>C (p.His1254Pro)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "H",
+    "position": 1253,
+    "mut_aa": "R",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.3761A>G (p.His1254Arg)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "L",
+    "position": 1256,
+    "mut_aa": "R",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.3770T>G (p.Leu1257Arg)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "G",
+    "position": 1259,
+    "mut_aa": "C",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.3778G>T (p.Gly1260Cys)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "N",
+    "position": 1273,
+    "mut_aa": "D",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.3820A>G (p.Asn1274Asp)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "E",
+    "position": 1275,
+    "mut_aa": "D",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.3828G>C (p.Glu1276Asp)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "L",
+    "position": 1293,
+    "mut_aa": "P",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.3881T>C (p.Leu1294Pro)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "L",
+    "position": 1298,
+    "mut_aa": "P",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.3896T>C (p.Leu1299Pro)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "L",
+    "position": 1301,
+    "mut_aa": "P",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.3905T>C (p.Leu1302Pro)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "S",
+    "position": 1312,
+    "mut_aa": "P",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.3937T>C (p.Ser1313Pro)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "R",
+    "position": 1316,
+    "mut_aa": "H",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.3950G>A (p.Arg1317His)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "L",
+    "position": 1321,
+    "mut_aa": "P",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.3965T>C (p.Leu1322Pro)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "L",
+    "position": 1343,
+    "mut_aa": "F",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.4030C>T (p.Leu1344Phe)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "R",
+    "position": 1344,
+    "mut_aa": "H",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.4034G>A (p.Arg1345His)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "A",
+    "position": 1377,
+    "mut_aa": "V",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.4133C>T (p.Ala1378Val)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "H",
+    "position": 1400,
+    "mut_aa": "R",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.4202A>G (p.His1401Arg)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "S",
+    "position": 1405,
+    "mut_aa": "N",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.4217G>A (p.Ser1406Asn)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "S",
+    "position": 1405,
+    "mut_aa": "R",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.4218C>A (p.Ser1406Arg)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "T",
+    "position": 1415,
+    "mut_aa": "R",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.4247C>G (p.Thr1416Arg)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "Y",
+    "position": 1419,
+    "mut_aa": "C",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.4259A>G (p.Tyr1420Cys)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "M",
+    "position": 1441,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.4324A>G (p.Met1442Val)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "T",
+    "position": 1448,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.4345A>G (p.Thr1449Ala)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "T",
+    "position": 1520,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.4562C>T (p.Thr1521Ile)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "V",
+    "position": 1551,
+    "mut_aa": "F",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.4654G>T (p.Val1552Phe)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "R",
+    "position": 1556,
+    "mut_aa": "G",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.4669A>G (p.Arg1557Gly)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "R",
+    "position": 1562,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.4688G>A (p.Arg1563Lys)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "L",
+    "position": 1578,
+    "mut_aa": "F",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.4737G>C (p.Leu1579Phe)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "C",
+    "position": 1587,
+    "mut_aa": "W",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.4764T>G (p.Cys1588Trp)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "R",
+    "position": 1592,
+    "mut_aa": "C",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.4777C>T (p.Arg1593Cys)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "D",
+    "position": 1595,
+    "mut_aa": "V",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.4787A>T (p.Asp1596Val)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "A",
+    "position": 1601,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.4804G>A (p.Ala1602Thr)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "R",
+    "position": 1619,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.4859G>A (p.Arg1620Gln)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "H",
+    "position": 1626,
+    "mut_aa": "Y",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.4879C>T (p.His1627Tyr)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "Q",
+    "position": 1632,
+    "mut_aa": "E",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.4897C>G (p.Gln1633Glu)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "R",
+    "position": 1676,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.5030G>A (p.Arg1677Gln)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "V",
+    "position": 1679,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.5039T>C (p.Val1680Ala)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "G",
+    "position": 1683,
+    "mut_aa": "C",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.5050G>T (p.Gly1684Cys)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "G",
+    "position": 1683,
+    "mut_aa": "R",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.5050G>C (p.Gly1684Arg)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "G",
+    "position": 1683,
+    "mut_aa": "S",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.5050G>A (p.Gly1684Ser)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "P",
+    "position": 1704,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.5114C>T (p.Pro1705Leu)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "Q",
+    "position": 1707,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.5123A>G (p.Gln1708Arg)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "R",
+    "position": 1740,
+    "mut_aa": "H",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.5222G>A (p.Arg1741His)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "R",
+    "position": 1742,
+    "mut_aa": "C",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.5227C>T (p.Arg1743Cys)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "L",
+    "position": 1747,
+    "mut_aa": "R",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.5243T>G (p.Leu1748Arg)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "A",
+    "position": 1756,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.5269G>A (p.Ala1757Thr)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "D",
+    "position": 1757,
+    "mut_aa": "N",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.5272G>A (p.Asp1758Asn)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "K",
+    "position": 1758,
+    "mut_aa": "N",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.5277G>T (p.Lys1759Asn)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "D",
+    "position": 1769,
+    "mut_aa": "G",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.5309A>G (p.Asp1770Gly)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "D",
+    "position": 1769,
+    "mut_aa": "N",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.5308G>A (p.Asp1770Asn)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "G",
+    "position": 1801,
+    "mut_aa": "S",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.5404G>A (p.Gly1802Ser)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "R",
+    "position": 1809,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.5429G>A (p.Arg1810Gln)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "D",
+    "position": 1811,
+    "mut_aa": "E",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.5436C>A (p.Asp1812Glu)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "D",
+    "position": 1811,
+    "mut_aa": "V",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.5435A>T (p.Asp1812Val)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "C",
+    "position": 1815,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.5447G>C (p.Cys1816Ser)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "F",
+    "position": 1816,
+    "mut_aa": "C",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.5450T>G (p.Phe1817Cys)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "G",
+    "position": 1844,
+    "mut_aa": "E",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.5534G>A (p.Gly1845Glu)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "D",
+    "position": 1877,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.5633A>T (p.Asp1878Val)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "A",
+    "position": 1886,
+    "mut_aa": "G",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.5660C>G (p.Ala1887Gly)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "E",
+    "position": 1896,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.5689G>A (p.Glu1897Lys)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "R",
+    "position": 1914,
+    "mut_aa": "Q",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.5744G>A (p.Arg1915Gln)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "R",
+    "position": 1941,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.5825G>A (p.Arg1942Gln)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "R",
+    "position": 1942,
+    "mut_aa": "W",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.5827C>T (p.Arg1943Trp)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "R",
+    "position": 1944,
+    "mut_aa": "G",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.5833C>G (p.Arg1945Gly)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "E",
+    "position": 1951,
+    "mut_aa": "D",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.5856A>T (p.Glu1952Asp)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "R",
+    "position": 1962,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.5888G>A (p.Arg1963Gln)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "E",
+    "position": 2011,
+    "mut_aa": "V",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.6035A>T (p.Glu2012Val)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "S",
+    "position": 2015,
+    "mut_aa": "N",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.6047G>A (p.Ser2016Asn)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "R",
+    "position": 2023,
+    "mut_aa": "G",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.6070C>G (p.Arg2024Gly)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "R",
+    "position": 2026,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.6080G>A (p.Arg2027Gln)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "R",
+    "position": 2056,
+    "mut_aa": "H",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.6170G>A (p.Arg2057His)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "R",
+    "position": 2064,
+    "mut_aa": "C",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.6193C>T (p.Arg2065Cys)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "P",
+    "position": 2071,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.6214C>T (p.Pro2072Ser)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "L",
+    "position": 2079,
+    "mut_aa": "P",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.6239T>C (p.Leu2080Pro)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "R",
+    "position": 2094,
+    "mut_aa": "W",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.6283C>T (p.Arg2095Trp)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "H",
+    "position": 2095,
+    "mut_aa": "R",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.6287A>G (p.His2096Arg)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "H",
+    "position": 2095,
+    "mut_aa": "Y",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.6286C>T (p.His2096Tyr)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "D",
+    "position": 2096,
+    "mut_aa": "H",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.6289G>C (p.Asp2097His)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "G",
+    "position": 2107,
+    "mut_aa": "R",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.6322G>A (p.Gly2108Arg)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "G",
+    "position": 2107,
+    "mut_aa": "W",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.6322G>T (p.Gly2108Trp)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "R",
+    "position": 2110,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.6332G>A (p.Arg2111Gln)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "L",
+    "position": 2116,
+    "mut_aa": "F",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.6349C>T (p.Leu2117Phe)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "N",
+    "position": 2117,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.6353A>G (p.Asn2118Ser)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "F",
+    "position": 2123,
+    "mut_aa": "C",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.6371T>G (p.Phe2124Cys)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "F",
+    "position": 2123,
+    "mut_aa": "S",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.6371T>C (p.Phe2124Ser)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "A",
+    "position": 2126,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.6379G>A (p.Ala2127Thr)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "H",
+    "position": 2127,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.6384T>G (p.His2128Gln)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "H",
+    "position": 2127,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.6383A>G (p.His2128Arg)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "N",
+    "position": 2129,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.6389A>T (p.Asn2130Ile)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "F",
+    "position": 2130,
+    "mut_aa": "C",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.6392T>G (p.Phe2131Cys)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "A",
+    "position": 2131,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.6394G>A (p.Ala2132Thr)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "T",
+    "position": 2139,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.6419C>T (p.Thr2140Ile)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "A",
+    "position": 2146,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.6439G>A (p.Ala2147Thr)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "G",
+    "position": 2148,
+    "mut_aa": "E",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.6446G>A (p.Gly2149Glu)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "S",
+    "position": 2158,
+    "mut_aa": "P",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.6475T>C (p.Ser2159Pro)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "A",
+    "position": 2159,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.6478G>A (p.Ala2160Thr)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "H",
+    "position": 2160,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.6483T>A (p.His2161Gln)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "I",
+    "position": 2161,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.6485T>C (p.Ile2162Thr)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "K",
+    "position": 2173,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.6521A>G (p.Lys2174Arg)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "E",
+    "position": 2176,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.6529G>A (p.Glu2177Lys)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "E",
+    "position": 2192,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.6577G>A (p.Glu2193Lys)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "D",
+    "position": 2196,
+    "mut_aa": "N",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.6589G>A (p.Asp2197Asn)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "G",
+    "position": 2199,
+    "mut_aa": "W",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.6598G>T (p.Gly2200Trp)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "A",
+    "position": 2210,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.6631G>A (p.Ala2211Thr)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "L",
+    "position": 2217,
+    "mut_aa": "P",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.6653T>C (p.Leu2218Pro)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "G",
+    "position": 2223,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.6670G>A (p.Gly2224Ser)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "D",
+    "position": 2225,
+    "mut_aa": "G",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.6677A>G (p.Asp2226Gly)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "T",
+    "position": 2226,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.6680C>G (p.Thr2227Ser)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "S",
+    "position": 2230,
+    "mut_aa": "C",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.6692C>G (p.Ser2231Cys)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "S",
+    "position": 2230,
+    "mut_aa": "F",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.6692C>T (p.Ser2231Phe)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "G",
+    "position": 2264,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.6793G>A (p.Gly2265Arg)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "M",
+    "position": 2275,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.6826A>G (p.Met2276Val)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "D",
+    "position": 2280,
+    "mut_aa": "E",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.6843T>G (p.Asp2281Glu)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "L",
+    "position": 2298,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.6895C>A (p.Leu2299Ile)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "F",
+    "position": 2304,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.6913T>C (p.Phe2305Leu)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "P",
+    "position": 2310,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.6932C>T (p.Pro2311Leu)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "R",
+    "position": 2318,
+    "mut_aa": "C",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.6955C>T (p.Arg2319Cys)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "R",
+    "position": 2318,
+    "mut_aa": "L",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.6956G>T (p.Arg2319Leu)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "R",
+    "position": 2318,
+    "mut_aa": "S",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.6955C>A (p.Arg2319Ser)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "I",
+    "position": 2322,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.6967A>G (p.Ile2323Val)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "G",
+    "position": 2329,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.6989G>C (p.Gly2330Ala)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "V",
+    "position": 2333,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.7000G>C (p.Val2334Leu)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "F",
+    "position": 2341,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.7024T>C (p.Phe2342Leu)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "P",
+    "position": 2350,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.7052C>T (p.Pro2351Leu)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "R",
+    "position": 2360,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.7083G>T (p.Arg2361Ser)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "A",
+    "position": 2363,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.7090G>T (p.Ala2364Ser)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "G",
+    "position": 2369,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.7108G>A (p.Gly2370Ser)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "G",
+    "position": 2375,
+    "mut_aa": "E",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.7127G>A (p.Gly2376Glu)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "R",
+    "position": 2397,
+    "mut_aa": "H",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.7193G>A (p.Arg2398His)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "R",
+    "position": 2399,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.7199G>A (p.Arg2400Gln)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "A",
+    "position": 2413,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.7240G>T (p.Ala2414Ser)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "A",
+    "position": 2413,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.7241C>T (p.Ala2414Val)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "A",
+    "position": 2414,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.7243G>T (p.Ala2415Ser)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "V",
+    "position": 2431,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.7294G>T (p.Val2432Leu)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "V",
+    "position": 2431,
+    "mut_aa": "M",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.7294G>A (p.Val2432Met)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "V",
+    "position": 2432,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.7297G>A (p.Val2433Ile)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "Q",
+    "position": 2437,
+    "mut_aa": "P",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.7313A>C (p.Gln2438Pro)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "Q",
+    "position": 2437,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.7313A>G (p.Gln2438Arg)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "T",
+    "position": 2451,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.7354A>G (p.Thr2452Ala)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "T",
+    "position": 2454,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.7363A>G (p.Thr2455Ala)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "N",
+    "position": 2468,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.7406A>C (p.Asn2469Thr)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "Q",
+    "position": 2480,
+    "mut_aa": "H",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.7443A>C (p.Gln2481His)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "M",
+    "position": 2481,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.7446G>A (p.Met2482Ile)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "S",
+    "position": 2489,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.7469C>T (p.Ser2490Leu)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "R",
+    "position": 2490,
+    "mut_aa": "C",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.7471C>T (p.Arg2491Cys)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "R",
+    "position": 2490,
+    "mut_aa": "H",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.7472G>A (p.Arg2491His)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "R",
+    "position": 2494,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.7485G>T (p.Arg2495Ser)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "R",
+    "position": 2512,
+    "mut_aa": "W",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.7537C>T (p.Arg2513Trp)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "M",
+    "position": 2526,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.7581G>T (p.Met2527Ile)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "M",
+    "position": 2526,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.7579A>C (p.Met2527Leu)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "H",
+    "position": 2528,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.7586A>G (p.His2529Arg)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "R",
+    "position": 2530,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.7592G>A (p.Arg2531Gln)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "R",
+    "position": 2530,
+    "mut_aa": "W",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.7591C>T (p.Arg2531Trp)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "D",
+    "position": 2537,
+    "mut_aa": "N",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.7612G>A (p.Asp2538Asn)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "I",
+    "position": 2548,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.7646T>C (p.Ile2549Thr)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "R",
+    "position": 2554,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.7664G>A (p.Arg2555Lys)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "I",
+    "position": 2556,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.7669A>G (p.Ile2557Val)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "T",
+    "position": 2566,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.7700C>T (p.Thr2567Ile)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "R",
+    "position": 2567,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.7703G>A (p.Arg2568Gln)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "I",
+    "position": 2571,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.7715T>C (p.Ile2572Thr)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "I",
+    "position": 2571,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.7714A>G (p.Ile2572Val)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "N",
+    "position": 2587,
+    "mut_aa": "S",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.7763A>G (p.Asn2588Ser)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "V",
+    "position": 2591,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.7775T>C (p.Val2592Ala)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "A",
+    "position": 2662,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.7988C>T (p.Ala2663Val)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "P",
+    "position": 2664,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.7993C>G (p.Pro2665Ala)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "D",
+    "position": 2667,
+    "mut_aa": "E",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.8004T>G (p.Asp2668Glu)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "P",
+    "position": 2682,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.8047C>T (p.Pro2683Ser)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "I",
+    "position": 2687,
+    "mut_aa": "R",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.8063T>G (p.Ile2688Arg)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "S",
+    "position": 2697,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.8093C>T (p.Ser2698Leu)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "V",
+    "position": 2707,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.8122G>A (p.Val2708Ile)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "R",
+    "position": 2709,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.8129G>A (p.Arg2710Gln)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "A",
+    "position": 2729,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.8188G>A (p.Ala2730Thr)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "F",
+    "position": 2749,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.8250T>G (p.Phe2750Leu)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "T",
+    "position": 2755,
+    "mut_aa": "M",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.8267C>T (p.Thr2756Met)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "A",
+    "position": 2769,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.8308G>A (p.Ala2770Thr)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "M",
+    "position": 2772,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.8317A>G (p.Met2773Val)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "A",
+    "position": 2784,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.8353G>A (p.Ala2785Thr)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "G",
+    "position": 2786,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.8359G>A (p.Gly2787Ser)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "D",
+    "position": 2787,
+    "mut_aa": "N",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.8362G>A (p.Asp2788Asn)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "A",
+    "position": 2788,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.8365G>A (p.Ala2789Thr)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "A",
+    "position": 2792,
+    "mut_aa": "G",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.8378C>G (p.Ala2793Gly)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "V",
+    "position": 2794,
+    "mut_aa": "M",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.8383G>A (p.Val2795Met)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "P",
+    "position": 2796,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.8389C>T (p.Pro2797Ser)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "L",
+    "position": 2805,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.8416C>G (p.Leu2806Val)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "N",
+    "position": 2807,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.8423A>G (p.Asn2808Ser)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "V",
+    "position": 2808,
+    "mut_aa": "M",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.8425G>A (p.Val2809Met)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "F",
+    "position": 2809,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.8428T>A (p.Phe2810Ile)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "G",
+    "position": 2813,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.8440G>A (p.Gly2814Arg)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "N",
+    "position": 2817,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.8454C>A (p.Asn2818Lys)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "N",
+    "position": 2825,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.8477A>G (p.Asn2826Ser)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "A",
+    "position": 2829,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.8488G>A (p.Ala2830Thr)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "S",
+    "position": 2830,
+    "mut_aa": "C",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.8492C>G (p.Ser2831Cys)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "S",
+    "position": 2838,
+    "mut_aa": "N",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.8516G>A (p.Ser2839Asn)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "D",
+    "position": 2851,
+    "mut_aa": "N",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.8554G>A (p.Asp2852Asn)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "N",
+    "position": 2853,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.8562C>G (p.Asn2854Lys)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "A",
+    "position": 2869,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.8609C>T (p.Ala2870Val)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "P",
+    "position": 2879,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.8638C>T (p.Pro2880Ser)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "N",
+    "position": 2885,
+    "mut_aa": "D",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.8656A>G (p.Asn2886Asp)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "P",
+    "position": 2886,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.8660C>T (p.Pro2887Leu)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "M",
+    "position": 2897,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.8694G>A (p.Met2898Ile)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "G",
+    "position": 2913,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.8740G>A (p.Gly2914Arg)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "A",
+    "position": 2924,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.8773G>A (p.Ala2925Thr)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "P",
+    "position": 2945,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.8837C>G (p.Pro2946Arg)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "P",
+    "position": 2945,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.8836C>T (p.Pro2946Ser)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "K",
+    "position": 2947,
+    "mut_aa": "E",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.8842A>G (p.Lys2948Glu)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "D",
+    "position": 2956,
+    "mut_aa": "N",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.8869G>A (p.Asp2957Asn)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "A",
+    "position": 2965,
+    "mut_aa": "S",
+    "label": 1,
+    "name": "NM_017780.4(CHD7):c.8896G>T (p.Ala2966Ser)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "L",
+    "position": 2969,
+    "mut_aa": "H",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.8909T>A (p.Leu2970His)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "E",
+    "position": 2973,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.8920G>A (p.Glu2974Lys)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "Q",
+    "position": 2976,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.8930A>G (p.Gln2977Arg)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "S",
+    "position": 2982,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.8948C>T (p.Ser2983Leu)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "L",
+    "position": 2983,
+    "mut_aa": "F",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.8950C>T (p.Leu2984Phe)"
+  },
+  {
+    "gene": "CHD7",
+    "wt_aa": "D",
+    "position": 2984,
+    "mut_aa": "E",
+    "label": 0,
+    "name": "NM_017780.4(CHD7):c.8955T>G (p.Asp2985Glu)"
+  }
+]

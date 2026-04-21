@@ -1,0 +1,6 @@
+field,value
+support_scan_table,/teamspace/studios/this_studio/SpectralBio/New Notebooks/results/01_block1_baseline_alpha_regime_audit_h100/runtime/support_scan/clinvar_gene_support_table.csv
+min_total,60
+min_per_class,20
+max_additional_genes,8
+ranking,min_class_count desc | n_total desc | gene asc

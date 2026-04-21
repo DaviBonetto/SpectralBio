@@ -1,0 +1,1 @@
+The multifamily stress test confirms that covariance still carries real signal, but the signal remains bounded: it is strongest in a subset of models and should be sold as a coverage-aware, model-sensitive rule rather than a universal cross-family law.

@@ -1,0 +1,12 @@
+model_label,n_rows,n_targets,n_variant_ids
+ESM2-150M,2747,8,2743
+ESM-1v,260,4,260
+ESM2-650M,260,4,260
+ProtT5,260,4,260
+ESM-1v+ESM2-150M-reference,1308,3,0
+ESM2-35M,255,1,255
+ESM2-3B,255,1,255
+ProGen2-base,255,1,255
+ProGen2-small,255,1,255
+ProtBERT,255,1,255
+ProtBERT-BFD,255,1,255
