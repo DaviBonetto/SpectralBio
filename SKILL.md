@@ -17,8 +17,10 @@ python_version: ">=3.10"
 Use this skill to reproduce the public SpectralBio repository through its frozen executable replay surface and its associated public scientific audit surfaces.
 
 - Flagship scientific result: covariance-aware augmentation against a stronger external baseline on `BRCA2`
-- Validation anchor: `TP53` is the only frozen public canonical replay surface
-- Breadth surface: support-ranked top-25 feasible panel
+- Validation and structural anchor: `TP53` is the only frozen public canonical replay surface and the manuscript's mechanistic anchor
+- Qualitative centerpiece: a covariance-defined scale-repair failure mode inside the ESM2 family
+- Breadth surface: support-ranked top-25 feasible panel plus bounded clinical-panel and gallery curation
+- Final claim boundary: late adjudication sharpens the story to `supportive rather than nuclear`
 - Auxiliary executable transfer surface: `bounded transfer on a fixed BRCA1 subset (N=100) without retraining`
 - Transfer framing: `secondary transfer evaluation without retraining`
 - Repository framing: `research reproducibility artifact`
@@ -48,8 +50,10 @@ Use this skill to reproduce the public SpectralBio repository through its frozen
 ### Manuscript Scientific Center
 
 - `BRCA2` is the flagship scientific result: ESM-1v baseline `0.6324` becomes covariance-augmented `0.6890`, for paired gain `0.0566`, paired 95% CI `[0.0131, 0.1063]`, and empirical `p = 0.0010`
-- `TP53` is the validation anchor that shows the covariance signal is real, auditable, and executable on a frozen public surface
-- The support-ranked top-25 feasible panel is the performance-blind breadth surface
+- `TP53` is the validation anchor that shows the covariance signal is real, auditable, executable on a frozen public surface, and structurally grounded through the repaired dissociation readout (`0.309` versus `0.036`)
+- The support-ranked top-25 feasible panel is the performance-blind breadth surface, which is then condensed through a bounded clinical-panel and gallery layer
+- The scale-repair failure-mode chain is the manuscript's qualitative centerpiece: covariance exposes a structured ESM2-150M blind spot that ESM2-650M partially repairs
+- The late rulebook / orthogonal / multifamily / adjudication / localization chain determines the paper's final stopping point: `supportive rather than nuclear`
 - `BRCA1` is a boundary and failure-analysis surface, not a co-primary scientific center
 
 ### Frozen Executable Replay Center
@@ -96,6 +100,20 @@ If you need manuscript-aligned scientific framing and public audit surfaces, ins
 
 - `abstract.md`
 - `content.md`
+- `New Notebooks/01_block1_baseline_alpha_regime_audit_h100.ipynb`
+- `New Notebooks/02_block2_failure_mode_hunt_h100.ipynb`
+- `New Notebooks/05_block3_structure_bridge_h100.ipynb`
+- `New Notebooks/06_block5_clinical_panel_audit_h100.ipynb`
+- `New Notebooks/07c_block10_structural_dissociation_tp53_h100.ipynb`
+- `New Notebooks/08_block7_turbo_gallery_rescues_h100.ipynb`
+- `New Notebooks/11_block11_covariance_rulebook_h100.ipynb`
+- `New Notebooks/12_block12_orthogonal_validation_tp53_h100.ipynb`
+- `New Notebooks/12b_block12_multifamily_coverage_aware_generalization_h100.ipynb`
+- `New Notebooks/12c_block12_covariance_adjudication_structural_closure_h100.ipynb`
+- `New Notebooks/12d_block12_final_nuclear_localization_h100.ipynb`
+
+If you need legacy manuscript-aligned audit surfaces that predate the final `New Notebooks` chain, inspect these next:
+
 - `notebooks/final_accept_part3_esm1v_augmentation_A100.ipynb`
 - `notebooks/final_accept_part4_brca2_canonicalization_A100.ipynb`
 - `notebooks/final_accept_part1_support_panel.ipynb`
@@ -113,8 +131,8 @@ Do **not** promote legacy wording, wrapper convenience, or stale surfaces above 
   - Priority: fastest and default route
 - Case 2 - Public scientific audit
   - Goal: inspect the manuscript-aligned scientific center without changing the executable contract
-  - Path: inspect `abstract.md`, `content.md`, and the BRCA2 / panel notebooks listed in `## Truth Boundary`
-  - Result: BRCA2 flagship framing, TP53 validation role, breadth, and boundary surfaces become explicit
+  - Path: inspect `abstract.md`, `content.md`, and the current manuscript audit surfaces listed in `## Truth Boundary`, especially the stronger-baseline, failure-mode, structural, gallery, rulebook, and adjudication blocks under `New Notebooks`
+  - Result: BRCA2 flagship framing, TP53 structural and validation role, breadth, scale-repair, and final claim boundary become explicit
   - Constraint: these audit surfaces complement the TP53 replay path; they do not replace it
 - Case 3 - Optional bounded auxiliary validation
   - Goal: check `BRCA1_transfer100` as bounded auxiliary executable evidence
@@ -286,6 +304,11 @@ ls outputs/transfer
 - BRCA2 flagship augmentation result: ESM-1v `0.6324` to covariance-plus-ESM-1v `0.6890`
 - BRCA2 paired delta over ESM-1v: `0.0566` with paired 95% CI `[0.0131, 0.1063]`
 - BRCA2 covariance-permutation audit: empirical `p = 0.0010`
+- TP53 structural dissociation anchor: covariance `0.309` versus likelihood `0.036` on the repaired structural subset
+- Scale-repair matched-pair audit: mean Frobenius gap reduction `0.7250` with exact sign-flip `p = 0.000244`
+- Scale-repair sister-substitution follow-up: exact sign-flip `p = 0.007812`
+- Clinical-panel bounded breadth: `4 of 4` positive-focus genes improve and `12` prioritized rescue candidates emerge
+- Final adjudication chain: `6` supportive models, `0` nuclear models, `0` transfer-positive models, and `1` supportive localized witness
 - TP53 remains the only frozen public canonical replay surface
 - The support-ranked top-25 feasible panel remains the breadth surface
 - BRCA1 remains bounded auxiliary executable evidence and a boundary surface, not a co-primary flagship result
@@ -296,13 +319,29 @@ Report drift if filenames change, replay metrics move outside tolerance, TP53 st
 
 Use these surfaces when the task is paper alignment, scientific review, or judge-facing explanation rather than cold-start CLI replay:
 
+### Current manuscript audit surfaces
+
+- `New Notebooks/01_block1_baseline_alpha_regime_audit_h100.ipynb` - BRCA2 flagship stronger-baseline framing, TP53 validation role, and MSH2 negative replication
+- `New Notebooks/02_block2_failure_mode_hunt_h100.ipynb` - discovery of the scale-repair failure mode
+- `New Notebooks/05_block3_structure_bridge_h100.ipynb` - bounded structural bridge and contact-density context
+- `New Notebooks/06_block5_clinical_panel_audit_h100.ipynb` - performance-blind bounded breadth and rescue prioritization
+- `New Notebooks/07c_block10_structural_dissociation_tp53_h100.ipynb` - final TP53 structural dissociation readout
+- `New Notebooks/08_block7_turbo_gallery_rescues_h100.ipynb` - reviewer-facing rescue gallery plus explicit anti-case
+- `New Notebooks/11_block11_covariance_rulebook_h100.ipynb` - bounded operating-regime condensation
+- `New Notebooks/12_block12_orthogonal_validation_tp53_h100.ipynb` - portable-rule test on a fresh TP53 surface
+- `New Notebooks/12b_block12_multifamily_coverage_aware_generalization_h100.ipynb` - coverage-aware supportive-not-nuclear breadth audit
+- `New Notebooks/12c_block12_covariance_adjudication_structural_closure_h100.ipynb` - covariance-native adjudication under stricter firewalls
+- `New Notebooks/12d_block12_final_nuclear_localization_h100.ipynb` - final localization pass and stopping-point evidence
+
+### Legacy manuscript audit surfaces
+
 - `notebooks/final_accept_part3_esm1v_augmentation_A100.ipynb` - BRCA2 flagship stronger-baseline augmentation audit
 - `notebooks/final_accept_part4_brca2_canonicalization_A100.ipynb` - BRCA2 benchmark qualification and next-surface evidence
 - `notebooks/final_accept_part1_support_panel.ipynb` - support-ranked top-25 breadth surface
 - `notebooks/final_accept_part5_protocol_sweep_A100.ipynb` - checkpoint, window, and layer sensitivity boundary analysis
 - `notebooks/final_accept_part6_panel25_brca1_failure_L4.ipynb` - BRCA1 failure and boundary structure
 
-These are public scientific audit surfaces. They are not the cold-start default CLI contract.
+These are public scientific audit surfaces. They are not the cold-start default CLI contract. When there is tension between legacy audit surfaces and the `New Notebooks` chain, prefer the `New Notebooks` chain because it matches the current manuscript.
 
 ## Command Truth
 
@@ -365,6 +404,10 @@ Stop and report failure if any of the following occur:
 - BRCA2 is described as already being the default frozen CLI benchmark without separate implementation
 - the transfer path is treated as unrestricted generalization rather than a fixed bounded subset
 - manuscript-facing text erases BRCA2 as the flagship scientific result or collapses TP53 and BRCA2 into an ambiguous dual-center story
+- the scale-repair failure-mode chain is omitted from manuscript-facing audit guidance
+- `07c` TP53 structural dissociation is omitted as the manuscript's mechanistic anchor
+- the late `11/12/12b/12c/12d` adjudication chain is omitted or demoted below stale audit surfaces
+- the final `supportive rather than nuclear` stopping point is erased or replaced with a stronger unsupported closure claim
 - `uv run spectralbio verify` fails after optional full validation
 - `uv run python scripts/preflight.py` fails after optional full validation
 - repository wording drifts into forbidden claims
