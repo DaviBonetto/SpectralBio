@@ -1,0 +1,100 @@
+{
+  "notebook_slug": "13_block13_multitarget_generalization_closure_h100",
+  "account_label": "local_run",
+  "run_at": "2026-04-21T21:52:33.474890+00:00",
+  "overwrite": false,
+  "skip_live": false,
+  "fixed_alpha": 0.55,
+  "alpha_grid": [
+    0.35,
+    0.45,
+    0.55,
+    0.65,
+    0.75
+  ],
+  "window_radius": 40,
+  "checkpoint_every": 10,
+  "random_seed": 42,
+  "runtime": [
+    {
+      "package": "packaging",
+      "version": "25.0"
+    },
+    {
+      "package": "numpy",
+      "version": "2.1.3"
+    },
+    {
+      "package": "pandas",
+      "version": "2.3.3"
+    },
+    {
+      "package": "matplotlib",
+      "version": "3.10.8"
+    },
+    {
+      "package": "scipy",
+      "version": "1.14.1"
+    },
+    {
+      "package": "sklearn",
+      "version": "1.5.2"
+    },
+    {
+      "package": "requests",
+      "version": "2.32.5"
+    },
+    {
+      "package": "transformers",
+      "version": "4.49.0"
+    },
+    {
+      "package": "torch",
+      "version": "2.10.0+cpu"
+    },
+    {
+      "package": "python",
+      "version": "3.13.5"
+    },
+    {
+      "package": "platform",
+      "version": "Windows-11-10.0.26200-SP0"
+    }
+  ],
+  "artifact_summary": {
+    "notebook_slug": "13_block13_multitarget_generalization_closure_h100",
+    "claim_status": "multitarget_generalization_strengthened_but_not_fully_closed",
+    "results_root": "C:\\Users\\Davib\\OneDrive\\\u00c1rea de Trabalho\\Stanford-Claw4s\\New Notebooks\\results\\13_block13_multitarget_generalization_closure_h100",
+    "tables_written": [
+      "alpha_sweep_summary.csv",
+      "control_win_summary.csv",
+      "family_closure_summary.csv",
+      "holdout_closure_summary.csv",
+      "multitarget_generalization_scoreboard.csv",
+      "multitarget_model_variant_scores.csv",
+      "negative_control_summary.csv",
+      "per_model_runtime_manifest.csv",
+      "protocol_stability_summary.csv",
+      "replay_ready_targets_overview.csv",
+      "replay_target_contracts.csv",
+      "replay_target_manifest.csv",
+      "replay_target_panels.csv",
+      "score_reuse_inventory.csv",
+      "transfer_closure_summary.csv",
+      "window_layer_stability_summary.csv"
+    ],
+    "figures_written": [
+      "multitarget_model_scoreboard.png",
+      "near_nuclear_witnesses.png",
+      "negative_controls_guardrail.png",
+      "protocol_stability_frontier.png",
+      "replay_ready_targets_overview.png",
+      "transfer_holdout_controls_panel.png"
+    ],
+    "text_written": [
+      "block13_claim_paragraph.md",
+      "block13_replay_contract.md",
+      "block13_summary.md"
+    ]
+  }
+}

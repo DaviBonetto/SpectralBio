@@ -1,0 +1,266 @@
+{
+  "anchor_genes": [
+    "TP53",
+    "BRCA1"
+  ],
+  "selected_genes": [
+    "TP53",
+    "BRCA1",
+    "BRCA2",
+    "KMT2D",
+    "DMD",
+    "DNAH5",
+    "CHD7",
+    "MSH2",
+    "SACS",
+    "NSD1"
+  ],
+  "selection_rule": {
+    "support_scan_table": "/teamspace/studios/this_studio/SpectralBio/New Notebooks/results/01_block1_baseline_alpha_regime_audit_h100/runtime/support_scan/clinvar_gene_support_table.csv",
+    "min_total": 60,
+    "min_per_class": 20,
+    "max_additional_genes": 8,
+    "ranking": [
+      "min_class_count desc",
+      "n_total desc",
+      "gene asc"
+    ]
+  },
+  "genes": {
+    "TP53": {
+      "variants_path": "/teamspace/studios/this_studio/SpectralBio/New Notebooks/results/01_block1_baseline_alpha_regime_audit_h100/runtime/multigene/tp53_variants.json",
+      "sequence_source": "local benchmark fasta",
+      "sequence_path": "/teamspace/studios/this_studio/SpectralBio/benchmarks/sequences/tp53.fasta",
+      "n_total": 255,
+      "n_positive": 115,
+      "n_negative": 140,
+      "support_rank": 0
+    },
+    "BRCA1": {
+      "variants_path": "/teamspace/studios/this_studio/SpectralBio/New Notebooks/results/01_block1_baseline_alpha_regime_audit_h100/runtime/multigene/brca1_full_filtered_variants.json",
+      "sequence_source": "local benchmark fasta",
+      "sequence_path": "/teamspace/studios/this_studio/SpectralBio/benchmarks/sequences/brca1.fasta",
+      "n_total": 512,
+      "n_positive": 165,
+      "n_negative": 347,
+      "support_rank": 0
+    },
+    "BRCA2": {
+      "variants_path": "/teamspace/studios/this_studio/SpectralBio/New Notebooks/results/01_block1_baseline_alpha_regime_audit_h100/runtime/multigene/brca2_clinvar_variants.json",
+      "sequence_source": "UniProt reviewed human entry",
+      "sequence_path": "/teamspace/studios/this_studio/SpectralBio/New Notebooks/results/01_block1_baseline_alpha_regime_audit_h100/runtime/cache/uniprot/brca2.fasta",
+      "n_total": 658,
+      "n_positive": 100,
+      "n_negative": 558,
+      "support_rank": 2
+    },
+    "KMT2D": {
+      "variants_path": "/teamspace/studios/this_studio/SpectralBio/New Notebooks/results/01_block1_baseline_alpha_regime_audit_h100/runtime/multigene/kmt2d_clinvar_variants.json",
+      "sequence_source": "UniProt reviewed human entry",
+      "sequence_path": "/teamspace/studios/this_studio/SpectralBio/New Notebooks/results/01_block1_baseline_alpha_regime_audit_h100/runtime/cache/uniprot/kmt2d.fasta",
+      "n_total": 1182,
+      "n_positive": 94,
+      "n_negative": 1088,
+      "support_rank": 4
+    },
+    "DMD": {
+      "variants_path": "/teamspace/studios/this_studio/SpectralBio/New Notebooks/results/01_block1_baseline_alpha_regime_audit_h100/runtime/multigene/dmd_clinvar_variants.json",
+      "sequence_source": "UniProt reviewed human entry",
+      "sequence_path": "/teamspace/studios/this_studio/SpectralBio/New Notebooks/results/01_block1_baseline_alpha_regime_audit_h100/runtime/cache/uniprot/dmd.fasta",
+      "n_total": 367,
+      "n_positive": 25,
+      "n_negative": 342,
+      "support_rank": 5
+    },
+    "DNAH5": {
+      "variants_path": "/teamspace/studios/this_studio/SpectralBio/New Notebooks/results/01_block1_baseline_alpha_regime_audit_h100/runtime/multigene/dnah5_clinvar_variants.json",
+      "sequence_source": "UniProt reviewed human entry",
+      "sequence_path": "/teamspace/studios/this_studio/SpectralBio/New Notebooks/results/01_block1_baseline_alpha_regime_audit_h100/runtime/cache/uniprot/dnah5.fasta",
+      "n_total": 450,
+      "n_positive": 42,
+      "n_negative": 408,
+      "support_rank": 6
+    },
+    "CHD7": {
+      "variants_path": "/teamspace/studios/this_studio/SpectralBio/New Notebooks/results/01_block1_baseline_alpha_regime_audit_h100/runtime/multigene/chd7_clinvar_variants.json",
+      "sequence_source": "UniProt reviewed human entry",
+      "sequence_path": "/teamspace/studios/this_studio/SpectralBio/New Notebooks/results/01_block1_baseline_alpha_regime_audit_h100/runtime/cache/uniprot/chd7.fasta",
+      "n_total": 391,
+      "n_positive": 75,
+      "n_negative": 316,
+      "support_rank": 7
+    },
+    "MSH2": {
+      "variants_path": "/teamspace/studios/this_studio/SpectralBio/New Notebooks/results/01_block1_baseline_alpha_regime_audit_h100/runtime/multigene/msh2_clinvar_variants.json",
+      "sequence_source": "UniProt reviewed human entry",
+      "sequence_path": "/teamspace/studios/this_studio/SpectralBio/New Notebooks/results/01_block1_baseline_alpha_regime_audit_h100/runtime/cache/uniprot/msh2.fasta",
+      "n_total": 395,
+      "n_positive": 124,
+      "n_negative": 271,
+      "support_rank": 8
+    },
+    "SACS": {
+      "variants_path": "/teamspace/studios/this_studio/SpectralBio/New Notebooks/results/01_block1_baseline_alpha_regime_audit_h100/runtime/multigene/sacs_clinvar_variants.json",
+      "sequence_source": "UniProt reviewed human entry",
+      "sequence_path": "/teamspace/studios/this_studio/SpectralBio/New Notebooks/results/01_block1_baseline_alpha_regime_audit_h100/runtime/cache/uniprot/sacs.fasta",
+      "n_total": 516,
+      "n_positive": 48,
+      "n_negative": 468,
+      "support_rank": 9
+    },
+    "NSD1": {
+      "variants_path": "/teamspace/studios/this_studio/SpectralBio/New Notebooks/results/01_block1_baseline_alpha_regime_audit_h100/runtime/multigene/nsd1_clinvar_variants.json",
+      "sequence_source": "UniProt reviewed human entry",
+      "sequence_path": "/teamspace/studios/this_studio/SpectralBio/New Notebooks/results/01_block1_baseline_alpha_regime_audit_h100/runtime/cache/uniprot/nsd1.fasta",
+      "n_total": 407,
+      "n_positive": 160,
+      "n_negative": 247,
+      "support_rank": 10
+    }
+  },
+  "candidate_stats": {
+    "TTN": {
+      "rows_seen": 78809,
+      "skip_non_grch38": 39453,
+      "skip_non_snv": 4788,
+      "skip_out_of_range": 30,
+      "skip_non_binary_label": 15113,
+      "skip_non_simple_missense": 17812,
+      "skip_sequence_mismatch": 856,
+      "skip_non_germline": 600,
+      "n_total": 157,
+      "n_positive": 4,
+      "n_negative": 153,
+      "fasta_path": "/teamspace/studios/this_studio/SpectralBio/New Notebooks/results/01_block1_baseline_alpha_regime_audit_h100/runtime/cache/uniprot/ttn.fasta",
+      "support_rank": 1,
+      "selected": false
+    },
+    "BRCA2": {
+      "rows_seen": 42839,
+      "skip_non_grch38": 21571,
+      "skip_non_snv": 5125,
+      "skip_non_binary_label": 9314,
+      "skip_non_simple_missense": 5973,
+      "skip_non_germline": 190,
+      "n_total": 658,
+      "n_positive": 100,
+      "n_negative": 558,
+      "fasta_path": "/teamspace/studios/this_studio/SpectralBio/New Notebooks/results/01_block1_baseline_alpha_regime_audit_h100/runtime/cache/uniprot/brca2.fasta",
+      "support_rank": 2,
+      "selected": true
+    },
+    "NEB": {
+      "rows_seen": 25029,
+      "skip_non_grch38": 12540,
+      "skip_non_snv": 1463,
+      "skip_non_simple_missense": 6020,
+      "skip_non_germline": 285,
+      "skip_non_binary_label": 4096,
+      "skip_sequence_mismatch": 1,
+      "n_total": 624,
+      "n_positive": 9,
+      "n_negative": 615,
+      "fasta_path": "/teamspace/studios/this_studio/SpectralBio/New Notebooks/results/01_block1_baseline_alpha_regime_audit_h100/runtime/cache/uniprot/neb.fasta",
+      "support_rank": 3,
+      "selected": false
+    },
+    "KMT2D": {
+      "rows_seen": 14837,
+      "skip_non_grch38": 7421,
+      "skip_non_simple_missense": 2346,
+      "skip_non_binary_label": 2809,
+      "skip_non_snv": 900,
+      "skip_non_germline": 178,
+      "n_total": 1182,
+      "n_positive": 94,
+      "n_negative": 1088,
+      "fasta_path": "/teamspace/studios/this_studio/SpectralBio/New Notebooks/results/01_block1_baseline_alpha_regime_audit_h100/runtime/cache/uniprot/kmt2d.fasta",
+      "support_rank": 4,
+      "selected": true
+    },
+    "DMD": {
+      "rows_seen": 22016,
+      "skip_non_grch38": 11639,
+      "skip_non_simple_missense": 4249,
+      "skip_non_snv": 1590,
+      "skip_non_binary_label": 3751,
+      "skip_non_germline": 418,
+      "n_total": 367,
+      "n_positive": 25,
+      "n_negative": 342,
+      "fasta_path": "/teamspace/studios/this_studio/SpectralBio/New Notebooks/results/01_block1_baseline_alpha_regime_audit_h100/runtime/cache/uniprot/dmd.fasta",
+      "support_rank": 5,
+      "selected": true
+    },
+    "DNAH5": {
+      "rows_seen": 13365,
+      "skip_non_grch38": 6714,
+      "skip_non_simple_missense": 3376,
+      "skip_non_snv": 728,
+      "skip_non_binary_label": 2005,
+      "skip_non_germline": 92,
+      "n_total": 450,
+      "n_positive": 42,
+      "n_negative": 408,
+      "fasta_path": "/teamspace/studios/this_studio/SpectralBio/New Notebooks/results/01_block1_baseline_alpha_regime_audit_h100/runtime/cache/uniprot/dnah5.fasta",
+      "support_rank": 6,
+      "selected": true
+    },
+    "CHD7": {
+      "rows_seen": 8894,
+      "skip_non_grch38": 4453,
+      "skip_non_simple_missense": 1477,
+      "skip_non_snv": 538,
+      "skip_non_binary_label": 1961,
+      "skip_non_germline": 73,
+      "n_total": 391,
+      "n_positive": 75,
+      "n_negative": 316,
+      "fasta_path": "/teamspace/studios/this_studio/SpectralBio/New Notebooks/results/01_block1_baseline_alpha_regime_audit_h100/runtime/cache/uniprot/chd7.fasta",
+      "support_rank": 7,
+      "selected": true
+    },
+    "MSH2": {
+      "rows_seen": 16504,
+      "skip_non_grch38": 8376,
+      "skip_non_simple_missense": 2014,
+      "skip_non_snv": 1967,
+      "skip_non_germline": 300,
+      "skip_non_binary_label": 3444,
+      "n_total": 395,
+      "n_positive": 124,
+      "n_negative": 271,
+      "fasta_path": "/teamspace/studios/this_studio/SpectralBio/New Notebooks/results/01_block1_baseline_alpha_regime_audit_h100/runtime/cache/uniprot/msh2.fasta",
+      "support_rank": 8,
+      "selected": true
+    },
+    "SACS": {
+      "rows_seen": 9866,
+      "skip_non_grch38": 4936,
+      "skip_non_snv": 758,
+      "skip_non_simple_missense": 1992,
+      "skip_non_binary_label": 1467,
+      "skip_non_germline": 197,
+      "n_total": 516,
+      "n_positive": 48,
+      "n_negative": 468,
+      "fasta_path": "/teamspace/studios/this_studio/SpectralBio/New Notebooks/results/01_block1_baseline_alpha_regime_audit_h100/runtime/cache/uniprot/sacs.fasta",
+      "support_rank": 9,
+      "selected": true
+    },
+    "NSD1": {
+      "rows_seen": 5383,
+      "skip_non_grch38": 2698,
+      "skip_non_simple_missense": 686,
+      "skip_non_snv": 439,
+      "skip_non_binary_label": 1098,
+      "skip_non_germline": 52,
+      "n_total": 407,
+      "n_positive": 160,
+      "n_negative": 247,
+      "fasta_path": "/teamspace/studios/this_studio/SpectralBio/New Notebooks/results/01_block1_baseline_alpha_regime_audit_h100/runtime/cache/uniprot/nsd1.fasta",
+      "support_rank": 10,
+      "selected": true
+    }
+  }
+}

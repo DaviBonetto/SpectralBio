@@ -1,0 +1,8 @@
+{
+  "gene": "GRIN2A",
+  "model_name": "facebook/esm2_t33_650M_UR50D",
+  "window_radius": 40,
+  "n_variants_total": 1,
+  "n_variants_written": 1,
+  "elapsed_seconds": 0.12557196617126465
+}

@@ -1,0 +1,14 @@
+{
+  "tp53_rows": 255,
+  "holdout_rows": 5,
+  "holdout_filtered_mismatches": 0,
+  "holdout_status": "gallery_counterexample_fallback_loaded",
+  "structural_status": "missing_structural_reference",
+  "structural_rows": 0,
+  "sequence_genes": [
+    "CREBBP",
+    "GRIN2A",
+    "TP53",
+    "TSC2"
+  ]
+}

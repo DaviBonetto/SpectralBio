@@ -1,0 +1,3 @@
+gene,source,delta_pair_vs_ll,same_surface_status,esm2_status,is_strong_negative_guardrail
+BRCA1,clinical_gene_panel,-0.0244520129246353,mixed,scalar_wins,True
+MSH2,clinical_gene_panel,0.0027972860373765,scalar_wins,mixed,True

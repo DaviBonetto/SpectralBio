@@ -1,0 +1,8 @@
+{
+  "gene": "CREBBP",
+  "model_name": "facebook/esm1v_t33_650M_UR90S_1",
+  "window_radius": 40,
+  "n_variants_total": 2,
+  "n_variants_written": 2,
+  "elapsed_seconds": 0.21797943115234375
+}

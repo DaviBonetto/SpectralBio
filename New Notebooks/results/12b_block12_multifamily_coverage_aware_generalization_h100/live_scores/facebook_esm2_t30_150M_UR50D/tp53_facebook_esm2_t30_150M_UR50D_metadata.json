@@ -1,0 +1,8 @@
+{
+  "gene": "TP53",
+  "model_name": "facebook/esm2_t30_150M_UR50D",
+  "window_radius": 40,
+  "n_variants_total": 255,
+  "n_variants_written": 255,
+  "elapsed_seconds": 17.435335159301758
+}

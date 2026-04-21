@@ -1,0 +1,7 @@
+{
+  "gene": "BRCA2",
+  "model_name": "facebook/esm1v_t33_650M_UR90S_3",
+  "window_radius": 40,
+  "n_total": 658,
+  "scoring_mode": "local_window"
+}

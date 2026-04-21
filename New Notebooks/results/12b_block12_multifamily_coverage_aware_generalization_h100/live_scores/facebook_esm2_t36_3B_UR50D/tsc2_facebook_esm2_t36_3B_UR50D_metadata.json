@@ -1,0 +1,8 @@
+{
+  "gene": "TSC2",
+  "model_name": "facebook/esm2_t36_3B_UR50D",
+  "window_radius": 40,
+  "n_variants_total": 2,
+  "n_variants_written": 2,
+  "elapsed_seconds": 0.34080004692077637
+}

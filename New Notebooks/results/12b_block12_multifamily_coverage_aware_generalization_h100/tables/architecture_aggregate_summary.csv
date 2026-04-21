@@ -1,0 +1,5 @@
+architecture_kind,n_models,n_models_passing_coverage,weighted_enrichment_gap,weighted_delta_pair_vs_ll
+causal_decoder,2,2,0.4700670498084291,0.0857542657242808
+masked_encoder,5,5,0.4496139186775956,0.08726866321161532
+bidirectional_encoder,2,2,0.38818318569279625,0.017913043478260893
+encoder_decoder,1,1,0.2041832669322709,0.0016149068322981464

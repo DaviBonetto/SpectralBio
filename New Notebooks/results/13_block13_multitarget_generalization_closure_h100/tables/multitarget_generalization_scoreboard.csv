@@ -1,0 +1,8 @@
+gene,target_role,replay_ready,portable_protocol_ok,transfer_positive,near_transfer_positive,is_negative_control,n_variants,n_source_surfaces,taxonomy
+CREBBP,secondary_positive,True,False,True,True,False,298,2,transfer_positive
+TSC2,primary,True,True,True,True,False,364,2,transfer_positive
+BRCA2,primary,True,False,False,False,False,1316,2,supportive
+TP53,primary,True,False,False,False,False,255,1,supportive
+GRIN2A,secondary_positive,False,False,False,True,False,1,1,near_nuclear
+BRCA1,negative_control,False,False,False,False,True,515,2,failed_due_to_negative_control
+MSH2,negative_control,False,False,False,False,True,397,2,failed_due_to_negative_control

@@ -1,0 +1,23 @@
+{
+  "account_label": "SET_ACCOUNT_LABEL_HERE",
+  "run_at_utc": "2026-04-16T18:26:18.635315+00:00",
+  "repo_status": {
+    "repo_root": "C:\\Users\\Davib\\OneDrive\\\u00c1rea de Trabalho\\Stanford-Claw4s",
+    "head_commit": "db02d2ea13d081bd7b35fd781f5bc8f051abd4b7",
+    "head_subject": "feat(notebooks): Add baseline alpha audit notebook",
+    "branch": "codex/claw4s-rebuild"
+  },
+  "run_genes": [
+    "TP53",
+    "BRCA2",
+    "MSH2"
+  ],
+  "primary_genes": [
+    "TP53",
+    "BRCA2"
+  ],
+  "permutation_replicates": 1000,
+  "run_3b_shadow": false,
+  "plateau_tolerance_auc": 0.01,
+  "runtime_output_root": "C:\\Users\\Davib\\OneDrive\\\u00c1rea de Trabalho\\Stanford-Claw4s\\New Notebooks\\results\\01_block1_baseline_alpha_regime_audit_h100\\runtime"
+}

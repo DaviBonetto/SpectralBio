@@ -1,0 +1,36 @@
+{
+  "notebook_slug": "13_block13_multitarget_generalization_closure_h100",
+  "claim_status": "multitarget_generalization_strengthened_but_not_fully_closed",
+  "results_root": "C:\\Users\\Davib\\OneDrive\\\u00c1rea de Trabalho\\Stanford-Claw4s\\New Notebooks\\results\\13_block13_multitarget_generalization_closure_h100",
+  "tables_written": [
+    "alpha_sweep_summary.csv",
+    "control_win_summary.csv",
+    "family_closure_summary.csv",
+    "holdout_closure_summary.csv",
+    "multitarget_generalization_scoreboard.csv",
+    "multitarget_model_variant_scores.csv",
+    "negative_control_summary.csv",
+    "per_model_runtime_manifest.csv",
+    "protocol_stability_summary.csv",
+    "replay_ready_targets_overview.csv",
+    "replay_target_contracts.csv",
+    "replay_target_manifest.csv",
+    "replay_target_panels.csv",
+    "score_reuse_inventory.csv",
+    "transfer_closure_summary.csv",
+    "window_layer_stability_summary.csv"
+  ],
+  "figures_written": [
+    "multitarget_model_scoreboard.png",
+    "near_nuclear_witnesses.png",
+    "negative_controls_guardrail.png",
+    "protocol_stability_frontier.png",
+    "replay_ready_targets_overview.png",
+    "transfer_holdout_controls_panel.png"
+  ],
+  "text_written": [
+    "block13_claim_paragraph.md",
+    "block13_replay_contract.md",
+    "block13_summary.md"
+  ]
+}

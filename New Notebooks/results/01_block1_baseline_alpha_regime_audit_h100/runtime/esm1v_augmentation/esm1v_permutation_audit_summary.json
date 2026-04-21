@@ -1,0 +1,88 @@
+{
+  "benchmark": "ESM-1v augmentation permutation audit",
+  "genes": {
+    "TP53": {
+      "observed_delta_augmented_vs_esm1v": -0.016086956521739193,
+      "permute_frob_alignment": {
+        "mean": -0.0709368322981367,
+        "ci_2p5": -0.10255745341614914,
+        "ci_97p5": -0.041667701863354126,
+        "empirical_p_ge_observed": 0.000999000999000999
+      },
+      "permute_esm1v_alignment": {
+        "mean": 0.07870627329192546,
+        "ci_2p5": 0.05800077639751558,
+        "ci_97p5": 0.09854736024844725,
+        "empirical_p_ge_observed": 1.0
+      }
+    },
+    "BRCA2": {
+      "observed_delta_augmented_vs_esm1v": 0.05659498207885305,
+      "permute_frob_alignment": {
+        "mean": -0.03497734767025088,
+        "ci_2p5": -0.07679838709677422,
+        "ci_97p5": 0.008822132616487425,
+        "empirical_p_ge_observed": 0.000999000999000999
+      },
+      "permute_esm1v_alignment": {
+        "mean": 0.15257132616487457,
+        "ci_2p5": 0.11652822580645161,
+        "ci_97p5": 0.18700761648745517,
+        "empirical_p_ge_observed": 1.0
+      }
+    },
+    "MSH2": {
+      "observed_delta_augmented_vs_esm1v": -0.0775502916319486,
+      "permute_frob_alignment": {
+        "mean": -0.07046545054160219,
+        "ci_2p5": -0.09425514819664321,
+        "ci_97p5": -0.044929919057255054,
+        "empirical_p_ge_observed": 0.7122877122877123
+      },
+      "permute_esm1v_alignment": {
+        "mean": 0.02038891203428163,
+        "ci_2p5": 0.003360463040114223,
+        "ci_97p5": 0.03788239495298179,
+        "empirical_p_ge_observed": 1.0
+      }
+    }
+  },
+  "rows": [
+    {
+      "gene": "TP53",
+      "observed_delta_augmented_vs_esm1v": -0.016086956521739193,
+      "permute_frob_mean": -0.0709368322981367,
+      "permute_frob_ci_2p5": -0.10255745341614914,
+      "permute_frob_ci_97p5": -0.041667701863354126,
+      "permute_frob_empirical_p_ge_observed": 0.000999000999000999,
+      "permute_esm1v_mean": 0.07870627329192546,
+      "permute_esm1v_ci_2p5": 0.05800077639751558,
+      "permute_esm1v_ci_97p5": 0.09854736024844725,
+      "permute_esm1v_empirical_p_ge_observed": 1.0
+    },
+    {
+      "gene": "BRCA2",
+      "observed_delta_augmented_vs_esm1v": 0.05659498207885305,
+      "permute_frob_mean": -0.03497734767025088,
+      "permute_frob_ci_2p5": -0.07679838709677422,
+      "permute_frob_ci_97p5": 0.008822132616487425,
+      "permute_frob_empirical_p_ge_observed": 0.000999000999000999,
+      "permute_esm1v_mean": 0.15257132616487457,
+      "permute_esm1v_ci_2p5": 0.11652822580645161,
+      "permute_esm1v_ci_97p5": 0.18700761648745517,
+      "permute_esm1v_empirical_p_ge_observed": 1.0
+    },
+    {
+      "gene": "MSH2",
+      "observed_delta_augmented_vs_esm1v": -0.0775502916319486,
+      "permute_frob_mean": -0.07046545054160219,
+      "permute_frob_ci_2p5": -0.09425514819664321,
+      "permute_frob_ci_97p5": -0.044929919057255054,
+      "permute_frob_empirical_p_ge_observed": 0.7122877122877123,
+      "permute_esm1v_mean": 0.02038891203428163,
+      "permute_esm1v_ci_2p5": 0.003360463040114223,
+      "permute_esm1v_ci_97p5": 0.03788239495298179,
+      "permute_esm1v_empirical_p_ge_observed": 1.0
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+gene,selected,support_rank,n_total,n_positive,n_negative,skip_sequence_mismatch,skip_non_binary_label
+TTN,False,1,157,4,153,856,15113
+BRCA2,True,2,658,100,558,0,9314
+NEB,False,3,624,9,615,1,4096
+KMT2D,True,4,1182,94,1088,0,2809
+DMD,True,5,367,25,342,0,3751
+DNAH5,True,6,450,42,408,0,2005
+CHD7,True,7,391,75,316,0,1961
+MSH2,True,8,395,124,271,0,3444
+SACS,True,9,516,48,468,0,1467
+NSD1,True,10,407,160,247,0,1098

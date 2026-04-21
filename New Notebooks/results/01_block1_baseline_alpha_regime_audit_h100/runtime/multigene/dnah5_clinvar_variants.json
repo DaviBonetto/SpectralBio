@@ -1,0 +1,3602 @@
+[
+  {
+    "gene": "DNAH5",
+    "wt_aa": "M",
+    "position": 0,
+    "mut_aa": "V",
+    "label": 1,
+    "name": "NM_001369.3(DNAH5):c.1A>G (p.Met1Val)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "I",
+    "position": 3,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.11T>C (p.Ile4Thr)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 6,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.20G>A (p.Arg7Lys)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "H",
+    "position": 11,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.36T>G (p.His12Gln)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "S",
+    "position": 12,
+    "mut_aa": "N",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.38G>A (p.Ser13Asn)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "K",
+    "position": 22,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.68A>G (p.Lys23Arg)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "G",
+    "position": 23,
+    "mut_aa": "E",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.71G>A (p.Gly24Glu)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "D",
+    "position": 33,
+    "mut_aa": "N",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.100G>A (p.Asp34Asn)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "F",
+    "position": 40,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.121T>C (p.Phe41Leu)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "A",
+    "position": 57,
+    "mut_aa": "D",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.173C>A (p.Ala58Asp)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "A",
+    "position": 57,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.172G>A (p.Ala58Thr)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 66,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.200G>T (p.Arg67Ile)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 77,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.233G>A (p.Arg78Gln)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "Y",
+    "position": 83,
+    "mut_aa": "C",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.251A>G (p.Tyr84Cys)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "A",
+    "position": 89,
+    "mut_aa": "E",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.269C>A (p.Ala90Glu)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "G",
+    "position": 99,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.298G>A (p.Gly100Arg)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "V",
+    "position": 114,
+    "mut_aa": "M",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.343G>A (p.Val115Met)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "V",
+    "position": 127,
+    "mut_aa": "E",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.383T>A (p.Val128Glu)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "D",
+    "position": 141,
+    "mut_aa": "E",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.426C>A (p.Asp142Glu)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "D",
+    "position": 153,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.461A>C (p.Asp154Ala)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "I",
+    "position": 170,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.511A>G (p.Ile171Val)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "A",
+    "position": 191,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.574G>A (p.Ala192Thr)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 195,
+    "mut_aa": "C",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.586C>T (p.Arg196Cys)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 195,
+    "mut_aa": "H",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.587G>A (p.Arg196His)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "V",
+    "position": 208,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.625G>A (p.Val209Ile)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "I",
+    "position": 227,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.682A>G (p.Ile228Val)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "P",
+    "position": 236,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.710C>T (p.Pro237Leu)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "T",
+    "position": 237,
+    "mut_aa": "M",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.713C>T (p.Thr238Met)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "Q",
+    "position": 272,
+    "mut_aa": "H",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.819G>C (p.Gln273His)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "A",
+    "position": 277,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.833C>T (p.Ala278Val)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "A",
+    "position": 284,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.854C>T (p.Ala285Val)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "K",
+    "position": 291,
+    "mut_aa": "N",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.876A>C (p.Lys292Asn)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "S",
+    "position": 294,
+    "mut_aa": "Y",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.884C>A (p.Ser295Tyr)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "N",
+    "position": 297,
+    "mut_aa": "D",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.892A>G (p.Asn298Asp)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "N",
+    "position": 297,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.894C>G (p.Asn298Lys)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "L",
+    "position": 299,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.898C>A (p.Leu300Ile)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "V",
+    "position": 308,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.926T>C (p.Val309Ala)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "V",
+    "position": 308,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.925G>T (p.Val309Leu)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 327,
+    "mut_aa": "W",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.982C>T (p.Arg328Trp)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 332,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.998G>A (p.Arg333Gln)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "N",
+    "position": 343,
+    "mut_aa": "H",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.1030A>C (p.Asn344His)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "A",
+    "position": 368,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.1105G>A (p.Ala369Thr)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "S",
+    "position": 381,
+    "mut_aa": "N",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.1145G>A (p.Ser382Asn)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "I",
+    "position": 382,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.1148T>G (p.Ile383Ser)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "Q",
+    "position": 402,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.1207C>A (p.Gln403Lys)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "S",
+    "position": 405,
+    "mut_aa": "Y",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.1217C>A (p.Ser406Tyr)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "Y",
+    "position": 410,
+    "mut_aa": "C",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.1232A>G (p.Tyr411Cys)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "N",
+    "position": 413,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.1241A>T (p.Asn414Ile)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "N",
+    "position": 413,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.1241A>G (p.Asn414Ser)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "Q",
+    "position": 450,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.1351C>A (p.Gln451Lys)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 477,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.1433G>A (p.Arg478Gln)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 478,
+    "mut_aa": "C",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.1435C>T (p.Arg479Cys)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 478,
+    "mut_aa": "H",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.1436G>A (p.Arg479His)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "A",
+    "position": 515,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.1547C>T (p.Ala516Val)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "I",
+    "position": 517,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.1553T>C (p.Ile518Thr)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 528,
+    "mut_aa": "G",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.1585C>G (p.Arg529Gly)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "E",
+    "position": 538,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.1616A>C (p.Glu539Ala)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "T",
+    "position": 543,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.1631C>T (p.Thr544Ile)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "D",
+    "position": 545,
+    "mut_aa": "E",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.1638C>A (p.Asp546Glu)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "N",
+    "position": 548,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.1647C>G (p.Asn549Lys)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 551,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.1655G>A (p.Arg552Gln)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "M",
+    "position": 554,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.1664T>C (p.Met555Thr)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "T",
+    "position": 557,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.1672A>G (p.Thr558Ala)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "T",
+    "position": 564,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.1693A>G (p.Thr565Ala)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 576,
+    "mut_aa": "T",
+    "label": 1,
+    "name": "NM_001369.3(DNAH5):c.1730G>C (p.Arg577Thr)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "L",
+    "position": 590,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.1772T>G (p.Leu591Arg)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "I",
+    "position": 599,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.1798A>G (p.Ile600Val)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "N",
+    "position": 618,
+    "mut_aa": "D",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.1855A>G (p.Asn619Asp)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "Q",
+    "position": 619,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.1858C>A (p.Gln620Lys)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 630,
+    "mut_aa": "H",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.1892G>A (p.Arg631His)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "H",
+    "position": 634,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.1904A>G (p.His635Arg)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "V",
+    "position": 649,
+    "mut_aa": "M",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.1948G>A (p.Val650Met)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "T",
+    "position": 652,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.1958C>A (p.Thr653Lys)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "A",
+    "position": 655,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.1967C>T (p.Ala656Val)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 660,
+    "mut_aa": "H",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.1982G>A (p.Arg661His)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 682,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.2048G>A (p.Arg683Gln)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "E",
+    "position": 692,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.2077G>C (p.Glu693Gln)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "P",
+    "position": 700,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.2101C>T (p.Pro701Ser)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "F",
+    "position": 717,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.2152T>C (p.Phe718Leu)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "D",
+    "position": 742,
+    "mut_aa": "E",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.2229T>G (p.Asp743Glu)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "N",
+    "position": 750,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.2253C>A (p.Asn751Lys)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "I",
+    "position": 765,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.2296A>T (p.Ile766Leu)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "D",
+    "position": 781,
+    "mut_aa": "G",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.2345A>G (p.Asp782Gly)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "P",
+    "position": 786,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.2360C>T (p.Pro787Leu)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "T",
+    "position": 805,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.2416A>G (p.Thr806Ala)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "K",
+    "position": 808,
+    "mut_aa": "E",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.2425A>G (p.Lys809Glu)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "D",
+    "position": 817,
+    "mut_aa": "G",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.2453A>G (p.Asp818Gly)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "E",
+    "position": 833,
+    "mut_aa": "D",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.2502A>C (p.Glu834Asp)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "T",
+    "position": 837,
+    "mut_aa": "M",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.2513C>T (p.Thr838Met)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "H",
+    "position": 869,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.2609A>G (p.His870Arg)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "E",
+    "position": 894,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.2683G>A (p.Glu895Lys)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "E",
+    "position": 911,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.2735A>T (p.Glu912Val)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "L",
+    "position": 936,
+    "mut_aa": "P",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.2810T>C (p.Leu937Pro)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "T",
+    "position": 938,
+    "mut_aa": "M",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.2816C>T (p.Thr939Met)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "V",
+    "position": 940,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.2821G>A (p.Val941Ile)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "T",
+    "position": 941,
+    "mut_aa": "M",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.2825C>T (p.Thr942Met)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "A",
+    "position": 954,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.2863G>A (p.Ala955Thr)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 955,
+    "mut_aa": "C",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.2866C>T (p.Arg956Cys)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 955,
+    "mut_aa": "P",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.2867G>C (p.Arg956Pro)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "H",
+    "position": 963,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.2891A>T (p.His964Leu)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "M",
+    "position": 966,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.2901G>A (p.Met967Ile)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 974,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.2924G>A (p.Arg975Lys)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "L",
+    "position": 977,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.2932C>G (p.Leu978Val)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "I",
+    "position": 980,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.2941A>G (p.Ile981Val)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 981,
+    "mut_aa": "H",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.2945G>A (p.Arg982His)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 983,
+    "mut_aa": "C",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.2950C>T (p.Arg984Cys)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 993,
+    "mut_aa": "W",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.2980C>T (p.Arg994Trp)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "S",
+    "position": 1005,
+    "mut_aa": "G",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.3016A>G (p.Ser1006Gly)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "S",
+    "position": 1005,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.3016A>C (p.Ser1006Arg)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "L",
+    "position": 1006,
+    "mut_aa": "F",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.3021G>T (p.Leu1007Phe)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "V",
+    "position": 1013,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.3040G>A (p.Val1014Ile)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "D",
+    "position": 1028,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.3086A>T (p.Asp1029Val)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "T",
+    "position": 1032,
+    "mut_aa": "N",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.3098C>A (p.Thr1033Asn)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "V",
+    "position": 1037,
+    "mut_aa": "M",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.3112G>A (p.Val1038Met)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "G",
+    "position": 1046,
+    "mut_aa": "R",
+    "label": 1,
+    "name": "NM_001369.3(DNAH5):c.3139G>A (p.Gly1047Arg)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "V",
+    "position": 1047,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.3142G>A (p.Val1048Ile)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "E",
+    "position": 1062,
+    "mut_aa": "D",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.3189A>C (p.Glu1063Asp)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "A",
+    "position": 1066,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.3200C>T (p.Ala1067Val)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "M",
+    "position": 1080,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.3241A>G (p.Met1081Val)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "V",
+    "position": 1100,
+    "mut_aa": "M",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.3301G>A (p.Val1101Met)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "I",
+    "position": 1126,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.3379A>G (p.Ile1127Val)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 1142,
+    "mut_aa": "C",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.3427C>T (p.Arg1143Cys)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "T",
+    "position": 1157,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.3473C>T (p.Thr1158Ile)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "I",
+    "position": 1172,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.3517A>C (p.Ile1173Leu)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "L",
+    "position": 1178,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.3535C>G (p.Leu1179Val)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "A",
+    "position": 1184,
+    "mut_aa": "G",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.3554C>G (p.Ala1185Gly)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "C",
+    "position": 1190,
+    "mut_aa": "W",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.3573T>G (p.Cys1191Trp)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "A",
+    "position": 1199,
+    "mut_aa": "T",
+    "label": 1,
+    "name": "NM_001369.3(DNAH5):c.3598G>A (p.Ala1200Thr)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "K",
+    "position": 1202,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.3607A>C (p.Lys1203Gln)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "A",
+    "position": 1204,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.3613G>A (p.Ala1205Thr)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "M",
+    "position": 1213,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.3642G>A (p.Met1214Ile)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "M",
+    "position": 1213,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.3640A>G (p.Met1214Val)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "V",
+    "position": 1214,
+    "mut_aa": "F",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.3643G>T (p.Val1215Phe)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "N",
+    "position": 1221,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.3665A>T (p.Asn1222Ile)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 1225,
+    "mut_aa": "W",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.3676C>T (p.Arg1226Trp)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "I",
+    "position": 1235,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.3707T>C (p.Ile1236Thr)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "I",
+    "position": 1252,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.3758T>C (p.Ile1253Thr)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 1253,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.3761G>A (p.Arg1254Gln)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "A",
+    "position": 1258,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.3776C>T (p.Ala1259Val)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "I",
+    "position": 1276,
+    "mut_aa": "F",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.3829A>T (p.Ile1277Phe)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "I",
+    "position": 1295,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.3887T>C (p.Ile1296Thr)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "D",
+    "position": 1296,
+    "mut_aa": "G",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.3890A>G (p.Asp1297Gly)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "H",
+    "position": 1302,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.3908A>G (p.His1303Arg)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "E",
+    "position": 1314,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.3943G>A (p.Glu1315Lys)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "L",
+    "position": 1319,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.3959T>C (p.Leu1320Ser)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "V",
+    "position": 1334,
+    "mut_aa": "M",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.4003G>A (p.Val1335Met)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "P",
+    "position": 1353,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.4060C>G (p.Pro1354Ala)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "P",
+    "position": 1360,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.4082C>G (p.Pro1361Arg)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 1379,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.4139G>A (p.Arg1380Gln)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 1379,
+    "mut_aa": "W",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.4138C>T (p.Arg1380Trp)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "Y",
+    "position": 1418,
+    "mut_aa": "H",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.4255T>C (p.Tyr1419His)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "V",
+    "position": 1425,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.4276G>A (p.Val1426Ile)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "E",
+    "position": 1439,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.4319A>C (p.Glu1440Ala)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "N",
+    "position": 1443,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.4331A>G (p.Asn1444Ser)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 1457,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.4373G>A (p.Arg1458Gln)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "C",
+    "position": 1478,
+    "mut_aa": "F",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.4436G>T (p.Cys1479Phe)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "N",
+    "position": 1517,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.4553A>G (p.Asn1518Ser)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "K",
+    "position": 1525,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.4577A>T (p.Lys1526Ile)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "L",
+    "position": 1547,
+    "mut_aa": "P",
+    "label": 1,
+    "name": "NM_001369.3(DNAH5):c.4643T>C (p.Leu1548Pro)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "G",
+    "position": 1562,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.4687G>A (p.Gly1563Ser)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "S",
+    "position": 1576,
+    "mut_aa": "N",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.4730G>A (p.Ser1577Asn)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "P",
+    "position": 1602,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.4807C>A (p.Pro1603Thr)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "N",
+    "position": 1616,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.4850A>G (p.Asn1617Ser)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "M",
+    "position": 1625,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.4877T>C (p.Met1626Thr)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "K",
+    "position": 1645,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.4936A>C (p.Lys1646Gln)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 1667,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.5003G>A (p.Arg1668Gln)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "S",
+    "position": 1673,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.5021G>T (p.Ser1674Ile)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "C",
+    "position": 1678,
+    "mut_aa": "Y",
+    "label": 1,
+    "name": "NM_001369.3(DNAH5):c.5036G>A (p.Cys1679Tyr)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "D",
+    "position": 1681,
+    "mut_aa": "G",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.5045A>G (p.Asp1682Gly)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "T",
+    "position": 1683,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.5050A>G (p.Thr1684Ala)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "T",
+    "position": 1683,
+    "mut_aa": "N",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.5051C>A (p.Thr1684Asn)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "L",
+    "position": 1684,
+    "mut_aa": "M",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.5053C>A (p.Leu1685Met)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 1715,
+    "mut_aa": "L",
+    "label": 1,
+    "name": "NM_001369.3(DNAH5):c.5147G>T (p.Arg1716Leu)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 1715,
+    "mut_aa": "P",
+    "label": 1,
+    "name": "NM_001369.3(DNAH5):c.5147G>C (p.Arg1716Pro)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 1715,
+    "mut_aa": "W",
+    "label": 1,
+    "name": "NM_001369.3(DNAH5):c.5146C>T (p.Arg1716Trp)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "V",
+    "position": 1719,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.5158G>A (p.Val1720Ile)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "L",
+    "position": 1725,
+    "mut_aa": "P",
+    "label": 1,
+    "name": "NM_001369.3(DNAH5):c.5177T>C (p.Leu1726Pro)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "T",
+    "position": 1736,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.5209A>G (p.Thr1737Ala)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "A",
+    "position": 1739,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.5218G>T (p.Ala1740Ser)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "Y",
+    "position": 1758,
+    "mut_aa": "N",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.5275T>A (p.Tyr1759Asn)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 1760,
+    "mut_aa": "G",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.5281C>G (p.Arg1761Gly)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "S",
+    "position": 1763,
+    "mut_aa": "P",
+    "label": 1,
+    "name": "NM_001369.3(DNAH5):c.5290T>C (p.Ser1764Pro)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "I",
+    "position": 1764,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.5294T>C (p.Ile1765Thr)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "I",
+    "position": 1764,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.5293A>G (p.Ile1765Val)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "T",
+    "position": 1771,
+    "mut_aa": "M",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.5315C>T (p.Thr1772Met)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "E",
+    "position": 1842,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.5528A>C (p.Glu1843Ala)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "L",
+    "position": 1845,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.5536C>G (p.Leu1846Val)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "A",
+    "position": 1848,
+    "mut_aa": "G",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.5546C>G (p.Ala1849Gly)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "K",
+    "position": 1853,
+    "mut_aa": "I",
+    "label": 1,
+    "name": "NM_001369.3(DNAH5):c.5561A>T (p.Lys1854Ile)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "I",
+    "position": 1854,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.5563A>G (p.Ile1855Val)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "M",
+    "position": 1855,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.5566A>G (p.Met1856Val)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "V",
+    "position": 1872,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.5617G>A (p.Val1873Ile)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "T",
+    "position": 1880,
+    "mut_aa": "M",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.5642C>T (p.Thr1881Met)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 1882,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.5648G>A (p.Arg1883Gln)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "V",
+    "position": 1893,
+    "mut_aa": "M",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.5680G>A (p.Val1894Met)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "D",
+    "position": 1901,
+    "mut_aa": "E",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.5706C>A (p.Asp1902Glu)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "M",
+    "position": 1905,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.5716A>G (p.Met1906Val)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "M",
+    "position": 1911,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.5735T>C (p.Met1912Thr)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "E",
+    "position": 1925,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.5776G>A (p.Glu1926Lys)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "I",
+    "position": 1940,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.5821A>T (p.Ile1941Leu)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "G",
+    "position": 1974,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.5924G>C (p.Gly1975Ala)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "A",
+    "position": 1981,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.5944G>A (p.Ala1982Thr)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "G",
+    "position": 1984,
+    "mut_aa": "R",
+    "label": 1,
+    "name": "NM_001369.3(DNAH5):c.5953G>C (p.Gly1985Arg)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "C",
+    "position": 2029,
+    "mut_aa": "G",
+    "label": 1,
+    "name": "NM_001369.3(DNAH5):c.6088T>G (p.Cys2030Gly)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "D",
+    "position": 2037,
+    "mut_aa": "E",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.6114T>A (p.Asp2038Glu)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "I",
+    "position": 2063,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.6191T>C (p.Ile2064Thr)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "T",
+    "position": 2065,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.6197C>T (p.Thr2066Ile)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "L",
+    "position": 2078,
+    "mut_aa": "F",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.6235C>T (p.Leu2079Phe)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "M",
+    "position": 2082,
+    "mut_aa": "I",
+    "label": 1,
+    "name": "NM_001369.3(DNAH5):c.6249G>A (p.Met2083Ile)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 2101,
+    "mut_aa": "C",
+    "label": 1,
+    "name": "NM_001369.3(DNAH5):c.6304C>T (p.Arg2102Cys)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 2115,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.6347G>A (p.Arg2116Lys)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "L",
+    "position": 2118,
+    "mut_aa": "M",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.6355T>A (p.Leu2119Met)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "V",
+    "position": 2127,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.6382G>A (p.Val2128Ile)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "E",
+    "position": 2142,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.6428A>T (p.Glu2143Val)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 2162,
+    "mut_aa": "W",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.6487C>T (p.Arg2163Trp)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "T",
+    "position": 2163,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.6490A>G (p.Thr2164Ala)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "N",
+    "position": 2171,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.6515A>G (p.Asn2172Ser)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "P",
+    "position": 2172,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.6517C>G (p.Pro2173Ala)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 2182,
+    "mut_aa": "C",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.6547C>T (p.Arg2183Cys)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 2182,
+    "mut_aa": "H",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.6548G>A (p.Arg2183His)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 2185,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.6557G>A (p.Arg2186Gln)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "I",
+    "position": 2204,
+    "mut_aa": "F",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.6613A>T (p.Ile2205Phe)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "N",
+    "position": 2210,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.6632A>G (p.Asn2211Ser)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "L",
+    "position": 2221,
+    "mut_aa": "M",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.6664C>A (p.Leu2222Met)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "I",
+    "position": 2225,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.6676A>G (p.Ile2226Val)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "A",
+    "position": 2232,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.6697G>A (p.Ala2233Thr)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "L",
+    "position": 2234,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.6703T>G (p.Leu2235Val)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "N",
+    "position": 2236,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.6710A>G (p.Asn2237Ser)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "P",
+    "position": 2238,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.6715C>T (p.Pro2239Ser)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "P",
+    "position": 2239,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.6718C>T (p.Pro2240Ser)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "S",
+    "position": 2263,
+    "mut_aa": "G",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.6790A>G (p.Ser2264Gly)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "S",
+    "position": 2263,
+    "mut_aa": "N",
+    "label": 1,
+    "name": "NM_001369.3(DNAH5):c.6791G>A (p.Ser2264Asn)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 2286,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.6860G>A (p.Arg2287Gln)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 2286,
+    "mut_aa": "W",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.6859C>T (p.Arg2287Trp)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 2303,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.6911G>A (p.Arg2304Gln)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 2303,
+    "mut_aa": "W",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.6910C>T (p.Arg2304Trp)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "V",
+    "position": 2306,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.6919G>A (p.Val2307Ile)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "A",
+    "position": 2326,
+    "mut_aa": "E",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.6980C>A (p.Ala2327Glu)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 2365,
+    "mut_aa": "Q",
+    "label": 1,
+    "name": "NM_001369.3(DNAH5):c.7097G>A (p.Arg2366Gln)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 2365,
+    "mut_aa": "W",
+    "label": 1,
+    "name": "NM_001369.3(DNAH5):c.7096C>T (p.Arg2366Trp)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "K",
+    "position": 2373,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.7121A>G (p.Lys2374Arg)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 2424,
+    "mut_aa": "H",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.7274G>A (p.Arg2425His)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "E",
+    "position": 2429,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.7288G>A (p.Glu2430Lys)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 2436,
+    "mut_aa": "H",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.7310G>A (p.Arg2437His)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "A",
+    "position": 2451,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.7355C>T (p.Ala2452Val)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "Q",
+    "position": 2462,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.7388A>G (p.Gln2463Arg)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "G",
+    "position": 2463,
+    "mut_aa": "D",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.7391G>A (p.Gly2464Asp)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "G",
+    "position": 2463,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.7391G>T (p.Gly2464Val)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "G",
+    "position": 2472,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.7417G>A (p.Gly2473Arg)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "A",
+    "position": 2486,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.7459G>T (p.Ala2487Ser)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "A",
+    "position": 2494,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.7484C>T (p.Ala2495Val)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "G",
+    "position": 2499,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.7498G>A (p.Gly2500Arg)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 2510,
+    "mut_aa": "P",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.7532G>C (p.Arg2511Pro)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "P",
+    "position": 2511,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.7535C>G (p.Pro2512Arg)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "G",
+    "position": 2513,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.7541G>T (p.Gly2514Val)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "P",
+    "position": 2518,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.7556C>T (p.Pro2519Leu)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "P",
+    "position": 2519,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.7559C>T (p.Pro2520Leu)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "G",
+    "position": 2522,
+    "mut_aa": "E",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.7568G>A (p.Gly2523Glu)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "T",
+    "position": 2539,
+    "mut_aa": "M",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.7619C>T (p.Thr2540Met)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 2544,
+    "mut_aa": "C",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.7633C>T (p.Arg2545Cys)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "L",
+    "position": 2549,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.7649T>A (p.Leu2550Gln)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "I",
+    "position": 2578,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.7735A>G (p.Ile2579Val)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "A",
+    "position": 2579,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.7738G>A (p.Ala2580Thr)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "G",
+    "position": 2589,
+    "mut_aa": "V",
+    "label": 1,
+    "name": "NM_001369.3(DNAH5):c.7769G>T (p.Gly2590Val)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "I",
+    "position": 2599,
+    "mut_aa": "M",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.7800T>G (p.Ile2600Met)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "T",
+    "position": 2641,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.7924A>G (p.Thr2642Ala)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "I",
+    "position": 2655,
+    "mut_aa": "T",
+    "label": 1,
+    "name": "NM_001369.3(DNAH5):c.7967T>C (p.Ile2656Thr)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "D",
+    "position": 2656,
+    "mut_aa": "V",
+    "label": 1,
+    "name": "NM_001369.3(DNAH5):c.7970A>T (p.Asp2657Val)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "P",
+    "position": 2661,
+    "mut_aa": "R",
+    "label": 1,
+    "name": "NM_001369.3(DNAH5):c.7985C>G (p.Pro2662Arg)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 2676,
+    "mut_aa": "P",
+    "label": 1,
+    "name": "NM_001369.3(DNAH5):c.8030G>C (p.Arg2677Pro)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "S",
+    "position": 2695,
+    "mut_aa": "G",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.8086A>G (p.Ser2696Gly)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "V",
+    "position": 2697,
+    "mut_aa": "M",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.8092G>A (p.Val2698Met)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "P",
+    "position": 2716,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.8149C>T (p.Pro2717Ser)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "F",
+    "position": 2723,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.8170T>C (p.Phe2724Leu)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "I",
+    "position": 2725,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.8176A>G (p.Ile2726Val)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "H",
+    "position": 2747,
+    "mut_aa": "Y",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.8242C>T (p.His2748Tyr)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "Q",
+    "position": 2751,
+    "mut_aa": "H",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.8256G>C (p.Gln2752His)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 2770,
+    "mut_aa": "C",
+    "label": 1,
+    "name": "NM_001369.3(DNAH5):c.8311C>T (p.Arg2771Cys)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "K",
+    "position": 2777,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.8332A>C (p.Lys2778Gln)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "K",
+    "position": 2777,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.8333A>G (p.Lys2778Arg)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "D",
+    "position": 2795,
+    "mut_aa": "H",
+    "label": 1,
+    "name": "NM_001369.3(DNAH5):c.8386G>C (p.Asp2796His)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 2798,
+    "mut_aa": "P",
+    "label": 1,
+    "name": "NM_001369.3(DNAH5):c.8396G>C (p.Arg2799Pro)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "I",
+    "position": 2811,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.8434A>G (p.Ile2812Val)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "D",
+    "position": 2816,
+    "mut_aa": "Y",
+    "label": 1,
+    "name": "NM_001369.3(DNAH5):c.8449G>T (p.Asp2817Tyr)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 2827,
+    "mut_aa": "C",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.8482C>T (p.Arg2828Cys)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 2827,
+    "mut_aa": "H",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.8483G>A (p.Arg2828His)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 2832,
+    "mut_aa": "H",
+    "label": 1,
+    "name": "NM_001369.3(DNAH5):c.8498G>A (p.Arg2833His)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 2832,
+    "mut_aa": "S",
+    "label": 1,
+    "name": "NM_001369.3(DNAH5):c.8497C>A (p.Arg2833Ser)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "D",
+    "position": 2838,
+    "mut_aa": "E",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.8517T>A (p.Asp2839Glu)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "F",
+    "position": 2842,
+    "mut_aa": "S",
+    "label": 1,
+    "name": "NM_001369.3(DNAH5):c.8528T>C (p.Phe2843Ser)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "G",
+    "position": 2855,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.8566G>A (p.Gly2856Ser)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "K",
+    "position": 2858,
+    "mut_aa": "E",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.8575A>G (p.Lys2859Glu)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "L",
+    "position": 2861,
+    "mut_aa": "F",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.8586G>T (p.Leu2862Phe)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "N",
+    "position": 2910,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.8732A>G (p.Asn2911Ser)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "A",
+    "position": 2923,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.8770G>A (p.Ala2924Thr)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "G",
+    "position": 2924,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.8773G>A (p.Gly2925Ser)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "D",
+    "position": 2932,
+    "mut_aa": "E",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.8799T>A (p.Asp2933Glu)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "V",
+    "position": 2938,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.8815G>A (p.Val2939Ile)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "I",
+    "position": 2944,
+    "mut_aa": "M",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.8835T>G (p.Ile2945Met)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "P",
+    "position": 2947,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.8843C>T (p.Pro2948Leu)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "P",
+    "position": 2947,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.8842C>T (p.Pro2948Ser)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "V",
+    "position": 2954,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.8863G>A (p.Val2955Ile)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "V",
+    "position": 2954,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.8863G>C (p.Val2955Leu)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "G",
+    "position": 2973,
+    "mut_aa": "D",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.8921G>A (p.Gly2974Asp)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "T",
+    "position": 2982,
+    "mut_aa": "M",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.8948C>T (p.Thr2983Met)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "E",
+    "position": 2992,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.8977G>C (p.Glu2993Gln)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "I",
+    "position": 3008,
+    "mut_aa": "M",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.9027C>G (p.Ile3009Met)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "I",
+    "position": 3017,
+    "mut_aa": "F",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.9052A>T (p.Ile3018Phe)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "A",
+    "position": 3052,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.9157G>A (p.Ala3053Thr)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "S",
+    "position": 3053,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.9160T>A (p.Ser3054Thr)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "T",
+    "position": 3065,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.9196A>G (p.Thr3066Ala)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 3078,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.9236G>A (p.Arg3079Gln)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "I",
+    "position": 3134,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.9404T>C (p.Ile3135Thr)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "E",
+    "position": 3139,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.9418G>C (p.Glu3140Gln)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "E",
+    "position": 3157,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.9472G>A (p.Glu3158Lys)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 3167,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.9503G>A (p.Arg3168Gln)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "T",
+    "position": 3170,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.9511A>T (p.Thr3171Ser)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "H",
+    "position": 3171,
+    "mut_aa": "D",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.9514C>G (p.His3172Asp)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "I",
+    "position": 3181,
+    "mut_aa": "M",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.9546T>G (p.Ile3182Met)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "N",
+    "position": 3203,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.9611A>G (p.Asn3204Ser)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "A",
+    "position": 3225,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.9677C>T (p.Ala3226Val)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "N",
+    "position": 3234,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.9704A>G (p.Asn3235Ser)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "D",
+    "position": 3238,
+    "mut_aa": "N",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.9715G>A (p.Asp3239Asn)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "K",
+    "position": 3253,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.9761A>G (p.Lys3254Arg)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "A",
+    "position": 3285,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.9856G>A (p.Ala3286Thr)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "S",
+    "position": 3303,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.9911C>T (p.Ser3304Leu)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "I",
+    "position": 3321,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.9964A>C (p.Ile3322Leu)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "L",
+    "position": 3328,
+    "mut_aa": "P",
+    "label": 1,
+    "name": "NM_001369.3(DNAH5):c.9986T>C (p.Leu3329Pro)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "L",
+    "position": 3340,
+    "mut_aa": "P",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.10022T>C (p.Leu3341Pro)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "Q",
+    "position": 3350,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.10051C>A (p.Gln3351Lys)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 3397,
+    "mut_aa": "H",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.10193G>A (p.Arg3398His)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "W",
+    "position": 3408,
+    "mut_aa": "S",
+    "label": 1,
+    "name": "NM_001369.3(DNAH5):c.10226G>C (p.Trp3409Ser)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "V",
+    "position": 3430,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.10292T>C (p.Val3431Ala)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "E",
+    "position": 3433,
+    "mut_aa": "D",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.10302G>T (p.Glu3434Asp)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "H",
+    "position": 3436,
+    "mut_aa": "Y",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.10309C>T (p.His3437Tyr)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "E",
+    "position": 3449,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.10348G>A (p.Glu3450Lys)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "V",
+    "position": 3460,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.10382T>C (p.Val3461Ala)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "L",
+    "position": 3475,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.10427T>G (p.Leu3476Arg)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "D",
+    "position": 3477,
+    "mut_aa": "N",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.10432G>A (p.Asp3478Asn)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "M",
+    "position": 3485,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.10457T>C (p.Met3486Thr)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "G",
+    "position": 3518,
+    "mut_aa": "R",
+    "label": 1,
+    "name": "NM_001369.3(DNAH5):c.10555G>C (p.Gly3519Arg)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 3538,
+    "mut_aa": "C",
+    "label": 1,
+    "name": "NM_001369.3(DNAH5):c.10615C>T (p.Arg3539Cys)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 3538,
+    "mut_aa": "H",
+    "label": 1,
+    "name": "NM_001369.3(DNAH5):c.10616G>A (p.Arg3539His)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 3538,
+    "mut_aa": "P",
+    "label": 1,
+    "name": "NM_001369.3(DNAH5):c.10616G>C (p.Arg3539Pro)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 3546,
+    "mut_aa": "G",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.10639C>G (p.Arg3547Gly)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "E",
+    "position": 3548,
+    "mut_aa": "G",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.10646A>G (p.Glu3549Gly)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 3552,
+    "mut_aa": "W",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.10657C>T (p.Arg3553Trp)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "E",
+    "position": 3617,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.10852G>A (p.Glu3618Lys)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 3619,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.10859G>A (p.Arg3620Gln)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "H",
+    "position": 3629,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.10890C>G (p.His3630Gln)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "E",
+    "position": 3649,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.10948G>A (p.Glu3650Lys)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "V",
+    "position": 3685,
+    "mut_aa": "M",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.11056G>A (p.Val3686Met)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "T",
+    "position": 3716,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.11149A>G (p.Thr3717Ala)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "M",
+    "position": 3746,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.11239A>T (p.Met3747Leu)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "D",
+    "position": 3748,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.11246A>T (p.Asp3749Val)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "D",
+    "position": 3748,
+    "mut_aa": "Y",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.11245G>T (p.Asp3749Tyr)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "M",
+    "position": 3756,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.11271G>A (p.Met3757Ile)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 3766,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.11300G>T (p.Arg3767Leu)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "D",
+    "position": 3777,
+    "mut_aa": "G",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.11333A>G (p.Asp3778Gly)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "V",
+    "position": 3783,
+    "mut_aa": "M",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.11350G>A (p.Val3784Met)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "T",
+    "position": 3790,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.11372C>T (p.Thr3791Ile)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "T",
+    "position": 3795,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.11386A>T (p.Thr3796Ser)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "E",
+    "position": 3805,
+    "mut_aa": "D",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.11418A>C (p.Glu3806Asp)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "V",
+    "position": 3806,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.11419G>C (p.Val3807Leu)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "T",
+    "position": 3820,
+    "mut_aa": "M",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.11462C>T (p.Thr3821Met)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "T",
+    "position": 3830,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.11492C>G (p.Thr3831Ser)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 3833,
+    "mut_aa": "H",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.11501G>A (p.Arg3834His)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 3844,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.11534G>T (p.Arg3845Leu)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "P",
+    "position": 3861,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.11585C>T (p.Pro3862Leu)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "I",
+    "position": 3871,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.11615T>C (p.Ile3872Thr)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "M",
+    "position": 3874,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.11623A>G (p.Met3875Val)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "T",
+    "position": 3895,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.11686A>G (p.Thr3896Ala)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "T",
+    "position": 3895,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.11687C>T (p.Thr3896Ile)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 3908,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.11726G>A (p.Arg3909Gln)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "H",
+    "position": 3911,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.11735A>G (p.His3912Arg)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "G",
+    "position": 3920,
+    "mut_aa": "R",
+    "label": 1,
+    "name": "NM_001369.3(DNAH5):c.11761G>C (p.Gly3921Arg)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "G",
+    "position": 3921,
+    "mut_aa": "D",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.11765G>A (p.Gly3922Asp)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "P",
+    "position": 3933,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.11801C>G (p.Pro3934Arg)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "L",
+    "position": 3943,
+    "mut_aa": "P",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.11831T>C (p.Leu3944Pro)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "S",
+    "position": 3962,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.11888C>T (p.Ser3963Leu)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "P",
+    "position": 3977,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.11933C>T (p.Pro3978Leu)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "N",
+    "position": 3984,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.11954A>G (p.Asn3985Ser)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "A",
+    "position": 3985,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.11957C>T (p.Ala3986Val)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 3995,
+    "mut_aa": "H",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.11987G>A (p.Arg3996His)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "V",
+    "position": 4016,
+    "mut_aa": "G",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.12050T>G (p.Val4017Gly)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "M",
+    "position": 4019,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.12059T>C (p.Met4020Thr)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "E",
+    "position": 4025,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.12076G>A (p.Glu4026Lys)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "E",
+    "position": 4036,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.12109G>C (p.Glu4037Gln)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 4041,
+    "mut_aa": "W",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.12124C>T (p.Arg4042Trp)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "I",
+    "position": 4045,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.12136A>G (p.Ile4046Val)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "M",
+    "position": 4050,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.12151A>G (p.Met4051Val)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "S",
+    "position": 4057,
+    "mut_aa": "P",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.12172T>C (p.Ser4058Pro)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "M",
+    "position": 4074,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.12225G>C (p.Met4075Ile)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "Q",
+    "position": 4087,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.12262C>A (p.Gln4088Lys)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "M",
+    "position": 4090,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.12272T>C (p.Met4091Thr)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "F",
+    "position": 4107,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.12323T>C (p.Phe4108Ser)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "M",
+    "position": 4108,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.12325A>G (p.Met4109Val)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "I",
+    "position": 4115,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.12346A>G (p.Ile4116Val)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "I",
+    "position": 4116,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.12349A>G (p.Ile4117Val)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "E",
+    "position": 4132,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.12397G>A (p.Glu4133Lys)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "A",
+    "position": 4133,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.12401C>T (p.Ala4134Val)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "K",
+    "position": 4135,
+    "mut_aa": "E",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.12406A>G (p.Lys4136Glu)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "D",
+    "position": 4151,
+    "mut_aa": "N",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.12454G>A (p.Asp4152Asn)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 4157,
+    "mut_aa": "W",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.12472C>T (p.Arg4158Trp)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "Y",
+    "position": 4164,
+    "mut_aa": "H",
+    "label": 1,
+    "name": "NM_001369.3(DNAH5):c.12493T>C (p.Tyr4165His)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "A",
+    "position": 4186,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.12559G>A (p.Ala4187Thr)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "A",
+    "position": 4202,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.12608C>T (p.Ala4203Val)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "G",
+    "position": 4204,
+    "mut_aa": "V",
+    "label": 1,
+    "name": "NM_001369.3(DNAH5):c.12614G>T (p.Gly4205Val)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "T",
+    "position": 4219,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.12658A>G (p.Thr4220Ala)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "D",
+    "position": 4231,
+    "mut_aa": "N",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.12694G>A (p.Asp4232Asn)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "V",
+    "position": 4236,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.12709G>A (p.Val4237Ile)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 4242,
+    "mut_aa": "H",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.12728G>A (p.Arg4243His)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "D",
+    "position": 4259,
+    "mut_aa": "V",
+    "label": 1,
+    "name": "NM_001369.3(DNAH5):c.12779A>T (p.Asp4260Val)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "D",
+    "position": 4279,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.12839A>T (p.Asp4280Val)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "G",
+    "position": 4285,
+    "mut_aa": "E",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.12857G>A (p.Gly4286Glu)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "S",
+    "position": 4292,
+    "mut_aa": "N",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.12878G>A (p.Ser4293Asn)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "V",
+    "position": 4294,
+    "mut_aa": "M",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.12883G>A (p.Val4295Met)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "Y",
+    "position": 4307,
+    "mut_aa": "C",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.12923A>G (p.Tyr4308Cys)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "V",
+    "position": 4331,
+    "mut_aa": "M",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.12994G>A (p.Val4332Met)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "G",
+    "position": 4346,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.13039G>A (p.Gly4347Arg)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "A",
+    "position": 4353,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.13060G>T (p.Ala4354Ser)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "A",
+    "position": 4353,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.13061C>T (p.Ala4354Val)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "M",
+    "position": 4362,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.13089G>T (p.Met4363Ile)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 4407,
+    "mut_aa": "C",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.13222C>T (p.Arg4408Cys)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "E",
+    "position": 4425,
+    "mut_aa": "K",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.13276G>A (p.Glu4426Lys)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 4428,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.13286G>A (p.Arg4429Gln)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "I",
+    "position": 4449,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.13348A>G (p.Ile4450Val)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "T",
+    "position": 4452,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.13358C>T (p.Thr4453Ile)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "G",
+    "position": 4454,
+    "mut_aa": "V",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.13364G>T (p.Gly4455Val)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "E",
+    "position": 4462,
+    "mut_aa": "G",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.13388A>G (p.Glu4463Gly)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "M",
+    "position": 4481,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.13444A>T (p.Met4482Leu)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "P",
+    "position": 4487,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.13462C>T (p.Pro4488Ser)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "P",
+    "position": 4487,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.13462C>A (p.Pro4488Thr)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 4495,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.13487G>A (p.Arg4496Gln)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "I",
+    "position": 4498,
+    "mut_aa": "M",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.13497A>G (p.Ile4499Met)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 4500,
+    "mut_aa": "Q",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.13502G>A (p.Arg4501Gln)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "N",
+    "position": 4502,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.13508A>G (p.Asn4503Ser)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "P",
+    "position": 4528,
+    "mut_aa": "R",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.13586C>G (p.Pro4529Arg)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "G",
+    "position": 4541,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.13625G>C (p.Gly4542Ala)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "W",
+    "position": 4544,
+    "mut_aa": "R",
+    "label": 1,
+    "name": "NM_001369.3(DNAH5):c.13633T>C (p.Trp4545Arg)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "N",
+    "position": 4548,
+    "mut_aa": "I",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.13646A>T (p.Asn4549Ile)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "I",
+    "position": 4552,
+    "mut_aa": "T",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.13658T>C (p.Ile4553Thr)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "V",
+    "position": 4558,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.13675G>T (p.Val4559Leu)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "V",
+    "position": 4565,
+    "mut_aa": "A",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.13697T>C (p.Val4566Ala)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "V",
+    "position": 4565,
+    "mut_aa": "L",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.13696G>C (p.Val4566Leu)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 4567,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.13704G>C (p.Arg4568Ser)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "R",
+    "position": 4579,
+    "mut_aa": "W",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.13738C>T (p.Arg4580Trp)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "A",
+    "position": 4599,
+    "mut_aa": "S",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.13798G>T (p.Ala4600Ser)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "D",
+    "position": 4601,
+    "mut_aa": "Y",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.13804G>T (p.Asp4602Tyr)"
+  },
+  {
+    "gene": "DNAH5",
+    "wt_aa": "L",
+    "position": 4602,
+    "mut_aa": "F",
+    "label": 0,
+    "name": "NM_001369.3(DNAH5):c.13807C>T (p.Leu4603Phe)"
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "repo_root": "/teamspace/studios/this_studio/SpectralBio",
+  "head_commit": "3050eb57bae32e16415ad25847a7b0f480baddef",
+  "branch": "",
+  "skip_live": false,
+  "cuda_available": true,
+  "cuda_device_count": 1
+}

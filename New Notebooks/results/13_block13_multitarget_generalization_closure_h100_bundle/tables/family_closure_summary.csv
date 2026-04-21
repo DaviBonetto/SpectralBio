@@ -1,0 +1,4 @@
+family_label,n_variant_rows,n_transfer_positive,n_near_transfer_positive,has_public_positive_witness
+prottrans,5,2,2,True
+esm2,10,1,8,True
+esm1v,5,0,1,False

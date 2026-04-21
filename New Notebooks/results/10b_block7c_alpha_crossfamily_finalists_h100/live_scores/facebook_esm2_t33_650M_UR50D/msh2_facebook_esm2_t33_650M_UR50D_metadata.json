@@ -1,0 +1,8 @@
+{
+  "gene": "MSH2",
+  "model_name": "facebook/esm2_t33_650M_UR50D",
+  "window_radius": 40,
+  "n_variants_total": 2,
+  "n_variants_written": 2,
+  "elapsed_seconds": 0.2325451374053955
+}

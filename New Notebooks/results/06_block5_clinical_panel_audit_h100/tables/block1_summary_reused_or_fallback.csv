@@ -1,0 +1,6 @@
+gene,auc_esm1v_mean,auc_reference_pair_fixed_055,auc_augmented_pair_fixed_055,delta_augmented_vs_esm1v,best_alpha_on_full_surface,best_alpha_auc,fixed_alpha_in_plateau,plateau_alpha_min,plateau_alpha_max,paired_delta_ci_2p5,paired_delta_ci_97p5,summary_source
+BRCA1,0.7865164614444153,0.8284865950572002,0.7950921316915553,0.00857567024714001,,,False,,,,,fallback_from_esm1v_augmentation_tables
+BRCA2,0.6323835125448029,0.7445878136200716,0.6889784946236559,0.05659498207885305,,,False,,,,,fallback_from_esm1v_augmentation_tables
+NSD1,0.8827935222672065,0.860754048582996,0.8741902834008097,-0.0086032388663968,,,False,,,,,fallback_from_esm1v_augmentation_tables
+TP53,0.9465838509316771,0.749751552795031,0.9304968944099379,-0.016086956521739193,,,False,,,,,fallback_from_esm1v_augmentation_tables
+MSH2,0.9232531841447447,0.7492262825854065,0.8457028925127961,-0.0775502916319486,,,False,,,,,fallback_from_esm1v_augmentation_tables

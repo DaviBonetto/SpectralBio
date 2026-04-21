@@ -1,0 +1,5 @@
+model_label,model_name,family_label,scalar_name,n_total,n_positive,n_negative,auc_scalar,auc_frob,auc_pair_fixed_055,delta_pair_vs_scalar,best_alpha,best_auc,fixed_alpha_auc,fixed_alpha_in_plateau,plateau_fraction,best_minus_fixed_auc
+ESM-1v,facebook/esm1v_t33_650M_UR90S_1,esm1v,ll_proper,10,5,5,0.0,0.28,0.0,0.0,1.0,0.28,0.0,False,0.047619047619047616,0.28
+ESM2-150M,facebook/esm2_t30_150M_UR50D,esm2,ll_proper,10,5,5,0.0,1.0,0.4,0.4,1.0,1.0,0.4,False,0.047619047619047616,0.6
+ESM2-650M,facebook/esm2_t33_650M_UR50D,esm2,ll_proper,10,5,5,0.04,0.68,0.4,0.36000000000000004,0.95,0.68,0.4,False,0.09523809523809523,0.28
+ProtT5,Rostlab/prot_t5_xl_half_uniref50-enc,prottrans,mut_token_shift,10,5,5,0.24,0.4,0.32,0.08000000000000002,0.8,0.4,0.32,False,0.23809523809523808,0.08000000000000002

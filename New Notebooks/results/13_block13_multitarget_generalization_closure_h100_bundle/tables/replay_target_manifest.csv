@@ -1,0 +1,8 @@
+gene,target_role,is_primary_target,is_negative_control,n_variants,n_positive,n_negative,n_source_surfaces,source_surfaces,uniprot_accession,sequence_loaded,contract_status
+BRCA2,primary,True,False,1316,200,1116,2,block1_brca2_augmentation|block6_clinical_panel_variant_scores,,True,replay_candidate
+TP53,primary,True,False,255,115,140,1,tp53_canonical_panel,P04637,True,replay_candidate
+TSC2,primary,True,False,364,166,198,2,block10b_finalists_panel|block6_clinical_panel_variant_scores,P49815,True,replay_candidate
+BRCA1,negative_control,False,True,515,165,350,2,block10b_finalists_panel|block6_clinical_panel_variant_scores,P38398,True,replay_candidate
+CREBBP,secondary_positive,False,False,298,116,182,2,block10b_finalists_panel|block6_clinical_panel_variant_scores,Q92793,True,replay_candidate
+GRIN2A,secondary_positive,False,False,1,1,0,1,block10b_finalists_panel,Q12879,True,replay_candidate
+MSH2,negative_control,False,True,397,124,273,2,block10b_finalists_panel|block6_clinical_panel_variant_scores,P43246,True,replay_candidate
