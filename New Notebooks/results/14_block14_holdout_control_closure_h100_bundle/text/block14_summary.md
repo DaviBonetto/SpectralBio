@@ -4,7 +4,7 @@
 - Holdout-positive models: `none`
 - Control-win models: `none`
 - Non-ESM transfer-positive models: `none`
-- Negative guardrails clean: `True`
+- Negative guardrails clean: `False`
 
 ## Interpretation
 

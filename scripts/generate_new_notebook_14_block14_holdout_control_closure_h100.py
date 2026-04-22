@@ -417,12 +417,15 @@ def build_notebook() -> dict:
                         BLOCK13_ROOT / 'live_scores' / safe_model_dir(model_name) / file_name,
                     ]
 
+                def has_expected_coverage(frame: pd.DataFrame, expected_variant_ids: set[str]) -> bool:
+                    observed = set(frame.get('variant_id', pd.Series(dtype=str)).astype(str))
+                    return bool(expected_variant_ids) and expected_variant_ids.issubset(observed)
+
                 def reuse_exact_scores(model_name: str, gene: str, expected_variant_ids: set[str]) -> tuple[pd.DataFrame, dict] | tuple[None, None]:
                     for candidate in reuse_candidates(model_name, gene):
                         if candidate.exists():
                             frame = pd.read_csv(candidate)
-                            observed = set(frame.get('variant_id', pd.Series(dtype=str)).astype(str))
-                            if expected_variant_ids and not expected_variant_ids.issubset(observed):
+                            if not has_expected_coverage(frame, expected_variant_ids):
                                 continue
                             return frame, {'reuse_source': str(candidate), 'reuse_kind': 'exact_live_score'}
                     return None, None
@@ -554,9 +557,12 @@ def build_notebook() -> dict:
                     return model(**encoded, output_hidden_states=True)
 
                 def score_panel_with_generic_model(panel_df: pd.DataFrame, sequence_map: dict[str, str], spec: dict, output_path: Path) -> tuple[pd.DataFrame, dict]:
+                    expected_variant_ids = set(panel_df['variant_id'].astype(str))
                     if output_path.exists() and not OVERWRITE:
                         reused = pd.read_csv(output_path)
-                        return reused, {'status': 'reused_existing_scores', 'n_rows': int(len(reused)), 'model_label': spec['model_label']}
+                        if has_expected_coverage(reused, expected_variant_ids):
+                            return reused, {'status': 'reused_existing_scores', 'n_rows': int(len(reused)), 'model_label': spec['model_label']}
+                        output_path.unlink(missing_ok=True)
 
                     bundle, manifest = load_model_bundle(spec)
                     if bundle is None:
@@ -642,10 +648,13 @@ def build_notebook() -> dict:
                             torch.cuda.empty_cache()
 
                 def score_panel_with_model(panel_df: pd.DataFrame, sequence_map: dict[str, str], spec: dict, output_path: Path) -> tuple[pd.DataFrame, dict]:
+                    expected_variant_ids = set(panel_df['variant_id'].astype(str))
                     if spec['adapter_kind'] == 'esm':
                         if output_path.exists() and not OVERWRITE:
                             reused = pd.read_csv(output_path)
-                            return reused, {'status': 'reused_existing_scores', 'n_rows': int(len(reused)), 'model_label': spec['model_label'], 'adapter_kind': 'esm'}
+                            if has_expected_coverage(reused, expected_variant_ids):
+                                return reused, {'status': 'reused_existing_scores', 'n_rows': int(len(reused)), 'model_label': spec['model_label'], 'adapter_kind': 'esm'}
+                            output_path.unlink(missing_ok=True)
                         grouped_rows = []
                         for gene, gene_df in panel_df.groupby('gene', sort=False):
                             gene_key = str(gene).upper()
@@ -678,7 +687,13 @@ def build_notebook() -> dict:
                 def ensure_rank_features(frame: pd.DataFrame, alpha: float) -> pd.DataFrame:
                     working = frame.copy()
                     required = {'ll_rank_norm', 'frob_rank_norm', 'pair_rank_fixed_055', 'pair_minus_ll'}
-                    if not required.issubset(set(working.columns)):
+                    need_recompute = not required.issubset(set(working.columns))
+                    if not need_recompute:
+                        finite_counts = []
+                        for column in ['ll_rank_norm', 'frob_rank_norm', 'pair_rank_fixed_055', 'pair_minus_ll']:
+                            finite_counts.append(int(np.isfinite(pd.to_numeric(working[column], errors='coerce')).sum()))
+                        need_recompute = min(finite_counts) == 0
+                    if need_recompute:
                         rows = working[['gene', 'name', 'position', 'wt_aa', 'mut_aa', 'label', 'frob_dist', 'trace_ratio', 'sps_log', 'll_proper', 'model_name', 'variant_id']].to_dict(orient='records')
                         payload = _pair_scores(rows, alpha)
                         working['ll_rank_norm'] = payload['ll_norm']
@@ -731,6 +746,9 @@ def build_notebook() -> dict:
                         return None
                     preferred_order = {'combined_confident': 0, 'combined': 1, 'pair_only': 2}
                     ranked = candidate_df.copy()
+                    ranked = ranked.loc[pd.to_numeric(ranked['n_rule_on'], errors='coerce').fillna(0).astype(int) > 0].copy()
+                    if ranked.empty:
+                        return None
                     ranked['rule_priority'] = ranked['rule_type'].map(preferred_order).fillna(99).astype(int)
                     ranked['coverage_pass_int'] = ranked['coverage_floor_pass'].fillna(False).astype(int)
                     ranked = ranked.sort_values(
