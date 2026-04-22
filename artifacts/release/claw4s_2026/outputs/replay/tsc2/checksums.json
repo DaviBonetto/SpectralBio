@@ -1,0 +1,9 @@
+{
+  "base_dir": "outputs/replay/tsc2",
+  "sha256": {
+    "summary.json": "9dbcbde8a11c72a10a7566dd638b0c237c7432a1a48c4b84bb2a4ddc89dc6b05",
+    "manifest.json": "dc521216a0907b696fdefdd363d9689b6034563d585878109eddeacf97d7d3a7",
+    "metrics.json": "84e09155c11ffad57c0e5d5cfde2dc4a793403582819313f5e4de168b30976b5",
+    "provenance.json": "48b47f5fb7a72c419591a3ce5c7f55a3639e593ec1b1cdf11f43a7999fe94fbd"
+  }
+}

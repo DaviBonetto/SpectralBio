@@ -1,0 +1,8 @@
+{
+  "name": "spectralbio-skill",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "workspaceFolder": "/workspace",
+  "postCreateCommand": "uv sync --frozen"
+}

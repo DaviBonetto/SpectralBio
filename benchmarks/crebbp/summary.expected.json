@@ -1,0 +1,31 @@
+{
+  "benchmark": "CREBBP",
+  "role": "replay_ready_transfer_surface",
+  "command": "spectralbio replay --target crebbp",
+  "source_variants": "benchmarks/crebbp/benchmark_table.tsv",
+  "n_total": 298,
+  "metrics": {
+    "replay_ready": true,
+    "transfer_positive": true,
+    "near_transfer_positive": true,
+    "n_variants": 298,
+    "n_positive": 116,
+    "n_negative": 182,
+    "positive_witness_models": [
+      "ProtT5"
+    ],
+    "positive_witness_variants": [
+      "CREBBP:R1340P"
+    ]
+  },
+  "artifacts": [
+    "summary.json",
+    "verification.json",
+    "provenance.json",
+    "manifest.json",
+    "metrics.json",
+    "checksums.json",
+    "status.json"
+  ],
+  "claim_boundary": "CREBBP is a replay-ready transfer surface and not a flagship canonical validation anchor."
+}

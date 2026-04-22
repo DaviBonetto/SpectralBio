@@ -122,17 +122,17 @@ BRCA2 audit, while the public executable replay center remains the TP53 canonica
 benchmark. On BRCA2, adding covariance-aware geometry to a five-model ESM-1v
 ensemble improves AUC from \textbf{0.6324} to \textbf{0.6890}, for paired gain
 \textbf{0.0566}, paired 95\% bootstrap CI \textbf{[0.0131, 0.1063]}, and
-empirical permutation \textbf{$p=0.0010$}. On the frozen TP53 canonical benchmark,
-the released pair \textbf{$0.55\cdot\text{FrobDist}+0.45\cdot\text{LL Proper}$}
-reaches \textbf{AUC=0.7498}, and repeated nested cross-validation places the fixed
-released weight on a stable out-of-fold plateau (\textbf{0.7510} vs.\ \textbf{0.7485}
-for re-tuned alpha). Across a support-ranked top-25 feasible panel derived from a
-15,752-gene ClinVar scan, 10 genes show positive pair-versus-likelihood lower bounds,
-2 are clearly negative, and the remainder are ambiguous. \methodname{} is therefore a
-bounded representational result and reproducibility artifact: covariance-aware
-hidden-state geometry can improve a stronger baseline in a benchmark-qualified gene,
-survives executable audit on TP53, and behaves as a structured rather than universal
-phenomenon.%
+ empirical permutation \textbf{$p=0.0010$}. On the frozen TP53 canonical benchmark,
+ the released pair \textbf{$0.55\cdot\text{FrobDist}+0.45\cdot\text{LL Proper}$}
+ reaches \textbf{AUC=0.7498}, and repeated nested cross-validation places the fixed
+ released weight on a stable out-of-fold plateau (\textbf{0.7510} vs.\ \textbf{0.7485}
+ for re-tuned alpha). Across a support-ranked top-25 feasible panel derived from a
+ 15,752-gene ClinVar scan, 10 genes show positive pair-versus-likelihood lower bounds,
+ 2 are clearly negative, and 13 are ambiguous. \methodname{} is therefore a
+ bounded representational result and reproducibility artifact: covariance-aware
+ hidden-state geometry can improve a stronger baseline in a benchmark-qualified gene,
+ survives executable audit on TP53, and behaves as a structured rather than universal
+ phenomenon.%
 }
 \end{center}
 \vspace{4pt}%
@@ -178,11 +178,10 @@ benchmarking culture by emphasizing explicit comparable evaluation surfaces rath
 than anecdotal gene-specific wins~\cite{notin2023proteingym}. In that literature,
 the dominant readout remains sequence likelihood or closely related scalar summaries.
 
-Spectral analysis of hidden-state geometry offers a complementary perspective.
-SpectralGuard showed that covariance-level perturbations in model representations can
-carry discriminative signal beyond surface probabilities~\cite{bonetto2026spectralguard}.
-\methodname{} transfers that intuition to zero-shot missense scoring and asks whether
-full-matrix covariance perturbations provide usable pathogenicity signal beyond both
+Closely related work showed that transformer protein language models encode structural
+information beyond surface likelihoods~\cite{rao2021structure}. \methodname{} narrows
+that intuition to zero-shot missense scoring and asks whether local full-matrix
+covariance perturbations provide usable pathogenicity signal beyond both
 likelihood-only and eigenvalue-only summaries.
 
 % ============================================================================
@@ -313,19 +312,18 @@ pair also exceeds either branch alone, with FrobDist and LL Proper combining
 mechanistically distinct information: representational displacement and sequence-level
 surprisal.
 
-\begin{figure*}[t]
+\begin{figure}[t]
 \centering
-\includegraphics[width=0.88\textwidth]{../outputs/canonical/roc_tp53.png}
+\includegraphics[width=\columnwidth]{assets/tp53_nested_cv_auc_comparison.png}
 \caption{%
-  \textbf{TP53 canonical executable validation surface.}
-  The released pair (orange) remains above the individual covariance and likelihood
-  branches on the frozen TP53 replay path and materializes as a machine-checkable
-  artifact under \texttt{outputs/canonical/}. This figure summarizes the executable
-  anchor that keeps the manuscript's covariance claim challengeable on a public,
-  deterministic surface.
+  \textbf{TP53 nested validation stability.}
+  The fixed released weight ($\alpha=0.55$) matches or slightly exceeds the re-tuned
+  alternative on held-out folds and remains above either branch alone. This is the
+  compact visual summary of the claim that the released TP53 pair sits on a stable
+  out-of-fold plateau rather than a same-surface spike.
 }
-\label{fig:results}
-\end{figure*}
+\label{fig:tp53_nested}
+\end{figure}
 
 \subsection{Breadth and Boundary Surfaces}
 
@@ -401,7 +399,7 @@ under the competition rules.
 % ============================================================================
 \bibliographystyle{plainnat}
 \begin{thebibliography}{5}
-\footnotesize
+\scriptsize
 
 \bibitem{lin2023evolutionary}
 Lin, Z., Akin, H., Rao, R., et al.\ (2023).
@@ -419,11 +417,10 @@ Landrum, M.\,J., Lee, J.\,M., Benson, M., et al.\ (2018).
 ClinVar: improving access to variant interpretations and supporting evidence.
 \textit{Nucleic Acids Res.}, 46(D1), D1062--D1067.
 
-\bibitem{bonetto2026spectralguard}
-Bonetto, D.\ (2026).
-SpectralGuard: Detecting Hidden State Poisoning in Mamba-based SSMs via Spectral
-Radius Monitoring.
-\textit{arXiv:2603.12414}.
+\bibitem{rao2021structure}
+Rao, R., Meier, J., Sercu, T., Ovchinnikov, S., and Rives, A.\ (2021).
+Transformer protein language models are unsupervised structure learners.
+\textit{ICLR}.
 
 \bibitem{notin2023proteingym}
 Notin, P., Dias, M., Frazer, J., et al.\ (2023).

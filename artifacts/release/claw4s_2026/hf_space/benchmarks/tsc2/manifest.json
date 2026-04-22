@@ -1,0 +1,17 @@
+{
+  "benchmark": "TSC2",
+  "role": "replay_ready_transfer_surface",
+  "artifacts": [
+    "summary.json",
+    "verification.json",
+    "provenance.json",
+    "manifest.json",
+    "metrics.json",
+    "checksums.json",
+    "status.json"
+  ],
+  "source_variants": "benchmarks/tsc2/benchmark_table.tsv",
+  "score_reference": "benchmarks/tsc2/score_reference.tsv",
+  "sequence_source": "benchmarks/tsc2/sequence_reference.fasta",
+  "source_bundle": "New Notebooks/results/13_block13_multitarget_generalization_closure_h100"
+}

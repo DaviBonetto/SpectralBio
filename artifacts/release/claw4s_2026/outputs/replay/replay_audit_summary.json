@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "replay_targets": [
+    "TP53",
+    "BRCA2",
+    "TSC2",
+    "CREBBP"
+  ],
+  "transfer_positive_targets": [
+    "TSC2",
+    "CREBBP"
+  ],
+  "negative_guardrails": [
+    "BRCA1",
+    "MSH2"
+  ],
+  "targets": {
+    "tp53": "PASS",
+    "brca2": "PASS",
+    "tsc2": "PASS",
+    "crebbp": "PASS"
+  }
+}

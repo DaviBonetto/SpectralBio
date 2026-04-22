@@ -1,0 +1,10 @@
+{
+  "auc_esm1v_mean": 0.6323835125448029,
+  "auc_reference_pair_fixed_055": 0.7445878136200716,
+  "auc_augmented_pair_fixed_055": 0.6889784946236559,
+  "delta_augmented_vs_esm1v": 0.05659498207885305,
+  "bootstrap_ci_2p5": 0.013139085295604062,
+  "bootstrap_ci_97p5": 0.1063037599856574,
+  "empirical_permutation_p": 0.000999000999000999,
+  "best_alpha_on_full_surface": 0.9
+}

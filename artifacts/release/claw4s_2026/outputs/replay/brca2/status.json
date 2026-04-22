@@ -1,0 +1,45 @@
+{
+  "command": "spectralbio replay --target brca2",
+  "status": "PASS",
+  "exit_code": 0,
+  "mode": "replay",
+  "target": "BRCA2",
+  "surface_role": "flagship_non_anchor_canonical_target",
+  "started_at": "2026-04-22T19:49:54.286076+00:00",
+  "finished_at": "2026-04-22T19:49:54.413393+00:00",
+  "duration_seconds": 0.127323,
+  "offline": true,
+  "cpu_only": true,
+  "artifacts_used": [
+    "benchmarks/brca2/benchmark_table.tsv",
+    "benchmarks/brca2/score_reference.tsv",
+    "benchmarks/brca2/sequence_reference.fasta"
+  ],
+  "artifacts_emitted": [
+    "outputs/replay/brca2/checksums.json",
+    "outputs/replay/brca2/manifest.json",
+    "outputs/replay/brca2/metrics.json",
+    "outputs/replay/brca2/provenance.json",
+    "outputs/replay/brca2/status.json",
+    "outputs/replay/brca2/summary.json",
+    "outputs/replay/brca2/verification.json"
+  ],
+  "checks_performed": [
+    "schema_validation",
+    "checksum_validation",
+    "target_verification"
+  ],
+  "metrics": {
+    "auc_esm1v_mean": 0.6323835125448029,
+    "auc_reference_pair_fixed_055": 0.7445878136200716,
+    "auc_augmented_pair_fixed_055": 0.6889784946236559,
+    "delta_augmented_vs_esm1v": 0.05659498207885305,
+    "bootstrap_ci_2p5": 0.013139085295604062,
+    "bootstrap_ci_97p5": 0.1063037599856574,
+    "empirical_permutation_p": 0.000999000999000999,
+    "best_alpha_on_full_surface": 0.9
+  },
+  "warnings": [],
+  "next_action": "none",
+  "details": {}
+}

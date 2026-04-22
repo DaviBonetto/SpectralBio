@@ -1,0 +1,51 @@
+{
+  "command": "spectralbio replay --target tsc2",
+  "status": "PASS",
+  "exit_code": 0,
+  "mode": "replay",
+  "target": "TSC2",
+  "surface_role": "replay_ready_transfer_surface",
+  "started_at": "2026-04-22T19:49:54.433883+00:00",
+  "finished_at": "2026-04-22T19:49:54.514863+00:00",
+  "duration_seconds": 0.080983,
+  "offline": true,
+  "cpu_only": true,
+  "artifacts_used": [
+    "benchmarks/tsc2/benchmark_table.tsv",
+    "benchmarks/tsc2/score_reference.tsv",
+    "benchmarks/tsc2/sequence_reference.fasta"
+  ],
+  "artifacts_emitted": [
+    "outputs/replay/tsc2/checksums.json",
+    "outputs/replay/tsc2/manifest.json",
+    "outputs/replay/tsc2/metrics.json",
+    "outputs/replay/tsc2/provenance.json",
+    "outputs/replay/tsc2/status.json",
+    "outputs/replay/tsc2/summary.json",
+    "outputs/replay/tsc2/verification.json"
+  ],
+  "checks_performed": [
+    "schema_validation",
+    "checksum_validation",
+    "target_verification"
+  ],
+  "metrics": {
+    "replay_ready": true,
+    "transfer_positive": true,
+    "near_transfer_positive": true,
+    "n_variants": 364,
+    "n_positive": 166,
+    "n_negative": 198,
+    "positive_witness_models": [
+      "ESM2-650M",
+      "ProtT5"
+    ],
+    "positive_witness_variants": [
+      "TSC2:N1563K",
+      "TSC2:G293R"
+    ]
+  },
+  "warnings": [],
+  "next_action": "none",
+  "details": {}
+}

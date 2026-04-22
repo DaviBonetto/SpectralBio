@@ -1,0 +1,27 @@
+{
+  "benchmark": "BRCA2",
+  "role": "flagship_non_anchor_canonical_target",
+  "command": "spectralbio replay --target brca2",
+  "source_variants": "benchmarks/brca2/benchmark_table.tsv",
+  "n_total": 658,
+  "metrics": {
+    "auc_esm1v_mean": 0.6323835125448029,
+    "auc_reference_pair_fixed_055": 0.7445878136200716,
+    "auc_augmented_pair_fixed_055": 0.6889784946236559,
+    "delta_augmented_vs_esm1v": 0.05659498207885305,
+    "bootstrap_ci_2p5": 0.013139085295604062,
+    "bootstrap_ci_97p5": 0.1063037599856574,
+    "empirical_permutation_p": 0.000999000999000999,
+    "best_alpha_on_full_surface": 0.9
+  },
+  "artifacts": [
+    "summary.json",
+    "verification.json",
+    "provenance.json",
+    "manifest.json",
+    "metrics.json",
+    "checksums.json",
+    "status.json"
+  ],
+  "claim_boundary": "Flagship non-anchor replay surface. Strong scientific support without elevating BRCA2 above TP53 as the validation anchor."
+}

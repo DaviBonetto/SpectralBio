@@ -1,0 +1,13 @@
+{
+  "sha256": {
+    "benchmark_contract.json": "fba9c646597ea48e125e04d91389fe3749c9cdab07af3678ae94989a3c8887a3",
+    "benchmark_table.tsv": "a91a52ddf81a38e8590ea509d7b00a894efe6b47d9b404d63c5c5aebab71e5fe",
+    "manifest.json": "dc521216a0907b696fdefdd363d9689b6034563d585878109eddeacf97d7d3a7",
+    "metrics.expected.json": "84e09155c11ffad57c0e5d5cfde2dc4a793403582819313f5e4de168b30976b5",
+    "provenance.json": "490de668585cdacfd816e2e5b91e908ae3a9f64f475ac5f0d52dcb97f723d8b7",
+    "score_reference.tsv": "f0466add3ded9480bc8e69e129f55c74d2c38edae6d75566c9eca84ffa4430cf",
+    "sequence_reference.fasta": "816340466ece6740ad2e80ca2c9ee1098c25dcc310ccd45836143b78b76eacce",
+    "summary.expected.json": "9dbcbde8a11c72a10a7566dd638b0c237c7432a1a48c4b84bb2a4ddc89dc6b05",
+    "verification.expected.json": "b3ae41b83d24794523351cd1e0debfc3c40864091185b0327c244297c85c7786"
+  }
+}

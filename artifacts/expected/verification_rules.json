@@ -47,9 +47,22 @@
     "final_closure_boundary": "the final harsh holdout/control tribunal remains mixed and does not establish model-level closure"
   },
   "commands": {
+    "preflight": "spectralbio preflight",
+    "doctor": "spectralbio doctor",
+    "replay": "spectralbio replay",
+    "replay_audit": "spectralbio replay-audit",
     "canonical": "spectralbio canonical",
     "transfer": "spectralbio transfer",
     "verify": "spectralbio verify",
+    "verify_legacy": "spectralbio verify-legacy",
+    "stats_report": "spectralbio stats-report",
+    "sensitivity": "spectralbio sensitivity",
+    "regenerate": "spectralbio regenerate",
+    "reproduce_all": "spectralbio reproduce-all",
+    "adapt": "spectralbio adapt",
+    "applicability": "spectralbio applicability",
+    "list_targets": "spectralbio list-targets",
+    "explain_status": "spectralbio explain-status",
     "export_hf_space": "spectralbio export-hf-space",
     "export_hf_dataset": "spectralbio export-hf-dataset",
     "release": "spectralbio release"
@@ -58,6 +71,11 @@
     "transfer_selection_rule": "fixed first 100 records from brca1_full_filtered_v1.json in source order",
     "canonical_dir": "outputs/canonical",
     "transfer_dir": "outputs/transfer",
+    "replay_dir": "outputs/replay",
+    "status_dir": "outputs/status",
+    "latest_status_dir": "outputs/status/latest",
+    "regeneration_dir": "outputs/regeneration",
+    "paper_dir": "outputs/paper",
     "portability_results_dir": "New Notebooks/results/13_block13_multitarget_generalization_closure_h100",
     "final_tribunal_results_dir": "New Notebooks/results/14_block14_holdout_control_closure_h100"
   },
@@ -90,6 +108,8 @@
   "drift_checks": {
     "must_preserve_tp53_as_default_executable_anchor": true,
     "must_preserve_brca1_as_auxiliary_bounded_executable_surface": true,
+    "must_preserve_brca2_as_flagship_non_anchor_replay_surface": true,
+    "must_preserve_tsc2_and_crebbp_as_replay_ready_transfer_surfaces": true,
     "must_preserve_block13_portability_strengthening": true,
     "must_preserve_block14_mixed_closure": true,
     "must_preserve_brca1_and_msh2_guardrails": true,
@@ -99,6 +119,8 @@
   "output_contract": {
     "canonical_dir": "outputs/canonical",
     "transfer_dir": "outputs/transfer",
+    "replay_dir": "outputs/replay",
+    "status_dir": "outputs/status",
     "canonical_files": [
       "run_metadata.json",
       "inputs_manifest.json",
@@ -113,6 +135,21 @@
       "summary.json",
       "variants.json",
       "manifest.json"
+    ],
+    "replay_files": [
+      "summary.json",
+      "verification.json",
+      "provenance.json",
+      "manifest.json",
+      "metrics.json",
+      "checksums.json",
+      "status.json"
+    ],
+    "status_files": [
+      "status.json",
+      "stdout.log",
+      "stderr.log",
+      "command.txt"
     ]
   },
   "metric_tolerance": 0.0001,
@@ -121,12 +158,18 @@
     "benchmarks/manifests/brca1_transfer_manifest.json",
     "benchmarks/manifests/checksums.json",
     "benchmarks/manifests/source_snapshot.json",
+    "benchmarks/benchmark_registry.json",
     "artifacts/expected/expected_metrics.json",
     "artifacts/expected/output_schema.json",
     "artifacts/expected/verification_rules.json",
     "artifacts/expected/expected_files.json",
     "docs/truth_contract.md",
     "docs/reproducibility.md",
-    "SKILL.md"
+    "SKILL.md",
+    "claw_agent_guide.md",
+    "schemas/status.schema.json",
+    "schemas/summary.schema.json",
+    "schemas/verification.schema.json",
+    "schemas/provenance.schema.json"
   ]
 }

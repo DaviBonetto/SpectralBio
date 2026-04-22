@@ -1,0 +1,45 @@
+{
+  "command": "spectralbio replay --target tp53",
+  "status": "PASS",
+  "exit_code": 0,
+  "mode": "replay",
+  "target": "TP53",
+  "surface_role": "validation_anchor",
+  "started_at": "2026-04-22T19:49:53.879255+00:00",
+  "finished_at": "2026-04-22T19:49:54.249487+00:00",
+  "duration_seconds": 0.37027,
+  "offline": true,
+  "cpu_only": true,
+  "artifacts_used": [
+    "benchmarks/tp53/tp53_canonical_v1.json",
+    "benchmarks/tp53/tp53_scores_v1.json",
+    "benchmarks/sequences/tp53.fasta"
+  ],
+  "artifacts_emitted": [
+    "outputs/replay/tp53/checksums.json",
+    "outputs/replay/tp53/manifest.json",
+    "outputs/replay/tp53/metrics.json",
+    "outputs/replay/tp53/provenance.json",
+    "outputs/replay/tp53/roc_tp53.png",
+    "outputs/replay/tp53/run_metadata.json",
+    "outputs/replay/tp53/status.json",
+    "outputs/replay/tp53/summary.json",
+    "outputs/replay/tp53/verification.json"
+  ],
+  "checks_performed": [
+    "schema_validation",
+    "checksum_validation",
+    "target_verification"
+  ],
+  "metrics": {
+    "official_auc_best_pair": 0.7498,
+    "computed_auc_best_pair": 0.749751552795031,
+    "computed_auc_frob_dist": 0.6209316770186335,
+    "computed_auc_ll_proper": 0.5955900621118012,
+    "best_pair_desc": "0.55*frob_dist + 0.45*ll_proper",
+    "reproducibility_delta": 0.0
+  },
+  "warnings": [],
+  "next_action": "none",
+  "details": {}
+}

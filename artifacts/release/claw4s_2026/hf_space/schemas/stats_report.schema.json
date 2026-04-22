@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["target", "role", "metrics"],
+  "properties": {
+    "target": { "type": "string" },
+    "role": { "type": "string" },
+    "metrics": { "type": "object" }
+  }
+}

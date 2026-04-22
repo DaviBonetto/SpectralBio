@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["status", "category", "summary", "recommended_fix"],
+  "properties": {
+    "status": { "type": "string" },
+    "category": { "type": "string" },
+    "summary": { "type": "string" },
+    "recommended_fix": { "type": "string" },
+    "details": { "type": "object" }
+  }
+}

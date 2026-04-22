@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "checks": {
+    "schema_validation": true,
+    "checksum_validation": true
+  },
+  "errors": []
+}

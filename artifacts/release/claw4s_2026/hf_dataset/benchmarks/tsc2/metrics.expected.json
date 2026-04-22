@@ -1,0 +1,16 @@
+{
+  "replay_ready": true,
+  "transfer_positive": true,
+  "near_transfer_positive": true,
+  "n_variants": 364,
+  "n_positive": 166,
+  "n_negative": 198,
+  "positive_witness_models": [
+    "ESM2-650M",
+    "ProtT5"
+  ],
+  "positive_witness_variants": [
+    "TSC2:N1563K",
+    "TSC2:G293R"
+  ]
+}

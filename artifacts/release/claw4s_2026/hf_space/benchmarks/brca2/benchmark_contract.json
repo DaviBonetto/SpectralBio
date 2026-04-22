@@ -1,0 +1,16 @@
+{
+  "target": "BRCA2",
+  "role": "flagship_non_anchor_canonical_target",
+  "contract_kind": "frozen_replay_surface",
+  "summary_expected": "benchmarks/brca2/summary.expected.json",
+  "verification_expected": "benchmarks/brca2/verification.expected.json",
+  "required_artifacts": [
+    "summary.json",
+    "verification.json",
+    "provenance.json",
+    "manifest.json",
+    "metrics.json",
+    "checksums.json",
+    "status.json"
+  ]
+}

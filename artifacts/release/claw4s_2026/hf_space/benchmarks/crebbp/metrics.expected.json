@@ -1,0 +1,14 @@
+{
+  "replay_ready": true,
+  "transfer_positive": true,
+  "near_transfer_positive": true,
+  "n_variants": 298,
+  "n_positive": 116,
+  "n_negative": 182,
+  "positive_witness_models": [
+    "ProtT5"
+  ],
+  "positive_witness_variants": [
+    "CREBBP:R1340P"
+  ]
+}

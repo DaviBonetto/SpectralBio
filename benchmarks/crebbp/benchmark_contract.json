@@ -1,0 +1,16 @@
+{
+  "target": "CREBBP",
+  "role": "replay_ready_transfer_surface",
+  "contract_kind": "frozen_replay_surface",
+  "summary_expected": "benchmarks/crebbp/summary.expected.json",
+  "verification_expected": "benchmarks/crebbp/verification.expected.json",
+  "required_artifacts": [
+    "summary.json",
+    "verification.json",
+    "provenance.json",
+    "manifest.json",
+    "metrics.json",
+    "checksums.json",
+    "status.json"
+  ]
+}

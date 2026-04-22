@@ -1,0 +1,17 @@
+{
+  "benchmark": "CREBBP",
+  "role": "replay_ready_transfer_surface",
+  "artifacts": [
+    "summary.json",
+    "verification.json",
+    "provenance.json",
+    "manifest.json",
+    "metrics.json",
+    "checksums.json",
+    "status.json"
+  ],
+  "source_variants": "benchmarks/crebbp/benchmark_table.tsv",
+  "score_reference": "benchmarks/crebbp/score_reference.tsv",
+  "sequence_source": "benchmarks/crebbp/sequence_reference.fasta",
+  "source_bundle": "New Notebooks/results/13_block13_multitarget_generalization_closure_h100"
+}

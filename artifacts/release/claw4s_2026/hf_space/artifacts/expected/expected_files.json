@@ -1,4 +1,29 @@
 {
+  "_meta": {
+    "canonical_executable_replay_surfaces": [
+      "TP53"
+    ],
+    "auxiliary_bounded_executable_surfaces": [
+      "BRCA1_transfer100"
+    ],
+    "replay_ready_portability_surfaces": [
+      "TP53",
+      "BRCA2",
+      "TSC2",
+      "CREBBP"
+    ],
+    "transfer_positive_targets": [
+      "TSC2",
+      "CREBBP"
+    ],
+    "negative_guardrails": [
+      "BRCA1",
+      "MSH2"
+    ],
+    "earlier_harsh_firewall_chain_status": "supportive_not_nuclear",
+    "final_holdout_control_closure_status": "mixed",
+    "note": "Canonical and transfer contracts remain intact. Replay target bundles add bounded frozen outputs for BRCA2, TSC2, and CREBBP without promoting them to default executable anchors."
+  },
   "canonical_run": [
     "run_metadata.json",
     "inputs_manifest.json",
@@ -14,9 +39,32 @@
     "variants.json",
     "manifest.json"
   ],
+  "replay_target_bundle": [
+    "summary.json",
+    "verification.json",
+    "provenance.json",
+    "manifest.json",
+    "metrics.json",
+    "checksums.json",
+    "status.json"
+  ],
+  "global_status_bundle": [
+    "status.json",
+    "stdout.log",
+    "stderr.log",
+    "command.txt"
+  ],
+  "diagnostic_status_bundle": [
+    "status.json",
+    "diagnosis.json",
+    "stdout.log",
+    "stderr.log",
+    "command.txt"
+  ],
   "release_bundle_root": [
     "README.md",
     "SKILL.md",
+    "claw_agent_guide.md",
     "docs/truth_contract.md",
     "docs/reproducibility.md",
     "benchmarks/manifests/checksums.json"
@@ -29,7 +77,8 @@
     "publish/hf_space/requirements.txt",
     "src/spectralbio",
     "benchmarks",
-    "artifacts/expected"
+    "artifacts/expected",
+    "schemas"
   ],
   "hf_dataset_publish": [
     "README.md",
@@ -43,7 +92,11 @@
     "benchmarks/manifests/tp53_canonical_manifest.json",
     "benchmarks/manifests/brca1_transfer_manifest.json",
     "benchmarks/manifests/source_snapshot.json",
-    "benchmarks/manifests/checksums.json"
+    "benchmarks/manifests/checksums.json",
+    "benchmarks/benchmark_registry.json",
+    "benchmarks/brca2",
+    "benchmarks/tsc2",
+    "benchmarks/crebbp"
   ],
   "dataset_publish": [
     "publish/hf_dataset/README.md",

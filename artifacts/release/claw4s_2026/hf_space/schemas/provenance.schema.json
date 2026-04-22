@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "target",
+    "benchmark_role",
+    "source_label",
+    "generated_at",
+    "generated_by_command",
+    "model_identifiers",
+    "seed_values",
+    "inputs",
+    "assumptions"
+  ],
+  "properties": {
+    "target": { "type": "string" },
+    "benchmark_role": { "type": "string" },
+    "source_label": { "type": "string" },
+    "generated_at": { "type": "string" },
+    "generated_by_command": { "type": "string" },
+    "git_commit_hash": { "type": ["string", "null"] },
+    "uv_lock_hash": { "type": ["string", "null"] },
+    "output_dir": { "type": "string" },
+    "model_identifiers": { "type": "array", "items": { "type": "string" } },
+    "seed_values": { "type": "object" },
+    "inputs": { "type": "array", "items": { "type": "object" } },
+    "assumptions": { "type": "object" }
+  }
+}

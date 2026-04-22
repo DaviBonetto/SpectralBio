@@ -1,0 +1,5 @@
+benchmark: TSC2
+role: replay_ready_transfer_surface
+variants_path: benchmarks/tsc2/benchmark_table.tsv
+scores_path: benchmarks/tsc2/score_reference.tsv
+output_dir: outputs/replay/tsc2
