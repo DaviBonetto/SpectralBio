@@ -396,26 +396,26 @@ TP53 gives that claim its public validation anchor. BRCA2 gives it its flagship 
 
 | Surface | Role |
 |---|---|
-| Repository root | Primary code and manuscript surface |
-| TP53 canonical `summary.json` | Machine-readable validation-anchor metric surface |
-| TP53 canonical `verification.json` | Machine-checkable replay and artifact verification surface |
-| Truth contract | Claim boundary and precedence contract |
-| Reproducibility notes | Canonical execution and verification semantics |
-| Campaign manifest notebook | Campaign provenance and cache preparation |
-| Baseline/alpha audit notebook | Stronger-baseline framing for BRCA2, TP53, and MSH2 |
-| Failure-mode notebook | Discovery of the scale-repair regime |
-| Cross-model notebook v2 | Family-bounded cross-model audit |
-| Structure-bridge notebook | Early bounded bridge from covariance to structure |
-| Clinical-panel notebook | Performance-blind bounded breadth and rescue prioritization |
-| Structural dissociation notebook | Final TP53 structural readout |
-| Rescue gallery notebook | Reviewer-facing rescue gallery plus explicit anti-case |
-| Rulebook notebook | Bounded operating-regime condensation |
-| Orthogonal TP53 notebook | Portable-rule test on a fresh TP53 surface |
-| Multifamily notebook | Earlier coverage-aware supportive-not-nuclear breadth audit |
-| Covariance adjudication notebook | Covariance-native adjudication under stricter firewalls |
-| Final localization notebook | Earlier localization pass and supportive stopping point |
-| Multi-target portability notebook | Replay-ready multi-target portability across TP53, BRCA2, TSC2, and CREBBP |
-| Holdout/control tribunal notebook | Final harsh closure tribunal that remains mixed |
-| Dataset | Public data surface for the study |
-| Demo Space | Interactive public demonstration surface |
-| SKILL | Cold-start reproduction and project-operating contract |
+| [Repository root](https://github.com/DaviBonetto/SpectralBio/tree/codex/claw4s-rebuild) | Primary code and manuscript surface |
+| [TP53 canonical `summary.json`](https://github.com/DaviBonetto/SpectralBio/blob/codex/claw4s-rebuild/outputs/canonical/summary.json) | Machine-readable validation-anchor metric surface |
+| [TP53 canonical `verification.json`](https://github.com/DaviBonetto/SpectralBio/blob/codex/claw4s-rebuild/outputs/canonical/verification.json) | Machine-checkable replay and artifact verification surface |
+| [Truth contract](https://github.com/DaviBonetto/SpectralBio/blob/codex/claw4s-rebuild/docs/truth_contract.md) | Claim boundary and precedence contract |
+| [Reproducibility notes](https://github.com/DaviBonetto/SpectralBio/blob/codex/claw4s-rebuild/docs/reproducibility.md) | Canonical execution and verification semantics |
+| [Campaign manifest notebook](https://github.com/DaviBonetto/SpectralBio/blob/codex/claw4s-rebuild/New%20Notebooks/00_campaign_manifest_and_cache_prep_T4.ipynb) | Campaign provenance and cache preparation |
+| [Baseline/alpha audit notebook](https://github.com/DaviBonetto/SpectralBio/blob/codex/claw4s-rebuild/New%20Notebooks/01_block1_baseline_alpha_regime_audit_h100.ipynb) | Stronger-baseline framing for BRCA2, TP53, and MSH2 |
+| [Failure-mode notebook](https://github.com/DaviBonetto/SpectralBio/blob/codex/claw4s-rebuild/New%20Notebooks/02_block2_failure_mode_hunt_h100.ipynb) | Discovery of the scale-repair regime |
+| [Cross-model notebook v2](https://github.com/DaviBonetto/SpectralBio/blob/codex/claw4s-rebuild/New%20Notebooks/03_block4_model_agnostic_plms_h100_v2.ipynb) | Family-bounded cross-model audit |
+| [Structure-bridge notebook](https://github.com/DaviBonetto/SpectralBio/blob/codex/claw4s-rebuild/New%20Notebooks/05_block3_structure_bridge_h100.ipynb) | Early bounded bridge from covariance to structure |
+| [Clinical-panel notebook](https://github.com/DaviBonetto/SpectralBio/blob/codex/claw4s-rebuild/New%20Notebooks/06_block5_clinical_panel_audit_h100.ipynb) | Performance-blind bounded breadth and rescue prioritization |
+| [Structural dissociation notebook](https://github.com/DaviBonetto/SpectralBio/blob/codex/claw4s-rebuild/New%20Notebooks/07c_block10_structural_dissociation_tp53_h100.ipynb) | Final TP53 structural readout |
+| [Rescue gallery notebook](https://github.com/DaviBonetto/SpectralBio/blob/codex/claw4s-rebuild/New%20Notebooks/08_block7_turbo_gallery_rescues_h100.ipynb) | Reviewer-facing rescue gallery plus explicit anti-case |
+| [Rulebook notebook](https://github.com/DaviBonetto/SpectralBio/blob/codex/claw4s-rebuild/New%20Notebooks/11_block11_covariance_rulebook_h100.ipynb) | Bounded operating-regime condensation |
+| [Orthogonal TP53 notebook](https://github.com/DaviBonetto/SpectralBio/blob/codex/claw4s-rebuild/New%20Notebooks/12_block12_orthogonal_validation_tp53_h100.ipynb) | Portable-rule test on a fresh TP53 surface |
+| [Multifamily notebook](https://github.com/DaviBonetto/SpectralBio/blob/codex/claw4s-rebuild/New%20Notebooks/12b_block12_multifamily_coverage_aware_generalization_h100.ipynb) | Earlier coverage-aware supportive-not-nuclear breadth audit |
+| [Covariance adjudication notebook](https://github.com/DaviBonetto/SpectralBio/blob/codex/claw4s-rebuild/New%20Notebooks/12c_block12_covariance_adjudication_structural_closure_h100.ipynb) | Covariance-native adjudication under stricter firewalls |
+| [Final localization notebook](https://github.com/DaviBonetto/SpectralBio/blob/codex/claw4s-rebuild/New%20Notebooks/12d_block12_final_nuclear_localization_h100.ipynb) | Earlier localization pass and supportive stopping point |
+| [Multi-target portability notebook](https://github.com/DaviBonetto/SpectralBio/blob/codex/claw4s-rebuild/New%20Notebooks/13_block13_multitarget_generalization_closure_h100.ipynb) | Replay-ready multi-target portability across TP53, BRCA2, TSC2, and CREBBP |
+| [Holdout/control tribunal notebook](https://github.com/DaviBonetto/SpectralBio/blob/codex/claw4s-rebuild/New%20Notebooks/14_block14_holdout_control_closure_h100.ipynb) | Final harsh closure tribunal that remains mixed |
+| [Dataset](https://github.com/DaviBonetto/SpectralBio/tree/codex/claw4s-rebuild/artifacts/release/claw4s_2026/hf_dataset) | Public data surface for the study |
+| [Demo Space](https://github.com/DaviBonetto/SpectralBio/tree/codex/claw4s-rebuild/artifacts/release/claw4s_2026/hf_space) | Interactive public demonstration surface |
+| [SKILL](https://github.com/DaviBonetto/SpectralBio/blob/codex/claw4s-rebuild/SKILL.md) | Cold-start reproduction and project-operating contract |
