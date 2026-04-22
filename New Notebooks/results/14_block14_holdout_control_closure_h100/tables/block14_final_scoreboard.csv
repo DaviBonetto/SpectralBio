@@ -1,6 +1,6 @@
 model_label,family_label,architecture_kind,covariance_native_rule_type,coverage_floor_pass,holdout_positive_model,positive_holdout_targets,negative_holdout_targets_triggered,negative_guardrail_clean,control_win_model,positive_targets_with_control_win,negative_targets_with_control_win,portable_protocol_ok,transfer_positive_model,closure_taxonomy
-ProtT5,prottrans,encoder_decoder,combined_confident,False,False,,,True,False,,,False,False,supportive_residual
-ProGen2-small,progen,causal_decoder,combined_confident,False,False,,,True,False,,,False,False,supportive_residual
-ESM2-650M,esm,masked_encoder,combined_confident,False,False,,,True,False,,,False,False,supportive_residual
-ESM2-150M,esm,masked_encoder,combined_confident,False,False,,,True,False,,,False,False,supportive_residual
-ESM-1v,esm_variant_specialist,masked_encoder,combined_confident,False,False,,,True,False,,,False,False,supportive_residual
+ProtT5,prottrans,encoder_decoder,pair_only,True,False,,,True,False,,,True,False,supportive_residual
+ProGen2-small,progen,causal_decoder,none,False,False,,,False,False,,,False,False,failed_negative_guardrail
+ESM2-650M,esm,masked_encoder,none,False,False,,,False,False,,,False,False,failed_negative_guardrail
+ESM2-150M,esm,masked_encoder,none,False,False,,,False,False,,,False,False,failed_negative_guardrail
+ESM-1v,esm_variant_specialist,masked_encoder,none,False,False,,,False,False,,,False,False,failed_negative_guardrail

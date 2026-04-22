@@ -91,6 +91,15 @@
           "items": {
             "type": "string"
           }
+        },
+        "surface_type": {
+          "type": "string"
+        },
+        "claim_class": {
+          "type": "string"
+        },
+        "default_executable": {
+          "type": "boolean"
         }
       }
     },
@@ -159,6 +168,15 @@
         },
         "scope_note": {
           "type": "string"
+        },
+        "surface_type": {
+          "type": "string"
+        },
+        "claim_class": {
+          "type": "string"
+        },
+        "default_executable": {
+          "type": "boolean"
         }
       }
     },
@@ -174,6 +192,47 @@
         "secondary_claim",
         "artifacts"
       ]
+    },
+    "surface_taxonomy": {
+      "type": "object",
+      "properties": {
+        "canonical_executable_replay_surfaces": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "auxiliary_bounded_executable_surfaces": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "replay_ready_portability_surfaces": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "transfer_positive_target_surfaces": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "negative_guardrails": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "earlier_harsh_firewall_chain_status": {
+          "type": "string"
+        },
+        "final_holdout_control_closure_status": {
+          "type": "string"
+        }
+      }
     }
   }
 }
