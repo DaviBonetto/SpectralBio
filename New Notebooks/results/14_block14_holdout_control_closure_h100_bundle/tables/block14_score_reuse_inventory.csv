@@ -1,0 +1,29 @@
+gene,model_label,reuse_kind,reuse_source,status
+TP53,ProtT5,exact_live_score,C:\Users\Davib\OneDrive\Área de Trabalho\Stanford-Claw4s\New Notebooks\results\12b_block12_multifamily_coverage_aware_generalization_h100\live_scores\Rostlab_prot_t5_xl_half_uniref50_enc\tp53_Rostlab_prot_t5_xl_half_uniref50_enc_scores.csv,reused
+TSC2,ProtT5,none,,missing_under_skip_live
+CREBBP,ProtT5,none,,missing_under_skip_live
+BRCA1,ProtT5,none,,missing_under_skip_live
+MSH2,ProtT5,none,,missing_under_skip_live
+TP53,ProGen2-small,exact_live_score,C:\Users\Davib\OneDrive\Área de Trabalho\Stanford-Claw4s\New Notebooks\results\12b_block12_multifamily_coverage_aware_generalization_h100\live_scores\hugohrban_progen2_small\tp53_hugohrban_progen2_small_scores.csv,reused
+TSC2,ProGen2-small,none,,missing_under_skip_live
+CREBBP,ProGen2-small,none,,missing_under_skip_live
+BRCA1,ProGen2-small,none,,missing_under_skip_live
+MSH2,ProGen2-small,none,,missing_under_skip_live
+TP53,ESM2-650M,exact_live_score,C:\Users\Davib\OneDrive\Área de Trabalho\Stanford-Claw4s\New Notebooks\results\12b_block12_multifamily_coverage_aware_generalization_h100\live_scores\facebook_esm2_t33_650M_UR50D\tp53_facebook_esm2_t33_650M_UR50D_scores.csv,reused
+TSC2,ESM2-650M,none,,missing_under_skip_live
+CREBBP,ESM2-650M,none,,missing_under_skip_live
+BRCA1,ESM2-650M,none,,missing_under_skip_live
+MSH2,ESM2-650M,none,,missing_under_skip_live
+BRCA2,ESM2-650M,none,,missing_under_skip_live
+TP53,ESM2-150M,exact_live_score,C:\Users\Davib\OneDrive\Área de Trabalho\Stanford-Claw4s\New Notebooks\results\12b_block12_multifamily_coverage_aware_generalization_h100\live_scores\facebook_esm2_t30_150M_UR50D\tp53_facebook_esm2_t30_150M_UR50D_scores.csv,reused
+TSC2,ESM2-150M,aggregate_table,block13_multitarget_model_variant_scores.csv,reused
+CREBBP,ESM2-150M,aggregate_table,block13_multitarget_model_variant_scores.csv,reused
+BRCA1,ESM2-150M,aggregate_table,block13_multitarget_model_variant_scores.csv,reused
+MSH2,ESM2-150M,aggregate_table,block13_multitarget_model_variant_scores.csv,reused
+BRCA2,ESM2-150M,aggregate_table,block13_multitarget_model_variant_scores.csv,reused
+TP53,ESM-1v,exact_live_score,C:\Users\Davib\OneDrive\Área de Trabalho\Stanford-Claw4s\New Notebooks\results\12b_block12_multifamily_coverage_aware_generalization_h100\live_scores\facebook_esm1v_t33_650M_UR90S_1\tp53_facebook_esm1v_t33_650M_UR90S_1_scores.csv,reused
+TSC2,ESM-1v,none,,missing_under_skip_live
+CREBBP,ESM-1v,none,,missing_under_skip_live
+BRCA1,ESM-1v,none,,missing_under_skip_live
+MSH2,ESM-1v,none,,missing_under_skip_live
+BRCA2,ESM-1v,none,,missing_under_skip_live

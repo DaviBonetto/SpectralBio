@@ -1,0 +1,1 @@
+Block 14 repairs the two invalid closure firewalls from Block 13 by rebuilding holdout on full labeled replay surfaces and by evaluating covariance-native rules against repaired alternative controls without self-comparison. Even after repairing the firewalls, no model satisfied the combined holdout and control-win closure criteria without breaking negative guardrails.

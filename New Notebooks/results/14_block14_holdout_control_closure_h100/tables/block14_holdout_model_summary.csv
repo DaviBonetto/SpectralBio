@@ -1,0 +1,6 @@
+model_label,family_label,architecture_kind,positive_holdout_targets,negative_holdout_targets_triggered,holdout_positive_model,negative_guardrail_clean,reason
+ProtT5,prottrans,encoder_decoder,,,False,True,No positive holdout passed or a negative guardrail triggered.
+ProGen2-small,progen,causal_decoder,,,False,True,No positive holdout passed or a negative guardrail triggered.
+ESM2-650M,esm,masked_encoder,,,False,True,No positive holdout passed or a negative guardrail triggered.
+ESM2-150M,esm,masked_encoder,,,False,True,No positive holdout passed or a negative guardrail triggered.
+ESM-1v,esm_variant_specialist,masked_encoder,,,False,True,No positive holdout passed or a negative guardrail triggered.

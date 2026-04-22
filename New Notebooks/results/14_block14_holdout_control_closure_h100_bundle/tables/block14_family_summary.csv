@@ -1,0 +1,5 @@
+family_label,n_models,holdout_positive_models,control_win_models,transfer_positive_models
+esm,2,0,0,0
+esm_variant_specialist,1,0,0,0
+progen,1,0,0,0
+prottrans,1,0,0,0
