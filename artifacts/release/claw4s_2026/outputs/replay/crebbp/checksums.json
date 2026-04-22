@@ -1,0 +1,9 @@
+{
+  "base_dir": "outputs/replay/crebbp",
+  "sha256": {
+    "summary.json": "1fd176fb1594516974478168194a26fcf23591bdd662b888a8335edfdfb6350b",
+    "manifest.json": "376150ad68fd41c97feca7c0050432aa819fb152e06b9293f2f36628f0371323",
+    "metrics.json": "af1f620d4214d488b60cb72d8436b222ca8351264e472d117eb6e8b0938800dd",
+    "provenance.json": "14bcb25ae41364664b75c60d573ecbe1f75fffedfdd20782647cc8bcb58876ac"
+  }
+}

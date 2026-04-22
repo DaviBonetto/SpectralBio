@@ -1,0 +1,5 @@
+benchmark: CREBBP
+role: replay_ready_transfer_surface
+variants_path: benchmarks/crebbp/benchmark_table.tsv
+scores_path: benchmarks/crebbp/score_reference.tsv
+output_dir: outputs/replay/crebbp

@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from pathlib import Path
+import shutil
 from typing import Any
 
 from spectralbio.configs import load_tp53_config
@@ -51,6 +52,11 @@ def _validate_config() -> None:
 def run(output_dir: Path) -> dict[str, Any]:
     _validate_config()
     ensure_dir(output_dir)
+    for child in output_dir.iterdir():
+        if child.is_dir():
+            shutil.rmtree(child)
+        else:
+            child.unlink()
 
     variants = load_tp53_variants()
     scores = load_tp53_scores()

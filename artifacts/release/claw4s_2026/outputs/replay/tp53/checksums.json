@@ -1,0 +1,11 @@
+{
+  "base_dir": "outputs/replay/tp53",
+  "sha256": {
+    "summary.json": "218ca9a337a73836aa026f1a70ab8f0ddb27d322e7aa9c12c33d29511623e23f",
+    "manifest.json": "e6ab273a399f0852bd974f0930c5f0c8ec4193617ac48fec5ec6540dd7d1f48e",
+    "metrics.json": "b09c3c664c6e48fc841111ed1ac0d06f53bc71d9daf2c047ff8c788457610ffa",
+    "provenance.json": "23e2507405966a8141ef650ff527dd0cfe79641b83e50bf802fdd6615046030b",
+    "run_metadata.json": "5fd927ca860e7bc381ee45e2c3d160d84c4db7d280c9ec1954cc997a5b1270fe",
+    "roc_tp53.png": "b49946d25a12b601badb4e39833ca9fc3f74e776a7f156952ab628fd84761c7a"
+  }
+}

@@ -1,4 +1,35 @@
 {
+  "_meta": {
+    "canonical_executable_replay_surfaces": [
+      "TP53"
+    ],
+    "auxiliary_bounded_executable_surfaces": [
+      "BRCA1_transfer100"
+    ],
+    "replay_ready_portability_surfaces": [
+      "TP53",
+      "BRCA2",
+      "TSC2",
+      "CREBBP"
+    ],
+    "transfer_positive_targets": [
+      "TSC2",
+      "CREBBP"
+    ],
+    "replay_target_bundle_roles": {
+      "TP53": "validation_anchor",
+      "BRCA2": "flagship_non_anchor_canonical_target",
+      "TSC2": "replay_ready_transfer_surface",
+      "CREBBP": "replay_ready_transfer_surface"
+    },
+    "negative_guardrails": [
+      "BRCA1",
+      "MSH2"
+    ],
+    "earlier_harsh_firewall_chain_status": "supportive_not_nuclear",
+    "final_holdout_control_closure_status": "mixed",
+    "note": "TP53 remains the only default executable validation anchor. BRCA2, TSC2, and CREBBP are frozen replay surfaces with bounded roles, not new default anchors."
+  },
   "canonical": {
     "benchmark": "TP53",
     "n_total": 255,
@@ -13,5 +44,19 @@
     "n_total": 100,
     "ll_proper_auc": 0.9174,
     "wording": "bounded transfer on a fixed BRCA1 subset (N=100) without retraining"
+  },
+  "replay_targets": {
+    "BRCA2": {
+      "role": "flagship_non_anchor_canonical_target",
+      "n_total": 658
+    },
+    "TSC2": {
+      "role": "replay_ready_transfer_surface",
+      "n_total": 364
+    },
+    "CREBBP": {
+      "role": "replay_ready_transfer_surface",
+      "n_total": 298
+    }
   }
 }

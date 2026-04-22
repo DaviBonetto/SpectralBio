@@ -1,0 +1,5 @@
+benchmark: BRCA2
+role: flagship_non_anchor_canonical_target
+variants_path: benchmarks/brca2/benchmark_table.tsv
+scores_path: benchmarks/brca2/score_reference.tsv
+output_dir: outputs/replay/brca2

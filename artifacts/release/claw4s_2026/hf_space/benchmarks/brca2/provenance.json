@@ -1,0 +1,13 @@
+{
+  "target": "BRCA2",
+  "source_label": "block1_brca2_augmentation_bundle",
+  "source_paths": [
+    "New Notebooks/results/01_block1_baseline_alpha_regime_audit_h100/runtime/esm1v_augmentation/brca2/augmentation_summary.json",
+    "New Notebooks/results/01_block1_baseline_alpha_regime_audit_h100/runtime/esm1v_augmentation/esm1v_permutation_audit_summary.json",
+    "New Notebooks/results/01_block1_baseline_alpha_regime_audit_h100/runtime/multigene/brca2_clinvar_variants.json"
+  ],
+  "model_identifiers": [
+    "facebook/esm2_t30_150M_UR50D",
+    "facebook/esm1v_t33_650M_UR90S_ensemble_mean"
+  ]
+}

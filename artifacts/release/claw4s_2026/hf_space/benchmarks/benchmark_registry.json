@@ -1,0 +1,60 @@
+{
+  "targets": [
+    {
+      "target": "TP53",
+      "role_label": "validation_anchor",
+      "replay_ready": true,
+      "default_executable": true,
+      "transfer_positive": false,
+      "source_label": "tp53_canonical_bundle"
+    },
+    {
+      "target": "BRCA2",
+      "role_label": "flagship_non_anchor_canonical_target",
+      "replay_ready": true,
+      "default_executable": false,
+      "transfer_positive": false,
+      "source_label": "block1_brca2_augmentation_bundle"
+    },
+    {
+      "target": "TSC2",
+      "role_label": "replay_ready_transfer_surface",
+      "replay_ready": true,
+      "default_executable": false,
+      "transfer_positive": true,
+      "source_label": "block13_multitarget_portability_bundle"
+    },
+    {
+      "target": "CREBBP",
+      "role_label": "replay_ready_transfer_surface",
+      "replay_ready": true,
+      "default_executable": false,
+      "transfer_positive": true,
+      "source_label": "block13_multitarget_portability_bundle"
+    },
+    {
+      "target": "BRCA1",
+      "role_label": "negative_guardrail",
+      "replay_ready": false,
+      "default_executable": false,
+      "transfer_positive": false,
+      "source_label": "bounded_auxiliary_transfer_and_guardrail"
+    },
+    {
+      "target": "MSH2",
+      "role_label": "negative_guardrail",
+      "replay_ready": false,
+      "default_executable": false,
+      "transfer_positive": false,
+      "source_label": "negative_guardrail_bundle"
+    },
+    {
+      "target": "HOLDOUT_CONTROL",
+      "role_label": "closure_tribunal_surface",
+      "replay_ready": false,
+      "default_executable": false,
+      "transfer_positive": false,
+      "source_label": "block14_holdout_control_bundle"
+    }
+  ]
+}

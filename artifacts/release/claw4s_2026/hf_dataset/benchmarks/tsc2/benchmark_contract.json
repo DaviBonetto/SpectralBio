@@ -1,0 +1,16 @@
+{
+  "target": "TSC2",
+  "role": "replay_ready_transfer_surface",
+  "contract_kind": "frozen_replay_surface",
+  "summary_expected": "benchmarks/tsc2/summary.expected.json",
+  "verification_expected": "benchmarks/tsc2/verification.expected.json",
+  "required_artifacts": [
+    "summary.json",
+    "verification.json",
+    "provenance.json",
+    "manifest.json",
+    "metrics.json",
+    "checksums.json",
+    "status.json"
+  ]
+}

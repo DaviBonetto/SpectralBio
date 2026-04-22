@@ -1,0 +1,72 @@
+{
+  "target": "TSC2",
+  "benchmark_role": "replay_ready_transfer_surface",
+  "source_label": "block13_multitarget_portability_bundle",
+  "generated_at": "2026-04-22T19:49:54.440688+00:00",
+  "generated_by_command": "spectralbio replay --target tsc2",
+  "git_commit_hash": "f7a30db9cff3bc6eaed2ab82135fce6dd610525c",
+  "uv_lock_hash": "bc5a2c7c0490bcb80a58eebdd9d51ea542181bc42b5e38abc595dfb97677e364",
+  "output_dir": "outputs/replay/tsc2",
+  "model_identifiers": [
+    "ESM2-650M",
+    "ProtT5",
+    "ESM-1v"
+  ],
+  "seed_values": {
+    "global_seed": 42
+  },
+  "inputs": [
+    {
+      "path": "benchmarks/tsc2/benchmark_contract.json",
+      "sha256": "fba9c646597ea48e125e04d91389fe3749c9cdab07af3678ae94989a3c8887a3"
+    },
+    {
+      "path": "benchmarks/tsc2/benchmark_table.tsv",
+      "sha256": "a91a52ddf81a38e8590ea509d7b00a894efe6b47d9b404d63c5c5aebab71e5fe"
+    },
+    {
+      "path": "benchmarks/tsc2/checksums.json",
+      "sha256": "9ee77faebb8c1b7cd19b49658b21001985116d14669b6e6f4fc92c5f08e39eac"
+    },
+    {
+      "path": "benchmarks/tsc2/manifest.json",
+      "sha256": "dc521216a0907b696fdefdd363d9689b6034563d585878109eddeacf97d7d3a7"
+    },
+    {
+      "path": "benchmarks/tsc2/metrics.expected.json",
+      "sha256": "84e09155c11ffad57c0e5d5cfde2dc4a793403582819313f5e4de168b30976b5"
+    },
+    {
+      "path": "benchmarks/tsc2/provenance.json",
+      "sha256": "490de668585cdacfd816e2e5b91e908ae3a9f64f475ac5f0d52dcb97f723d8b7"
+    },
+    {
+      "path": "benchmarks/tsc2/score_reference.tsv",
+      "sha256": "f0466add3ded9480bc8e69e129f55c74d2c38edae6d75566c9eca84ffa4430cf"
+    },
+    {
+      "path": "benchmarks/tsc2/sequence_reference.fasta",
+      "sha256": "816340466ece6740ad2e80ca2c9ee1098c25dcc310ccd45836143b78b76eacce"
+    },
+    {
+      "path": "benchmarks/tsc2/summary.expected.json",
+      "sha256": "9dbcbde8a11c72a10a7566dd638b0c237c7432a1a48c4b84bb2a4ddc89dc6b05"
+    },
+    {
+      "path": "benchmarks/tsc2/verification.expected.json",
+      "sha256": "b3ae41b83d24794523351cd1e0debfc3c40864091185b0327c244297c85c7786"
+    }
+  ],
+  "assumptions": {
+    "offline_replay_supported": true,
+    "cpu_only_supported": true
+  },
+  "target_metadata": {
+    "target": "TSC2",
+    "role_label": "replay_ready_transfer_surface",
+    "replay_ready": true,
+    "default_executable": false,
+    "transfer_positive": true,
+    "source_label": "block13_multitarget_portability_bundle"
+  }
+}

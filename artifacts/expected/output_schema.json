@@ -10,7 +10,8 @@
     "canonical_manifest",
     "canonical_verification",
     "transfer_summary",
-    "transfer_manifest"
+    "transfer_manifest",
+    "surface_taxonomy"
   ],
   "properties": {
     "canonical_run_metadata": {
@@ -195,6 +196,15 @@
     },
     "surface_taxonomy": {
       "type": "object",
+      "required": [
+        "canonical_executable_replay_surfaces",
+        "auxiliary_bounded_executable_surfaces",
+        "replay_ready_portability_surfaces",
+        "transfer_positive_target_surfaces",
+        "negative_guardrails",
+        "earlier_harsh_firewall_chain_status",
+        "final_holdout_control_closure_status"
+      ],
       "properties": {
         "canonical_executable_replay_surfaces": {
           "type": "array",
@@ -233,6 +243,40 @@
           "type": "string"
         }
       }
+    },
+    "replay_target_summary": {
+      "type": "object",
+      "required": [
+        "benchmark",
+        "role",
+        "command",
+        "source_variants",
+        "n_total",
+        "metrics",
+        "artifacts"
+      ]
+    },
+    "global_status_bundle": {
+      "type": "object",
+      "required": [
+        "command",
+        "status",
+        "exit_code",
+        "mode",
+        "surface_role",
+        "started_at",
+        "finished_at",
+        "duration_seconds",
+        "offline",
+        "cpu_only",
+        "artifacts_used",
+        "artifacts_emitted",
+        "checks_performed",
+        "metrics",
+        "warnings",
+        "next_action",
+        "details"
+      ]
     }
   }
 }

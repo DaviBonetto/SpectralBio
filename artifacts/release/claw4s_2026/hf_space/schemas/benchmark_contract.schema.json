@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "target",
+    "role",
+    "contract_kind",
+    "summary_expected",
+    "verification_expected",
+    "required_artifacts"
+  ],
+  "properties": {
+    "target": { "type": "string" },
+    "role": { "type": "string" },
+    "contract_kind": { "type": "string" },
+    "summary_expected": { "type": "string" },
+    "verification_expected": { "type": "string" },
+    "required_artifacts": { "type": "array", "items": { "type": "string" } }
+  }
+}

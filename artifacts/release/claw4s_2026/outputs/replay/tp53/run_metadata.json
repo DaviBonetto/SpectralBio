@@ -1,0 +1,9 @@
+{
+  "benchmark": "TP53",
+  "mode": "canonical",
+  "seed": 42,
+  "model_name": "facebook/esm2_t30_150M_UR50D",
+  "score_formula": "0.55*frob_dist + 0.45*ll_proper",
+  "command": "spectralbio canonical",
+  "config_path": "configs/tp53_canonical.yaml"
+}

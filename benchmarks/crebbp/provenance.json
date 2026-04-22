@@ -1,0 +1,13 @@
+{
+  "target": "CREBBP",
+  "source_label": "block13_multitarget_portability_bundle",
+  "source_paths": [
+    "New Notebooks/results/13_block13_multitarget_generalization_closure_h100/tables/replay_target_manifest.csv",
+    "New Notebooks/results/13_block13_multitarget_generalization_closure_h100/tables/replay_target_panels.csv",
+    "New Notebooks/results/13_block13_multitarget_generalization_closure_h100/tables/multitarget_model_variant_scores.csv",
+    "New Notebooks/results/13_block13_multitarget_generalization_closure_h100/tables/transfer_closure_summary.csv"
+  ],
+  "model_identifiers": [
+    "ESM2-150M"
+  ]
+}

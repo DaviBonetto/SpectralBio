@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["benchmark", "role", "command", "artifacts", "metrics"],
+  "properties": {
+    "benchmark": { "type": "string" },
+    "role": { "type": "string" },
+    "command": { "type": "string" },
+    "artifacts": { "type": "array", "items": { "type": "string" } },
+    "metrics": { "type": "object" }
+  }
+}

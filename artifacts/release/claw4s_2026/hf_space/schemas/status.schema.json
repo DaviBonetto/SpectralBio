@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "command",
+    "status",
+    "exit_code",
+    "mode",
+    "surface_role",
+    "started_at",
+    "finished_at",
+    "duration_seconds",
+    "offline",
+    "cpu_only",
+    "artifacts_used",
+    "artifacts_emitted",
+    "checks_performed",
+    "metrics",
+    "warnings",
+    "next_action",
+    "details"
+  ],
+  "properties": {
+    "command": { "type": "string" },
+    "status": { "type": "string" },
+    "exit_code": { "type": "integer" },
+    "mode": { "type": "string" },
+    "target": { "type": ["string", "null"] },
+    "surface_role": { "type": "string" },
+    "started_at": { "type": "string" },
+    "finished_at": { "type": "string" },
+    "duration_seconds": { "type": "number" },
+    "offline": { "type": "boolean" },
+    "cpu_only": { "type": "boolean" },
+    "artifacts_used": { "type": "array", "items": { "type": "string" } },
+    "artifacts_emitted": { "type": "array", "items": { "type": "string" } },
+    "checks_performed": { "type": "array", "items": { "type": "string" } },
+    "metrics": { "type": "object" },
+    "warnings": { "type": "array", "items": { "type": "string" } },
+    "next_action": { "type": "string" },
+    "details": { "type": "object" }
+  }
+}

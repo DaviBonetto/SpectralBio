@@ -5,7 +5,13 @@ from __future__ import annotations
 from pathlib import Path
 from typing import Any
 
-from spectralbio.constants import BRCA1_TRANSFER_CONFIG_PATH, TP53_CONFIG_PATH
+from spectralbio.constants import (
+    BRCA1_TRANSFER_CONFIG_PATH,
+    BRCA2_REPLAY_CONFIG_PATH,
+    CREBBP_REPLAY_CONFIG_PATH,
+    TP53_CONFIG_PATH,
+    TSC2_REPLAY_CONFIG_PATH,
+)
 
 
 def load_yaml(path: Path) -> dict[str, Any]:
@@ -27,3 +33,15 @@ def load_tp53_config() -> dict[str, Any]:
 
 def load_brca1_transfer_config() -> dict[str, Any]:
     return load_yaml(BRCA1_TRANSFER_CONFIG_PATH)
+
+
+def load_brca2_replay_config() -> dict[str, Any]:
+    return load_yaml(BRCA2_REPLAY_CONFIG_PATH)
+
+
+def load_tsc2_replay_config() -> dict[str, Any]:
+    return load_yaml(TSC2_REPLAY_CONFIG_PATH)
+
+
+def load_crebbp_replay_config() -> dict[str, Any]:
+    return load_yaml(CREBBP_REPLAY_CONFIG_PATH)

@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "checks": {
+    "summary_present": true,
+    "manifest_present": true,
+    "metrics_present": true,
+    "provenance_present": true,
+    "schema_validation": true,
+    "checksum_validation": true,
+    "benchmark_matches_manifest": true,
+    "metrics_nonempty": true
+  },
+  "errors": [],
+  "target": "tp53",
+  "role": "validation_anchor"
+}

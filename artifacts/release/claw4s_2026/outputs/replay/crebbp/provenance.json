@@ -1,0 +1,72 @@
+{
+  "target": "CREBBP",
+  "benchmark_role": "replay_ready_transfer_surface",
+  "source_label": "block13_multitarget_portability_bundle",
+  "generated_at": "2026-04-22T19:49:54.540035+00:00",
+  "generated_by_command": "spectralbio replay --target crebbp",
+  "git_commit_hash": "f7a30db9cff3bc6eaed2ab82135fce6dd610525c",
+  "uv_lock_hash": "bc5a2c7c0490bcb80a58eebdd9d51ea542181bc42b5e38abc595dfb97677e364",
+  "output_dir": "outputs/replay/crebbp",
+  "model_identifiers": [
+    "ProtT5",
+    "ESM2-650M",
+    "ESM-1v"
+  ],
+  "seed_values": {
+    "global_seed": 42
+  },
+  "inputs": [
+    {
+      "path": "benchmarks/crebbp/benchmark_contract.json",
+      "sha256": "62339ca0fdf2811478e354f49dfb526814fb65de0de4d2cacf6ed051e69b6d7d"
+    },
+    {
+      "path": "benchmarks/crebbp/benchmark_table.tsv",
+      "sha256": "0d71e34ef3bb3000887f995dba487d9655bd0cc66e401bbfdef5b832add7f0a4"
+    },
+    {
+      "path": "benchmarks/crebbp/checksums.json",
+      "sha256": "a4e5de8032b84387262b8369969d19e71ee369299681b914257462a0c487d0b8"
+    },
+    {
+      "path": "benchmarks/crebbp/manifest.json",
+      "sha256": "376150ad68fd41c97feca7c0050432aa819fb152e06b9293f2f36628f0371323"
+    },
+    {
+      "path": "benchmarks/crebbp/metrics.expected.json",
+      "sha256": "af1f620d4214d488b60cb72d8436b222ca8351264e472d117eb6e8b0938800dd"
+    },
+    {
+      "path": "benchmarks/crebbp/provenance.json",
+      "sha256": "2e327dbde68c32138bdc0f2299b33d528d3c0e0e177a582d2082acd77e1fda40"
+    },
+    {
+      "path": "benchmarks/crebbp/score_reference.tsv",
+      "sha256": "12be846df6da42dab97edb96ec819465b84507e2f9f8993fd82426ea43d133e2"
+    },
+    {
+      "path": "benchmarks/crebbp/sequence_reference.fasta",
+      "sha256": "36e1b744a8f26fe91fe76e625d05f7bf368fb0130ab9131046649608dfba6549"
+    },
+    {
+      "path": "benchmarks/crebbp/summary.expected.json",
+      "sha256": "1fd176fb1594516974478168194a26fcf23591bdd662b888a8335edfdfb6350b"
+    },
+    {
+      "path": "benchmarks/crebbp/verification.expected.json",
+      "sha256": "b3ae41b83d24794523351cd1e0debfc3c40864091185b0327c244297c85c7786"
+    }
+  ],
+  "assumptions": {
+    "offline_replay_supported": true,
+    "cpu_only_supported": true
+  },
+  "target_metadata": {
+    "target": "CREBBP",
+    "role_label": "replay_ready_transfer_surface",
+    "replay_ready": true,
+    "default_executable": false,
+    "transfer_positive": true,
+    "source_label": "block13_multitarget_portability_bundle"
+  }
+}

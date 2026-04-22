@@ -1,0 +1,71 @@
+{
+  "target": "BRCA2",
+  "benchmark_role": "flagship_non_anchor_canonical_target",
+  "source_label": "block1_brca2_augmentation_bundle",
+  "generated_at": "2026-04-22T19:49:54.297916+00:00",
+  "generated_by_command": "spectralbio replay --target brca2",
+  "git_commit_hash": "f7a30db9cff3bc6eaed2ab82135fce6dd610525c",
+  "uv_lock_hash": "bc5a2c7c0490bcb80a58eebdd9d51ea542181bc42b5e38abc595dfb97677e364",
+  "output_dir": "outputs/replay/brca2",
+  "model_identifiers": [
+    "facebook/esm2_t30_150M_UR50D",
+    "facebook/esm1v_t33_650M_UR90S_ensemble_mean"
+  ],
+  "seed_values": {
+    "global_seed": 42
+  },
+  "inputs": [
+    {
+      "path": "benchmarks/brca2/benchmark_contract.json",
+      "sha256": "275b1a3ff42a4cbfb45580e3c873e2f7949cd1b64296d685d204fc83edac3c9b"
+    },
+    {
+      "path": "benchmarks/brca2/benchmark_table.tsv",
+      "sha256": "a349314ff1ff2b856aa1a9840132867b6e47c423603aadf3524cbf119d242bf9"
+    },
+    {
+      "path": "benchmarks/brca2/checksums.json",
+      "sha256": "adf757690f99ef5586204773bb06e5441ea0a6fd147789a7f133425d3796cd31"
+    },
+    {
+      "path": "benchmarks/brca2/manifest.json",
+      "sha256": "6e5f37c390e0f61cc8ac06060734b658534533af2bf73f5d95961b06b443fdb2"
+    },
+    {
+      "path": "benchmarks/brca2/metrics.expected.json",
+      "sha256": "3c344b1f603b8eee959a5167cb67de55d611e0a5bcee786e9992a493cfd3ee28"
+    },
+    {
+      "path": "benchmarks/brca2/provenance.json",
+      "sha256": "35435ed701812ec4fae76bc20304ef78f899edf016f3e04d04811c34028f42ee"
+    },
+    {
+      "path": "benchmarks/brca2/score_reference.tsv",
+      "sha256": "62a7af9e1b7a5e075b5ed77919234427db2b131e4d443f57eb07c4383817a193"
+    },
+    {
+      "path": "benchmarks/brca2/sequence_reference.fasta",
+      "sha256": "d7a38c0507ad39af0996c206b134514b0784d49eddd229cb88fd3185dc2f75bb"
+    },
+    {
+      "path": "benchmarks/brca2/summary.expected.json",
+      "sha256": "91a382aeec4e387398ee3f4b2902c2be3689cab7bfb4ce03e741490bfb494984"
+    },
+    {
+      "path": "benchmarks/brca2/verification.expected.json",
+      "sha256": "b3ae41b83d24794523351cd1e0debfc3c40864091185b0327c244297c85c7786"
+    }
+  ],
+  "assumptions": {
+    "offline_replay_supported": true,
+    "cpu_only_supported": true
+  },
+  "target_metadata": {
+    "target": "BRCA2",
+    "role_label": "flagship_non_anchor_canonical_target",
+    "replay_ready": true,
+    "default_executable": false,
+    "transfer_positive": false,
+    "source_label": "block1_brca2_augmentation_bundle"
+  }
+}

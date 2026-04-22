@@ -1,0 +1,9 @@
+{
+  "base_dir": "outputs/replay/brca2",
+  "sha256": {
+    "summary.json": "91a382aeec4e387398ee3f4b2902c2be3689cab7bfb4ce03e741490bfb494984",
+    "manifest.json": "6e5f37c390e0f61cc8ac06060734b658534533af2bf73f5d95961b06b443fdb2",
+    "metrics.json": "3c344b1f603b8eee959a5167cb67de55d611e0a5bcee786e9992a493cfd3ee28",
+    "provenance.json": "ecc9aee9598ddd58bb78dae8ee6cb3dec83a7b7f7f43058f0169fc7014e94d5f"
+  }
+}

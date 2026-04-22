@@ -10,7 +10,8 @@
     "canonical_manifest",
     "canonical_verification",
     "transfer_summary",
-    "transfer_manifest"
+    "transfer_manifest",
+    "surface_taxonomy"
   ],
   "properties": {
     "canonical_run_metadata": {
@@ -91,6 +92,15 @@
           "items": {
             "type": "string"
           }
+        },
+        "surface_type": {
+          "type": "string"
+        },
+        "claim_class": {
+          "type": "string"
+        },
+        "default_executable": {
+          "type": "boolean"
         }
       }
     },
@@ -159,6 +169,15 @@
         },
         "scope_note": {
           "type": "string"
+        },
+        "surface_type": {
+          "type": "string"
+        },
+        "claim_class": {
+          "type": "string"
+        },
+        "default_executable": {
+          "type": "boolean"
         }
       }
     },
@@ -173,6 +192,90 @@
         "expected_variant_count",
         "secondary_claim",
         "artifacts"
+      ]
+    },
+    "surface_taxonomy": {
+      "type": "object",
+      "required": [
+        "canonical_executable_replay_surfaces",
+        "auxiliary_bounded_executable_surfaces",
+        "replay_ready_portability_surfaces",
+        "transfer_positive_target_surfaces",
+        "negative_guardrails",
+        "earlier_harsh_firewall_chain_status",
+        "final_holdout_control_closure_status"
+      ],
+      "properties": {
+        "canonical_executable_replay_surfaces": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "auxiliary_bounded_executable_surfaces": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "replay_ready_portability_surfaces": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "transfer_positive_target_surfaces": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "negative_guardrails": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "earlier_harsh_firewall_chain_status": {
+          "type": "string"
+        },
+        "final_holdout_control_closure_status": {
+          "type": "string"
+        }
+      }
+    },
+    "replay_target_summary": {
+      "type": "object",
+      "required": [
+        "benchmark",
+        "role",
+        "command",
+        "source_variants",
+        "n_total",
+        "metrics",
+        "artifacts"
+      ]
+    },
+    "global_status_bundle": {
+      "type": "object",
+      "required": [
+        "command",
+        "status",
+        "exit_code",
+        "mode",
+        "surface_role",
+        "started_at",
+        "finished_at",
+        "duration_seconds",
+        "offline",
+        "cpu_only",
+        "artifacts_used",
+        "artifacts_emitted",
+        "checks_performed",
+        "metrics",
+        "warnings",
+        "next_action",
+        "details"
       ]
     }
   }

@@ -4,7 +4,9 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
+from time import sleep
 from typing import Any
+from uuid import uuid4
 
 from spectralbio.constants import PROJECT_ROOT
 
@@ -20,7 +22,9 @@ def read_json(path: Path) -> Any:
 
 def write_json(path: Path, data: Any) -> Path:
     ensure_dir(path.parent)
-    path.write_text(json.dumps(data, indent=2) + "\n", encoding="utf-8")
+    temp_path = path.parent / f"{path.name}.{uuid4().hex}.tmp"
+    temp_path.write_text(json.dumps(data, indent=2) + "\n", encoding="utf-8")
+    _replace_with_retry(temp_path, path)
     return path
 
 
@@ -30,12 +34,43 @@ def read_text(path: Path) -> str:
 
 def write_text(path: Path, content: str) -> Path:
     ensure_dir(path.parent)
-    path.write_text(content, encoding="utf-8")
+    temp_path = path.parent / f"{path.name}.{uuid4().hex}.tmp"
+    temp_path.write_text(content, encoding="utf-8")
+    _replace_with_retry(temp_path, path)
     return path
 
 
+def _replace_with_retry(temp_path: Path, target_path: Path) -> None:
+    for _ in range(5):
+        try:
+            temp_path.replace(target_path)
+            return
+        except PermissionError:
+            if target_path.exists():
+                try:
+                    target_path.unlink()
+                except PermissionError:
+                    sleep(0.05)
+                    continue
+                try:
+                    temp_path.replace(target_path)
+                    return
+                except PermissionError:
+                    sleep(0.05)
+                    continue
+            sleep(0.05)
+
+    target_path.write_text(temp_path.read_text(encoding="utf-8"), encoding="utf-8")
+    if temp_path.exists():
+        temp_path.unlink()
+
+
 def project_relpath(path: Path) -> str:
-    return path.resolve().relative_to(PROJECT_ROOT.resolve()).as_posix()
+    resolved = path.resolve()
+    try:
+        return resolved.relative_to(PROJECT_ROOT.resolve()).as_posix()
+    except ValueError:
+        return str(resolved)
 
 
 def read_tsv(path: Path) -> list[dict[str, str]]:

@@ -1,0 +1,33 @@
+{
+  "benchmark": "TSC2",
+  "role": "replay_ready_transfer_surface",
+  "command": "spectralbio replay --target tsc2",
+  "source_variants": "benchmarks/tsc2/benchmark_table.tsv",
+  "n_total": 364,
+  "metrics": {
+    "replay_ready": true,
+    "transfer_positive": true,
+    "near_transfer_positive": true,
+    "n_variants": 364,
+    "n_positive": 166,
+    "n_negative": 198,
+    "positive_witness_models": [
+      "ESM2-650M",
+      "ProtT5"
+    ],
+    "positive_witness_variants": [
+      "TSC2:N1563K",
+      "TSC2:G293R"
+    ]
+  },
+  "artifacts": [
+    "summary.json",
+    "verification.json",
+    "provenance.json",
+    "manifest.json",
+    "metrics.json",
+    "checksums.json",
+    "status.json"
+  ],
+  "claim_boundary": "TSC2 is a replay-ready transfer surface and not a flagship canonical validation anchor."
+}

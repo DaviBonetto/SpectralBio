@@ -16,6 +16,19 @@ def test_cli_exposes_expected_subcommands() -> None:
         "canonical",
         "transfer",
         "verify",
+        "verify-legacy",
+        "preflight",
+        "doctor",
+        "replay",
+        "replay-audit",
+        "stats-report",
+        "sensitivity",
+        "regenerate",
+        "reproduce-all",
+        "adapt",
+        "applicability",
+        "list-targets",
+        "explain-status",
         "export-hf-space",
         "export-hf-dataset",
         "release",
@@ -60,6 +73,20 @@ def test_verify_command_emits_json_and_passes_for_contract_compliant_outputs(tmp
     assert payload["transfer"]["status"] == "PASS"
 
 
+def test_verify_legacy_alias_preserves_original_contract(tmp_path: Path, capsys) -> None:
+    canonical_dir = tmp_path / "canonical"
+    transfer_dir = tmp_path / "transfer"
+
+    run_canonical(canonical_dir)
+    run_transfer(transfer_dir)
+
+    exit_code = main(["verify-legacy", "--canonical-dir", str(canonical_dir), "--transfer-dir", str(transfer_dir)])
+    payload = json.loads(capsys.readouterr().out)
+
+    assert exit_code == 0
+    assert payload["status"] == "PASS"
+
+
 def test_export_commands_stage_expected_files() -> None:
     hf_space = export_hf_space()
     hf_dataset = export_hf_dataset()
@@ -74,6 +101,7 @@ def test_export_commands_stage_expected_files() -> None:
         "src/spectralbio",
         "benchmarks",
         "artifacts/expected",
+        "schemas",
     ]
     destination = Path(hf_space["destination"])
     for relative_path in (
@@ -101,6 +129,10 @@ def test_export_commands_stage_expected_files() -> None:
         "benchmarks/manifests/brca1_transfer_manifest.json",
         "benchmarks/manifests/source_snapshot.json",
         "benchmarks/manifests/checksums.json",
+        "benchmarks/benchmark_registry.json",
+        "benchmarks/brca2",
+        "benchmarks/tsc2",
+        "benchmarks/crebbp",
     ]
     dataset_destination = Path(hf_dataset["destination"])
     for relative_path in (
@@ -116,6 +148,10 @@ def test_export_commands_stage_expected_files() -> None:
         "benchmarks/manifests/brca1_transfer_manifest.json",
         "benchmarks/manifests/source_snapshot.json",
         "benchmarks/manifests/checksums.json",
+        "benchmarks/benchmark_registry.json",
+        "benchmarks/brca2/summary.expected.json",
+        "benchmarks/tsc2/summary.expected.json",
+        "benchmarks/crebbp/summary.expected.json",
     ):
         assert (dataset_destination / relative_path).exists()
 
@@ -133,6 +169,7 @@ def test_release_bundle_copies_support_files_and_verified_outputs(tmp_path: Path
         "content.md",
         "docs/truth_contract.md",
         "docs/reproducibility.md",
+        "claw_agent_guide.md",
         "benchmarks/manifests/checksums.json",
         "publish/clawrxiv/spectralbio_clawrxiv.md",
         "assets/branding/spectralbio_banner.jpeg",
@@ -153,6 +190,7 @@ def test_release_bundle_copies_support_files_and_verified_outputs(tmp_path: Path
         "content.md",
         "docs/truth_contract.md",
         "docs/reproducibility.md",
+        "claw_agent_guide.md",
         "benchmarks/manifests/checksums.json",
         "publish/clawrxiv/spectralbio_clawrxiv.md",
         "assets/branding/spectralbio_banner.jpeg",

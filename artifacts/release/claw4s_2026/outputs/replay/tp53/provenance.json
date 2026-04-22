@@ -1,0 +1,38 @@
+{
+  "target": "TP53",
+  "benchmark_role": "validation_anchor",
+  "source_label": "tp53_canonical_bundle",
+  "generated_at": "2026-04-22T19:49:54.071060+00:00",
+  "generated_by_command": "spectralbio replay --target tp53",
+  "git_commit_hash": "f7a30db9cff3bc6eaed2ab82135fce6dd610525c",
+  "uv_lock_hash": "bc5a2c7c0490bcb80a58eebdd9d51ea542181bc42b5e38abc595dfb97677e364",
+  "output_dir": "outputs/replay/tp53",
+  "model_identifiers": [
+    "facebook/esm2_t30_150M_UR50D"
+  ],
+  "seed_values": {
+    "global_seed": 42
+  },
+  "inputs": [
+    {
+      "path": "benchmarks/tp53/tp53_canonical_v1.json",
+      "sha256": "ba37cef10ef3a334932be0b0b7a7d4756d15ea7c6aaf29a777ef79c14e1d4fa6"
+    },
+    {
+      "path": "benchmarks/tp53/tp53_scores_v1.json",
+      "sha256": "a07066ca3d55cce98d81a04a30f71ab99e3c5cbb95d28a4a135d03229e809b28"
+    }
+  ],
+  "assumptions": {
+    "offline_replay_supported": true,
+    "cpu_only_supported": true
+  },
+  "target_metadata": {
+    "target": "TP53",
+    "role_label": "validation_anchor",
+    "replay_ready": true,
+    "default_executable": true,
+    "transfer_positive": false,
+    "source_label": "tp53_canonical_bundle"
+  }
+}
