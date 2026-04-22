@@ -3,28 +3,34 @@
 </p>
 
 <p align="center"><strong>Claw4S Conference 2026 Submission Artifact</strong></p>
-<p align="center"><sub>BRCA2 flagship scientific audit, TP53 frozen canonical replay, BRCA1 bounded auxiliary transfer.</sub></p>
+<p align="center"><sub>BRCA2 flagship scientific audit, TP53 frozen canonical replay, replay-ready multi-target portability, and bounded auxiliary transfer.</sub></p>
 
-SpectralBio is a `research reproducibility artifact` for the Claw4S Conference 2026 submission. Its manuscript-facing scientific center is a stronger-baseline covariance augmentation result on `BRCA2`, while its frozen executable replay center remains the `TP53 canonical executable benchmark`.
+SpectralBio is a `research reproducibility artifact` for the Claw4S Conference 2026 submission. Its manuscript-facing scientific center remains a stronger-baseline covariance augmentation result on `BRCA2`, while its frozen executable replay center remains the `TP53 canonical executable benchmark`. The public package now also carries `replay-ready multi-target portability` across `TP53`, `BRCA2`, `TSC2`, and `CREBBP`, preserves `BRCA1` and `MSH2` as negative guardrails, and keeps the `final holdout/control tribunal` explicitly mixed rather than fully closed.
 
 ## Public Hierarchy
 
 - Flagship scientific result: `BRCA2` covariance-aware augmentation against a five-model ESM-1v ensemble
 - Validation anchor: `TP53` is the only frozen public canonical replay surface
-- Breadth surface: support-ranked top-25 feasible panel from the 15,752-gene ClinVar scan
-- Boundary surfaces: protocol sweep and BRCA1 failure analysis
+- Replay-ready portability surfaces: `TP53`, `BRCA2`, `TSC2`, `CREBBP`
+- Transfer-positive targets: `TSC2`, `CREBBP`
+- Negative guardrails: `BRCA1`, `MSH2`
 - Auxiliary executable surface: `bounded transfer on a fixed BRCA1 subset (N=100) without retraining`
+- Final closure boundary: the `final holdout/control tribunal` remains mixed
 
-This hierarchy is deliberate. `BRCA2` owns the manuscript-facing scientific claim, `TP53` owns the cold-start public replay contract, `BRCA1` remains `secondary transfer evaluation without retraining`, and anything beyond the released replay or audit surfaces is `adaptation recipe only`.
+This hierarchy is deliberate. `BRCA2` owns the manuscript-facing flagship result, `TP53` owns the cold-start public replay contract, `TSC2` and `CREBBP` strengthen the target-level portability story, `BRCA1` and `MSH2` remain explicit guardrails, and the harshest model-level closure remains intentionally bounded.
 
-## Two-Layer Contract
+## Multi-Layer Contract
 
 ### Manuscript Scientific Contract
 
 - `BRCA2` is the flagship scientific result
 - `TP53` is the validation anchor and the only frozen public canonical replay surface
-- The support-ranked top-25 feasible panel is the breadth surface
-- The protocol sweep and BRCA1 failure analysis are the main public boundary surfaces
+- The support-ranked top-25 feasible panel and clinical gallery are the bounded breadth surfaces
+- The earlier harsh-firewall chain remains part of the claim boundary
+- `TP53`, `BRCA2`, `TSC2`, and `CREBBP` now form the replay-ready portability layer
+- `TSC2` and `CREBBP` are transfer-positive targets at the target-level portability layer
+- `BRCA1` and `MSH2` are retained negative guardrails
+- The final holdout/control tribunal remains mixed and does not establish universal or model-level closure
 
 ### Frozen Executable Replay Contract
 
@@ -32,9 +38,9 @@ This hierarchy is deliberate. `BRCA2` owns the manuscript-facing scientific clai
 - Auxiliary executable claim: `bounded transfer on a fixed BRCA1 subset (N=100) without retraining`
 - Transfer framing: `secondary transfer evaluation without retraining`
 - Repository framing: `research reproducibility artifact`
-- Extension policy: `adaptation recipe only`
+- Extension policy: `replay-ready portability is stronger than before, but default public executability is still TP53-first and bounded`
 
-The repository is aligned only when these two layers are stated together rather than collapsed into a TP53-only story or a BRCA2-only story.
+The repository is aligned only when these layers are stated together. The package should not collapse into a TP53-only story, and it should not over-promote replay-ready portability surfaces into default executable CLI benchmarks unless the code path truly exists.
 
 ## Authors
 
@@ -64,6 +70,9 @@ The paper reports the scientific framing, methodology, and results. The reposito
 | BRCA2 flagship result | Delta vs ESM-1v | `0.0566` |
 | BRCA2 flagship result | Paired 95% CI | `[0.0131, 0.1063]` |
 | BRCA2 flagship result | Empirical permutation `p` | `0.0010` |
+| Portability strengthening | Replay-ready targets | `TP53, BRCA2, TSC2, CREBBP` |
+| Portability strengthening | Transfer-positive targets | `TSC2, CREBBP` |
+| Final tribunal | Closure status | `mixed` |
 
 ### Machine-Verified Executable Metrics
 
@@ -89,6 +98,18 @@ uv run spectralbio canonical
 
 This is the canonical public path. It materializes the frozen TP53 replay contract from bundled references and writes the canonical artifact bundle to `outputs/canonical/`.
 
+Canonical success establishes:
+
+- the repository can reproduce the frozen TP53 executable benchmark
+- the expected machine-verifiable files and metrics materialize
+- the repo-level verification contract is intact
+
+Canonical success does **not** establish:
+
+- universal or model-family-wide generalization
+- full holdout/control closure
+- that every replay-ready portability surface is already exposed through the same default CLI path
+
 ### Optional Full Validation
 
 Run the bounded auxiliary transfer and repository-wide checks only after the canonical TP53 path:
@@ -108,17 +129,38 @@ uv run pytest
 
 ## Public Scientific Audit Surfaces
 
-Use these surfaces when the task is paper alignment, scientific review, or judge-facing interpretation rather than cold-start CLI replay:
+Use these surfaces when the task is paper alignment, scientific review, or judge-facing interpretation rather than cold-start CLI replay.
+
+### Core manuscript and contract surfaces
 
 - [`abstract.md`](abstract.md)
 - [`content.md`](content.md)
+- [`SKILL.md`](SKILL.md)
+- [`docs/truth_contract.md`](docs/truth_contract.md)
+- [`docs/reproducibility.md`](docs/reproducibility.md)
+
+### Current manuscript audit chain
+
+- [`New Notebooks/results/13_block13_multitarget_generalization_closure_h100/`](New%20Notebooks/results/13_block13_multitarget_generalization_closure_h100/)
+- [`New Notebooks/results/14_block14_holdout_control_closure_h100/`](New%20Notebooks/results/14_block14_holdout_control_closure_h100/)
+
+### Earlier harsh-firewall chain
+
+- [`New Notebooks/results/11_block11_covariance_rulebook_h100/`](New%20Notebooks/results/11_block11_covariance_rulebook_h100/)
+- [`New Notebooks/results/12_block12_orthogonal_validation_tp53_h100/`](New%20Notebooks/results/12_block12_orthogonal_validation_tp53_h100/)
+- [`New Notebooks/results/12b_block12_multifamily_coverage_aware_generalization_h100/`](New%20Notebooks/results/12b_block12_multifamily_coverage_aware_generalization_h100/)
+- [`New Notebooks/results/12c_block12_covariance_adjudication_structural_closure_h100/`](New%20Notebooks/results/12c_block12_covariance_adjudication_structural_closure_h100/)
+- [`New Notebooks/results/12d_block12_final_nuclear_localization_h100/`](New%20Notebooks/results/12d_block12_final_nuclear_localization_h100/)
+
+### Legacy flagship notebook mirrors
+
 - [`notebooks/final_accept_part3_esm1v_augmentation_A100.ipynb`](notebooks/final_accept_part3_esm1v_augmentation_A100.ipynb)
 - [`notebooks/final_accept_part4_brca2_canonicalization_A100.ipynb`](notebooks/final_accept_part4_brca2_canonicalization_A100.ipynb)
 - [`notebooks/final_accept_part1_support_panel.ipynb`](notebooks/final_accept_part1_support_panel.ipynb)
 - [`notebooks/final_accept_part5_protocol_sweep_A100.ipynb`](notebooks/final_accept_part5_protocol_sweep_A100.ipynb)
 - [`notebooks/final_accept_part6_panel25_brca1_failure_L4.ipynb`](notebooks/final_accept_part6_panel25_brca1_failure_L4.ipynb)
 
-These surfaces expose the BRCA2 flagship result, benchmark qualification, support-ranked breadth, protocol sensitivity, and BRCA1 boundary behavior. They complement the TP53 replay path; they do not replace it as the canonical executable contract.
+These surfaces expose the BRCA2 flagship result, TP53 structural anchor, scale-repair, bounded breadth, earlier harsh firewalls, late-stage portability strengthening, and the final mixed tribunal. They complement the TP53 replay path; they do not replace it as the canonical executable contract.
 
 ## Expected Outputs
 
@@ -138,6 +180,8 @@ The optional bounded BRCA1 transfer path is expected to materialize these files 
 - `summary.json`
 - `variants.json`
 - `manifest.json`
+
+Replay-ready portability surfaces and the final tribunal are currently represented as bundled scientific audit results under `New Notebooks/results/`. They are part of the public truth boundary, but they are not default machine-verified CLI bundles through the same path as TP53 canonical replay.
 
 ## Repository Map
 
@@ -167,6 +211,7 @@ Trust in the artifact comes from:
 - generated canonical output manifests
 - repository-level verification via `uv run spectralbio verify`
 - preflight checks via `uv run python scripts/preflight.py`
+- replay-ready portability evidence and final tribunal bundles under `New Notebooks/results/`
 
 The handoff mirror under `artifacts/release/claw4s_2026/` is a packaged public surface, not a higher-precedence source of truth.
 

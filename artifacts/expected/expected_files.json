@@ -1,4 +1,29 @@
 {
+  "_meta": {
+    "canonical_executable_replay_surfaces": [
+      "TP53"
+    ],
+    "auxiliary_bounded_executable_surfaces": [
+      "BRCA1_transfer100"
+    ],
+    "replay_ready_portability_surfaces": [
+      "TP53",
+      "BRCA2",
+      "TSC2",
+      "CREBBP"
+    ],
+    "transfer_positive_targets": [
+      "TSC2",
+      "CREBBP"
+    ],
+    "negative_guardrails": [
+      "BRCA1",
+      "MSH2"
+    ],
+    "earlier_harsh_firewall_chain_status": "supportive_not_nuclear",
+    "final_holdout_control_closure_status": "mixed",
+    "note": "File contracts below are machine-verifiable only for TP53 canonical replay and BRCA1 bounded transfer. Replay-ready portability surfaces are scientific audit surfaces unless and until the executable contract expands."
+  },
   "canonical_run": [
     "run_metadata.json",
     "inputs_manifest.json",
