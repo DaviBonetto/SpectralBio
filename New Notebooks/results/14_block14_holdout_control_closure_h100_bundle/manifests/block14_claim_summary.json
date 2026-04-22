@@ -1,0 +1,16 @@
+{
+  "notebook_slug": "14_block14_holdout_control_closure_h100",
+  "run_at_utc": "2026-04-21T23:34:31.316416+00:00",
+  "account_label": "local_run",
+  "claim_status": "closure_still_mixed",
+  "claim_reason": "Even after repairing the firewalls, no model satisfied the combined holdout and control-win closure criteria without breaking negative guardrails.",
+  "holdout_positive_models": [],
+  "control_win_models": [],
+  "transfer_positive_models": [],
+  "non_esm_transfer_positive_models": [],
+  "negative_guardrails_clean": true,
+  "repair_notes": {
+    "holdout_panel": "full_labeled_replay_surfaces",
+    "control_logic": "no_self_comparison_for_pair_only_and_no_scalar_only_final_rule"
+  }
+}

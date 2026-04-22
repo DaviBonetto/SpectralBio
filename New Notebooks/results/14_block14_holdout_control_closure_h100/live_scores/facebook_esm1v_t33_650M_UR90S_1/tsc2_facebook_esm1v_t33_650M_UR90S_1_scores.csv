@@ -1,0 +1,3 @@
+gene,name,position,wt_aa,mut_aa,label,variant_id,frob_dist,trace_ratio,sps_log,ll_proper,model_name,model_label,family_label,architecture_kind,adapter_kind,sequence_mode,scale_bucket,panel_name
+TSC2,NM_000548.5(TSC2):c.4692T>G (p.Asn1564Lys),1563,N,K,1,TSC2:N1563K,1981.6628919240584,0.0262890763006605,0.1158139759718967,3.0671995878219604,facebook/esm1v_t33_650M_UR90S_1,ESM-1v,esm_variant_specialist,masked_encoder,esm,raw,650M,tsc2
+TSC2,NM_000548.5(TSC2):c.880G>A (p.Gly294Arg),293,G,R,1,TSC2:G293R,2620.152822434741,0.0405298102812357,0.2047505483571922,3.3275451958179474,facebook/esm1v_t33_650M_UR90S_1,ESM-1v,esm_variant_specialist,masked_encoder,esm,raw,650M,tsc2

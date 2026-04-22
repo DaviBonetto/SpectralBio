@@ -1,0 +1,3 @@
+gene,name,position,wt_aa,mut_aa,label,variant_id,frob_dist,trace_ratio,sps_log,ll_proper,model_name,model_label,family_label,architecture_kind,adapter_kind,sequence_mode,scale_bucket,panel_name
+CREBBP,NM_004380.3(CREBBP):c.4022G>C (p.Arg1341Pro),1340,R,P,1,CREBBP:R1340P,2566.9734167383504,0.0363763248423175,0.2720235422912699,4.860839933156967,facebook/esm1v_t33_650M_UR90S_1,ESM-1v,esm_variant_specialist,masked_encoder,esm,raw,650M,crebbp
+CREBBP,NM_004380.3(CREBBP):c.5060C>T (p.Ser1687Phe),1686,S,F,1,CREBBP:S1686F,1102.871644494282,0.0051538670575878,0.1087993929815481,4.3388671875,facebook/esm1v_t33_650M_UR90S_1,ESM-1v,esm_variant_specialist,masked_encoder,esm,raw,650M,crebbp

@@ -1,0 +1,6 @@
+model_label,positive_targets_with_control_win,negative_targets_with_control_win,control_win_model,reason
+ProtT5,,,False,No positive target beat all repaired controls or a negative guardrail also won.
+ProGen2-small,,,False,No positive target beat all repaired controls or a negative guardrail also won.
+ESM2-650M,,,False,No positive target beat all repaired controls or a negative guardrail also won.
+ESM2-150M,,,False,No positive target beat all repaired controls or a negative guardrail also won.
+ESM-1v,,,False,No positive target beat all repaired controls or a negative guardrail also won.

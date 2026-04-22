@@ -1,0 +1,4 @@
+{
+  "reuse_kind": "aggregate_table",
+  "reuse_source": "block13_multitarget_model_variant_scores.csv"
+}
